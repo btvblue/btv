@@ -1,21 +1,187 @@
-<!-- prettier-ignore -->
-@@include("../component/head.html",{
-  "title" : "Components | Booting"
-})
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.ico" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <script src="../../assets/js/default.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>Components | Booting</title>
+</head>
+</html>
 <body>
   <div class="wrapper">
     <!-- Header -->
-    <!-- prettier-ignore -->
-    @@include("../component/header.html", {
-      "page" : "components"
-    })
-
+    <header class="header-container">
+      <div class="header-area">
+        <div class="header-left">
+          <div class="header-logo-box">
+            <a href="javascript:void(0)" class="header-logo-link">
+              <img src="../../assets/images/btv_logo.svg" alt="" />
+              <span class="text">BLUE Design System</span>
+            </a>
+          </div>
+        </div>
+        <div class="header-right">
+          <!--
+        Class 설명 
+        expand : 메뉴 펼쳤을 때 스타일 적용 (인터렉션은 js로 구현함. 클래스로 제어하지 않음)
+      -->
+          <ul class="header-menu-list-box">
+            <li class="header-menu-list ">
+              <a href="javascript:void(0)" class="header-menu-link"><span class="text">Principle</span></a>
+            </li>
+            <li class="header-menu-list ">
+              <a href="javascript:void(0)" class="header-menu-link"><span class="text">Foundation</span></a>
+            </li>
+            <li class="header-menu-list active">
+              <a href="javascript:void(0)" class="header-menu-link"><span class="text">Components</span></a>
+            </li>
+          </ul>
+          <div class="menu-button-box">
+            <button type="button" class="btn-menu">
+              <img src="../../assets/images/btn_open_menu_nor.svg" alt="메뉴 열기" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- LNB -->
-    <!-- prettier-ignore -->
-    @@include("../component/lnb.html", {
-      "title" : "booting"
-    })
-
+    <div class="lnb-container">
+      <div class="lnb-area">
+        <ul class="lnb-list-box">
+          <li class="lnb-list ">
+            <a href="javascript:void(0)" class="lnb-link"><span class="text">Overview</span></a>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="javascript:void(0)" class="lnb-link"><span class="text">Principle</span></a>
+            <ul class="lnb-sub-list-box kor">
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">명확한 구조</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">접근성</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">일관성</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">강조</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">TV 해상도</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">탐색</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">계층구조</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="javascript:void(0)" class="lnb-link"><span class="text">Foundation</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Typography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Icongraphy</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Color</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Grid</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Focus</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Motion</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Image</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="javascript:void(0)" class="lnb-link"><span class="text">Components</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Badges</span></a>
+              </li>
+              <li class="lnb-sub-list active">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Booting</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Buttons</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <button class="btn-sub-open"><i class="icon ic-arrow"></i></button>
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Controls</span></a>
+                <ul class="lnb-last-list-box">
+                  <li class="lnb-last-list ">
+                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Checkbox</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Radio Button</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Switch</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Slider</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Dropdown</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">GNB</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Inputs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">IME</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">List Cards</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Loading</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Pagination</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Player</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Pop up</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Splash</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Tabs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Tooltip</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- Components | Booting -->
     <main class="main">
       <div class="main-container">
@@ -35,20 +201,19 @@
               </div>
               <div class="heading-bottom">
                 <div class="content-box">
-                  <!-- prettier-ignore -->
-                  @@include("../component/image_content_box.html", {
-                    "mode"  : "",
-                    "image" : "components/booting/booting_image_01",
-                    "desc"  : {
-                      "alphabet" : "A",
-                      "desc"     : "General Booting"
-                    }
-                  })
+                  <div class="image-content-box ">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/booting/booting_image_01.png" alt="" />
+                    </div>
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">A</span></span>
+                      <span class="text">General Booting</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
           <!-- Anatomy -->
           <div class="content-container">
             <div class="content-area">
@@ -61,20 +226,20 @@
                 <div class="content-box">
                   <div class="image-title-box">
                     <div class="image-title-top">
-                      <!-- prettier-ignore -->
-                      @@include("../component/image_content_box.html", {
-                        "mode"  : "",
-                        "image" : "components/booting/booting_image_02",
-                        "desc"  : null
-                      })
+                      <div class="image-content-box ">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/booting/booting_image_02.png" alt="" />
+                        </div>
+                      </div>
                     </div>
                     <div class="image-title-bottom">
                       <ul class="number-desc-list-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "1. Graphic Area",
-                          "desc"  : "CI 또는 BI와 같은 Brand Logo를 단발성 Image 또는 Motion으로 표시합니다."
-                        })
+                        <li class="number-desc-list">
+                          <span class="title">1. Graphic Area</span>
+                          <div class="text-box">
+                            <p class="text">CI 또는 BI와 같은 Brand Logo를 단발성 Image 또는 Motion으로 표시합니다.</p>
+                          </div>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -86,30 +251,45 @@
                     .green  : Do
                     .orange : Exception
                   -->
-                  <!-- prettier-ignore -->
-                  @@include("../component/color_box.html", {
-                    "mode" : "",
-                    "full"  : "",
-                    "state" : "do",
-                    "image" : "components/booting/booting_image_03",
-                    "desc"  : "Brand Logo를 제외한 Text 사용을 지양합니다."
-                  })
-                  <!-- prettier-ignore -->
-                  @@include("../component/color_box.html", {
-                    "mode" : "",
-                    "full"  : "",
-                    "state" : "do",
-                    "image" : "components/booting/booting_image_04",
-                    "desc"  : "Booting의 경우 Splash와 다른 BI를 사용합니다."
-                  })
-                  <!-- prettier-ignore -->
-                  @@include("../component/color_box.html", {
-                    "mode" : "",
-                    "full"  : "",
-                    "state" : "dont",
-                    "image" : "components/booting/booting_image_05",
-                    "desc"  : "Logo는 가독성 확보가 가능한 적절한 크기로 표현되어야 합니다."
-                  })
+                  <div class="color-box   do">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/booting/booting_image_03.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Do</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">Brand Logo를 제외한 Text 사용을 지양합니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="color-box   do">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/booting/booting_image_04.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Do</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">Booting의 경우 Splash와 다른 BI를 사용합니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="color-box   dont">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/booting/booting_image_05.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Don't</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">Logo는 가독성 확보가 가능한 적절한 크기로 표현되어야 합니다.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -146,28 +326,31 @@
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "",
-                          "image" : "components/booting/booting_image_06",
-                          "desc"  : null
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "",
-                          "image" : "components/booting/booting_image_07",
-                          "desc"  : null
-                        })
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/booting/booting_image_06.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/booting/booting_image_07.png" alt="" />
+                          </div>
+                        </div>
                       </div>
                       <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode"  : "",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/booting/booting_image_08",
-                          "desc"  : "사용자 경험에 흥미를 더하는 Animation을 사용하여 표시할 수 있습니다."
-                        })
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/booting/booting_image_08.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">사용자 경험에 흥미를 더하는 Animation을 사용하여 표시할 수 있습니다.</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -179,7 +362,6 @@
         </div>
       </div>
     </main>
-
     <!-- Quick Menu -->
     <div class="quick-menu-container">
       <div class="quick-menu-area">
@@ -200,5 +382,4 @@
     </div>
   </div>
 </body>
-
 </html>
