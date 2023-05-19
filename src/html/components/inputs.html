@@ -1,0 +1,529 @@
+<!-- prettier-ignore -->
+@@include("../component/head.html",{
+  "title" : "Components | Inputs"
+})
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <!-- prettier-ignore -->
+      @@include("../component/header.html", {
+        "page" : "components"
+      })
+
+    <!-- LNB -->
+    <!-- prettier-ignore -->
+    @@include("../component/lnb.html", {
+      "title" : "inputs"
+    })
+
+    <!-- Components Inputs -->
+    <main class="main">
+      <div class="main-container">
+        <div class="main-area">
+          <div class="heading-container">
+            <div class="heading-area">
+              <div class="heading-top">
+                <div class="title-box">
+                  <h1 class="title">Inputs</h1>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">사용자가 문자, 숫자, 기호등을 입력하고 확인할 수 있는 컴포넌트입니다.</p>
+                </div>
+              </div>
+              <div class="heading-bottom">
+                <div class="content-box">
+                  <!-- prettier-ignore -->
+                  @@include("../component/image_content_box.html", {
+                    "mode"  : "dark",
+                    "image" : "components/inputs/inputs_image_01",
+                    "desc"  : {
+                      "alphabet" : "A",
+                      "desc"     : "Text Inputs"
+                    }
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/image_content_box.html", {
+                    "mode"  : "dark",
+                    "image" : "components/inputs/inputs_image_02",
+                    "desc"  : {
+                      "alphabet" : "B",
+                      "desc"     : "Password Inputs"
+                    }
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/image_content_box.html", {
+                    "mode"  : "dark",
+                    "image" : "components/inputs/inputs_image_03",
+                    "desc"  : {
+                      "alphabet" : "C",
+                      "desc"     : "Search Inputs"
+                    }
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Anatomy -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Anatomy</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <!-- prettier-ignore -->
+                      @@include("../component/image_content_box.html", {
+                        "mode"  : "dark",
+                        "image" : "components/inputs/inputs_image_04",
+                        "desc"  : null
+                      })
+                      <!-- prettier-ignore -->
+                      @@include("../component/image_content_box.html", {
+                        "mode"  : "dark",
+                        "image" : "components/inputs/inputs_image_05",
+                        "desc"  : null
+                      })
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "1. Title (Optional)",
+                          "desc"  : "Inputs에 관련된 내용을 사용자에게 알려주는 Text를 표기합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "2. Container ",
+                          "desc"  : "Inputs의 형태를 나타냅니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "3. Text",
+                          "desc"  : "입력 전에는 Guide Text가 노출되며, 입력중과 입력 후에는 사용자가 입력한 Text를 표기합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "4. Icon (Optional)",
+                          "desc"  : "입력값에 오류가  있을 경우 Icon을 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "5. Cursor (Optional)",
+                          "desc"  : "Input에서 입력 위치를 나타냅니다."
+                        })
+                      </ul>
+                      <ul class="number-desc-list-box"> 
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "1. Container",
+                          "desc"  : "낱개의 Inputs 형태를 나타냅니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "2. Password Circle",
+                          "desc"  : "문자를 숨김 처리한 도형입니다."
+                        })
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="image-title-box half">
+                    <div class="image-title-top">
+                      <!-- prettier-ignore -->
+                      @@include("../component/image_content_box.html", {
+                        "mode"  : "dark",
+                        "image" : "components/inputs/inputs_image_06",
+                        "desc"  : null
+                      })
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box"> 
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "1. Icon",
+                          "desc"  : "검색을 나타내는 돋보기 모양의 Icon입니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "2. Text",
+                          "desc"  : "입력 전에는 Guide Text가 노출되며, 입력중과 입력 후에는 사용자가 입력한 Text를 표기합니다."
+                        })
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "dark",
+                    "full"  : "",
+                    "state" : "do",
+                    "image" : "components/inputs/inputs_image_07",
+                    "desc"  : "Inputs은 Text 입력을 할 때 IME와 함께 사용합니다."
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "dark",
+                    "full"  : "",
+                    "state" : "do",
+                    "image" : "components/inputs/inputs_image_08",
+                    "desc"  : "입력값에 오류가 있는 경우 사용자가 바로 확인할 수 있도록 Icon, Color를 사용해 일반 케이스와 명확히 구분하도록 합니다."
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "dark",
+                    "full"  : "",
+                    "state" : "do",
+                    "image" : "components/inputs/inputs_image_09",
+                    "desc"  : "Guide Text는 입력 할 내용에 대한 힌트를 제공합니다."
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "dark",
+                    "full"  : "",
+                    "state" : "dont",
+                    "image" : "components/inputs/inputs_image_010",
+                    "desc"  : "Inputs Title과 Guide Text에 중복된 내용을 넣지 않습니다."
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "dark",
+                    "full"  : "",
+                    "state" : "do",
+                    "image" : "components/inputs/inputs_image_011",
+                    "desc"  : "Toast Popup을 이용해 Inputs의 Action에 대한 알림으로 사용할 수 있습니다."
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "dark",
+                    "full"  : "",
+                    "state" : "do",
+                    "image" : "components/inputs/inputs_image_012",
+                    "desc"  : "Inputs Text는 좌측 정렬을 기본으로 합니다."
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Anatomy -->
+
+          <!-- States -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">States</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <!-- prettier-ignore -->
+                      @@include("../component/image_content_box.html", {
+                        "mode"  : "dark",
+                        "image" : "components/inputs/inputs_image_013",
+                        "desc"  : null
+                      })
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "1. Normal",
+                          "desc"  : "사용자가 Action을 하기 전인 일반적인 상태를 나타냅니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "2. Focus",
+                          "desc"  : "Focusing 된 상태로 커서가 나타나 입력하고 있는 위치를 표시합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "3. Dimmed",
+                          "desc"  : "사용자가 Action을 할 수 없는 비활성화 된 상태입니다. "
+                        })
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // States -->
+
+          <!-- Types -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Types</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Text Inputs</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">가장 기본적인 Inputs Type으로 Text를 입력 및 확인 시 활용됩니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "dark",
+                          "image" : "components/inputs/inputs_image_014",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full"  : "",
+                          "state" : "do",
+                          "image" : "components/inputs/inputs_image_015",
+                          "desc"  : "커서는 사용자가 현재 입력 중인 위치를 알 수 있는 요소입니다. Focus시 노출되며 입력하는 동안 지속적으로 노출됩니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full"  : "",
+                          "state" : "do",
+                          "image" : "components/inputs/inputs_image_016",
+                          "desc"  : "사용자가 이해하기 쉽게 명확한 Guide Text를 제공합니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Password Inputs</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">비밀번호, 인증번호와 같이 보안이 필요할 때 숨김 처리하여 사용됩니다. </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "dark",
+                          "image" : "components/inputs/inputs_image_017",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full"  : "",
+                          "state" : "do",
+                          "image" : "components/inputs/inputs_image_018",
+
+                          "desc"  : "오류 발생시에 Alert Text 아이콘은 Container 우측에 배치하고 Helper Text는 하단에 노출합니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Search Inputs</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">Search Inputs은 컨텐츠를 검색하는 기본 수단으로, 원하는 정보를 빠르게 찾을 때 사용합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "dark",
+                          "image" : "components/inputs/inputs_image_019",
+                          "desc"  : null
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Types -->
+
+          <!-- Usage -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Usage</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Text Inputs</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">Text를 입력하고 수정할 수 있는 Component 입니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "",
+                          "image" : "components/inputs/inputs_image_020",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "dark",
+                          "full"  : "",
+                          "state" : "do",
+                          "image" : "components/inputs/inputs_image_021",
+                          "desc"  : "Inputs은 여러 Component와 조합하여 사용할 수 있습니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "dark",
+                          "full"  : "",
+                          "state" : "exception",
+                          "image" : "components/inputs/inputs_image_022",
+                          "desc"  : "Inputs 하단에 부가적인 설명이 필요할 경우 Helper Text를 사용할 수 있습니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Password Inputs</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">비밀번호나 인증번호 등을 입력할 때 사용합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "",
+                          "image" : "components/inputs/inputs_image_023",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "dark",
+                          "full"  : "",
+                          "state" : "do",
+                          "image" : "components/inputs/inputs_image_024",
+                          "desc"  : "Password Inputs의 Guide Text의 경우 Container의 상단에 배치하며, 중요한 안내의 경우 Color로 강조하여 나타냅니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "dark",
+                          "full"  : "",
+                          "state" : "exception",
+                          "image" : "components/inputs/inputs_image_025",
+                          "desc"  : "Play Z의 경우 비밀번호를 노출시킬 수 있습니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Search Inputs</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">Search Inputs은 Keyword를 사용하여 탐색하는 방법을 제공합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "",
+                          "image" : "components/inputs/inputs_image_026",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "dark",
+                          "full"  : "",
+                          "state" : "exception",
+                          "image" : "components/inputs/inputs_image_027",
+                          "desc"  : "Play Z에서 Search Inputs은 커서만으론 현재 입력 중인 위치를 파악하기 용이하지 않을수 있어 돋보기 효과를 제공합니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Usage -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Quick Menu -->
+    <div class="quick-menu-container">
+      <div class="quick-menu-area">
+        <ul class="quick-menu-list-box">
+          <li class="quick-menu-list"><span class="list-title">Anatomy</span></li>
+          <li class="quick-menu-list"><span class="list-title">States</span></li>
+          <li class="quick-menu-list">
+            <span class="list-title">Types</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Text Inputs</span></li>
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Password Inputs</span></li>
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Search Inputs</span></li>
+            </ul>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Usage</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Text Inputs</span></li>
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Password Inputs</span></li>
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Search Inputs</span></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

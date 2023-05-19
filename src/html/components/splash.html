@@ -1,0 +1,273 @@
+<!-- prettier-ignore -->
+@@include("../component/head.html",{
+  "title" : "Components | Splash"
+})
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <!-- prettier-ignore -->
+    @@include("../component/header.html", {
+      "page" : "components"
+    })
+
+    <!-- LNB -->
+    <!-- prettier-ignore -->
+    @@include("../component/lnb.html", {
+      "title" : "splash"
+    })
+
+    <!-- Components | Splash -->
+    <main class="main">
+      <div class="main-container">
+        <div class="main-area">
+          <div class="heading-container">
+            <div class="heading-area">
+              <div class="heading-top">
+                <div class="title-box">
+                  <h1 class="title">Splash</h1>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">
+                    App의 시작에 나타나는 화면으로 Data를 Loading하면서 본 화면이 보여지기 전
+                    1~2초간 노출합니다.<br/>실행 화면은 Branding의 목적, 서비스의 Identity를 지속적으로
+                    노출하기 위한 Branding의 관점에서 구현합니다.
+                  </p>
+                </div>
+              </div>
+              <div class="heading-bottom">
+                <div class="content-box">
+                  <!-- prettier-ignore -->
+                  @@include("../component/image_content_box.html", {
+                    "mode"  : "",
+                    "image" : "components/splash/splash_image_01",
+                    "desc"  : {
+                      "alphabet" : "A",
+                      "desc"     : "General Splash"
+                    }
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Anatomy -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Anatomy</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <!-- prettier-ignore -->
+                      @@include("../component/image_content_box.html", {
+                          "mode"  : "",
+                          "image" : "components/splash/splash_image_02",
+                          "desc"  : null
+                      })
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "1. Graphic Area",
+                          "desc"  : "Brand의 Logo 또는 Brand Identity를 나타내는 주요 요소를 표시합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "2. Text (Optional)",
+                          "desc"  : "해당 App에 대한 간단한 내용을 표기합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "3. Background",
+                          "desc"  : "투명도가 적용되지 않은 색상의 배경을 표시합니다."
+                        })
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <!--
+                    color-box 컬러 추가 클래스
+                    .red    : Don't
+                    .green  : Do
+                    .orange : Exception
+                  -->
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "",
+                    "full"  : "",
+                    "state" : "do",
+                    "image" : "components/splash/splash_image_03",
+                    "desc"  : "Brand와 관련된 Graphic나 Tagline을 제외한 Text 사용을 지양합니다."
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "",
+                    "full"  : "",
+                    "state" : "do",
+                    "image" : "components/splash/splash_image_04",
+                    "desc"  : "Brand의 Identity와 명시성을 고려하여 각 요소에 대해 밝거나 어두운 Mode의 Version을 사용합니다."
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "",
+                    "full"  : "",
+                    "state" : "do",
+                    "image" : "components/splash/splash_image_05",
+                    "desc"  : "Splash의 마지막 시퀀스에서 Logo 하단에 Progress Bar가 표시됩니다."
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "",
+                    "full"  : "",
+                    "state" : "dont",
+                    "image" : "components/splash/splash_image_06",
+                    "desc"  : "Graphic은 가독성 확보가 가능한 적절한 크기로 표현되어야 합니다."
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Anatomy -->
+          <!-- Types -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Types</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">General Splash</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          실행 화면은 Brand 인지도를 높이는 Graphic 또는 기타 요소를 표시하여 앱이
+                          로드되는 동안 Branding을 표현합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "",
+                          "image" : "components/splash/splash_image_07",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "",
+                          "full"  : "",
+                          "state" : "do",
+                          "image" : "components/splash/splash_image_08",
+                          "desc"  : "사용자 경험에 흥미를 더하는 Animation을 사용하여 표시할 수 있습니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "",
+                          "full"  : "",
+                          "state" : "do",
+                          "image" : "components/splash/splash_image_09",
+                          "desc"  : "Brand의 Graphic 요소를 사용하여 Animation을 제작 할 수 있습니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Types -->
+          <!-- Usage -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Usage</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">General Splash</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          App을 실행하면서 앱이 로드 될 때 빈 화면을 표시하는 대신 Splash를
+                          노출합니다.<br/>시작 화면을 표시하면 Loading 시간이 길다는 느낌을 줄일 수
+                          있으며 사용자 경험에 즐거움을 더할 수 있습니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "",
+                          "image" : "components/splash/splash_image_010",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "",
+                          "full"  : "",
+                          "state" : "dont",
+                          "image" : "components/splash/splash_image_011",
+                          "desc"  : "App이 실행 중인 경우 Splash를 표시하지 않습니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Usage -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Quick Menu -->
+    <div class="quick-menu-container">
+      <div class="quick-menu-area">
+        <ul class="quick-menu-list-box">
+          <li class="quick-menu-list">
+            <span class="list-title">Anatomy</span>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Types</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">General Splash</span>
+              </li>
+            </ul>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Usage</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">General Splash</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>

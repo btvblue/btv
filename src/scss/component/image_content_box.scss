@@ -1,0 +1,46 @@
+.image-content-box {
+  flex: 1;
+  overflow: hidden;
+  margin: 0 1rem;
+  border: 1px solid #EEEEEE;
+  border-radius: 0.8rem;
+  background-color: $white;
+  &.dark {
+    background-color: $dark;
+    .image-text-box {
+      .circle {
+        background-color: #EEEEEE;
+        color: $dark;
+        & +.text {
+          color: #EEEEEE;
+        }
+      }
+      .text {
+        color: #EEEEEE;
+      }
+    }
+  }
+  .image-box {
+    @include flex(row, center, center);
+  }
+  .image-text-box {
+    @include flex(row, center, center);
+    height: 5.6rem;
+    border-top: 1px solid #EEEEEE;
+    .circle {
+      @include flex(row, center, center);
+      min-width: 2rem;
+      height: 2rem;
+      margin-right: 0.8rem;
+      background-color: #242424;
+      border-radius: 50%;
+      @include font(1.2rem, 600, $white, 1.5rem);
+      & + .text {
+        @include font(1.2rem, 400, #242424, 1.5rem);
+      }
+    }
+    .text {
+      @include font(1.4rem, 400, #4A4A4A, 2.4rem);
+    }
+  }
+}

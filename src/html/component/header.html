@@ -1,0 +1,34 @@
+<header class="header-container">
+  <div class="header-area">
+    <div class="header-left">
+      <div class="header-logo-box">
+        <a href="javascript:void(0)" class="header-logo-link">
+          <img src="../../assets/images/btv_logo.svg" alt="" />
+          <span class="text">BLUE Design System</span>
+        </a>
+      </div>
+    </div>
+    <div class="header-right">
+      <!--
+        Class 설명 
+        expand : 메뉴 펼쳤을 때 스타일 적용 (인터렉션은 js로 구현함. 클래스로 제어하지 않음)
+      -->
+      <ul class="header-menu-list-box">
+        <li class="header-menu-list @@if(page === 'principle') {active}">
+          <a href="javascript:void(0)" class="header-menu-link"><span class="text">Principle</span></a>
+        </li>
+        <li class="header-menu-list @@if(page === 'foundation') {active}">
+          <a href="javascript:void(0)" class="header-menu-link"><span class="text">Foundation</span></a>
+        </li>
+        <li class="header-menu-list @@if(page === 'components') {active}">
+          <a href="javascript:void(0)" class="header-menu-link"><span class="text">Components</span></a>
+        </li>
+      </ul>
+      <div class="menu-button-box">
+        <button type="button" class="btn-menu">
+          <img src="../../assets/images/btn_open_menu_nor.svg" alt="메뉴 열기" />
+        </button>
+      </div>
+    </div>
+  </div>
+</header>

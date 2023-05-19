@@ -1,0 +1,324 @@
+<!-- prettier-ignore -->
+@@include("../component/head.html",{
+  "title" : "Components | Controls | Switch"
+})
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <!-- prettier-ignore -->
+    @@include("../component/header.html", {
+      "page" : "components"
+    })
+
+    <!-- LNB -->
+    <!-- prettier-ignore -->
+    @@include("../component/lnb.html", {
+      "title" : "switch"
+    })
+
+    <!-- Components | Controls | Switch -->
+    <main class="main">
+      <div class="main-container">
+        <div class="main-area">
+          <div class="heading-container">
+            <div class="heading-area">
+              <div class="heading-top">
+                <div class="title-box">
+                  <h1 class="title">Switch</h1>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">Switch는 상호간의 배타적인 상태의 전환이 필요할 때, 기능을 ON/OFF 하기 위해 사용합니다. 
+                    사용자가 선택하지 않아도 기본적으로 선택되어 있는 Default Option을 제공합니다.</p>
+                </div>
+              </div>
+              <div class="heading-bottom">
+                <div class="content-box">
+                  <!-- prettier-ignore -->
+                  @@include("../component/image_content_box.html", {
+                    "mode"  : "dark",
+                    "image" : "components/switch/switch_image_01",
+                    "desc"  : {
+                      "alphabet" : "A",
+                      "desc"     : "General ON/OFF Switch"
+                    }
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Anatomy -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Anatomy</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <!-- prettier-ignore -->
+                      @@include("../component/image_content_box.html", {
+                        "mode"  : "dark",
+                        "image" : "components/switch/switch_image_02",
+                        "desc"  : null
+                      })
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <!-- prettier-ignore -->
+                      @@include("../component/number_desc_list.html", {
+                          "title" : "1. Track",
+                          "desc"  : "Thumb의 이동이 가능한 범위를 나타냅니다."
+                        })
+                        <!-- prettier-ignore -->
+                      @@include("../component/number_desc_list.html", {
+                          "title" : "2. Thumb",
+                          "desc"  : "Thumb의 위치로 Option의 상태를 나타냅니다."
+                        })
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Anatomy -->
+
+          <!-- Types -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Types</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">General switch</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">기본적으로 사용되는 Switch로, ON/OFF의 기능을 수행합니다.<br>
+                          사용자의 시각적 이해를 돕기위해 선택된 Option에 Color로 강조합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "dark",
+                          "image" : "components/switch/switch_image_03",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full"  : "",
+                          "state" : "do",
+                          "image" : "components/switch/switch_image_04",
+                          "desc"  : "사용자에게 Switch Option의 명확한 설명을 위해 Title을 같이 배치합니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sub-content-container">
+                <div class="sub-content-area">
+                  <div class="sub-content-top">
+                    <div class="title-box">
+                      <h3 class="title">Text Switch</h3>
+                    </div>
+                    <div class="desc-box">
+                      <p class="desc">Text Switch 안에 배치되는 Text는 ON/OFF의 기능을 수행합니다.<br>
+                        사용자의 시각적 이해를 돕기위해 선택된 Option에 Color와 Text로 강조합니다.</p>
+                    </div>
+                  </div>
+                  <div class="sub-content-bottom">
+                    <div class="content-box">
+                      <!-- prettier-ignore -->
+                      @@include("../component/image_content_box.html", {
+                        "mode"  : "dark",
+                        "image" : "components/switch/switch_image_05",
+                        "desc"  : null
+                      })
+                    </div>
+                    <div class="content-box">
+                      <!-- prettier-ignore -->
+                      @@include("../component/color_box.html", {
+                        "mode" : "dark",
+                        "full"  : "",
+                        "state" : "do",
+                        "image" : "components/switch/switch_image_06",
+                        "desc"  : "사용자에게 Switch Option의 명확한 설명을 위해 Title을 같이 배치합니다."
+                      })
+                      <!-- prettier-ignore -->
+                      @@include("../component/color_box.html", {
+                        "mode" : "dark",
+                        "full"  : "",
+                        "state" : "dont",
+                        "image" : "components/switch/switch_image_07",
+                        "desc"  : "On/Off  요소 외에 Switch를 사용하지 않습니다."
+                      })
+                      <!-- prettier-ignore -->
+                      @@include("../component/color_box.html", {
+                        "mode" : "dark",
+                        "full"  : "",
+                        "state" : "exception",
+                        "image" : "components/switch/switch_image_08",
+                        "desc"  : "PlayZ의 경우 정보 간 전환 용도로 사용하며, Track 외부에 Text를 배치하는 형태로 Switch를 사용합니다."
+                      })
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- // Types -->
+
+          <!-- States -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">States</h2>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">
+                    Switch의 상태 별 정의는 리모컨의 포커싱에 따라 Focus/Select 상태로 크게 분류됩니다.
+                  </p>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <!-- prettier-ignore -->
+                  @@include("../component/image_content_box.html", {
+                    "mode"  : "dark",
+                    "image" : "components/switch/switch_image_09",
+                    "desc"  : null
+                  })
+                </div>
+                <div class="content-box">
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "dark",
+                    "full"  : "",
+                    "state" : "do",
+                    "image" : "components/switch/switch_image_010",
+                    "desc"  : "Switch는 사용자가 선택한 상태값에 대해 시각적으로  바로 인지 할 수 있도록 확실한 대비 Color로 강조해줘야합니다."
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "dark",
+                    "full"  : "",
+                    "state" : "do",
+                    "image" : "components/switch/switch_image_011",
+                    "desc"  : "Title이 같이 붙는 경우, Title과 같이 그룹으로 지정하여 전체적으로 Focus Line을 활용하여 사용자의 명확한 이해를 돕습니다."
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // States -->
+
+          <!-- Usage -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Usage</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Text Switch</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">일반적으로 하나의 상태값을 키고 끌때 사용합니다.<br>
+                          Thumb의 위치는 리모컨 확인 키로 변경이 가능하며 상태값은 즉각적으로 변경됩니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "dark",
+                          "image" : "components/switch/switch_image_012",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "dark",
+                          "full"  : "",
+                          "state" : "dont",
+                          "image" : "components/switch/switch_image_013",
+                          "desc"  : "세개 이상의 상태값을 선택하기 위해 Switch를 사용할 수 없습니다. "
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "dark",
+                          "full"  : "",
+                          "state" : "dont",
+                          "image" : "components/switch/switch_image_014",
+                          "desc"  : "사용자의 시선 흐름이 좌측에서 우측으로 흐르기 때문에 Option을 설명하는 Text를 Swich의 우측에 배치 할 수 없습니다. "
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "dark",
+                          "full"  : "",
+                          "state" : "dont",
+                          "image" : "components/switch/switch_image_015",
+                          "desc"  : "사용자가 Option을 변경하면 변경 사항은 바로 반영되어야 하기 때문에 확인 또는 적용하기 Button을 제공하지 않습니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Usage -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Quick Menu -->
+    <div class="quick-menu-container">
+      <div class="quick-menu-area">
+        <ul class="quick-menu-list-box">
+          <li class="quick-menu-list"><span class="list-title">Anatomy</span></li>
+          <li class="quick-menu-list">
+            <span class="list-title">Types</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list"><span class="sub-list-title">General Switch</span></li>
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Text Switch</span></li>
+            </ul>
+          </li>
+          <li class="quick-menu-list"><span class="list-title">States</span></li>
+          <li class="quick-menu-list">
+            <span class="list-title">Usage</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Text Switch</span></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

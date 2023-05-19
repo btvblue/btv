@@ -1,0 +1,21 @@
+.main-block-box {
+  width: calc(33.3% - 2rem);
+  margin: 3rem 1rem;
+  .main-block-image-box {
+    @include flex(row, center, center);
+    overflow: hidden;
+    border: 1px solid #EEEEEE;
+    border-radius: 0.8rem;
+    background-color: $white;
+  }
+  .main-block-info-box {
+    margin-top: 2rem;
+    .title-box {
+      @include font(1.8rem, 600, #242424, 2.2rem);
+    }
+    .desc-box {
+      margin-top: 1rem;
+      @include font(1.4rem, 500, #4a4a4a, 2.4rem);
+    }
+  }
+}

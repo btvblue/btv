@@ -1,0 +1,44 @@
+.quick-menu-container {
+  position: fixed;
+  right: 0;
+  top: 17.2rem;
+  width: 28.6rem;
+  border-left: 1px solid #D4D4D4;
+}
+.quick-menu-list-box {
+  @include flex(column, flex-start, flex-start);
+  padding-left: 3rem;
+  .quick-menu-list {
+    margin-top: 2rem;
+    @include font(1.4rem, 300, #AAAAAA, 2.4rem);
+    &:first-of-type {
+      margin: 0;
+    }
+
+    .list-title.active {
+      font-weight: 600;
+      color: #242424;
+    }
+    span {
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+  .quick-menu-sub-list-box {
+    padding-left: 2rem;
+    .quick-menu-sub-list {
+      margin-top: 1.4rem;
+
+      .sub-list-title.active {
+        font-weight: 600;
+        color: #242424;
+      }
+    }
+  }
+}
+
+@media #{$tablet} {
+  .quick-menu-container {
+    visibility: hidden;
+  }
+}

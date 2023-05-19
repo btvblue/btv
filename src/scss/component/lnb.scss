@@ -1,0 +1,211 @@
+.lnb-container {
+  z-index: 1;
+  position: fixed;
+  top: 9.2rem;
+  left: 0;
+  width: 28.6rem;
+  height: calc(100vh - 9.2rem);
+  background-color: $white;
+  * {
+    &::-webkit-scrollbar {
+      width: 0.8rem;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #D4D4D4;
+      border-radius: 3.2rem; 
+    }
+    &::-webkit-scrollbar-track { // 전체
+      background: transparent;
+      border-radius: 3.2rem;
+    }
+  }
+  .lnb-area {
+    height: calc(100% - 5.2rem);
+    padding: 2.6rem 0.6rem 2.6rem 2rem;
+    border-right: 1px solid #D4D4D4;
+  }
+  .lnb-list-box {
+    overflow-y: auto;
+    height: 100%;
+    padding-right: 1.4rem;
+  }
+  .lnb-list {
+    position: relative;
+    margin-top: 1.3rem;
+    &:first-of-type {
+      margin: 0;
+    }
+    &.active {
+      .lnb-link {
+        color: $purple;
+      }
+    }
+    .btn-open,
+    .btn-sub-open {
+      z-index: 2;
+      position: absolute;
+      top: 1.2rem;
+      left: 2rem;
+      &:hover {
+        border-radius: 0.8rem;
+        background-color: rgba($purple, 0.1);
+      }
+      &.active {
+        .ic-arrow {
+          transform: rotate(90deg);
+        }
+
+        ~ .lnb-sub-list-box {
+          display: block;
+        }
+      }
+      .ic-arrow {
+        display: block;
+        width: 2.4rem;
+        height: 2.4rem;
+        background: asset-image('btn_open_arrow.svg');
+      }
+    }
+    .btn-sub-open {
+      &.active {
+        .ic-arrow {
+          transform: none;
+        }
+      }
+      .ic-arrow {
+        background: asset-image('btn_open_arrow_g.svg');
+        transform: rotate(270deg);
+      }
+    }
+    .lnb-link {
+      @include flex(row, flex-start, center);
+      height: 4.9rem;
+      padding-left: 5.4rem;
+      @include font(1.8rem, 700, #242424, 2.2rem);
+      &:hover {
+        border-radius: 3.2rem;
+        background-color: rgba($purple, 0.1);
+      }
+    }
+  }
+  .lnb-sub-list-box {
+    display: none;
+    overflow: hidden;
+  }
+  .lnb-sub-list {
+    position: relative;
+    &.active {
+      .lnb-sub-link {
+        font-weight: 600;
+        color: $purple;
+      }
+    }
+    .lnb-sub-link {
+      @include flex(row, flex-start, center);
+      height: 4.9rem;
+      padding-left: 7.4rem;
+      @include font(1.6rem, 300, #AAAAAA, 1.8rem);
+      &:hover {
+        border-radius: 3.2rem;
+        background-color: rgba($purple, 0.1);
+      }
+    }
+  }
+  .lnb-last-list-box {
+    display: none;
+    overflow: hidden;
+    margin:1.65rem 0 1.65rem 7.4rem;
+    padding-left: 2rem;
+    border-left: 1px solid #EEEEEE;
+
+    .lnb-last-list {
+      margin-top: 3.2rem;
+      &:first-of-type {
+        margin: 0;
+      }
+      &:hover {
+        .lnb-last-link {
+          color: $purple;
+        }
+      }
+      &.active {
+        .lnb-last-link {
+          font-weight: 600;
+          color: $purple;
+        }
+      }
+      .lnb-last-link {
+        @include font(1.6rem, 300, #AAAAAA, 1.9rem);
+      }
+    }
+  }
+}
+
+@media #{$tablet} {
+  .lnb-container {
+    top: 7rem;
+    width: 23rem;
+    height: auto;
+    border-radius: 0 0 0.4rem 0;
+    box-shadow: 0px 0px 4rem rgba(112, 112, 112, 0.4);
+    
+
+    .lnb-area {
+      height: auto;
+      padding: 0;
+      border-right: none;
+    }
+
+    .lnb-list-box {
+      // overflow-y: visible;
+      height: auto;
+      padding-right: 0;
+    }
+    
+    /* LNB LIST */
+    .lnb-list {
+      margin-top: 0;
+
+      .lnb-link {
+        height: 6.2rem;
+        padding: 0 3rem 0 5.4rem;
+        border-bottom: 1px solid #eee;
+        background-color: #fff;
+        box-sizing: border-box;
+
+        &:hover {
+          border-radius: 0;
+        }
+      }
+      
+      .btn-open,
+      .btn-sub-open {
+        top: 1.9rem;
+        left: 2rem;
+      }
+    }
+    
+    /* LNB SUB LIST */
+    .lnb-sub-list-box {
+      overflow-y: auto;
+      padding: 1rem 0;
+      max-height: calc(100dvh - 13.2rem);
+    }
+
+    .lnb-sub-list {
+      .lnb-sub-link {
+        height: 6rem;
+        padding: 0 3rem 0 5.4rem;
+
+        &:hover {
+          border-radius: 0;
+        }
+      }
+    }
+
+    .lnb-last-list-box {
+      padding-left: 0;
+      border-left: 0;
+    }
+  }
+}

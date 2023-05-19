@@ -1,0 +1,21 @@
+.number-desc-list-box {
+  flex: 1;
+  margin: 0 1rem;
+}
+.number-desc-box {
+  margin-top: 3rem;
+}
+.number-desc-list {
+  margin-top: 3rem;
+  &:first-of-type {
+    margin: 0;
+  }
+  .title {
+    @include font(1.6rem, 600, #242424, 1.9rem);
+  }
+  .text-box {
+    margin: 0.6rem 0 0 1.8rem;
+    font-family: 'SK_Btv';
+    @include font(1.6rem, 500, #4a4a4a, 2.8rem);
+  }
+}
