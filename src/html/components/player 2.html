@@ -1,0 +1,441 @@
+<!-- prettier-ignore -->
+@@include("../component/head.html",{
+  "title" : "Components | Player"
+})
+  
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <!-- prettier-ignore -->
+    @@include("../component/header.html", {
+      "page" : "components"
+    })
+
+    <!-- LNB -->
+    <!-- prettier-ignore -->
+    @@include("../component/lnb.html", {
+      "title" : "player"
+    })
+
+    <!-- Components | Player -->
+    <main class="main">
+      <div class="main-container">
+        <div class="main-area">
+          <div class="heading-container">
+            <div class="heading-area">
+              <div class="heading-top">
+                <div class="title-box">
+                  <h1 class="title">Player</h1>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">Player은 VOD를 재생하고 Control하는 Component입니다.</p>
+                </div>
+              </div>
+              <div class="heading-bottom">
+                <div class="content-box">
+                  <!-- prettier-ignore -->
+                  @@include("../component/image_content_box.html", {
+                    "mode" : "",
+                    "image" : "components/player/player_image_01",
+                    "desc" : {
+                      "alphabet" : "A",
+                      "desc" : "General VOD Player"
+                    }
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Anatomy -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Anatomy</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <!-- prettier-ignore -->
+                      @@include("../component/image_content_box.html", {
+                        "mode" : "",
+                        "image" : "components/player/player_image_02",
+                        "desc" : null
+                      })
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "1. Title Area",
+                          "desc" : "VOD의 타이틀을 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "2. Track",
+                          "desc" : "재생가능한 범위를 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "3. Active Indicator",
+                          "desc" : "재생된 범위를 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "4. Knob",
+                          "desc" : "사용자가 조작하는 위치를 Focus 하여 세부 조작할 수 있는 Point 입니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "5. Running Time",
+                          "desc" : "VOD가 재생 된 시간과 상태를 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "6. Remaining Time",
+                          "desc" : "VOD의 남은 시간을 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "7. Icon Area",
+                          "desc" : "VOD를 세부적으로 Control하는 Button을 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "8. Thumbnail",
+                          "desc" : "현재 위치를 표시하는 Mark와 함께 재생되는 지점의 Image를 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "9. Guide Text (Optional) ",
+                          "desc" : "VOD의 회차가 존재할 경우 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "10. Gradation",
+                          "desc" : "VOD와 Player간의 시인성을 높이기 위해 사용합니다."
+                        })
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "dark",
+                    "full" : "",
+                    "state" : "do",
+                    "image" : "components/player/player_image_03",
+                    "desc" : "Running Time은 VOD를 Control 하고 있는 상태에 따라 Time 앞뒤로 Icon을 붙여 사용합니다."
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "dark",
+                    "full" : "",
+                    "state" : "do",
+                    "image" : "components/player/player_image_04",
+                    "desc" : "Icon Button을 Focus할 경우 사용자가 명확하게 인지하기 위해 상단에 해당 기능의 Text가 함께 노출됩니다."
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "dark",
+                    "full" : "",
+                    "state" : "do",
+                    "image" : "components/player/player_image_05",
+                    "desc" : "사용자가 VOD를 탐색할때는 Knob의 형태를 Stick 형태로 사용합니다."
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "dark",
+                    "full" : "",
+                    "state" : "do",
+                    "image" : "components/player/player_image_06",
+                    "desc" : "Image Button을 Focus 하면 사용자의 세부적인 Option 설정을 위한 Menu를 노출할 수 있습니다."
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Anatomy -->
+          <!-- Placement -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Placement</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="desc-box">
+                        <p class="desc">사용자가 VOD를 탐색하기 위해 리모컨을 조작하면 VOD Player Component가 나타나며 일정 시간동안 조작이 없을 시 <br/>
+                          VOD Player Component가 사라지며 상황에 따른 Toast Popup을 노출합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "dark",
+                          "image" : "components/player/player_image_07",
+                          "desc"  : "null"
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/player/player_image_08",
+                          "desc" : "사용자가 VOD 시간 조정 시 Knob와 Running Time, Mark는 중앙 정렬하여 사용합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/player/player_image_09",
+                          "desc" : "Thumbnail이 Track의 끝에 도달했을 경우 Thumbnail은 고정된 상태로 Knob와 Mark만 이동하며, 종료시간은 노출하지 않습니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/player/player_image_010",
+                          "desc" : "VOD 첫 시작 시 Thumbnail 와 Knob, Running Time은 좌측 정렬됩니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/player/player_image_011",
+                          "desc" : "VOD 끝날 시 Thumbnail 와 Knob, Running Time은 우측 정렬됩니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Placement -->
+          <!-- Types -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Types</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <!-- General VOD Player -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">General VOD Player</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">일반적인 VOD Player로, VOD를 Control하며 사용자에게 재생에 대한 정보를 제공합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "",
+                          "image" : "components/player/player_image_012",
+                          "desc" : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/player/player_image_013",
+                          "desc" : "사용자에게 Player Component가 사라졌을 때, 설정한 VOD의 Control 상황을 인식하게 하기 위해 재생에 따른 Toast Popup을 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "dont",
+                          "image" : "components/player/player_image_014",
+                          "desc" : "Active Indicator와 Track은 확실한 대비 Color을 사용해야 사용자가 바로 진행 상황을 인식합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "exception",
+                          "image" : "components/player/player_image_015",
+                          "desc" : "PlayZ의 경우, 기능을 Control 할 수 있는 요소를 우측에 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "exception",
+                          "image" : "components/player/player_image_016",
+                          "desc" : "PlayZ의 경우, 장면보기 탐색 시 일정 단위의 Thumbnail이 노출됩니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Types -->
+          <!-- Usage -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Usage</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <!-- General VOD Player -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">General VOD Player</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">사용자가 세부적인 Control을 할 수 있는 VOD를 재생 시 사용됩니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "dark",
+                          "image" : "components/player/player_image_017",
+                          "desc" : null
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Usage -->
+          <!-- Interaction -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Interaction</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <!-- Drag & Drop -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Drag & Drop</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">리모컨 좌우키를 원하는 방향으로 꾹 누르면 좌우로 타임을 이동할수 있으며, 원하는 시간대에 멈춘 위치로 시간이 정해집니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "dark",
+                          "image" : "components/player/player_image_018",
+                          "desc" : null
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Tap & Jump -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Tap & Jump</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">리모컨 좌우키를 원하는 방향으로 짧게 누르면 일정 간격으로 이동하며, 원하는 시간대에 멈춘 위치로 시간이 정해집니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "dark",
+                          "image" : "components/player/player_image_019",
+                          "desc" : null
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Interaction -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Quick Menu -->
+    <div class="quick-menu-container">
+      <div class="quick-menu-area">
+        <ul class="quick-menu-list-box">
+          <li class="quick-menu-list">
+            <span class="list-title">Anatomy</span>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Placement</span>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Types</span>
+            <ul class="quick-menu-sub-list-box"> 
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">General VOD Player</span>
+              </li>
+            </ul>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Usage</span>
+            <ul class="quick-menu-sub-list-box"> 
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">General VOD Player</span>
+              </li>
+            </ul>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Interaction</span>
+            <ul class="quick-menu-sub-list-box"> 
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Drag & Drop</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Tap & Jump</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,470 @@
+<!-- prettier-ignore -->
+@@include("../component/head.html",{
+  "title" : "Components | IME"
+})
+
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <!-- prettier-ignore -->
+    @@include("../component/header.html", {
+      "page" : "components"
+    })
+
+    <!-- LNB -->
+    <!-- prettier-ignore -->
+    @@include("../component/lnb.html", {
+      "title" : "ime"
+    })
+
+    <!-- Components | IME -->
+    <main class="main">
+      <div class="main-container">
+        <div class="main-area">
+          <div class="heading-container">
+            <div class="heading-area">
+              <div class="heading-top">
+                <div class="title-box">
+                  <h1 class="title">IME</h1>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">
+                    IME(Input Method Editor)는 Text 입력이 필요한 경우 제공되는 화상 키보드 입니다.
+                    <br />애플리케이션 전용 온스크린 키보드를 만들거나 OS에서 제공하는 IME를
+                    사용합니다.
+                  </p>
+                </div>
+              </div>
+              <div class="heading-bottom">
+                <div class="content-box">
+                  <!-- prettier-ignore -->
+                  @@include("../component/image_content_box.html", {
+                    "mode" : "dark",
+                    "image" : "components/ime/ime_image_01",
+                    "desc" : {
+                      "alphabet" : "A",
+                      "desc" : "General IME"
+                    }
+                  })
+                </div>
+                <div class="content-box">
+                  <!-- prettier-ignore -->
+                  @@include("../component/image_content_box.html", {
+                    "mode" : "dark",
+                    "image" : "components/ime/ime_image_02",
+                    "desc" : {
+                      "alphabet" : "B",
+                      "desc" : "Number IME"
+                    }
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Anatomy -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Anatomy</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <!-- prettier-ignore -->
+                      @@include("../component/image_content_box.html", {
+                        "mode" : "dark",
+                        "image" : "components/ime/ime_image_03",
+                        "desc" : null
+                      })
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "1. Character",
+                          "desc" : "사용자가 선택한 입력 소스(한글, 영어, 숫자)를 표시합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "2. Segmented Control",
+                          "desc" : "사용자가 현재 사용하고있는 입력 소스를 나타내고 전환합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "3. Button Area",
+                          "desc" : "사용자가 입력한 문자를 편집하는데 사용하는 Component로 Text나 Icon Button을 사용합니다."
+                        })
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <!-- prettier-ignore -->
+                      @@include("../component/image_content_box.html", {
+                        "mode" : "dark",
+                        "image" : "components/ime/ime_image_04",
+                        "desc" : null
+                      })
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "1. Container",
+                          "desc" : "IME의 형태를 나타냅니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "2. Character",
+                          "desc" : "사용자에게 숫자를 표시합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "3. Icon Button",
+                          "desc" : "Icon 형태의 Button으로 사용자가 입력한 문자를 편집합니다."
+                        })
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "dark",
+                    "full" : "full",
+                    "state" : "exception",
+                    "image" : "components/ime/ime_image_05",
+                    "desc" : "PlayZ의 경우, Android On-screen keyboard를 사용합니다."
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Anatomy -->
+          <!-- Placement -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Placement</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <!-- General IME -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">General IME</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          화면 Layout과 사용자의 시선 흐름에 따라 중앙 상단에 위치합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "dark",
+                          "image" : "components/ime/ime_image_06",
+                          "desc" : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "full",
+                          "state" : "exception",
+                          "image" : "components/ime/ime_image_07",
+                          "desc" : "PlayZ의 경우, 기본위치는 중앙이지만 키보드의 위치가 레이아웃에 따라 좌측과 우측에 정렬됩니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Number IME -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Number IME</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          화면 Layout과 사용자의 시선 흐름에 따라 중앙 하단에 위치합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "dark",
+                          "image" : "components/ime/ime_image_08",
+                          "desc" : null
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Placement -->
+          <!-- Types -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Types</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <!-- General IME -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">General IME</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          기본적인 IME로, Segmented Control을 사용하여 영어, 한글, 숫자를
+                          전환합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "dark",
+                          "image" : "components/ime/ime_image_09",
+                          "desc" : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/ime/ime_image_010",
+                          "desc" : "상단의 Segmented Control에 선택된 언어에 맞게 아래 Characters가 전환되어 노출됩니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "dont",
+                          "image" : "components/ime/ime_image_011",
+                          "desc" : "검색 결과가 바로 적용이 되므로 확인 Button을 추가로 배치하지 않습니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Number IME -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Number IME</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          숫자 입력만 가능한 IME로, 리모컨 조작을 통해 숫자를 입력합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "dark",
+                          "image" : "components/ime/ime_image_012",
+                          "desc" : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/ime/ime_image_013",
+                          "desc" : "Contents에 따라 2단 배열로 변경하여 사용합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "exception",
+                          "image" : "components/ime/ime_image_014",
+                          "desc" : "PlayZ의 경우 해당하는 Input에 포커스 시 Number IME가 노출됩니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Types -->
+          <!-- Usage -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Usage</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <!-- General IME -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">General IME</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          일반적인 IME로, 주로 Contents 검색 화면에 사용되며 입력시 검색 결과가 바로
+                          노출됩니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "dark",
+                          "image" : "components/ime/ime_image_015",
+                          "desc" : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/ime/ime_image_016",
+                          "desc" : "General IME는 검색 화면 상단에 고정되며, 컨텐츠에 focus 됐을 시 사라집니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "exception",
+                          "image" : "components/ime/ime_image_017",
+                          "desc" : "PlayZ의 경우, 사용자가 Search bar에 포커스 했을 시 IME가 화면 하단에서 노출됩니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Number IME -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Number IME</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">단순한 숫자를 입력하는 Input과 붙여 사용합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "dark",
+                          "image" : "components/ime/ime_image_018",
+                          "desc" : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/ime/ime_image_019",
+                          "desc" : "Number IME를 사용하지 않는 Component에 Focus 될 시, Dimmed 하여 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "exception",
+                          "image" : "components/ime/ime_image_020",
+                          "desc" : "PlayZ의 경우, 사용자가 Input에 포커스 했을 때 Number IME가 화면 하단에서 노출됩니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Usage -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Quick Menu -->
+    <div class="quick-menu-container">
+      <div class="quick-menu-area">
+        <ul class="quick-menu-list-box">
+          <li class="quick-menu-list">
+            <span class="list-title">Anatomy</span>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Placement</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">General IME</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Number IME</span>
+              </li>
+            </ul>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Types</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">General IME</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Number IME</span>
+              </li>
+            </ul>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Usage</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">General IME</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Number IME</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+<!-- prettier-ignore -->
+@@include("../component/head.html",{
+  "title" : "Components | Loading"
+})
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <!-- prettier-ignore -->
+    @@include("../component/header.html", {
+      "page" : "components"
+    })
+
+    <!-- LNB -->
+    <!-- prettier-ignore -->
+    @@include("../component/lnb.html", {
+      "title" : "loading"
+    })
+
+    <!-- Components | Loading -->
+    <main class="main">
+      <div class="main-container">
+        <div class="main-area">
+          <div class="heading-container">
+            <div class="heading-area">
+              <div class="heading-top">
+                <div class="title-box">
+                  <h1 class="title">Loading</h1>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">Loading은 작업에 대한 대기가 필요 할 때 나타납니다. <br>
+                    Data를 검색하거나 느린 계산을 수행할 때 사용되며 요청이 처리 되고 있음을 사용자에게 알리는 데 도움이 됩니다.</p>
+                </div>
+              </div>
+              <div class="heading-bottom">
+                <div class="content-box">
+                  <!-- prettier-ignore -->
+                  @@include("../component/image_content_box.html", {
+                    "mode"  : "",
+                    "image" : "components/loading/loading_image_01",
+                    "desc"  : {
+                      "alphabet" : "A",
+                      "desc"     : "Spinner"
+                    }
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/image_content_box.html", {
+                    "mode"  : "",
+                    "image" : "components/loading/loading_image_02",
+                    "desc"  : {
+                      "alphabet" : "B",
+                      "desc"     : "Circle Progress Bar"
+                    }
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Anatomy -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Anatomy</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <!-- prettier-ignore -->
+                      @@include("../component/image_content_box.html", {
+                        "mode"  : "",
+                        "image" : "components/loading/loading_image_03",
+                        "desc"  : null
+                      })
+                      <!-- prettier-ignore -->
+                      @@include("../component/image_content_box.html", {
+                        "mode"  : "",
+                        "image" : "components/loading/loading_image_04",
+                        "desc"  : null
+                      })
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "1. Fill",
+                          "desc"  : "원형 경로를 따라 반복적으로 움직이는 Indicator입니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "2. Trak",
+                          "desc"  : " Indicator가 움직이는 경로를 나타냅니다. "
+                        })
+                      </ul>
+                      <ul class="number-desc-list-box"> 
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "1. Fill",
+                          "desc"  : "원형 경로를 따라 채워지는 Indicator입니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "2. Trak",
+                          "desc"  : "Indicator가 채워지는 경로를 나타냅니다."
+                        })
+                      </ul>
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content-box">
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "dark",
+                    "full"  : "",
+                    "state" : "do",
+                    "image" : "components/loading/loading_image_05",
+                    "desc"  : "Background와 Loading은 읽을 수 있도록 충분한 대비를 제공합니다."
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "",
+                    "full"  : "",
+                    "state" : "dont",
+                    "image" : "components/loading/loading_image_06",
+                    "desc"  : "Fill과 Track을 명확하게 구분하여 쉽게 인식 되어야 합니다."
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Anatomy -->
+
+          <!-- Types -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Types</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Spinner</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">Spinner는 시계 방향으로 돌아가는 원형 형태의 Animation입니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "",
+                          "image" : "components/loading/loading_image_07",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "",
+                          "full"  : "",
+                          "state" : "do",
+                          "image" : "components/loading/loading_image_08",
+                          "desc"  : "Loading이 완료 될 때까지 멈추지 않고 반복되며, 완료 시 사라집니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Circle Progress Bar</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">Progress Bar는 점진적이고 일관적인 속도로 원형 형태의 Bar를 채우는 Animation입니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "",
+                          "image" : "components/loading/loading_image_09",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "",
+                          "full"  : "",
+                          "state" : "do",
+                          "image" : "components/loading/loading_image_010",
+                          "desc"  : "완료 시 Circle Progerss Bar에 색상이 모두 채워지며 사라집니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "",
+                          "full"  : "",
+                          "state" : "do",
+                          "image" : "components/loading/loading_image_011",
+                          "desc"  : "Circle Progerss Bar의 모양을 변형하여 사용할 수 있습니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Types -->
+
+          <!-- Usage -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Usage</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Spinner</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">Spinner는 실행중인 프로세스의 현 상태와 완료까지의 대기 시간이 짧거나 진행률을 나타낼 필요가 없을 경우 사용합니다.<br/>1초 이상이 걸릴 때 노출하며, 세부 정보를 제공하지는 않지만 사용자에게 작업이 처리되고 있음을 알리며 안심시킵니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "",
+                          "image" : "components/loading/loading_image_012",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "",
+                          "full"  : "",
+                          "state" : "do",
+                          "image" : "components/loading/loading_image_013",
+                          "desc"  : "Full 대기 화면에서 Spinner가 적용될 경우, 단독 배치로 사용합니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Circle Progress Bar</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">Progress Bar는 진행률에 대한 정보가 필요할 경우 사용합니다.<br/>4초 이상이 걸릴 때 노출하는 것을 권장하며, 사용자에게 긴 시간을 기다리기 수월해지는 시각적 신호를 제공합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "",
+                          "image" : "components/loading/loading_image_014",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "",
+                          "full"  : "",
+                          "state" : "do",
+                          "image" : "components/loading/loading_image_015",
+                          "desc"  : "추가 정보가 필요한 경우 Progress Bar 하단에 간결한 Text를 제공합니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+          <!-- // Usage -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Quick Menu -->
+    <div class="quick-menu-container">
+      <div class="quick-menu-area">
+        <ul class="quick-menu-list-box">
+          <li class="quick-menu-list"><span class="list-title">Anatomy</span></li>
+          <li class="quick-menu-list">
+            <span class="list-title">Types</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Spinner</span></li>
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Circle Progress Bar</span></li>
+            </ul>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Usage</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Spinner</span></li>
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Circle Progress Bar</span></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

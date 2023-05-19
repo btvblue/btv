@@ -1,0 +1,510 @@
+<!-- prettier-ignore -->
+@@include("../component/head.html",{
+  "title" : "Components | Tooltip"
+})
+
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <!-- prettier-ignore -->
+    @@include("../component/header.html", {
+      "page" : "components"
+    })
+
+    <!-- LNB -->
+    <!-- prettier-ignore -->
+    @@include("../component/lnb.html", {
+      "title" : "tooltip"
+    })
+
+    <!-- Components | Tooltip -->
+    <main class="main">
+      <div class="main-container">
+        <div class="main-area">
+          <div class="heading-container">
+            <div class="heading-area">
+              <div class="heading-top">
+                <div class="title-box">
+                  <h1 class="title">Tooltip</h1>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">Tooltip은 사용자가 익숙하지 않은 구조나 기능에 대해 도움을 줄 때 주로 사용이 되며, 정보의 정확한 조작을 유도할 때도 표시합니다. 특정 이벤트
+                    프로모션이 진행 되는 경우 부가설명을 위해 사용하기도 합니다.</p>
+                </div>
+              </div>
+              <div class="heading-bottom">
+                <div class="content-box">
+                  <!-- prettier-ignore -->
+                  @@include("../component/image_content_box.html", {
+                    "mode" : "",
+                    "image" : "components/tooltip/tooltip_image_01",
+                    "desc" : {
+                      "alphabet" : "A",
+                      "desc" : "Bubble Tooltip"
+                    }
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/image_content_box.html", {
+                    "mode" : "",
+                    "image" : "components/tooltip/tooltip_image_02",
+                    "desc" : {
+                      "alphabet" : "B",
+                      "desc" : "Round Tooltip"
+                    }
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/image_content_box.html", {
+                    "mode" : "",
+                    "image" : "components/tooltip/tooltip_image_03",
+                    "desc" : {
+                      "alphabet" : "C",
+                      "desc" : "Image Tooltip"
+                    }
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Anatomy -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Anatomy</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <!-- prettier-ignore -->
+                      @@include("../component/image_content_box.html", {
+                        "mode" : "dark",
+                        "image" : "components/tooltip/tooltip_image_04",
+                        "desc" : null
+                      })
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "1. Container",
+                          "desc" : "Tooltip의 형태를 나타냅니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "2. Text",
+                          "desc" : "설명하고자 하는 정보를 표기합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "3. Sub Text (Optional)",
+                          "desc" : "Main Text의 세부 정보를 표기합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "4. Tip",
+                          "desc" : "설명하는 대상을 명확하게 지시합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "5. Icon (Optional)",
+                          "desc" : "설명하고자 하는 정보와 관련된 Icon을 노출합니다."
+                        })
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <!-- prettier-ignore -->
+                      @@include("../component/image_content_box.html", {
+                        "mode" : "",
+                        "image" : "components/tooltip/tooltip_image_05",
+                        "desc" : null
+                      })
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "1. Guide image",
+                          "desc" : "내용과 관련 된 Image를 사용합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "2. Text",
+                          "desc" : "이미지를 설명하는 텍스트 정보를 표기합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "3. Icon (Optional)",
+                          "desc" : "설명하고자 하는 정보와 관련된 Icon을 노출합니다."
+                        })
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Anatomy -->
+          <!-- Placement -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Placement</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <!-- Tip 위치 -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title kor">Tip 위치</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">Tip의 위치는 타겟 요소의 배치에 따로 상/하단으로 제공 될 수 있으며 타겟이 되는 요소를 가리키기 위하여 유동적으로 배치합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "",
+                          "image" : "components/tooltip/tooltip_image_06",
+                          "desc" : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/tooltip/tooltip_image_07",
+                          "desc" : "Tip의 위치는 필요에 따라 좌측, 정중앙, 우측에 배치합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/tooltip/tooltip_image_08",
+                          "desc" : "기존 UI 요소를 침범하지 않으며 Focus와 정렬을 맞춰 배치합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "",
+                          "full" : "",
+                          "state" : "dont",
+                          "image" : "components/tooltip/tooltip_image_09",
+                          "desc" : "버블의 좌/우측에는 Tip을 사용할 수 없습니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Placement -->
+          <!-- Types -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Types</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <!-- Bubble Tooltip -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Bubble Tooltip</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">사용자에게 특정 기능이나 항목에 대한 부연설명을 필요로 할 때 사용합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "",
+                          "image" : "components/tooltip/tooltip_image_010",
+                          "desc" : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "",
+                          "full" : "",
+                          "state" : "dont",
+                          "image" : "components/tooltip/tooltip_image_011",
+                          "desc" : "Bubble Tooltip은 Focus 색상으로 강조하여 사용할 수 없습니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Round Tooltip -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Round Tooltip</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">특정 영역에 대한 프로모션이 있는 경우 부가설명을 위해 사용하거나 기능에 대한 도움말을 표시하는 데 사용합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "",
+                          "image" : "components/tooltip/tooltip_image_012",
+                          "desc" : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "",
+                          "full" : "",
+                          "state" : "dont",
+                          "image" : "components/tooltip/tooltip_image_013",
+                          "desc" : "Icon을 Text의 뒤에 배치하여 사용하지 않습니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Image Tooltip -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Image Tooltip</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">사용자의 올바른 조작을 유도하는 Guide Image를 사용하고 실행해야 하는 Motion 및 도달하는 정보를 표기합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "",
+                          "image" : "components/tooltip/tooltip_image_014",
+                          "desc" : null
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Types -->
+          <!-- Usage -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Usage</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <!-- Bubble Tooltip -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Bubble Tooltip</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">부가 정보형은 타겟 요소가 한정된 영역에서 사용 될 경우 제공하며, <br />Tip의 위치는 항상 타겟이 되는 요소를 가까이 가리키고 있어야
+                          합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "dark",
+                          "image" : "components/tooltip/tooltip_image_015",
+                          "desc" : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/tooltip/tooltip_image_016",
+                          "desc" : "일반적인 Tooltip은 화면 진입 후 N초 후 사라지지만 말풍선 부가 정보형의 경우 Focus 시 지속적으로 표시합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "dont",
+                          "image" : "components/tooltip/tooltip_image_017",
+                          "desc" : "Tip을 가깝게 배치하지 않으면 가리키는 요소에 혼동을 유발합니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Round Tooltip -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Round Tooltip</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">Text의 특정 부분을 강조해야할 경우 Point Color를 사용합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "dark",
+                          "image" : "components/tooltip/tooltip_image_018",
+                          "desc" : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/tooltip/tooltip_image_019",
+                          "desc" : "강조해야 하는 부분에는 Point Color를 적용합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "dont",
+                          "image" : "components/tooltip/tooltip_image_020",
+                          "desc" : "Contents 별 일관된 Color를 사용하며 가시성을 해치는 Color는 <br />지양합니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Image Tooltip -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Image Tooltip</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">사용자에게 Guide Image를 제공하고 실행해야 하는 정보를 표기합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "dark",
+                          "image" : "components/tooltip/tooltip_image_021",
+                          "desc" : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/tooltip/tooltip_image_022",
+                          "desc" : "사용자가 인지하기 쉽도록 설명하는 요소와 관련된 위치에 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/tooltip/tooltip_image_023",
+                          "desc" : "가시성을 높여 사용해야 하는 경우 Background에 Gradation와 함께 Tooltip을 노출합니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Usage -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Quick Menu -->
+    <div class="quick-menu-container">
+      <div class="quick-menu-area">
+        <ul class="quick-menu-list-box">
+          <li class="quick-menu-list">
+            <span class="list-title">Anatomy</span>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Placement</span>
+            <ul class="quick-menu-sub-list-box kor">
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Tip 위치</span>
+              </li>
+            </ul>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Types</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Bubble Tooltip</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Round Tooltip</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Image Tooltip</span>
+              </li>
+            </ul>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Usage</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Bubble Tooltip</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Round Tooltip</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Image Tooltip</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+<<<<<<< Updated upstream
+
+</html>
+=======
+>>>>>>> Stashed changes
