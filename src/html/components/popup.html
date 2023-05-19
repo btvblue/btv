@@ -1,21 +1,187 @@
-<!-- prettier-ignore -->
-@@include("../component/head.html",{
-  "title" : "Components | Popup"
-})
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.ico" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <script src="../../assets/js/default.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>Components | Popup</title>
+</head>
+</html>
 <body>
   <div class="wrapper">
     <!-- Header -->
-    <!-- prettier-ignore -->
-    @@include("../component/header.html", {
-      "page" : "components"
-    })
-
+    <header class="header-container">
+      <div class="header-area">
+        <div class="header-left">
+          <div class="header-logo-box">
+            <a href="javascript:void(0)" class="header-logo-link">
+              <img src="../../assets/images/btv_logo.svg" alt="" />
+              <span class="text">BLUE Design System</span>
+            </a>
+          </div>
+        </div>
+        <div class="header-right">
+          <!--
+        Class 설명 
+        expand : 메뉴 펼쳤을 때 스타일 적용 (인터렉션은 js로 구현함. 클래스로 제어하지 않음)
+      -->
+          <ul class="header-menu-list-box">
+            <li class="header-menu-list ">
+              <a href="javascript:void(0)" class="header-menu-link"><span class="text">Principle</span></a>
+            </li>
+            <li class="header-menu-list ">
+              <a href="javascript:void(0)" class="header-menu-link"><span class="text">Foundation</span></a>
+            </li>
+            <li class="header-menu-list active">
+              <a href="javascript:void(0)" class="header-menu-link"><span class="text">Components</span></a>
+            </li>
+          </ul>
+          <div class="menu-button-box">
+            <button type="button" class="btn-menu">
+              <img src="../../assets/images/btn_open_menu_nor.svg" alt="메뉴 열기" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- LNB -->
-    <!-- prettier-ignore -->
-    @@include("../component/lnb.html", {
-      "title" : "popup"
-    })
-
+    <div class="lnb-container">
+      <div class="lnb-area">
+        <ul class="lnb-list-box">
+          <li class="lnb-list ">
+            <a href="javascript:void(0)" class="lnb-link"><span class="text">Overview</span></a>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="javascript:void(0)" class="lnb-link"><span class="text">Principle</span></a>
+            <ul class="lnb-sub-list-box kor">
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">명확한 구조</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">접근성</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">일관성</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">강조</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">TV 해상도</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">탐색</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">계층구조</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="javascript:void(0)" class="lnb-link"><span class="text">Foundation</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Typography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Icongraphy</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Color</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Grid</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Focus</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Motion</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Image</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="javascript:void(0)" class="lnb-link"><span class="text">Components</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Badges</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Booting</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Buttons</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <button class="btn-sub-open"><i class="icon ic-arrow"></i></button>
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Controls</span></a>
+                <ul class="lnb-last-list-box">
+                  <li class="lnb-last-list ">
+                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Checkbox</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Radio Button</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Switch</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Slider</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Dropdown</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">GNB</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Inputs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">IME</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">List Cards</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Loading</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Pagination</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Player</span></a>
+              </li>
+              <li class="lnb-sub-list active">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Pop up</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Splash</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Tabs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Tooltip</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- Components | Popup -->
     <main class="main">
       <div class="main-container">
@@ -32,38 +198,37 @@
               </div>
               <div class="heading-bottom">
                 <div class="content-box">
-                  <!-- prettier-ignore -->
-                  @@include("../component/image_content_box.html", {
-                    "mode"  : "",
-                    "image" : "components/popup/popup_image_01",
-                    "desc"  : {
-                      "alphabet" : "A",
-                      "desc"     : "Full Popup"
-                    }
-                  })
-                  <!-- prettier-ignore -->
-                  @@include("../component/image_content_box.html", {
-                    "mode"  : "",
-                    "image" : "components/popup/popup_image_02",
-                    "desc"  : {
-                      "alphabet" : "B",
-                      "desc"     : "Layer Popup"
-                    }
-                  })
-                  <!-- prettier-ignore -->
-                  @@include("../component/image_content_box.html", {
-                    "mode"  : "",
-                    "image" : "components/popup/popup_image_03",
-                    "desc"  : {
-                      "alphabet" : "C",
-                      "desc"     : "Toast Popup"
-                    }
-                  })
+                  <div class="image-content-box ">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/popup/popup_image_01.png" alt="" />
+                    </div>
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">A</span></span>
+                      <span class="text">Full Popup</span>
+                    </div>
+                  </div>
+                  <div class="image-content-box ">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/popup/popup_image_02.png" alt="" />
+                    </div>
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">B</span></span>
+                      <span class="text">Layer Popup</span>
+                    </div>
+                  </div>
+                  <div class="image-content-box ">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/popup/popup_image_03.png" alt="" />
+                    </div>
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">C</span></span>
+                      <span class="text">Toast Popup</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
           <!-- Anatomy -->
           <div class="content-container">
             <div class="content-area">
@@ -76,65 +241,70 @@
                 <div class="content-box">
                   <div class="image-title-box">
                     <div class="image-title-top">
-                      <!-- prettier-ignore -->
-                      @@include("../component/image_content_box.html", {
-                        "mode"  : "",
-                        "image" : "components/popup/popup_image_04",
-                        "desc"  : null
-                      })
-                      <!-- prettier-ignore -->
-                      @@include("../component/image_content_box.html", {
-                        "mode"  : "",
-                        "image" : "components/popup/popup_image_05",
-                        "desc"  : null
-                      })
+                      <div class="image-content-box ">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/popup/popup_image_04.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="image-content-box ">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/popup/popup_image_05.png" alt="" />
+                        </div>
+                      </div>
                     </div>
                     <div class="image-title-bottom">
                       <ul class="number-desc-list-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "1. Background",
-                          "desc"  : "Popup의 배경영역입니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "2. Contents Area",
-                          "desc"  : "Title, Description, Image 등 내용이 표기되는 영역입니다. "
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "3. Button (Optional)",
-                          "desc"  : "Popup의 동작을 수행하기 위한 Button을 제공합니다."
-                        })
+                        <li class="number-desc-list">
+                          <span class="title">1. Background</span>
+                          <div class="text-box">
+                            <p class="text">Popup의 배경영역입니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Contents Area</span>
+                          <div class="text-box">
+                            <p class="text">Title, Description, Image 등 내용이 표기되는 영역입니다. </p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Button (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">Popup의 동작을 수행하기 위한 Button을 제공합니다.</p>
+                          </div>
+                        </li>
                       </ul>
-                      <ul class="number-desc-list-box"> 
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "1. Background",
-                          "desc"  : "Popup의 배경영역입니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "2. Contents Area",
-                          "desc"  : "Title, Description, Image 등 내용이 표기되는 영역입니다. "
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "3. Button (Optional)",
-                          "desc"  : "Popup의 동작을 수행하기 위한 Button을 제공합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "4. Shadow (Optional)",
-                          "desc"  : "Popup을 강조하기 위한 요소로 제공합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "5. Dimmed",
-                          "desc"  : "Contents와 Popup간의 Layer 구분을 위해 사용합니다."
-                        })
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Background</span>
+                          <div class="text-box">
+                            <p class="text">Popup의 배경영역입니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Contents Area</span>
+                          <div class="text-box">
+                            <p class="text">Title, Description, Image 등 내용이 표기되는 영역입니다. </p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Button (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">Popup의 동작을 수행하기 위한 Button을 제공합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">4. Shadow (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">Popup을 강조하기 위한 요소로 제공합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">5. Dimmed</span>
+                          <div class="text-box">
+                            <p class="text">Contents와 Popup간의 Layer 구분을 위해 사용합니다.</p>
+                          </div>
+                        </li>
                       </ul>
-                      
                     </div>
                   </div>
                 </div>
@@ -142,88 +312,112 @@
                   <!-- .half : 컨텐츠 half 사이즈일 경우 -->
                   <div class="image-title-box half">
                     <div class="image-title-top">
-                      <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                        "mode"  : "",
-                        "image" : "components/popup/popup_image_06",
-                        "desc"  : null
-                      })
+                      <div class="image-content-box ">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/popup/popup_image_06.png" alt="" />
+                        </div>
+                      </div>
                     </div>
                     <div class="image-title-bottom">
-                      <ul class="number-desc-list-box"> 
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "1. Background",
-                          "desc"  : "Popup의 배경영역입니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "2. Text (Optional) ",
-                          "desc"  : "Title, Description, Icon 등 내용이 표기되는 영역입니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "3. Icon (Optional) ",
-                          "desc"  : "Title, Description, Icon 등 내용이 표기되는 영역입니다. "
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "4. Shadow (Optional)",
-                          "desc"  : "Popup을 강조하기 위한 요소로 제공합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "5. Dimmed (Optional)",
-                          "desc"  : "Contents와 Popup간의 Layer 구분을 위해 사용합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "6. Gradient (Optional)",
-                          "desc"  : "Popup의 하위로 깔리는 그라디언트 효과입니다. "
-                        })
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Background</span>
+                          <div class="text-box">
+                            <p class="text">Popup의 배경영역입니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Text (Optional) </span>
+                          <div class="text-box">
+                            <p class="text">Title, Description, Icon 등 내용이 표기되는 영역입니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Icon (Optional) </span>
+                          <div class="text-box">
+                            <p class="text">Title, Description, Icon 등 내용이 표기되는 영역입니다. </p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">4. Shadow (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">Popup을 강조하기 위한 요소로 제공합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">5. Dimmed (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">Contents와 Popup간의 Layer 구분을 위해 사용합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">6. Gradient (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">Popup의 하위로 깔리는 그라디언트 효과입니다. </p>
+                          </div>
+                        </li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <div class="content-box">
-                  <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                    "mode" : "",
-                    "full"  : "",
-                    "state" : "do",
-                    "image" : "components/popup/popup_image_07",
-                    "desc"  : "Title은 가독성을 고려하여 한 줄로 작성하며, 메세지는 간결하게 구성합니다."
-                  })
-                  <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                    "mode" : "",
-                    "full"  : "",
-                    "state" : "do",
-                    "image" : "components/popup/popup_image_08",
-                    "desc"  : "본문 내용이 길어지게 되면 스크롤을 제공합니다."
-                  })
-                  <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                    "mode" : "",
-                    "full"  : "",
-                    "state" : "do",
-                    "image" : "components/popup/popup_image_09",
-                    "desc"  : "행동이 완료 될 때까지 Action Button을 Dimmed 처리 합니다."
-                  })
-                  <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                    "mode" : "",
-                    "full"  : "",
-                    "state" : "dont",
-                    "image" : "components/popup/popup_image_010",
-                    "desc"  : "Button의 간격을 과도하게 떨어뜨리지 않습니다."
-                  })
+                  <div class="color-box   do">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/popup/popup_image_07.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Do</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">Title은 가독성을 고려하여 한 줄로 작성하며, 메세지는 간결하게 구성합니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="color-box   do">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/popup/popup_image_08.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Do</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">본문 내용이 길어지게 되면 스크롤을 제공합니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="color-box   do">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/popup/popup_image_09.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Do</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">행동이 완료 될 때까지 Action Button을 Dimmed 처리 합니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="color-box   dont">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/popup/popup_image_010.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Don't</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">Button의 간격을 과도하게 떨어뜨리지 않습니다.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- // Anatomy -->
-
           <!-- Placement -->
           <div class="content-container">
             <div class="content-area">
@@ -245,17 +439,15 @@
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "dark",
-                          "image" : "components/popup/popup_image_011",
-                          "desc"  : null
-                        })
+                        <div class="image-content-box dark">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/popup/popup_image_011.png" alt="" />
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-  
                 <div class="sub-content-container">
                   <div class="sub-content-area">
                     <div class="sub-content-top">
@@ -268,34 +460,30 @@
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box kor">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "",
-                          "image" : "components/popup/popup_image_012",
-                          "desc"  : {
-                            "alphabet" : null,
-                            "desc"     : "상, 하 배열 형태"
-                          }
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "",
-                          "image" : "components/popup/popup_image_013",
-                          "desc"  : {
-                            "alphabet" : null,
-                            "desc"     : "좌, 우 배열 형태"
-                          }
-                        })
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/popup/popup_image_012.png" alt="" />
+                          </div>
+                          <div class="image-text-box">
+                            <span class="text">상, 하 배열 형태</span>
+                          </div>
+                        </div>
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/popup/popup_image_013.png" alt="" />
+                          </div>
+                          <div class="image-text-box">
+                            <span class="text">좌, 우 배열 형태</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
- 
               </div>
             </div>
           </div>
           <!-- // Placement -->
-
           <!-- Types -->
           <div class="content-container">
             <div class="content-area">
@@ -317,17 +505,15 @@
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "",
-                          "image" : "components/popup/popup_image_014",
-                          "desc"  : null
-                        })
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/popup/popup_image_014.png" alt="" />
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-  
                 <div class="sub-content-container">
                   <div class="sub-content-area">
                     <div class="sub-content-top">
@@ -340,27 +526,30 @@
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "",
-                          "image" : "components/popup/popup_image_015",
-                          "desc"  : null
-                        })
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/popup/popup_image_015.png" alt="" />
+                          </div>
+                        </div>
                       </div>
                       <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode" : "",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/popup/popup_image_016",
-                          "desc"  : "Layer Popup은 가시성 확보를 위하여 dimmed를 적용합니다."
-                        })
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/popup/popup_image_016.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Layer Popup은 가시성 확보를 위하여 dimmed를 적용합니다.</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-  
                 <div class="sub-content-container">
                   <div class="sub-content-area">
                     <div class="sub-content-top">
@@ -373,30 +562,39 @@
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "",
-                          "image" : "components/popup/popup_image_017",
-                          "desc"  : null
-                        })
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/popup/popup_image_017.png" alt="" />
+                          </div>
+                        </div>
                       </div>
                       <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode" : "",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/popup/popup_image_018",
-                          "desc"  : "사용자의 추가 Action 필요 없이 단순한 안내를 제공하는 경우, Popup 대신 Toast Popup으로 정보를 제공합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode" : "",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/popup/popup_image_019",
-                          "desc"  : "Toast Popup은 짧은 시간 안에 사용자에게 내용을 전달해야 하므로 서브 Text가 존재할 시, Text 위계 질서가 명확하게 보여야 합니다."
-                        })
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/popup/popup_image_018.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">사용자의 추가 Action 필요 없이 단순한 안내를 제공하는 경우, Popup 대신 Toast Popup으로 정보를 제공합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/popup/popup_image_019.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Toast Popup은 짧은 시간 안에 사용자에게 내용을 전달해야 하므로 서브 Text가 존재할 시, Text 위계 질서가 명확하게 보여야 합니다.</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -405,7 +603,6 @@
             </div>
           </div>
           <!-- // Types -->
-
           <!-- Usage -->
           <div class="content-container">
             <div class="content-area">
@@ -427,30 +624,39 @@
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "",
-                          "image" : "components/popup/popup_image_020",
-                          "desc"  : null
-                        })
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/popup/popup_image_020.png" alt="" />
+                          </div>
+                        </div>
                       </div>
                       <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode"  : "",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/popup/popup_image_021",
-                          "desc"  : "진행되는 플로우가 있거나 비슷한 유형의 Contents가 있는 경우 Pagination을 하단에 노출시킬 수 있습니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode"  : "",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/popup/popup_image_022",
-                          "desc"  : "TV 해상도에 따라 여백이 생기거나 Scroll을 사용합니다."
-                        })
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/popup/popup_image_021.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">진행되는 플로우가 있거나 비슷한 유형의 Contents가 있는 경우 Pagination을 하단에 노출시킬 수 있습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/popup/popup_image_022.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">TV 해상도에 따라 여백이 생기거나 Scroll을 사용합니다.</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -467,38 +673,52 @@
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "",
-                          "image" : "components/popup/popup_image_023",
-                          "desc"  : null
-                        })
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/popup/popup_image_023.png" alt="" />
+                          </div>
+                        </div>
                       </div>
                       <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode"  : "",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/popup/popup_image_024",
-                          "desc"  : "세로형 List Button을 사용할 수 있습니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode"  : "",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/popup/popup_image_025",
-                          "desc"  : "Checkbox를 통해 Popup 노출을 제어할 수 있습니다. "
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode"  : "",
-                          "full"  : "",
-                          "state" : "dont",
-                          "image" : "components/popup/popup_image_026",
-                          "desc"  : "Layer Popup은 중첩해서 사용하지 않습니다."
-                        })
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/popup/popup_image_024.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">세로형 List Button을 사용할 수 있습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/popup/popup_image_025.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Checkbox를 통해 Popup 노출을 제어할 수 있습니다. </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box   dont">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/popup/popup_image_026.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Don't</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Layer Popup은 중첩해서 사용하지 않습니다.</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -515,30 +735,39 @@
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "",
-                          "image" : "components/popup/popup_image_027",
-                          "desc"  : null
-                        })
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/popup/popup_image_027.png" alt="" />
+                          </div>
+                        </div>
                       </div>
                       <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode"  : "",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/popup/popup_image_028",
-                          "desc"  : "필요한 정보의 내용을 Icon과 함께 사용합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode"  : "",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/popup/popup_image_029",
-                          "desc"  : "Toast Popup의 본문 Text는 최대 3줄 안으로 권장합니다."
-                        })
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/popup/popup_image_028.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">필요한 정보의 내용을 Icon과 함께 사용합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/popup/popup_image_029.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Toast Popup의 본문 Text는 최대 3줄 안으로 권장합니다.</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -550,7 +779,6 @@
         </div>
       </div>
     </main>
-
     <!-- Quick Menu -->
     <div class="quick-menu-container">
       <div class="quick-menu-area">
@@ -584,5 +812,4 @@
     </div>
   </div>
 </body>
-
 </html>

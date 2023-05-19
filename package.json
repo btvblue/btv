@@ -37,6 +37,7 @@
     "eslint-plugin-html": "^6.2.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^2.3.0",
+    "gulp-download": "^0.0.1",
     "gulp-eslint": "^6.0.0",
     "gulp-include": "^2.4.1",
     "gulp-sourcemaps": "^3.0.0",
