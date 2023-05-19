@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.ico" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <script src="../../assets/js/default.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>Components | GNB</title>
+</head>
+</html>
+<style>
+  .heading-bottom .image-content-box {
+    flex: unset;
+  }
+  .heading-bottom .image-content-box:last-of-type {
+    flex: 1;
+  }
+</style>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header-container">
+      <div class="header-area">
+        <div class="header-left">
+          <div class="header-logo-box">
+            <a href="javascript:void(0)" class="header-logo-link">
+              <img src="../../assets/images/btv_logo.svg" alt="" />
+              <span class="text">BLUE Design System</span>
+            </a>
+          </div>
+        </div>
+        <div class="header-right">
+          <!--
+        Class 설명 
+        expand : 메뉴 펼쳤을 때 스타일 적용 (인터렉션은 js로 구현함. 클래스로 제어하지 않음)
+      -->
+          <ul class="header-menu-list-box">
+            <li class="header-menu-list ">
+              <a href="javascript:void(0)" class="header-menu-link"><span class="text">Principle</span></a>
+            </li>
+            <li class="header-menu-list ">
+              <a href="javascript:void(0)" class="header-menu-link"><span class="text">Foundation</span></a>
+            </li>
+            <li class="header-menu-list active">
+              <a href="javascript:void(0)" class="header-menu-link"><span class="text">Components</span></a>
+            </li>
+          </ul>
+          <div class="menu-button-box">
+            <button type="button" class="btn-menu">
+              <img src="../../assets/images/btn_open_menu_nor.svg" alt="메뉴 열기" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- LNB -->
+    <div class="lnb-container">
+      <div class="lnb-area">
+        <ul class="lnb-list-box">
+          <li class="lnb-list ">
+            <a href="javascript:void(0)" class="lnb-link"><span class="text">Overview</span></a>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="javascript:void(0)" class="lnb-link"><span class="text">Principle</span></a>
+            <ul class="lnb-sub-list-box kor">
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">명확한 구조</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">접근성</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">일관성</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">강조</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">TV 해상도</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">탐색</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">계층구조</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="javascript:void(0)" class="lnb-link"><span class="text">Foundation</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Typography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Icongraphy</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Color</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Grid</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Focus</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Motion</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Image</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="javascript:void(0)" class="lnb-link"><span class="text">Components</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Badges</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Booting</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Buttons</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <button class="btn-sub-open"><i class="icon ic-arrow"></i></button>
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Controls</span></a>
+                <ul class="lnb-last-list-box">
+                  <li class="lnb-last-list ">
+                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Checkbox</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Radio Button</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Switch</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Slider</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Dropdown</span></a>
+              </li>
+              <li class="lnb-sub-list active">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">GNB</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Inputs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">IME</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">List Cards</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Loading</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Pagination</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Player</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Pop up</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Splash</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Tabs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Tooltip</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Components | Controls | GNB -->
+    <main class="main">
+      <div class="main-container">
+        <div class="main-area">
+          <div class="heading-container">
+            <div class="heading-area">
+              <div class="heading-top">
+                <div class="title-box">
+                  <h1 class="title">GNB</h1>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">서비스를 구성하는 가장 기본적인 뼈대이자 정보구조이며, 사용자 동선을 안내하는 중요한 서비스 구성요소입니다.<br>
+                    GNB는 서비스의 정체성을 전달하는 역할로 상위 Level 탐색에 사용됩니다.</p>
+                </div>
+              </div>
+              <div class="heading-bottom">
+                <div class="content-box">
+                  <div class="image-content-box dark">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/gnb/gnb_image_01.png" alt="" />
+                    </div>
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">A</span></span>
+                      <span class="text">General Home</span>
+                    </div>
+                  </div>
+                  <div class="image-content-box dark">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/gnb/gnb_image_02.png" alt="" />
+                    </div>
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">B</span></span>
+                      <span class="text">1Depth</span>
+                    </div>
+                  </div>
+                  <div class="image-content-box dark">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/gnb/gnb_image_03.png" alt="" />
+                    </div>
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">C</span></span>
+                      <span class="text">2Depth</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Anatomy -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Anatomy</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box dark">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/gnb/gnb_image_04.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="image-content-box dark">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/gnb/gnb_image_05.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Menu Icon (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">설명하고자 하는 정보와 관련된 Icon을 노출합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Text</span>
+                          <div class="text-box">
+                            <p class="text">설명하고자 하는 정보를 표기합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Icon (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">Menu List에 다음 Depth가 있을 경우 화살표를 노출합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">4. Line (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">Select 된 GNB를 표시합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">5. Container (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">Focus된 GNB의 영역을 표시합니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="color-box dark  do">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/gnb/gnb_image_06.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Do</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">사용자의 시인성을 위해 Gradation을 사용합니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="color-box dark  do">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/gnb/gnb_image_07.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Do</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">Menu Icon은 일반적으로 같은 형태로 제공하나, 예외로 Seg.관련 메뉴 (OCEAN, ZEM키즈 등)는 Image Icon 형태도 가능합니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="color-box dark  do">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/gnb/gnb_image_08.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Do</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">Floating은 편리한 이동을 유도하는 Menu로 Layer 최상단에 노출합니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="color-box dark  exception">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/gnb/gnb_image_09.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Exception</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">PlayZ의 경우, General Home에 Dot Badge를 추가할 수 있습니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Anatomy -->
+          <!-- States -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">States</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box dark">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/gnb/gnb_image_010.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Normal</span>
+                          <div class="text-box">
+                            <p class="text">Focus 또는 Select 되지 않은 일반적인 상태입니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Focus</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 이동한 Menu의 위치를 인식할 수 있도록 적용된 상태입니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Select</span>
+                          <div class="text-box">
+                            <p class="text">Menu가 선택되어 정보가 활성화 된 상태입니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // States -->
+          <!-- Placement -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Placement</h2>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">
+                    화면의 좌측에 배치하여 Category 선택에 따라 Select, Focus 2가지 상태로 구성합니다.
+                  </p>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-content-box ">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/gnb/gnb_image_011.png" alt="" />
+                    </div>
+                    <div class="image-text-box">
+                      <span class="text">Select</span>
+                    </div>
+                  </div>
+                  <div class="image-content-box ">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/gnb/gnb_image_012.png" alt="" />
+                    </div>
+                    <div class="image-text-box">
+                      <span class="text">Focus</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="color-box dark  do">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/gnb/gnb_image_013.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Do</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">하위 Menu List가 있는 경우 우측에 2depth Menu List를 배치합니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Placement -->
+          <!-- Types -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Types</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">General Home</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">기본 Home에서 GNB가 접힌 일반적인 상태로 Icon을 노출합니다.<br>
+                          Select 된 Menu의 경우 좌측에 Line 노출하여 사용자의 현위치를 알립니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box dark">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/gnb/gnb_image_014.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="image-content-box dark">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/gnb/gnb_image_015.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box dark  dont">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/gnb/gnb_image_016.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Don't</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Style에 맞지 않거나 시인성을 해치는 Icon 또는 컬러 사용을 지양합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">1Depth/2Depth</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">GNB가 Focus되어 열린 상태로 관련 Icon과 Text를 함께 노출합니다. <br>
+                          1 Depth에서 추가적으로 하위 Menu List가 있을 경우 2 Depth를 노출하며, 해당 Category의 관련 List를 제공합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box dark">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/gnb/gnb_image_017.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="image-content-box dark">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/gnb/gnb_image_018.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/gnb/gnb_image_019.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">하위 Menu List가 없는 경우에는 화살표를 노출하지 않습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/gnb/gnb_image_020.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Menu List의 최대 글자수가 초과할 경우 ‘..’ 말줄임표 표기합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Types -->
+          <!-- Usage -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Usage</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">General GNB</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">Menu List의 탐색과 사용자의 동선을 안내하는 데 사용합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/gnb/gnb_image_021.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/gnb/gnb_image_022.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">하위 Menu List가 없는 경우에는 화살표를 노출하지 않습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/gnb/gnb_image_023.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">2 Depth 내 주요한 Menu에 Icon을 추가하여 강조해줄 수 있습니다. </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/gnb/gnb_image_024.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">2 Depth로 Focus 이동 시, Contents 영역을 확보하기 위해 2 Depth가 접혀서 1 Depth 위치로 이동하며, 진입 경로를 좌측 상단에 표시합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box dark  dont">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/gnb/gnb_image_025.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Don't</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">GNB에 Focus 되지 않은 상태에서는 Menu를 이동할 수 없습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Floating</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">Floating은 간단한 Key 조작으로 노출되며 화면에서 가장 기본적인 Menu의 빠른 진입을 돕기 위해 사용합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/gnb/gnb_image_026.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/gnb/gnb_image_027.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">주요 기능과 관련성 있는 적절한 개수의 Action을 제공합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box dark  dont">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/gnb/gnb_image_028.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Don't</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Menu를 더 깊은 탐색 수준으로 확장하거나 주요 기능이 아닌 Contents를 Floating으로 제공하지 않습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Usage -->
+        </div>
+      </div>
+    </main>
+    <!-- Quick Menu -->
+    <div class="quick-menu-container">
+      <div class="quick-menu-area">
+        <ul class="quick-menu-list-box">
+          <li class="quick-menu-list"><span class="list-title">Anatomy</span></li>
+          <li class="quick-menu-list"><span class="list-title">States</span></li>
+          <li class="quick-menu-list"><span class="list-title">Placement</span></li>
+          <li class="quick-menu-list">
+            <span class="list-title">Types</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list"><span class="sub-list-title">General Home</span></li>
+              <li class="quick-menu-sub-list"><span class="sub-list-title">1Depth/2Depth</span></li>
+            </ul>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Usage</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list"><span class="sub-list-title">General GNB</span></li>
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Floating</span></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

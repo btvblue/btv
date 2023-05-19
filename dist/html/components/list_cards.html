@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.ico" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <script src="../../assets/js/default.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>Components | List Cards</title>
+</head>
+</html>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header-container">
+      <div class="header-area">
+        <div class="header-left">
+          <div class="header-logo-box">
+            <a href="javascript:void(0)" class="header-logo-link">
+              <img src="../../assets/images/btv_logo.svg" alt="" />
+              <span class="text">BLUE Design System</span>
+            </a>
+          </div>
+        </div>
+        <div class="header-right">
+          <!--
+        Class 설명 
+        expand : 메뉴 펼쳤을 때 스타일 적용 (인터렉션은 js로 구현함. 클래스로 제어하지 않음)
+      -->
+          <ul class="header-menu-list-box">
+            <li class="header-menu-list ">
+              <a href="javascript:void(0)" class="header-menu-link"><span class="text">Principle</span></a>
+            </li>
+            <li class="header-menu-list ">
+              <a href="javascript:void(0)" class="header-menu-link"><span class="text">Foundation</span></a>
+            </li>
+            <li class="header-menu-list active">
+              <a href="javascript:void(0)" class="header-menu-link"><span class="text">Components</span></a>
+            </li>
+          </ul>
+          <div class="menu-button-box">
+            <button type="button" class="btn-menu">
+              <img src="../../assets/images/btn_open_menu_nor.svg" alt="메뉴 열기" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- LNB -->
+    <div class="lnb-container">
+      <div class="lnb-area">
+        <ul class="lnb-list-box">
+          <li class="lnb-list ">
+            <a href="javascript:void(0)" class="lnb-link"><span class="text">Overview</span></a>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="javascript:void(0)" class="lnb-link"><span class="text">Principle</span></a>
+            <ul class="lnb-sub-list-box kor">
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">명확한 구조</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">접근성</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">일관성</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">강조</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">TV 해상도</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">탐색</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">계층구조</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="javascript:void(0)" class="lnb-link"><span class="text">Foundation</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Typography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Icongraphy</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Color</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Grid</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Focus</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Motion</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Image</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="javascript:void(0)" class="lnb-link"><span class="text">Components</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Badges</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Booting</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Buttons</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <button class="btn-sub-open"><i class="icon ic-arrow"></i></button>
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Controls</span></a>
+                <ul class="lnb-last-list-box">
+                  <li class="lnb-last-list ">
+                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Checkbox</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Radio Button</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Switch</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Slider</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Dropdown</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">GNB</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Inputs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">IME</span></a>
+              </li>
+              <li class="lnb-sub-list active">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">List Cards</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Loading</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Pagination</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Player</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Pop up</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Splash</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Tabs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Tooltip</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Components | listcards -->
+    <main class="main">
+      <div class="main-container">
+        <div class="main-area">
+          <div class="heading-container">
+            <div class="heading-area">
+              <div class="heading-top">
+                <div class="title-box">
+                  <h1 class="title">List Cards</h1>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">
+                    List Cards는 Contents 및 Promotion을 특정 테마로 묶어 제공하는 한 행의 편성
+                    단위입니다.<br/>Contents Block과 Menu Block으로 나뉘어 편성됩니다.
+                  </p>
+                </div>
+              </div>
+              <div class="heading-bottom">
+                <div class="content-box">
+                  <div class="image-content-box dark">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/list_cards/list_cards_image_01.png" alt="" />
+                    </div>
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">A</span></span>
+                      <span class="text">Contents Block</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="image-content-box dark">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/list_cards/list_cards_image_02.png" alt="" />
+                    </div>
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">B</span></span>
+                      <span class="text">Menu Block</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Anatomy -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Anatomy</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box ">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/list_cards/list_cards_image_03.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Block Title (Optional) </span>
+                          <div class="text-box">
+                            <p class="text">Block의 타이틀을 노출합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Number Badge (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">Contents 개수를 Badge형태로 노출합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Contents List </span>
+                          <div class="text-box">
+                            <p class="text">Block Title에 맞는 Contents를 노출합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">4. Box Button (Optional) </span>
+                          <div class="text-box">
+                            <p class="text">Contents의 개수가 많을 때 전체 List로 이동해서 탐색할 수 있는 Button입니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box ">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/list_cards/list_cards_image_04.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Block Title (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">Block의 타이틀을 노출합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Number Badge (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">Contents 개수를 Badge형태로 노출합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Contents List </span>
+                          <div class="text-box">
+                            <p class="text">Block Title에 맞는 Contents를 노출합니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="color-box dark  dont">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/list_cards/list_cards_image_05.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Don't</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">Contents Block과 Menu Block을 혼용해서 사용하지 않습니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Anatomy -->
+          <!-- Placement -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Placement</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">1. Horizontal</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">가장 기본적인 구조로, 가로로 좌측 정렬되어 나열됩니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/list_cards/list_cards_image_06.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/list_cards/list_cards_image_07.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">사용자에게 Block의 우측과 하단에 Contents가 더 있다는 시각적 힌트를 제공합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box dark  dont">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/list_cards/list_cards_image_08.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Don't</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">여러개의 Block을 사용자가 혼란을 느끼지 않도록 알맞은 그룹핑을 유지하여 배치합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">2.Vertical</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          선택된 Block Title에 맞는 Contents가 세로로 나열됩니다. Layout에 따라
+                          좌측이나 우측에 배치됩니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/list_cards/list_cards_image_09.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box dark  dont">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/list_cards/list_cards_image_010.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Don't</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">여러개의 Contents를 나열할 때 스크롤과 시각적 힌트가 없으면 사용자는 추가 정보가 있다는 것을 인지하기 어렵습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">3.Grid</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          Grid 형태의 List로, 주로 개수가 많은 일반 Horizontal 의 전체 Contents를
+                          나열합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/list_cards/list_cards_image_011.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/list_cards/list_cards_image_012.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">사용자의 시선의 흐름에 따라 좌측 상단부터 우측 하단으로 Contents를 내려서 구성합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Placement -->
+          <!-- Types -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Types</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Contents Block</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          Image나 Poster, Thumbnail 등 List를 구성하는 Contents의 형태에 따라
+                          4가지로 크게 분류합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-title-box">
+                          <div class="image-title-top">
+                            <div class="image-content-box ">
+                              <div class="image-box">
+                                <img src="../../assets/images/components/list_cards/list_cards_image_013.png" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="image-title-bottom">
+                            <ul class="number-desc-list-box">
+                              <li class="number-desc-list">
+                                <span class="title">A. Vertical Contents Type</span>
+                                <div class="text-box">
+                                  <p class="text">주로 Poster나 Promotion Image를 나열합니다.</p>
+                                </div>
+                              </li>
+                              <li class="number-desc-list">
+                                <span class="title">B. Horizontal Contents Type</span>
+                                <div class="text-box">
+                                  <p class="text">주로 Thumbnail, Poster를 나열합니다. </p>
+                                </div>
+                              </li>
+                              <li class="number-desc-list">
+                                <span class="title">C. Circle Contents Type</span>
+                                <div class="text-box">
+                                  <p class="text">음악 관련 이미지를 나열합니다.</p>
+                                </div>
+                              </li>
+                              <li class="number-desc-list">
+                                <span class="title">D. Banner Contents Type </span>
+                                <div class="text-box">
+                                  <p class="text">Event성 Banner를 나열합니다.</p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/list_cards/list_cards_image_014.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Contents의 속성에 따라 Text나 Image Icon, Progress Bar와 같은 Component를 추가로 사용합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/list_cards/list_cards_image_015.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Contents의 Filtering이 필요한 경우, Block과 Tab을 혼용하여 사용합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/list_cards/list_cards_image_016.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Vertical 배치의 경우, 부가정보 Text가 Image 우측에 배치 될 수 있습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/list_cards/list_cards_image_017.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">같은 Block 내에 Banner Contents Type과 Vertical Contents Type을 혼용하여 사용할 수 있습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Menu Block</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          List를 구성하는 Menu의 형태에 따라 3가지로 크게 분류합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-title-box">
+                          <div class="image-title-top">
+                            <div class="image-content-box ">
+                              <div class="image-box">
+                                <img src="../../assets/images/components/list_cards/list_cards_image_018.png" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="image-title-bottom">
+                            <ul class="number-desc-list-box">
+                              <li class="number-desc-list">
+                                <span class="title">A. Rectangle Menu Type </span>
+                                <div class="text-box">
+                                  <p class="text">Block의 간단한 Title이 오거나 사용자가 Control 할 수 있는 Menu를 제공합니다. </p>
+                                </div>
+                              </li>
+                              <li class="number-desc-list">
+                                <span class="title">B. Square Menu Type</span>
+                                <div class="text-box">
+                                  <p class="text">Block의 간단한 세부 정보를 표기합니다. </p>
+                                </div>
+                              </li>
+                              <li class="number-desc-list">
+                                <span class="title">C. Round Menu Type</span>
+                                <div class="text-box">
+                                  <p class="text">간단한 Keyword나, 사용자의 Action 상태의 결과값을 반영합니다.</p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/list_cards/list_cards_image_019.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Icon과 Badge, Text를 사용자가 정보를 인식하기 쉽도록 알맞게 강조하여 사용합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/list_cards/list_cards_image_020.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Menu Block은 사용자가 정보를 한 눈에 인식하기 쉽도록 명확한 Text 위계 구조가 보이도록 사용합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box dark  dont">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/list_cards/list_cards_image_021.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Don't</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Menu Block 뒤에 Box Button을 제공하지 않습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Types -->
+          <!-- Usage -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Usage</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Contents Block</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">주로 Home에 다양한 형태의 Contents Block을 사용합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/list_cards/list_cards_image_022.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/list_cards/list_cards_image_023.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">상황에 따라 Box Button이 List 첫번째나 마지막에 배치될 수 있습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Menu Block</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          주로 MY와 검색 결과에 다양한 형태의 Menu Block을 사용합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/list_cards/list_cards_image_024.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/list_cards/list_cards_image_025.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">MY에 사용 되는 Menu Block은 Number Badge를 노출하지 않습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Usage -->
+        </div>
+      </div>
+    </main>
+    <!-- Quick Menu -->
+    <div class="quick-menu-container">
+      <div class="quick-menu-area">
+        <ul class="quick-menu-list-box">
+          <li class="quick-menu-list">
+            <span class="list-title">Anatomy</span>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Placement</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">1. Horizontal</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">2. Vertical</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">3. Grid</span>
+              </li>
+            </ul>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Types</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Contents Block</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Menu Block</span>
+              </li>
+            </ul>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Usage</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Contents Block</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Menu Block</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
