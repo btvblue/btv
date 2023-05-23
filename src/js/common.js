@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         slideDown(headerMenuList, 400);
         headerMenuList.classList.add('expand');
         target.querySelector('img').setAttributes({
-          'src': '../../assets/images/btn_close_menu_nor.svg',
-          'alt': '메뉴 닫기'
+          src: '../../assets/images/btn_close_menu_nor.svg',
+          alt: '메뉴 닫기',
         });
       }
       // 메뉴 접음 //
@@ -27,19 +27,17 @@ document.addEventListener('DOMContentLoaded', () => {
         slideUp(headerMenuList, 400);
         headerMenuList.classList.remove('expand');
         target.querySelector('img').setAttributes({
-          'src': '../../assets/images/btn_open_menu_nor.svg',
-          'alt': '메뉴 열기'
+          src: '../../assets/images/btn_open_menu_nor.svg',
+          alt: '메뉴 열기',
         });
       }
     }
   }
 
-
-
   // LNB Dropdown //
   const lnbContainer = document.querySelector('.lnb-container');
   const openBtns = lnbContainer.querySelectorAll('.btn-open');
-  const breakPoint = 1440;
+  const breakPoint = 1468;
   setLnbPosition(window.innerWidth, breakPoint);
 
   // LNB 토글버튼 이벤트 리스너 적용 //
@@ -81,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
           }
         }
-      })
+      });
     }
   }
 
@@ -105,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
           lastListBox.style.marginBottom = '1.8rem';
           slideDown(lastListBox, 400);
         }
-      })
+      });
     }
   }
 
@@ -130,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 스크롤 함수 실행 //
         smoothScroll(matchTitle, 500, headerHeight);
-      })
+      });
     }
 
     // 윈도우 스크롤 이벤트 리스너 //
@@ -138,21 +136,19 @@ document.addEventListener('DOMContentLoaded', () => {
       const windowHeight = window.innerHeight;
       let scrollY = window.scrollY;
       let trigger = scrollY + windowHeight / 2;
-  
+
       titles.forEach((title, index) => {
         const titleTop = title.offsetTop;
         if (titleTop < trigger) {
-  
           listTitles.forEach((quickMenu, i) => {
             quickMenu.classList.remove('active');
           });
-  
+
           listTitles[index].classList.add('active');
         }
       });
     });
   }
-
 
   // 콘텐츠 로드 완료, 리사이징 될 때 퀵메뉴가 콘텐츠와 겹치지 않도록 재설정 한다. //
   const mainContainer = document.querySelector('.main-container');
@@ -211,7 +207,7 @@ function setLnbPosition(width, breakPoint) {
   }
 }
 
-// 윈도우 가로 크기에 따라 퀵메뉴 left 위치를 재설정 하는 함수 
+// 윈도우 가로 크기에 따라 퀵메뉴 left 위치를 재설정 하는 함수
 function setQuickMenuLeft(container, menu) {
   const mainLeft = container.offsetLeft;
   const mainWidth = container.offsetWidth;
@@ -220,8 +216,7 @@ function setQuickMenuLeft(container, menu) {
 
   if (menuLeft <= mainRight) {
     menu.style.left = `${mainRight}px`;
-  }
-  else {
+  } else {
     menu.style.removeProperty('left');
   }
 }

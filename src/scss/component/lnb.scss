@@ -81,7 +81,7 @@
       @include flex(row, flex-start, center);
       height: 4.9rem;
       padding-left: 5.4rem;
-      @include font(1.8rem, 700, #242424, 2.2rem);
+      @include font(1.8rem, 600, #242424, 2.2rem);
       &:hover {
         border-radius: 3.2rem;
         background-color: rgba($purple, 0.1);

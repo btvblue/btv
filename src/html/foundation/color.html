@@ -1,0 +1,537 @@
+<!-- prettier-ignore -->
+@@include("../component/head.html",{
+  "title" : "Foundation | Color"
+})
+
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <!-- prettier-ignore -->
+    @@include("../component/header.html", {
+    "page" : "foundation"
+    })
+    <!-- LNB -->
+    <!-- prettier-ignore -->
+    @@include("../component/lnb.html", {
+    "title" : "color"
+    })
+
+    <!-- Foundation | Color -->
+    <main class="main">
+      <div class="main-container">
+        <div class="main-area">
+          <!--
+            .heading-container : h1 컨텐츠
+          -->
+          <div class="heading-container">
+            <div class="heading-area">
+              <div class="heading-top">
+                <div class="title-box">
+                  <h1 class="title">Color</h1>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">
+                    표준화된 Color 및 사용 Guide를 제공하여 Brand Service Color를 정의합니다.<br/>
+                    정형화 된 Color System을 통하여 사용자에게 일관성 있는 Brand 경험을 제공하며, 효율적인 Brand 인식을 돕습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--
+            .content-container : h2 컨텐츠
+          -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Principles of Use</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">색상 테스트</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          TV 화면은 Web 화면보다 대비가 높기 때문에 의도하고자 한 색상과 다르게 보일 수 있습니다.<br/>
+                          채도가 높아 색상이 더 밝고 생생하게 보이기 때문에 다양한 디스플레이 환경 설정에 따라서 색상 테스트가 필요합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-title-box">
+                          <div class="image-title-top">
+                            <!-- prettier-ignore -->
+                            @@include("../component/image_content_box.html", {
+                              "mode"  : "",
+                              "image" : "foundation/color/color_image_01",
+                              "desc"  : null
+                            })
+                          </div>
+                          <div class="image-title-bottom">
+                            <ul class="number-desc-list-box">
+                              <!-- prettier-ignore -->
+                              @@include("../component/number_desc_list.html", {
+                                "title" : null,
+                                "desc"  : "모바일이나 웹에서 사용했던 Color보다 채도를 낮춰서 적용 해야되며, Warm tone 보다 Cool tone 이 색 번짐이 적어 사용자의 눈 피로도를 줄일 수 있습니다."
+                              })
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="image-title-box">
+                          <div class="image-title-top">
+                            <!-- prettier-ignore -->
+                            @@include("../component/image_content_box.html", {
+                              "mode"  : "",
+                              "image" : "foundation/color/color_image_02",
+                              "desc"  : null
+                            })
+                          </div>
+                          <div class="image-title-bottom">
+                            <ul class="number-desc-list-box">
+                              <!-- prettier-ignore -->
+                              @@include("../component/number_desc_list.html", {
+                                "title" : null,
+                                "desc"  : "TV 디스플레이가 재현할 수 있는 색상의 스펙트럼을으로 여기에는 sRGB 및 DCI-P3 색상이 영역으로, sRGB는 가장 널리 사용되는 색상이며 가장 광범위한 TV 모델과 호환됩니다."
+                              })
+                              <!-- prettier-ignore -->
+                              @@include("../component/number_desc_list.html", {
+                                "title" : null,
+                                "desc"  : "DCI-P3 색상을 사용하면 영상이 더욱 생생하게 나타날 수 있습니다. DCI-P3에서 만든 콘텐츠는 더 많은 영역의 색상에 적용할 수 있으며, 콘텐츠는 고급 TV 디스플레이와만 호환될 수 있습니다."
+                              })
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="image-title-box">
+                          <div class="image-title-top">
+                            <!-- prettier-ignore -->
+                            @@include("../component/color_box.html", {
+                              "mode"  : "",
+                              "full"  : "",
+                              "state" : "do",
+                              "image" : "foundation/color/color_image_03",
+                              "desc"  : "명도 대비가 확실하고 차분한 Color(파랑,보라,회색)의 사용을 권장합니다."
+                            })
+                            <!-- prettier-ignore -->
+                            @@include("../component/color_box.html", {
+                              "mode"  : "",
+                              "full"  : "",
+                              "state" : "dont",
+                              "image" : "foundation/color/color_image_04",
+                              "desc"  : "명도 대비가 정확하지 않고 채도가 높은 Color의 사용을 지양합니다."
+                            })
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Brand Color</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          Brand Color를 사용 함으로써 일관성있는 Brand 경험을 만들어 나갈 수 있으며, Service 전체의 통일감을 부여하고<br/>
+                          Brand Image 생성에 중요한 역할을 하므로 Color 활용 기준을 준수해야 합니다.
+                        </p>
+                        <p class="desc grey">
+                          B tv Contents 중심의 디자인을 위해서 무분별하게 Color를 사용하지 않고 명확하게 지정된 Color를 위주로 사용합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "dark",
+                          "full"  : "",
+                          "state" : "do",
+                          "image" : "foundation/color/color_image_05",
+                          "desc"  : "Brand Color를 활용한 3가지 계열 Color Chip 사용을 권장합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "dark",
+                          "full"  : "",
+                          "state" : "dont",
+                          "image" : "foundation/color/color_image_06",
+                          "desc"  : "Brand Color와 관련 없는 Color 사용을 지양합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "dark",
+                          "full"  : "",
+                          "state" : "do",
+                          "image" : "foundation/color/color_image_07",
+                          "desc"  : "Button Color는 Main Brand Color와 상호보완적이며 주로 보색을 사용합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "dark",
+                          "full"  : "",
+                          "state" : "caution",
+                          "image" : "foundation/color/color_image_08",
+                          "desc"  : "TV Dark Thema에서는 Brand Color의 저채도 Color와  Point Color를 목적에 맞도록 적절하게 적용하여 계층간의 구조를 명확히 합니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">TV White Color</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          TV Screen은 대비가 높아 색상이 더 밝고 생생하게 보이기 때문에 White가 특히 더 밝게 보이게 됩니다. 이러한 이유로 사용자의 시각적인 피로도를 높일 수 있는 True White(#FFFFFF)대신 Light Gray(#EEEEEE, #f2f2f2) 사용을 권장합니다.
+                        </p>
+                        <p class="desc grey">
+                          Apple tv에서 서비스 중인 B tv에서는 Light Gray(#F5F5F5)를 사용하고 있습니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "",
+                          "image" : "foundation/color/color_image_09",
+                          "desc"  : null
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">TV Dark Thema</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          TV Dark Thema는 빛 반사를 최소화 하여 눈의 피로도를 줄여주며, 시인성과 가독성을 높여 Contents 주목도를 향상시킵니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "",
+                          "image" : "foundation/color/color_image_010",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "dark",
+                          "full"  : "",
+                          "state" : "do",
+                          "image" : "foundation/color/color_image_011",
+                          "desc"  : "Dark Thema UI에 Point Color은 사용자의 눈에 잘 띄도록 밝은 Color(저채도, 파스텔)나 선명한 Color(고채도)를 적용합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "dark",
+                          "full"  : "",
+                          "state" : "dont",
+                          "image" : "foundation/color/color_image_012",
+                          "desc"  : "어두운 배경에 지나치게 높은 고채도의 색상은 빛번짐 및 시각적인 진동을 유발 할 수 있으므로 사용을 지양합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "dark",
+                          "full"  : "",
+                          "state" : "do",
+                          "image" : "foundation/color/color_image_013",
+                          "desc"  : "TV Dark Thema에서 Point Color는 좁은 면적에 사용합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode"  : "dark",
+                          "full"  : "",
+                          "state" : "dont",
+                          "image" : "foundation/color/color_image_014",
+                          "desc"  : "TV Dark Thema에서 Point Color를 사용한 면적이 너무 넓으면 사용자에게 시각적인 불편함을 줄 수 있기 때문에 적당한 Point Color의 사용을 권장합니다."
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--
+            .content-container : h2 컨텐츠
+          -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Color Palette</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Primary Color</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          Brand Image를 대표하는 Main Color입니다.<br/>
+                          주요 UI 구성요소는 해당 Service의 Brand 경험에 직접적인 영향을 주므로 아래 정의된 Color Chip 내에서 사용합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "no-border",
+                          "image" : "foundation/color/color_image_015",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "no-border",
+                          "image" : "foundation/color/color_image_016",
+                          "desc"  : null
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Gray Color</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          여러가지 무채색의 Color로 정의 내려져 있으며, UI 기본적인 구성요소에 사용되나 주로 Text에 쓰이고 있습니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "no-border",
+                          "image" : "foundation/color/color_image_017",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "no-border",
+                          "image" : "foundation/color/color_image_018",
+                          "desc"  : null
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Background Color</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          서비스 화면에 전체적으로 들어가는 배경 Color입니다.<br/>
+                          메인 Color를 기반으로 많이 쓰이지만 상황에 따라서 서브 Color를 배경으로 적용 할 수 있습니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "no-border",
+                          "image" : "foundation/color/color_image_019",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "no-border",
+                          "image" : "foundation/color/color_image_020",
+                          "desc"  : null
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Dimmed Color</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          화면 위에 뜨는 Popup 화면이나 특정 요소를 어두운 색상으로 가려야 할 때 Opacity를 조절하여 사용합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "no-border",
+                          "image" : "foundation/color/color_image_021",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "no-border",
+                          "image" : "foundation/color/color_image_022",
+                          "desc"  : null
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Alert Color</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          오류, 경고, 주의, 장애와 같은 부정적인 메시지에 사용합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "no-border",
+                          "image" : "foundation/color/color_image_023",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="content-box">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "no-border",
+                          "image" : "foundation/color/color_image_024",
+                          "desc"  : null
+                        })
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--
+            .content-container : h2 컨텐츠
+          -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Usage Color Guide</h2>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">정보의 우선 순위를 시각화 할 수 있도록 중요한 내용부터 쉽게 눈에 띌 수 있도록 구성합니다.</p>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <!-- prettier-ignore -->
+                  @@include("../component/image_content_box.html", {
+                    "mode"  : "no-border",
+                    "image" : "foundation/color/color_image_025",
+                    "desc"  : null
+                  })
+                  @@include("../component/image_content_box.html", {
+                    "mode"  : "no-border",
+                    "image" : "foundation/color/color_image_026",
+                    "desc"  : null
+                  })
+                </div>
+                <div class="content-box">
+                  <!-- prettier-ignore -->
+                  @@include("../component/image_content_box.html", {
+                    "mode"  : "no-border",
+                    "image" : "foundation/color/color_image_027",
+                    "desc"  : null
+                  })
+                  @@include("../component/image_content_box.html", {
+                    "mode"  : "no-border",
+                    "image" : "foundation/color/color_image_028",
+                    "desc"  : null
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Quick Menu -->
+    <div class="quick-menu-container">
+      <div class="quick-menu-area">
+        <ul class="quick-menu-list-box">
+          <li class="quick-menu-list"><span>Anatomy</span></li>
+          <li class="quick-menu-list">
+            <span>Types</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list"><span>General Checkbox</span></li>
+            </ul>
+          </li>
+          <li class="quick-menu-list"><span>States</span></li>
+          <li class="quick-menu-list">
+            <span>Usage</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list"><span>General Usage</span></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

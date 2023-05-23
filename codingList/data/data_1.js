@@ -38,52 +38,40 @@ const list = [
     content: "Principle",
     children: [
       {
-        link: "principle.html",
+        link: "principle/principle.html",
         name: "principle",
         complete: false,
       },
       {
-        content: "명확한 구조",
-        link: "structure.html",
-        name: "structure",
+        content: "TV Environment",
+        link: "principle/tv.html",
+        name: "tv",
         complete: false,
       },
       {
-        content: "접근성",
-        link: "accessibility.html",
+        content: "Contents",
+        link: "principle/contents.html",
+        name: "contents",
+        complete: false,
+      },
+      {
+        content: "Navigation",
+        link: "principle/navigation.html",
+        name: "navigation",
+        complete: false,
+      },
+      {
+        content: "Respect for Legacy",
+        link: "principle/legacy.html",
+        name: "legacy",
+        complete: false,
+      },
+      {
+        content: "Accessibility",
+        link: "principle/accessibility.html",
         name: "accessibility",
         complete: false,
-      },
-      {
-        content: "일관성",
-        link: "consistency.html",
-        name: "consistency",
-        complete: false,
-      },
-      {
-        content: "강조",
-        link: "emphasis.html",
-        name: "emphasis",
-        complete: false,
-      },
-      {
-        content: "TV 해상도",
-        link: "tv_resolution.html",
-        name: "tv_resolution",
-        complete: false,
-      },
-      {
-        content: "탐색",
-        link: "search.html",
-        name: "search",
-        complete: false,
-      },
-      {
-        content: "계층구조",
-        link: "hierarchy.html",
-        name: "hierarchy",
-        complete: false,
-      },
+      }
     ],
   },
   {
@@ -101,9 +89,9 @@ const list = [
         complete: false,
       },
       {
-        content: "Icongraphy",
-        link: "foundation/icongraphy.html",
-        name: "icongraphy",
+        content: "Iconography",
+        link: "foundation/iconography.html",
+        name: "iconography",
         complete: false,
       },
       {

@@ -1,187 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta http-equiv="cache-control" content="no-cache" />
-  <link rel="icon" type="image/png" href="../../assets/images/favicon.ico" />
-  <link rel="stylesheet" href="../../assets/css/style.css" />
-  <script src="../../assets/js/default.js"></script>
-  <script src="../../assets/js/common.js"></script>
-  <title>Components | Player</title>
-</head>
-</html>
+<!-- prettier-ignore -->
+@@include("../component/head.html",{
+  "title" : "Components | Player"
+})
+  
 <body>
   <div class="wrapper">
     <!-- Header -->
-    <header class="header-container">
-      <div class="header-area">
-        <div class="header-left">
-          <div class="header-logo-box">
-            <a href="javascript:void(0)" class="header-logo-link">
-              <img src="../../assets/images/btv_logo.svg" alt="" />
-              <span class="text">BLUE Design System</span>
-            </a>
-          </div>
-        </div>
-        <div class="header-right">
-          <!--
-        Class 설명 
-        expand : 메뉴 펼쳤을 때 스타일 적용 (인터렉션은 js로 구현함. 클래스로 제어하지 않음)
-      -->
-          <ul class="header-menu-list-box">
-            <li class="header-menu-list ">
-              <a href="javascript:void(0)" class="header-menu-link"><span class="text">Principle</span></a>
-            </li>
-            <li class="header-menu-list ">
-              <a href="javascript:void(0)" class="header-menu-link"><span class="text">Foundation</span></a>
-            </li>
-            <li class="header-menu-list active">
-              <a href="javascript:void(0)" class="header-menu-link"><span class="text">Components</span></a>
-            </li>
-          </ul>
-          <div class="menu-button-box">
-            <button type="button" class="btn-menu">
-              <img src="../../assets/images/btn_open_menu_nor.svg" alt="메뉴 열기" />
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
+    <!-- prettier-ignore -->
+    @@include("../component/header.html", {
+      "page" : "components"
+    })
+
     <!-- LNB -->
-    <div class="lnb-container">
-      <div class="lnb-area">
-        <ul class="lnb-list-box">
-          <li class="lnb-list ">
-            <a href="javascript:void(0)" class="lnb-link"><span class="text">Overview</span></a>
-          </li>
-          <li class="lnb-list ">
-            <button class="btn-open"><i class="icon ic-arrow"></i></button>
-            <a href="javascript:void(0)" class="lnb-link"><span class="text">Principle</span></a>
-            <ul class="lnb-sub-list-box kor">
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">명확한 구조</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">접근성</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">일관성</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">강조</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">TV 해상도</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">탐색</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">계층구조</span></a>
-              </li>
-            </ul>
-          </li>
-          <li class="lnb-list ">
-            <button class="btn-open"><i class="icon ic-arrow"></i></button>
-            <a href="javascript:void(0)" class="lnb-link"><span class="text">Foundation</span></a>
-            <ul class="lnb-sub-list-box">
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Typography</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Icongraphy</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Color</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Grid</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Focus</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Motion</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Image</span></a>
-              </li>
-            </ul>
-          </li>
-          <li class="lnb-list ">
-            <button class="btn-open"><i class="icon ic-arrow"></i></button>
-            <a href="javascript:void(0)" class="lnb-link"><span class="text">Components</span></a>
-            <ul class="lnb-sub-list-box">
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Badges</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Booting</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Buttons</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <button class="btn-sub-open"><i class="icon ic-arrow"></i></button>
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Controls</span></a>
-                <ul class="lnb-last-list-box">
-                  <li class="lnb-last-list ">
-                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Checkbox</span></a>
-                  </li>
-                  <li class="lnb-last-list ">
-                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Radio Button</span></a>
-                  </li>
-                  <li class="lnb-last-list ">
-                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Switch</span></a>
-                  </li>
-                  <li class="lnb-last-list ">
-                    <a href="javascript:void(0)" class="lnb-last-link"><span class="text">Slider</span></a>
-                  </li>
-                </ul>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Dropdown</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">GNB</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Inputs</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">IME</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">List Cards</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Loading</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Pagination</span></a>
-              </li>
-              <li class="lnb-sub-list active">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Player</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Pop up</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Splash</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Tabs</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="javascript:void(0)" class="lnb-sub-link"><span class="text">Tooltip</span></a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <!-- prettier-ignore -->
+    @@include("../component/lnb.html", {
+      "title" : "player"
+    })
+
     <!-- Components | Player -->
     <main class="main">
       <div class="main-container">
@@ -198,15 +33,15 @@
               </div>
               <div class="heading-bottom">
                 <div class="content-box">
-                  <div class="image-content-box ">
-                    <div class="image-box">
-                      <img src="../../assets/images/components/player/player_image_01.png" alt="" />
-                    </div>
-                    <div class="image-text-box">
-                      <span class="circle"><span class="number">A</span></span>
-                      <span class="text">General VOD Player</span>
-                    </div>
-                  </div>
+                  <!-- prettier-ignore -->
+                  @@include("../component/image_content_box.html", {
+                    "mode" : "",
+                    "image" : "components/player/player_image_01",
+                    "desc" : {
+                      "alphabet" : "A",
+                      "desc" : "General VOD Player"
+                    }
+                  })
                 </div>
               </div>
             </div>
@@ -223,131 +58,102 @@
                 <div class="content-box">
                   <div class="image-title-box">
                     <div class="image-title-top">
-                      <div class="image-content-box ">
-                        <div class="image-box">
-                          <img src="../../assets/images/components/player/player_image_02.png" alt="" />
-                        </div>
-                      </div>
+                      <!-- prettier-ignore -->
+                      @@include("../component/image_content_box.html", {
+                        "mode" : "",
+                        "image" : "components/player/player_image_02",
+                        "desc" : null
+                      })
                     </div>
                     <div class="image-title-bottom">
                       <ul class="number-desc-list-box">
-                        <li class="number-desc-list">
-                          <span class="title">1. Title Area</span>
-                          <div class="text-box">
-                            <p class="text">VOD의 타이틀을 노출합니다.</p>
-                          </div>
-                        </li>
-                        <li class="number-desc-list">
-                          <span class="title">2. Track</span>
-                          <div class="text-box">
-                            <p class="text">재생가능한 범위를 노출합니다.</p>
-                          </div>
-                        </li>
-                        <li class="number-desc-list">
-                          <span class="title">3. Active Indicator</span>
-                          <div class="text-box">
-                            <p class="text">재생된 범위를 노출합니다.</p>
-                          </div>
-                        </li>
-                        <li class="number-desc-list">
-                          <span class="title">4. Knob</span>
-                          <div class="text-box">
-                            <p class="text">사용자가 조작하는 위치를 Focus 하여 세부 조작할 수 있는 Point 입니다.</p>
-                          </div>
-                        </li>
-                        <li class="number-desc-list">
-                          <span class="title">5. Running Time</span>
-                          <div class="text-box">
-                            <p class="text">VOD가 재생 된 시간과 상태를 노출합니다.</p>
-                          </div>
-                        </li>
-                        <li class="number-desc-list">
-                          <span class="title">6. Remaining Time</span>
-                          <div class="text-box">
-                            <p class="text">VOD의 남은 시간을 노출합니다.</p>
-                          </div>
-                        </li>
-                        <li class="number-desc-list">
-                          <span class="title">7. Icon Area</span>
-                          <div class="text-box">
-                            <p class="text">VOD를 세부적으로 Control하는 Button을 노출합니다.</p>
-                          </div>
-                        </li>
-                        <li class="number-desc-list">
-                          <span class="title">8. Thumbnail</span>
-                          <div class="text-box">
-                            <p class="text">현재 위치를 표시하는 Mark와 함께 재생되는 지점의 Image를 노출합니다.</p>
-                          </div>
-                        </li>
-                        <li class="number-desc-list">
-                          <span class="title">9. Guide Text (Optional) </span>
-                          <div class="text-box">
-                            <p class="text">VOD의 회차가 존재할 경우 노출합니다.</p>
-                          </div>
-                        </li>
-                        <li class="number-desc-list">
-                          <span class="title">10. Gradation</span>
-                          <div class="text-box">
-                            <p class="text">VOD와 Player간의 시인성을 높이기 위해 사용합니다.</p>
-                          </div>
-                        </li>
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "1. Title Area",
+                          "desc" : "VOD의 타이틀을 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "2. Track",
+                          "desc" : "재생가능한 범위를 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "3. Active Indicator",
+                          "desc" : "재생된 범위를 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "4. Knob",
+                          "desc" : "사용자가 조작하는 위치를 Focus 하여 세부 조작할 수 있는 Point 입니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "5. Running Time",
+                          "desc" : "VOD가 재생 된 시간과 상태를 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "6. Remaining Time",
+                          "desc" : "VOD의 남은 시간을 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "7. Icon Area",
+                          "desc" : "VOD를 세부적으로 Control하는 Button을 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "8. Thumbnail",
+                          "desc" : "현재 위치를 표시하는 Mark와 함께 재생되는 지점의 Image를 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "9. Guide Text (Optional) ",
+                          "desc" : "VOD의 회차가 존재할 경우 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/number_desc_list.html", {
+                          "title" : "10. Gradation",
+                          "desc" : "VOD와 Player간의 시인성을 높이기 위해 사용합니다."
+                        })
                       </ul>
                     </div>
                   </div>
                 </div>
                 <div class="content-box">
-                  <div class="color-box dark  do">
-                    <div class="image-box">
-                      <img src="../../assets/images/components/player/player_image_03.png" alt="" />
-                    </div>
-                    <div class="color-text-box">
-                      <div class="color-title-box">
-                        <span class="color-title">Do</span>
-                      </div>
-                      <div class="color-desc-box">
-                        <p class="color-desc">Running Time은 VOD를 Control 하고 있는 상태에 따라 Time 앞뒤로 Icon을 붙여 사용합니다.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="color-box dark  do">
-                    <div class="image-box">
-                      <img src="../../assets/images/components/player/player_image_04.png" alt="" />
-                    </div>
-                    <div class="color-text-box">
-                      <div class="color-title-box">
-                        <span class="color-title">Do</span>
-                      </div>
-                      <div class="color-desc-box">
-                        <p class="color-desc">Icon Button을 Focus할 경우 사용자가 명확하게 인지하기 위해 상단에 해당 기능의 Text가 함께 노출됩니다.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="color-box dark  do">
-                    <div class="image-box">
-                      <img src="../../assets/images/components/player/player_image_05.png" alt="" />
-                    </div>
-                    <div class="color-text-box">
-                      <div class="color-title-box">
-                        <span class="color-title">Do</span>
-                      </div>
-                      <div class="color-desc-box">
-                        <p class="color-desc">사용자가 VOD를 탐색할때는 Knob의 형태를 Stick 형태로 사용합니다.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="color-box dark  do">
-                    <div class="image-box">
-                      <img src="../../assets/images/components/player/player_image_06.png" alt="" />
-                    </div>
-                    <div class="color-text-box">
-                      <div class="color-title-box">
-                        <span class="color-title">Do</span>
-                      </div>
-                      <div class="color-desc-box">
-                        <p class="color-desc">Image Button을 Focus 하면 사용자의 세부적인 Option 설정을 위한 Menu를 노출할 수 있습니다.</p>
-                      </div>
-                    </div>
-                  </div>
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "dark",
+                    "full" : "",
+                    "state" : "do",
+                    "image" : "components/player/player_image_03",
+                    "desc" : "Running Time은 VOD를 Control 하고 있는 상태에 따라 Time 앞뒤로 Icon을 붙여 사용합니다."
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "dark",
+                    "full" : "",
+                    "state" : "do",
+                    "image" : "components/player/player_image_04",
+                    "desc" : "Icon Button을 Focus할 경우 사용자가 명확하게 인지하기 위해 상단에 해당 기능의 Text가 함께 노출됩니다."
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "dark",
+                    "full" : "",
+                    "state" : "do",
+                    "image" : "components/player/player_image_05",
+                    "desc" : "사용자가 VOD를 탐색할때는 Knob의 형태를 Stick 형태로 사용합니다."
+                  })
+                  <!-- prettier-ignore -->
+                  @@include("../component/color_box.html", {
+                    "mode" : "dark",
+                    "full" : "",
+                    "state" : "do",
+                    "image" : "components/player/player_image_06",
+                    "desc" : "Image Button을 Focus 하면 사용자의 세부적인 Option 설정을 위한 Menu를 노출할 수 있습니다."
+                  })
                 </div>
               </div>
             </div>
@@ -372,67 +178,46 @@
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box">
-                        <div class="image-content-box dark">
-                          <div class="image-box">
-                            <img src="../../assets/images/components/player/player_image_07.png" alt="" />
-                          </div>
-                          <div class="image-text-box">
-                          </div>
-                        </div>
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "dark",
+                          "image" : "components/player/player_image_07",
+                          "desc"  : "null"
+                        })
                       </div>
                       <div class="content-box">
-                        <div class="color-box dark  do">
-                          <div class="image-box">
-                            <img src="../../assets/images/components/player/player_image_08.png" alt="" />
-                          </div>
-                          <div class="color-text-box">
-                            <div class="color-title-box">
-                              <span class="color-title">Do</span>
-                            </div>
-                            <div class="color-desc-box">
-                              <p class="color-desc">사용자가 VOD 시간 조정 시 Knob와 Running Time, Mark는 중앙 정렬하여 사용합니다.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="color-box dark  do">
-                          <div class="image-box">
-                            <img src="../../assets/images/components/player/player_image_09.png" alt="" />
-                          </div>
-                          <div class="color-text-box">
-                            <div class="color-title-box">
-                              <span class="color-title">Do</span>
-                            </div>
-                            <div class="color-desc-box">
-                              <p class="color-desc">Thumbnail이 Track의 끝에 도달했을 경우 Thumbnail은 고정된 상태로 Knob와 Mark만 이동하며, 종료시간은 노출하지 않습니다.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="color-box dark  do">
-                          <div class="image-box">
-                            <img src="../../assets/images/components/player/player_image_010.png" alt="" />
-                          </div>
-                          <div class="color-text-box">
-                            <div class="color-title-box">
-                              <span class="color-title">Do</span>
-                            </div>
-                            <div class="color-desc-box">
-                              <p class="color-desc">VOD 첫 시작 시 Thumbnail 와 Knob, Running Time은 좌측 정렬됩니다.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="color-box dark  do">
-                          <div class="image-box">
-                            <img src="../../assets/images/components/player/player_image_011.png" alt="" />
-                          </div>
-                          <div class="color-text-box">
-                            <div class="color-title-box">
-                              <span class="color-title">Do</span>
-                            </div>
-                            <div class="color-desc-box">
-                              <p class="color-desc">VOD 끝날 시 Thumbnail 와 Knob, Running Time은 우측 정렬됩니다.</p>
-                            </div>
-                          </div>
-                        </div>
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/player/player_image_08",
+                          "desc" : "사용자가 VOD 시간 조정 시 Knob와 Running Time, Mark는 중앙 정렬하여 사용합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/player/player_image_09",
+                          "desc" : "Thumbnail이 Track의 끝에 도달했을 경우 Thumbnail은 고정된 상태로 Knob와 Mark만 이동하며, 종료시간은 노출하지 않습니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/player/player_image_010",
+                          "desc" : "VOD 첫 시작 시 Thumbnail 와 Knob, Running Time은 좌측 정렬됩니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/player/player_image_011",
+                          "desc" : "VOD 끝날 시 Thumbnail 와 Knob, Running Time은 우측 정렬됩니다."
+                        })
                       </div>
                     </div>
                   </div>
@@ -463,65 +248,46 @@
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box">
-                        <div class="image-content-box ">
-                          <div class="image-box">
-                            <img src="../../assets/images/components/player/player_image_012.png" alt="" />
-                          </div>
-                        </div>
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "",
+                          "image" : "components/player/player_image_012",
+                          "desc" : null
+                        })
                       </div>
                       <div class="content-box">
-                        <div class="color-box dark  do">
-                          <div class="image-box">
-                            <img src="../../assets/images/components/player/player_image_013.png" alt="" />
-                          </div>
-                          <div class="color-text-box">
-                            <div class="color-title-box">
-                              <span class="color-title">Do</span>
-                            </div>
-                            <div class="color-desc-box">
-                              <p class="color-desc">사용자에게 Player Component가 사라졌을 때, 설정한 VOD의 Control 상황을 인식하게 하기 위해 재생에 따른 Toast Popup을 노출합니다.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="color-box dark  dont">
-                          <div class="image-box">
-                            <img src="../../assets/images/components/player/player_image_014.png" alt="" />
-                          </div>
-                          <div class="color-text-box">
-                            <div class="color-title-box">
-                              <span class="color-title">Don't</span>
-                            </div>
-                            <div class="color-desc-box">
-                              <p class="color-desc">Active Indicator와 Track은 확실한 대비 Color을 사용해야 사용자가 바로 진행 상황을 인식합니다.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="color-box dark  exception">
-                          <div class="image-box">
-                            <img src="../../assets/images/components/player/player_image_015.png" alt="" />
-                          </div>
-                          <div class="color-text-box">
-                            <div class="color-title-box">
-                              <span class="color-title">Exception</span>
-                            </div>
-                            <div class="color-desc-box">
-                              <p class="color-desc">PlayZ의 경우, 기능을 Control 할 수 있는 요소를 우측에 노출합니다.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="color-box dark  exception">
-                          <div class="image-box">
-                            <img src="../../assets/images/components/player/player_image_016.png" alt="" />
-                          </div>
-                          <div class="color-text-box">
-                            <div class="color-title-box">
-                              <span class="color-title">Exception</span>
-                            </div>
-                            <div class="color-desc-box">
-                              <p class="color-desc">PlayZ의 경우, 장면보기 탐색 시 일정 단위의 Thumbnail이 노출됩니다.</p>
-                            </div>
-                          </div>
-                        </div>
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "do",
+                          "image" : "components/player/player_image_013",
+                          "desc" : "사용자에게 Player Component가 사라졌을 때, 설정한 VOD의 Control 상황을 인식하게 하기 위해 재생에 따른 Toast Popup을 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "dont",
+                          "image" : "components/player/player_image_014",
+                          "desc" : "Active Indicator와 Track은 확실한 대비 Color을 사용해야 사용자가 바로 진행 상황을 인식합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "exception",
+                          "image" : "components/player/player_image_015",
+                          "desc" : "PlayZ의 경우, 기능을 Control 할 수 있는 요소를 우측에 노출합니다."
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/color_box.html", {
+                          "mode" : "dark",
+                          "full" : "",
+                          "state" : "exception",
+                          "image" : "components/player/player_image_016",
+                          "desc" : "PlayZ의 경우, 장면보기 탐색 시 일정 단위의 Thumbnail이 노출됩니다."
+                        })
                       </div>
                     </div>
                   </div>
@@ -552,11 +318,12 @@
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box">
-                        <div class="image-content-box dark">
-                          <div class="image-box">
-                            <img src="../../assets/images/components/player/player_image_017.png" alt="" />
-                          </div>
-                        </div>
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "dark",
+                          "image" : "components/player/player_image_017",
+                          "desc" : null
+                        })
                       </div>
                     </div>
                   </div>
@@ -587,11 +354,12 @@
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box">
-                        <div class="image-content-box dark">
-                          <div class="image-box">
-                            <img src="../../assets/images/components/player/player_image_018.png" alt="" />
-                          </div>
-                        </div>
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "dark",
+                          "image" : "components/player/player_image_018",
+                          "desc" : null
+                        })
                       </div>
                     </div>
                   </div>
@@ -609,11 +377,12 @@
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box">
-                        <div class="image-content-box dark">
-                          <div class="image-box">
-                            <img src="../../assets/images/components/player/player_image_019.png" alt="" />
-                          </div>
-                        </div>
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode" : "dark",
+                          "image" : "components/player/player_image_019",
+                          "desc" : null
+                        })
                       </div>
                     </div>
                   </div>
@@ -625,6 +394,7 @@
         </div>
       </div>
     </main>
+
     <!-- Quick Menu -->
     <div class="quick-menu-container">
       <div class="quick-menu-area">
@@ -637,7 +407,7 @@
           </li>
           <li class="quick-menu-list">
             <span class="list-title">Types</span>
-            <ul class="quick-menu-sub-list-box">
+            <ul class="quick-menu-sub-list-box"> 
               <li class="quick-menu-sub-list">
                 <span class="sub-list-title">General VOD Player</span>
               </li>
@@ -645,7 +415,7 @@
           </li>
           <li class="quick-menu-list">
             <span class="list-title">Usage</span>
-            <ul class="quick-menu-sub-list-box">
+            <ul class="quick-menu-sub-list-box"> 
               <li class="quick-menu-sub-list">
                 <span class="sub-list-title">General VOD Player</span>
               </li>
@@ -653,7 +423,7 @@
           </li>
           <li class="quick-menu-list">
             <span class="list-title">Interaction</span>
-            <ul class="quick-menu-sub-list-box">
+            <ul class="quick-menu-sub-list-box"> 
               <li class="quick-menu-sub-list">
                 <span class="sub-list-title">Drag & Drop</span>
               </li>
@@ -667,4 +437,5 @@
     </div>
   </div>
 </body>
+
 </html>
