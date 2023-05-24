@@ -1,204 +1,204 @@
-<!-- prettier-ignore -->
-@@include("../component/head.html",{
-  "title" : "Components | Booting"
-})
-<body>
-  <div class="wrapper">
-    <!-- Header -->
-    <!-- prettier-ignore -->
-    @@include("../component/header.html", {
-      "page" : "components"
-    })
+<!DOCTYPE html>
+<html lang="en">
+  <!-- prettier-ignore -->
+  @@include("../component/head.html",{
+    "title" : "Components | Booting"
+  })
 
-    <!-- LNB -->
-    <!-- prettier-ignore -->
-    @@include("../component/lnb.html", {
-      "title" : "booting"
-    })
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <!-- prettier-ignore -->
+      @@include("../component/header.html", {
+        "page" : "components"
+      })
 
-    <!-- Components | Booting -->
-    <main class="main">
-      <div class="main-container">
-        <div class="main-area">
-          <div class="heading-container">
-            <div class="heading-area">
-              <div class="heading-top">
-                <div class="title-box">
-                  <h1 class="title">Booting</h1>
-                </div>
-                <div class="desc-box">
-                  <p class="desc">
-                    Booting은 셋탑의 시동을 나타나는 화면으로 본 화면이 보여지기 전 1~3초간
-                    노출합니다.
-                  </p>
-                </div>
-              </div>
-              <div class="heading-bottom">
-                <div class="content-box">
-                  <!-- prettier-ignore -->
-                  @@include("../component/image_content_box.html", {
-                    "mode"  : "",
-                    "image" : "components/booting/booting_image_01",
-                    "desc"  : {
-                      "alphabet" : "A",
-                      "desc"     : "General Booting"
-                    }
-                  })
-                </div>
-              </div>
-            </div>
-          </div>
+      <!-- LNB -->
+      <!-- prettier-ignore -->
+      @@include("../component/lnb.html", {
+        "title" : "booting"
+      })
 
-          <!-- Anatomy -->
-          <div class="content-container">
-            <div class="content-area">
-              <div class="content-top">
-                <div class="title-box">
-                  <h2 class="title">Anatomy</h2>
-                </div>
-              </div>
-              <div class="content-bottom">
-                <div class="content-box">
-                  <div class="image-title-box">
-                    <div class="image-title-top">
-                      <!-- prettier-ignore -->
-                      @@include("../component/image_content_box.html", {
-                        "mode"  : "",
-                        "image" : "components/booting/booting_image_02",
-                        "desc"  : null
-                      })
-                    </div>
-                    <div class="image-title-bottom">
-                      <ul class="number-desc-list-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "1. Graphic Area",
-                          "desc"  : "CI 또는 BI와 같은 Brand Logo를 단발성 Image 또는 Motion으로 표시합니다."
-                        })
-                      </ul>
-                    </div>
+      <!-- Components | Booting -->
+      <main class="main">
+        <div class="main-container">
+          <div class="main-area">
+            <div class="heading-container">
+              <div class="heading-area">
+                <div class="heading-top">
+                  <div class="title-box">
+                    <h1 class="title">Booting</h1>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      Booting은 셋탑의 시동을 나타나는 화면으로 본 화면이 보여지기 전 1~3초간 노출합니다.
+                    </p>
                   </div>
                 </div>
-                <div class="content-box">
-                  <!--
-                    color-box 컬러 추가 클래스
-                    .red    : Don't
-                    .green  : Do
-                    .orange : Exception
-                  -->
-                  <!-- prettier-ignore -->
-                  @@include("../component/color_box.html", {
-                    "mode" : "",
-                    "full"  : "",
-                    "state" : "do",
-                    "image" : "components/booting/booting_image_03",
-                    "desc"  : "Brand Logo를 제외한 Text 사용을 지양합니다."
-                  })
-                  <!-- prettier-ignore -->
-                  @@include("../component/color_box.html", {
-                    "mode" : "",
-                    "full"  : "",
-                    "state" : "do",
-                    "image" : "components/booting/booting_image_04",
-                    "desc"  : "Booting의 경우 Splash와 다른 BI를 사용합니다."
-                  })
-                  <!-- prettier-ignore -->
-                  @@include("../component/color_box.html", {
-                    "mode" : "",
-                    "full"  : "",
-                    "state" : "dont",
-                    "image" : "components/booting/booting_image_05",
-                    "desc"  : "Logo는 가독성 확보가 가능한 적절한 크기로 표현되어야 합니다."
-                  })
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- // Anatomy -->
-          <!-- Usage -->
-          <div class="content-container">
-            <div class="content-area">
-              <div class="content-top">
-                <div class="title-box">
-                  <h2 class="title">Usage</h2>
-                </div>
-              </div>
-              <div class="content-bottom">
-                <!-- General Booting -->
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">General Booting</h3>
-                      </div>
-                      <div class="desc-box">
-                        <p class="desc">
-                          셋탑을 구동 할 때 빈 화면을 표시하는 대신 Booting을 노출하며, 해당
-                          Service의 Identity 및 브랜드를 나타냅니다. Android 셋탑 Booting Motion
-                          제작 시 서비스사 CI Motion + Android Booting Motion을 함께 사용하여 Motion
-                          제작이 가능합니다.
-                        </p>
-                        <p class="desc red">
-                          * Booting Motion or img의 경우 서비스사에서 중요한 마케팅 문구 또는 CI/BI
-                          사용이 가능하나 Splash와는 차별화 하여 표현합니다.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "",
-                          "image" : "components/booting/booting_image_06",
-                          "desc"  : null
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "",
-                          "image" : "components/booting/booting_image_07",
-                          "desc"  : null
-                        })
-                      </div>
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode"  : "",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/booting/booting_image_08",
-                          "desc"  : "사용자 경험에 흥미를 더하는 Animation을 사용하여 표시할 수 있습니다."
-                        })
-                      </div>
-                    </div>
+                <div class="heading-bottom">
+                  <div class="content-box">
+                    <!-- prettier-ignore -->
+                    @@include("../component/image_content_box.html", {
+                      "mode"  : "",
+                      "image" : "components/booting/booting_image_01",
+                      "desc"  : {
+                        "alphabet" : "A",
+                        "desc"     : "General Booting"
+                      }
+                    })
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- Anatomy -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Anatomy</h2>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <div class="image-title-box">
+                      <div class="image-title-top">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "",
+                          "image" : "components/booting/booting_image_02",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="image-title-bottom">
+                        <ul class="number-desc-list-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "1. Graphic Area",
+                            "desc"  : "CI 또는 BI와 같은 Brand Logo를 단발성 Image 또는 Motion으로 표시합니다."
+                          })
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-box">
+                    <!--
+                      color-box 컬러 추가 클래스
+                      .red    : Don't
+                      .green  : Do
+                      .orange : Exception
+                    -->
+                    <!-- prettier-ignore -->
+                    @@include("../component/color_box.html", {
+                      "mode" : "",
+                      "full"  : "",
+                      "state" : "do",
+                      "image" : "components/booting/booting_image_03",
+                      "desc"  : "Brand Logo를 제외한 Text 사용을 지양합니다."
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/color_box.html", {
+                      "mode" : "",
+                      "full"  : "",
+                      "state" : "do",
+                      "image" : "components/booting/booting_image_04",
+                      "desc"  : "Booting의 경우 Splash와 다른 BI를 사용합니다."
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/color_box.html", {
+                      "mode" : "",
+                      "full"  : "",
+                      "state" : "dont",
+                      "image" : "components/booting/booting_image_05",
+                      "desc"  : "Logo는 가독성 확보가 가능한 적절한 크기로 표현되어야 합니다."
+                    })
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // Anatomy -->
+            <!-- Usage -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Usage</h2>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <!-- General Booting -->
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">General Booting</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">
+                            셋탑을 구동 할 때 빈 화면을 표시하는 대신 Booting을 노출하며, 해당 Service의 Identity 및
+                            브랜드를 나타냅니다. Android 셋탑 Booting Motion 제작 시 서비스사 CI Motion + Android
+                            Booting Motion을 함께 사용하여 Motion 제작이 가능합니다.
+                          </p>
+                          <p class="desc red">
+                            * Booting Motion or img의 경우 서비스사에서 중요한 마케팅 문구 또는 CI/BI 사용이 가능하나
+                            Splash와는 차별화 하여 표현합니다.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode"  : "",
+                            "image" : "components/booting/booting_image_06",
+                            "desc"  : null
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode"  : "",
+                            "image" : "components/booting/booting_image_07",
+                            "desc"  : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode"  : "",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "components/booting/booting_image_08",
+                            "desc"  : "사용자 경험에 흥미를 더하는 Animation을 사용하여 표시할 수 있습니다."
+                          })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // Usage -->
           </div>
-          <!-- // Usage -->
+        </div>
+      </main>
+
+      <!-- Quick Menu -->
+      <div class="quick-menu-container">
+        <div class="quick-menu-area">
+          <ul class="quick-menu-list-box">
+            <li class="quick-menu-list">
+              <span class="list-title">Anatomy</span>
+            </li>
+            <li class="quick-menu-list">
+              <span class="list-title">Usage</span>
+              <ul class="quick-menu-sub-list-box">
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">General Booting</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-    </main>
-
-    <!-- Quick Menu -->
-    <div class="quick-menu-container">
-      <div class="quick-menu-area">
-        <ul class="quick-menu-list-box">
-          <li class="quick-menu-list">
-            <span class="list-title">Anatomy</span>
-          </li>
-          <li class="quick-menu-list">
-            <span class="list-title">Usage</span>
-            <ul class="quick-menu-sub-list-box">
-              <li class="quick-menu-sub-list">
-                <span class="sub-list-title">General Booting</span>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

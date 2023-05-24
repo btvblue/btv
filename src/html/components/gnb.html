@@ -1,509 +1,524 @@
-<!-- prettier-ignore -->
-@@include("../component/head.html",{
-  "title" : "Components | GNB"
-})
+<!DOCTYPE html>
+<html lang="en">
+  <!-- prettier-ignore -->
+  @@include("../component/head.html",{
+    "title" : "Components | GNB"
+  })
 
-<style>
-  .heading-bottom .image-content-box {
-    flex: unset;
-  }
-  .heading-bottom .image-content-box:last-of-type {
-    flex: 1;
-  }
-</style>
+  <style>
+    .heading-bottom .image-content-box {
+      flex: unset;
+    }
+    .heading-bottom .image-content-box:last-of-type {
+      flex: 1;
+    }
+  </style>
 
-<body>
-  <div class="wrapper">
-    <!-- Header -->
-    <!-- prettier-ignore -->
-    @@include("../component/header.html", {
-      "page" : "components"
-    })
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <!-- prettier-ignore -->
+      @@include("../component/header.html", {
+        "page" : "components"
+      })
 
-    <!-- LNB -->
-    <!-- prettier-ignore -->
-    @@include("../component/lnb.html", {
-      "title" : "gnb"
-    })
+      <!-- LNB -->
+      <!-- prettier-ignore -->
+      @@include("../component/lnb.html", {
+        "title" : "gnb"
+      })
 
-    <!-- Components | Controls | GNB -->
-    <main class="main">
-      <div class="main-container">
-        <div class="main-area">
-          <div class="heading-container">
-            <div class="heading-area">
-              <div class="heading-top">
-                <div class="title-box">
-                  <h1 class="title">GNB</h1>
-                </div>
-                <div class="desc-box">
-                  <p class="desc">서비스를 구성하는 가장 기본적인 뼈대이자 정보구조이며, 사용자 동선을 안내하는 중요한 서비스 구성요소입니다.<br>
-                    GNB는 서비스의 정체성을 전달하는 역할로 상위 Level 탐색에 사용됩니다.</p>
-                </div>
-              </div>
-              <div class="heading-bottom">
-                <div class="content-box">
-                  <!-- prettier-ignore -->
-                  @@include("../component/image_content_box.html", {
-                    "mode"  : "dark",
-                    "image" : "components/gnb/gnb_image_01",
-                    "desc"  : {
-                      "alphabet" : "A",
-                      "desc"     : "General Home"
-                    }
-                  })
-                  <!-- prettier-ignore -->
-                  @@include("../component/image_content_box.html", {
-                    "mode"  : "dark",
-                    "image" : "components/gnb/gnb_image_02",
-                    "desc"  : {
-                      "alphabet" : "B",
-                      "desc"     : "1Depth"
-                    }
-                  })
-                  <!-- prettier-ignore -->
-                  @@include("../component/image_content_box.html", {
-                    "mode"  : "dark",
-                    "image" : "components/gnb/gnb_image_03",
-                    "desc"  : {
-                      "alphabet" : "C",
-                      "desc"     : "2Depth"
-                    }
-                  })
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Anatomy -->
-          <div class="content-container">
-            <div class="content-area">
-              <div class="content-top">
-                <div class="title-box">
-                  <h2 class="title">Anatomy</h2>
-                </div>
-              </div>
-              <div class="content-bottom">
-                <div class="content-box">
-                  <div class="image-title-box">
-                    <div class="image-title-top">
-                      <!-- prettier-ignore -->
-                      @@include("../component/image_content_box.html", {
-                        "mode"  : "dark",
-                        "image" : "components/gnb/gnb_image_04",
-                        "desc"  : null
-                      })
-                      <!-- prettier-ignore -->
-                      @@include("../component/image_content_box.html", {
-                        "mode"  : "dark",
-                        "image" : "components/gnb/gnb_image_05",
-                        "desc"  : null
-                      })
-                    </div>
-                    <div class="image-title-bottom">
-                      <ul class="number-desc-list-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "1. Menu Icon (Optional)",
-                          "desc"  : "설명하고자 하는 정보와 관련된 Icon을 노출합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "2. Text",
-                          "desc"  : "설명하고자 하는 정보를 표기합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "3. Icon (Optional)",
-                          "desc"  : "Menu List에 다음 Depth가 있을 경우 화살표를 노출합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "4. Line (Optional)",
-                          "desc"  : "Select 된 GNB를 표시합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "5. Container (Optional)",
-                          "desc"  : "Focus된 GNB의 영역을 표시합니다."
-                        })
-                      </ul>
-                    </div>
+      <!-- Components | Controls | GNB -->
+      <main class="main">
+        <div class="main-container">
+          <div class="main-area">
+            <div class="heading-container">
+              <div class="heading-area">
+                <div class="heading-top">
+                  <div class="title-box">
+                    <h1 class="title">GNB</h1>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      서비스를 구성하는 가장 기본적인 뼈대이자 정보구조이며, 사용자 동선을 안내하는 중요한 서비스
+                      구성요소입니다.<br />
+                      GNB는 서비스의 정체성을 전달하는 역할로 상위 Level 탐색에 사용됩니다.
+                    </p>
                   </div>
                 </div>
-                <div class="content-box">
-                  <!-- prettier-ignore -->
-                  @@include("../component/color_box.html", {
-                    "mode" : "dark",
-                    "full"  : "",
-                    "state" : "do",
-                    "image" : "components/gnb/gnb_image_06",
-                    "desc"  : "사용자의 시인성을 위해 Gradation을 사용합니다."
-                  })
-                  <!-- prettier-ignore -->
-                  @@include("../component/color_box.html", {
-                    "mode" : "dark",
-                    "full"  : "",
-                    "state" : "do",
-                    "image" : "components/gnb/gnb_image_07",
-                    "desc"  : "Menu Icon은 일반적으로 같은 형태로 제공하나, 예외로 Seg.관련 메뉴 (OCEAN, ZEM키즈 등)는 Image Icon 형태도 가능합니다."
-                  })
-                  <!-- prettier-ignore -->
-                  @@include("../component/color_box.html", {
-                    "mode" : "dark",
-                    "full"  : "",
-                    "state" : "do",
-                    "image" : "components/gnb/gnb_image_08",
-                    "desc"  : "Floating은 편리한 이동을 유도하는 Menu로 Layer 최상단에 노출합니다."
-                  })
-                  <!-- prettier-ignore -->
-                  @@include("../component/color_box.html", {
-                    "mode" : "dark",
-                    "full"  : "",
-                    "state" : "exception",
-                    "image" : "components/gnb/gnb_image_09",
-                    "desc"  : "PlayZ의 경우, General Home에 Dot Badge를 추가할 수 있습니다."
-                  })
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- // Anatomy -->
-
-          <!-- States -->
-          <div class="content-container">
-            <div class="content-area">
-              <div class="content-top">
-                <div class="title-box">
-                  <h2 class="title">States</h2>
-                </div>
-              </div>
-              <div class="content-bottom">
-                <div class="content-box">
-                  <div class="image-title-box">
-                    <div class="image-title-top">
-                      <!-- prettier-ignore -->
-                      @@include("../component/image_content_box.html", {
-                        "mode"  : "dark",
-                        "image" : "components/gnb/gnb_image_010",
-                        "desc"  : null
-                      })
-                    </div>
-                    <div class="image-title-bottom">
-                      <ul class="number-desc-list-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "1. Normal",
-                          "desc"  : "Focus 또는 Select 되지 않은 일반적인 상태입니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "2. Focus",
-                          "desc"  : "사용자가 이동한 Menu의 위치를 인식할 수 있도록 적용된 상태입니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "3. Select",
-                          "desc"  : "Menu가 선택되어 정보가 활성화 된 상태입니다."
-                        })
-                      </ul>
-                    </div>
+                <div class="heading-bottom">
+                  <div class="content-box">
+                    <!-- prettier-ignore -->
+                    @@include("../component/image_content_box.html", {
+                      "mode"  : "dark",
+                      "image" : "components/gnb/gnb_image_01",
+                      "desc"  : {
+                        "alphabet" : "A",
+                        "desc"     : "General Home"
+                      }
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/image_content_box.html", {
+                      "mode"  : "dark",
+                      "image" : "components/gnb/gnb_image_02",
+                      "desc"  : {
+                        "alphabet" : "B",
+                        "desc"     : "1Depth"
+                      }
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/image_content_box.html", {
+                      "mode"  : "dark",
+                      "image" : "components/gnb/gnb_image_03",
+                      "desc"  : {
+                        "alphabet" : "C",
+                        "desc"     : "2Depth"
+                      }
+                    })
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- // States -->
-          <!-- Placement -->
-          <div class="content-container">
-            <div class="content-area">
-              <div class="content-top">
-                <div class="title-box">
-                  <h2 class="title">Placement</h2>
+
+            <!-- Anatomy -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Anatomy</h2>
+                  </div>
                 </div>
-                <div class="desc-box">
-                  <p class="desc">
-                    화면의 좌측에 배치하여 Category 선택에 따라 Select, Focus 2가지 상태로 구성합니다.
-                  </p>
-                </div>
-              </div>
-              <div class="content-bottom">
-                <div class="content-box">
-                  <!-- prettier-ignore -->
-                  @@include("../component/image_content_box.html", {
-                    "mode"  : "",
-                    "image" : "components/gnb/gnb_image_011",
-                    "desc"  : {
-                      "alphabet" : null,
-                      "desc"     : "Select"
-                    }
-                  })
-                  <!-- prettier-ignore -->
-                  @@include("../component/image_content_box.html", {
-                    "mode"  : "",
-                    "image" : "components/gnb/gnb_image_012",
-                    "desc"  : {
-                      "alphabet" : null,
-                      "desc"     : "Focus"
-                    }
-                  })
-                </div>
-                <div class="content-box">
-                  <!-- prettier-ignore -->
-                  @@include("../component/color_box.html", {
-                    "mode" : "dark",
-                    "full"  : "",
-                    "state" : "do",
-                    "image" : "components/gnb/gnb_image_013",
-                    "desc"  : "하위 Menu List가 있는 경우 우측에 2depth Menu List를 배치합니다."
-                  })
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <div class="image-title-box">
+                      <div class="image-title-top">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "dark",
+                          "image" : "components/gnb/gnb_image_04",
+                          "desc"  : null
+                        })
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "dark",
+                          "image" : "components/gnb/gnb_image_05",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="image-title-bottom">
+                        <ul class="number-desc-list-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "1. Menu Icon (Optional)",
+                            "desc"  : "설명하고자 하는 정보와 관련된 Icon을 노출합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "2. Text",
+                            "desc"  : "설명하고자 하는 정보를 표기합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "3. Icon (Optional)",
+                            "desc"  : "Menu List에 다음 Depth가 있을 경우 화살표를 노출합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "4. Line (Optional)",
+                            "desc"  : "Select 된 GNB를 표시합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "5. Container (Optional)",
+                            "desc"  : "Focus된 GNB의 영역을 표시합니다."
+                          })
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-box">
+                    <!-- prettier-ignore -->
+                    @@include("../component/color_box.html", {
+                      "mode" : "dark",
+                      "full"  : "",
+                      "state" : "do",
+                      "image" : "components/gnb/gnb_image_06",
+                      "desc"  : "사용자의 시인성을 위해 Gradation을 사용합니다."
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/color_box.html", {
+                      "mode" : "dark",
+                      "full"  : "",
+                      "state" : "do",
+                      "image" : "components/gnb/gnb_image_07",
+                      "desc"  : "Menu Icon은 일반적으로 같은 형태로 제공하나, 예외로 Seg.관련 메뉴 (OCEAN, ZEM키즈 등)는 Image Icon 형태도 가능합니다."
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/color_box.html", {
+                      "mode" : "dark",
+                      "full"  : "",
+                      "state" : "do",
+                      "image" : "components/gnb/gnb_image_08",
+                      "desc"  : "Floating은 편리한 이동을 유도하는 Menu로 Layer 최상단에 노출합니다."
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/color_box.html", {
+                      "mode" : "dark",
+                      "full"  : "",
+                      "state" : "exception",
+                      "image" : "components/gnb/gnb_image_09",
+                      "desc"  : "PlayZ의 경우, General Home에 Dot Badge를 추가할 수 있습니다."
+                    })
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- // Placement -->
+            <!-- // Anatomy -->
 
-          <!-- Types -->
-          <div class="content-container">
-            <div class="content-area">
-              <div class="content-top">
-                <div class="title-box">
-                  <h2 class="title">Types</h2>
-                </div>
-              </div>
-              <div class="content-bottom">
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">General Home</h3>
-                      </div>
-                      <div class="desc-box">
-                        <p class="desc">기본 Home에서 GNB가 접힌 일반적인 상태로 Icon을 노출합니다.<br>
-                          Select 된 Menu의 경우 좌측에 Line 노출하여 사용자의 현위치를 알립니다.</p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "dark",
-                          "image" : "components/gnb/gnb_image_014",
-                          "desc"  : null
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "dark",
-                          "image" : "components/gnb/gnb_image_015",
-                          "desc"  : null
-                        })
-                      </div>
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode" : "dark",
-                          "full"  : "",
-                          "state" : "dont",
-                          "image" : "components/gnb/gnb_image_016",
-                          "desc"  : "Style에 맞지 않거나 시인성을 해치는 Icon 또는 컬러 사용을 지양합니다."
-                        })
-                      </div>
-                    </div>
+            <!-- States -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">States</h2>
                   </div>
                 </div>
-  
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">1Depth/2Depth</h3>
-                      </div>
-                      <div class="desc-box">
-                        <p class="desc">GNB가 Focus되어 열린 상태로 관련 Icon과 Text를 함께 노출합니다. <br>
-                          1 Depth에서 추가적으로 하위 Menu List가 있을 경우 2 Depth를 노출하며, 해당 Category의 관련 List를 제공합니다.</p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <div class="image-title-box">
+                      <div class="image-title-top">
                         <!-- prettier-ignore -->
                         @@include("../component/image_content_box.html", {
                           "mode"  : "dark",
-                          "image" : "components/gnb/gnb_image_017",
-                          "desc"  : null
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "dark",
-                          "image" : "components/gnb/gnb_image_018",
+                          "image" : "components/gnb/gnb_image_010",
                           "desc"  : null
                         })
                       </div>
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode" : "dark",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/gnb/gnb_image_019",
-                          "desc"  : "하위 Menu List가 없는 경우에는 화살표를 노출하지 않습니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode" : "dark",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/gnb/gnb_image_020",
-                          "desc"  : "Menu List의 최대 글자수가 초과할 경우 ‘..’ 말줄임표 표기합니다."
-                        })
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <!-- // Types -->
-
-          <!-- Usage -->
-          <div class="content-container">
-            <div class="content-area">
-              <div class="content-top">
-                <div class="title-box">
-                  <h2 class="title">Usage</h2>
-                </div>
-              </div>
-              <div class="content-bottom">
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">General GNB</h3>
-                      </div>
-                      <div class="desc-box">
-                        <p class="desc">Menu List의 탐색과 사용자의 동선을 안내하는 데 사용합니다.</p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "",
-                          "image" : "components/gnb/gnb_image_021",
-                          "desc"  : null
-                        })
-                      </div>
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode"  : "dark",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/gnb/gnb_image_022",
-                          "desc"  : "하위 Menu List가 없는 경우에는 화살표를 노출하지 않습니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode"  : "dark",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/gnb/gnb_image_023",
-                          "desc"  : "2 Depth 내 주요한 Menu에 Icon을 추가하여 강조해줄 수 있습니다. "
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode"  : "dark",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/gnb/gnb_image_024",
-                          "desc"  : "2 Depth로 Focus 이동 시, Contents 영역을 확보하기 위해 2 Depth가 접혀서 1 Depth 위치로 이동하며, 진입 경로를 좌측 상단에 표시합니다."
-                        })
-              
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode"  : "dark",
-                          "full"  : "",
-                          "state" : "dont",
-                          "image" : "components/gnb/gnb_image_025",
-                          "desc"  : "GNB에 Focus 되지 않은 상태에서는 Menu를 이동할 수 없습니다."
-                        })
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">Floating</h3>
-                      </div>
-                      <div class="desc-box">
-                        <p class="desc">Floating은 간단한 Key 조작으로 노출되며 화면에서 가장 기본적인 Menu의 빠른 진입을 돕기 위해 사용합니다.</p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "",
-                          "image" : "components/gnb/gnb_image_026",
-                          "desc"  : null
-                        })
-                      </div>
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode"  : "dark",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/gnb/gnb_image_027",
-                          "desc"  : "주요 기능과 관련성 있는 적절한 개수의 Action을 제공합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode"  : "dark",
-                          "full"  : "",
-                          "state" : "dont",
-                          "image" : "components/gnb/gnb_image_028",
-                          "desc"  : "Menu를 더 깊은 탐색 수준으로 확장하거나 주요 기능이 아닌 Contents를 Floating으로 제공하지 않습니다."
-                        })
+                      <div class="image-title-bottom">
+                        <ul class="number-desc-list-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "1. Normal",
+                            "desc"  : "Focus 또는 Select 되지 않은 일반적인 상태입니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "2. Focus",
+                            "desc"  : "사용자가 이동한 Menu의 위치를 인식할 수 있도록 적용된 상태입니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "3. Select",
+                            "desc"  : "Menu가 선택되어 정보가 활성화 된 상태입니다."
+                          })
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- // States -->
+            <!-- Placement -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Placement</h2>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      화면의 좌측에 배치하여 Category 선택에 따라 Select, Focus 2가지 상태로 구성합니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <!-- prettier-ignore -->
+                    @@include("../component/image_content_box.html", {
+                      "mode"  : "",
+                      "image" : "components/gnb/gnb_image_011",
+                      "desc"  : {
+                        "alphabet" : null,
+                        "desc"     : "Select"
+                      }
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/image_content_box.html", {
+                      "mode"  : "",
+                      "image" : "components/gnb/gnb_image_012",
+                      "desc"  : {
+                        "alphabet" : null,
+                        "desc"     : "Focus"
+                      }
+                    })
+                  </div>
+                  <div class="content-box">
+                    <!-- prettier-ignore -->
+                    @@include("../component/color_box.html", {
+                      "mode" : "dark",
+                      "full"  : "",
+                      "state" : "do",
+                      "image" : "components/gnb/gnb_image_013",
+                      "desc"  : "하위 Menu List가 있는 경우 우측에 2depth Menu List를 배치합니다."
+                    })
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // Placement -->
+
+            <!-- Types -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Types</h2>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">General Home</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">
+                            기본 Home에서 GNB가 접힌 일반적인 상태로 Icon을 노출합니다.<br />
+                            Select 된 Menu의 경우 좌측에 Line 노출하여 사용자의 현위치를 알립니다.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode"  : "dark",
+                            "image" : "components/gnb/gnb_image_014",
+                            "desc"  : null
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode"  : "dark",
+                            "image" : "components/gnb/gnb_image_015",
+                            "desc"  : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "dark",
+                            "full"  : "",
+                            "state" : "dont",
+                            "image" : "components/gnb/gnb_image_016",
+                            "desc"  : "Style에 맞지 않거나 시인성을 해치는 Icon 또는 컬러 사용을 지양합니다."
+                          })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">1Depth/2Depth</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">
+                            GNB가 Focus되어 열린 상태로 관련 Icon과 Text를 함께 노출합니다. <br />
+                            1 Depth에서 추가적으로 하위 Menu List가 있을 경우 2 Depth를 노출하며, 해당 Category의 관련
+                            List를 제공합니다.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode"  : "dark",
+                            "image" : "components/gnb/gnb_image_017",
+                            "desc"  : null
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode"  : "dark",
+                            "image" : "components/gnb/gnb_image_018",
+                            "desc"  : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "dark",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "components/gnb/gnb_image_019",
+                            "desc"  : "하위 Menu List가 없는 경우에는 화살표를 노출하지 않습니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "dark",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "components/gnb/gnb_image_020",
+                            "desc"  : "Menu List의 최대 글자수가 초과할 경우 ‘..’ 말줄임표 표기합니다."
+                          })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // Types -->
+
+            <!-- Usage -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Usage</h2>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">General GNB</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">Menu List의 탐색과 사용자의 동선을 안내하는 데 사용합니다.</p>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode"  : "",
+                            "image" : "components/gnb/gnb_image_021",
+                            "desc"  : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode"  : "dark",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "components/gnb/gnb_image_022",
+                            "desc"  : "하위 Menu List가 없는 경우에는 화살표를 노출하지 않습니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode"  : "dark",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "components/gnb/gnb_image_023",
+                            "desc"  : "2 Depth 내 주요한 Menu에 Icon을 추가하여 강조해줄 수 있습니다. "
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode"  : "dark",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "components/gnb/gnb_image_024",
+                            "desc"  : "2 Depth로 Focus 이동 시, Contents 영역을 확보하기 위해 2 Depth가 접혀서 1 Depth 위치로 이동하며, 진입 경로를 좌측 상단에 표시합니다."
+                          })
+
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode"  : "dark",
+                            "full"  : "",
+                            "state" : "dont",
+                            "image" : "components/gnb/gnb_image_025",
+                            "desc"  : "GNB에 Focus 되지 않은 상태에서는 Menu를 이동할 수 없습니다."
+                          })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">Floating</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">
+                            Floating은 간단한 Key 조작으로 노출되며 화면에서 가장 기본적인 Menu의 빠른 진입을 돕기 위해
+                            사용합니다.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode"  : "",
+                            "image" : "components/gnb/gnb_image_026",
+                            "desc"  : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode"  : "dark",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "components/gnb/gnb_image_027",
+                            "desc"  : "주요 기능과 관련성 있는 적절한 개수의 Action을 제공합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode"  : "dark",
+                            "full"  : "",
+                            "state" : "dont",
+                            "image" : "components/gnb/gnb_image_028",
+                            "desc"  : "Menu를 더 깊은 탐색 수준으로 확장하거나 주요 기능이 아닌 Contents를 Floating으로 제공하지 않습니다."
+                          })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // Usage -->
           </div>
-          <!-- // Usage -->
+        </div>
+      </main>
+
+      <!-- Quick Menu -->
+      <div class="quick-menu-container">
+        <div class="quick-menu-area">
+          <ul class="quick-menu-list-box">
+            <li class="quick-menu-list"><span class="list-title">Anatomy</span></li>
+            <li class="quick-menu-list"><span class="list-title">States</span></li>
+            <li class="quick-menu-list"><span class="list-title">Placement</span></li>
+            <li class="quick-menu-list">
+              <span class="list-title">Types</span>
+              <ul class="quick-menu-sub-list-box">
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">General Home</span>
+                </li>
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">1Depth/2Depth</span>
+                </li>
+              </ul>
+            </li>
+            <li class="quick-menu-list">
+              <span class="list-title">Usage</span>
+              <ul class="quick-menu-sub-list-box">
+                <li class="quick-menu-sub-list"><span class="sub-list-title">General GNB</span></li>
+                <li class="quick-menu-sub-list"><span class="sub-list-title">Floating</span></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-    </main>
-
-    <!-- Quick Menu -->
-    <div class="quick-menu-container">
-      <div class="quick-menu-area">
-        <ul class="quick-menu-list-box">
-          <li class="quick-menu-list"><span class="list-title">Anatomy</span></li>
-          <li class="quick-menu-list"><span class="list-title">States</span></li>
-          <li class="quick-menu-list"><span class="list-title">Placement</span></li>
-          <li class="quick-menu-list">
-            <span class="list-title">Types</span>
-            <ul class="quick-menu-sub-list-box">
-              <li class="quick-menu-sub-list"><span class="sub-list-title">General Home</span></li>
-              <li class="quick-menu-sub-list"><span class="sub-list-title">1Depth/2Depth</span></li>
-            </ul>
-          </li>
-          <li class="quick-menu-list">
-            <span class="list-title">Usage</span>
-            <ul class="quick-menu-sub-list-box">
-              <li class="quick-menu-sub-list"><span class="sub-list-title">General GNB</span></li>
-              <li class="quick-menu-sub-list"><span class="sub-list-title">Floating</span></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

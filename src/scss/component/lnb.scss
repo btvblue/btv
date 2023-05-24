@@ -11,10 +11,11 @@
       width: 0.8rem;
     }
     &::-webkit-scrollbar-thumb {
-      background: #D4D4D4;
-      border-radius: 3.2rem; 
+      background: #d4d4d4;
+      border-radius: 3.2rem;
     }
-    &::-webkit-scrollbar-track { // 전체
+    &::-webkit-scrollbar-track {
+      // 전체
       background: transparent;
       border-radius: 3.2rem;
     }
@@ -22,7 +23,7 @@
   .lnb-area {
     height: calc(100% - 5.2rem);
     padding: 2.6rem 0.6rem 2.6rem 2rem;
-    border-right: 1px solid #D4D4D4;
+    border-right: 1px solid #d4d4d4;
   }
   .lnb-list-box {
     overflow-y: auto;
@@ -103,8 +104,8 @@
     .lnb-sub-link {
       @include flex(row, flex-start, center);
       height: 4.9rem;
-      padding-left: 7.4rem;
-      @include font(1.6rem, 300, #AAAAAA, 1.8rem);
+      padding-left: 5.4rem;
+      @include font(1.6rem, 300, #aaaaaa, 1.8rem);
       &:hover {
         border-radius: 3.2rem;
         background-color: rgba($purple, 0.1);
@@ -114,9 +115,9 @@
   .lnb-last-list-box {
     display: none;
     overflow: hidden;
-    margin:1.65rem 0 1.65rem 7.4rem;
+    margin: 1.65rem 0 1.65rem 5.4rem;
     padding-left: 2rem;
-    border-left: 1px solid #EEEEEE;
+    border-left: 1px solid #eeeeee;
 
     .lnb-last-list {
       margin-top: 3.2rem;
@@ -135,7 +136,7 @@
         }
       }
       .lnb-last-link {
-        @include font(1.6rem, 300, #AAAAAA, 1.9rem);
+        @include font(1.6rem, 300, #aaaaaa, 1.9rem);
       }
     }
   }
@@ -148,7 +149,6 @@
     height: auto;
     border-radius: 0 0 0.4rem 0;
     box-shadow: 0px 0px 4rem rgba(112, 112, 112, 0.4);
-    
 
     .lnb-area {
       height: auto;
@@ -161,7 +161,7 @@
       height: auto;
       padding-right: 0;
     }
-    
+
     /* LNB LIST */
     .lnb-list {
       margin-top: 0;
@@ -177,14 +177,14 @@
           border-radius: 0;
         }
       }
-      
+
       .btn-open,
       .btn-sub-open {
         top: 1.9rem;
         left: 2rem;
       }
     }
-    
+
     /* LNB SUB LIST */
     .lnb-sub-list-box {
       overflow-y: auto;

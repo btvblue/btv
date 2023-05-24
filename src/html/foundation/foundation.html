@@ -1,29 +1,104 @@
-<!-- prettier-ignore -->
-@@include("../component/head.html",{
-  "title" : "Foundation | Foundation"
-})
+<!DOCTYPE html>
+<html lang="en">
+  <!-- prettier-ignore -->
+  @@include("../component/head.html",{
+    "title" : "Foundation | Foundation"
+  })
 
-<body>
-  <div class="wrapper">
-    <!-- Header -->
-    <!-- prettier-ignore -->
-    @@include("../component/header.html", {
-    "page" : "foundation"
-    })
-    <!-- LNB -->
-    <!-- prettier-ignore -->
-    @@include("../component/lnb.html", {
-    "title" : "foundation"
-    })
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <!-- prettier-ignore -->
+      @@include("../component/header.html", {
+        "page" : "foundation"
+      })
 
-    <!-- Foundation | Foundation -->
-    <main class="main">
-      <div class="main-container">
-        <div class="main-area"></div>
-      </div>
-    </main>
+      <!-- LNB -->
+      <!-- prettier-ignore -->
+      @@include("../component/lnb.html", {
+        "title" : "foundation"
+      })
 
-  </div>
-</body>
-
+      <!-- Foundation | Foundation -->
+      <main class="main">
+        <div class="main-container">
+          <div class="main-area">
+            <div class="heading-container">
+              <div class="heading-area">
+                <div class="heading-top">
+                  <div class="title-box">
+                    <h1 class="title">Foundation</h1>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      공통의 가치와 원칙에 따른 일관된 레이아웃 설계로 사용자 경험을 만드는데 필수적인 요소들입니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="heading-bottom">
+                  <!-- .main-content-box : 메인 페이지에서만 사용 -->
+                  <div class="main-content-box">
+                    <!-- prettier-ignore -->
+                    @@include("../component/main_block_box.html", {
+                      "link"  : "color",
+                      "image" : "foundation/foundation/foundation_image_01",
+                      "title" : "Color",
+                      "desc"  : {
+                        "desc" : "표준화된 Color 및  Guide를 제공하여 일관성있는 Brand 경험을 제공합니다."
+                      }
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/main_block_box.html", {
+                      "link"  : "typography",
+                      "image" : "foundation/foundation/foundation_image_02",
+                      "title" : "Typography",
+                      "desc"  : {
+                        "desc" : "서비스와 사용자 커뮤니케이션의 주요 요소로 TV 경험을 향상시킵니다."
+                      }
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/main_block_box.html", {
+                      "link"  : "iconography",
+                      "image" : "foundation/foundation/foundation_image_03",
+                      "title" : "Iconography",
+                      "desc"  : {
+                        "desc" : "Icon은 서비스를 직관적으로 표현하여 사용자의 이해도를 높입니다."
+                      }
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/main_block_box.html", {
+                      "link"  : "layout",
+                      "image" : "foundation/foundation/foundation_image_04",
+                      "title" : "Layout",
+                      "desc"  : {
+                        "desc" : "그리드, 간격을 정의하여 정보 및 UI 요소를 표시하기 위한 구조를 설정합니다."
+                      }
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/main_block_box.html", {
+                      "link"  : "focus",
+                      "image" : "foundation/foundation/foundation_image_05",
+                      "title" : "Focus",
+                      "desc"  : {
+                        "desc" : "UI의 요소들을 인터랙티브하게 제공하며 사용자의 브랜드 경험을 높여줍니다."
+                      }
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/main_block_box.html", {
+                      "link"  : "motion",
+                      "image" : "foundation/foundation/foundation_image_06",
+                      "title" : "Motion",
+                      "desc"  : {
+                        "desc" : "선택 가능한 구성 요소를 강조 표시하고 사용자의 현재 위치를 직관적으로 나타냅니다."
+                      }
+                    })
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>

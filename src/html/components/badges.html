@@ -1,562 +1,555 @@
-<!-- prettier-ignore -->
-@@include("../component/head.html",{
-"title" : "Components | Badges"
-})
+<!DOCTYPE html>
+<html lang="en">
+  <!-- prettier-ignore -->
+  @@include("../component/head.html",{
+    "title" : "Components | Badges"
+  })
 
-<body>
-  <div class="wrapper">
-    <!-- Header -->
-    <!-- prettier-ignore -->
-    @@include("../component/header.html", {
-    "page" : "components"
-    })
-    <!-- LNB -->
-    <!-- prettier-ignore -->
-    @@include("../component/lnb.html", {
-    "title" : "badges"
-    })
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <!-- prettier-ignore -->
+      @@include("../component/header.html", {
+        "page" : "components"
+      })
+      <!-- LNB -->
+      <!-- prettier-ignore -->
+      @@include("../component/lnb.html", {
+        "title" : "badges"
+      })
 
-    <!-- Components | Badges -->
-    <main class="main">
-      <div class="main-container">
-        <div class="main-area">
-          <div class="heading-container">
-            <div class="heading-area">
-              <div class="heading-top">
-                <div class="title-box">
-                  <h1 class="title">Badges</h1>
+      <!-- Components | Badges -->
+      <main class="main">
+        <div class="main-container">
+          <div class="main-area">
+            <div class="heading-container">
+              <div class="heading-area">
+                <div class="heading-top">
+                  <div class="title-box">
+                    <h1 class="title">Badges</h1>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      Badge는 새로운 Contents나 알림에 대한 정보를 제공할 때 Icon 또는 Text에 추가적인 요소를 사용하여
+                      표시합니다.<br />Badge에는 Text나 숫자 또는 Icon을 포함합니다.
+                    </p>
+                  </div>
                 </div>
-                <div class="desc-box">
-                  <p class="desc">
-                    Badge는 새로운 Contents나 알림에 대한 정보를 제공할 때 Icon 또는 Text에 추가적인
-                    요소를 사용하여 표시합니다.<br />Badge에는 Text나 숫자 또는 Icon을 포함합니다.
-                  </p>
-                </div>
-              </div>
-              <div class="heading-bottom">
-                <div class="content-box">
-                  <!-- prettier-ignore -->
-                  @@include("../component/image_content_box.html", {
-                  "mode" : "",
-                  "image" : "components/badges/badge_image_01",
-                  "desc" : {
-                  "alphabet" : "A",
-                  "desc" : "Text Badge"
-                  }
-                  })
-                  <!-- prettier-ignore -->
-                  @@include("../component/image_content_box.html", {
-                  "mode" : "",
-                  "image" : "components/badges/badge_image_02",
-                  "desc" : {
-                  "alphabet" : "B",
-                  "desc" : "Number Badge"
-                  }
-                  })
-                  <!-- prettier-ignore -->
-                  @@include("../component/image_content_box.html", {
-                  "mode" : "",
-                  "image" : "components/badges/badge_image_03",
-                  "desc" : {
-                  "alphabet" : "C",
-                  "desc" : "Icon Badge"
-                  }
-                  })
-                  <!-- prettier-ignore -->
-                  @@include("../component/image_content_box.html", {
-                  "mode" : "",
-                  "image" : "components/badges/badge_image_04",
-                  "desc" : {
-                  "alphabet" : "D",
-                  "desc" : "Floating Action Button"
-                  }
-                  })
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Anatomy -->
-          <div class="content-container">
-            <div class="content-area">
-              <div class="content-top">
-                <div class="title-box">
-                  <h2 class="title">Anatomy</h2>
-                </div>
-              </div>
-              <div class="content-bottom">
-                <div class="content-box">
-                  <div class="image-title-box">
-                    <div class="image-title-top">
-                      <!-- prettier-ignore -->
-                      @@include("../component/image_content_box.html", {
+                <div class="heading-bottom">
+                  <div class="content-box">
+                    <!-- prettier-ignore -->
+                    @@include("../component/image_content_box.html", {
                       "mode" : "",
-                      "image" : "components/badges/badge_image_05",
-                      "desc" : null
-                      })
-                      <!-- prettier-ignore -->
-                      @@include("../component/image_content_box.html", {
+                      "image" : "components/badges/badge_image_01",
+                      "desc" : {
+                        "alphabet" : "A",
+                        "desc" : "Text Badge"
+                      }
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/image_content_box.html", {
                       "mode" : "",
-                      "image" : "components/badges/badge_image_06",
-                      "desc" : null
-                      })
-                    </div>
-                    <div class="image-title-bottom">
-                      <ul class="number-desc-list-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                        "title" : "1. Text, Number, Icon",
-                        "desc" : "Text, 숫자, Icon을 표시합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                        "title" : "2. Container (Optional)",
-                        "desc" : "Badge의 형태를 나타내는 배경 컨테이너입니다. 원형 형태로 숫자 길이에 따라 가로 너비의 형태가 넓게 변형될 수 있습니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                        "title" : "3. Dot",
-                        "desc" : "새로운 알림이나 업데이트 있는 경우 Icon이나 Text 주변에 표시됩니다."
-                        })
-                      </ul>
-                    </div>
+                      "image" : "components/badges/badge_image_02",
+                      "desc" : {
+                        "alphabet" : "B",
+                        "desc" : "Number Badge"
+                      }
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/image_content_box.html", {
+                      "mode" : "",
+                      "image" : "components/badges/badge_image_03",
+                      "desc" : {
+                        "alphabet" : "C",
+                        "desc" : "Icon Badge"
+                      }
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/image_content_box.html", {
+                      "mode" : "",
+                      "image" : "components/badges/badge_image_04",
+                      "desc" : {
+                        "alphabet" : "D",
+                        "desc" : "Floating Action Button"
+                      }
+                    })
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- // Anatomy -->
-          <!-- Types -->
-          <div class="content-container">
-            <div class="content-area">
-              <div class="content-top">
-                <div class="title-box">
-                  <h2 class="title">Types</h2>
-                </div>
-                <div class="desc-box">
-                  <p class="desc">
-                    Text/Number/Icon Badge에서는 Basic과 Image 형태로 나뉘며, Basic Badge는 새로운
-                    소식이나 정보를 알려주기 위한 요소로 다양한 영역에 사용하고 Image Badge는 Poster
-                    또는 Thumbnail 내에 국한하여 상태를 노출할 수 있는 정보성 Badge로 사용합니다.
-                  </p>
-                  <p class="desc red">
-                    * Image Badge는 B tv 시스템 기준으로 정의 내려져 있으며 Flag라고 명시 되어
-                    있습니다.
-                  </p>
-                </div>
-              </div>
-              <div class="content-bottom">
-                <!-- Text Badge -->
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">Text Badge</h3>
-                      </div>
-                      <div class="desc-box">
-                        <p class="desc">
-                          원형 Badge 내부에 Text로 상태와 같은 동적 정보를 전달하고 알림을 표시할 때
-                          사용합니다.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                        "mode" : "",
-                        "image" : "components/badges/badge_image_07",
-                        "desc" : null
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                        "mode" : "",
-                        "image" : "components/badges/badge_image_08",
-                        "desc" : null
-                        })
-                      </div>
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                        "mode" : "",
-                        "full" : "",
-                        "state" : "do",
-                        "image" : "components/badges/badge_image_09",
-                        "desc" : "Contents의 상태 정보를 나타낼 때 Image Badge를 사용합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                        "mode" : "",
-                        "full" : "",
-                        "state" : "do",
-                        "image" : "components/badges/badge_image_010",
-                        "desc" : "Contents 별 일관된 Color를 따라 Badge의 색상을 다르게 적용할 수 있습니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                        "mode" : "",
-                        "full" : "",
-                        "state" : "dont",
-                        "image" : "components/badges/badge_image_011",
-                        "desc" : "Basic Badge와 Image Badge를 Contents별로 알맞게 사용하여야 합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                        "mode" : "",
-                        "full" : "",
-                        "state" : "exception",
-                        "image" : "components/badges/badge_image_012",
-                        "desc" : "보다 상세한 정보의 고지가 필요할 경우 제한적으로 사용합니다. "
-                        })
-                      </div>
-                    </div>
+            <!-- Anatomy -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Anatomy</h2>
                   </div>
                 </div>
-                <!-- Number Badge -->
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">Number Badge</h3>
-                      </div>
-                      <div class="desc-box">
-                        <p class="desc">
-                          Basic Badge는 정보의 개수를 카운트 할 수 있는 기능에 사용합니다.<br />1부터
-                          999까지 표시할 수 있고 숫자 길이에 따라 너비가 자동으로 변형될 수
-                          있습니다.
-                        </p>
-                        <p class="desc">
-                          Image Badge의 경우 Contents의 순위를 나타내는 기능으로 사용합니다.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <div class="image-title-box">
+                      <div class="image-title-top">
                         <!-- prettier-ignore -->
                         @@include("../component/image_content_box.html", {
-                        "mode" : "",
-                        "image" : "components/badges/badge_image_013",
-                        "desc" : null
+                          "mode" : "",
+                          "image" : "components/badges/badge_image_05",
+                          "desc" : null
                         })
                         <!-- prettier-ignore -->
                         @@include("../component/image_content_box.html", {
-                        "mode" : "",
-                        "image" : "components/badges/badge_image_014",
-                        "desc" : null
+                          "mode" : "",
+                          "image" : "components/badges/badge_image_06",
+                          "desc" : null
                         })
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Icon Badge -->
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">Icon Badge</h3>
-                      </div>
-                      <div class="desc-box">
-                        <p class="desc">
-                          Icon을 활용하여 사용자의 정보 인지를 효과적으로 돕기 위해 사용합니다.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                        "mode" : "",
-                        "image" : "components/badges/badge_image_015",
-                        "desc" : null
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                        "mode" : "",
-                        "image" : "components/badges/badge_image_016",
-                        "desc" : null
-                        })
-                      </div>
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                        "mode" : "",
-                        "full" : "",
-                        "state" : "do",
-                        "image" : "components/badges/badge_image_017",
-                        "desc" : "Image Badge는 경우에 따라 배경 컨테이너를 포함하지 않을 수 있습니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                        "mode" : "",
-                        "full" : "",
-                        "state" : "exception",
-                        "image" : "components/badges/badge_image_018",
-                        "desc" : "일반적으로 Badge 내부에 Icon 또는 Text만을 포함하지만 사용자의 이해를 더 쉽게 이끌기 위해 Icon+Text를 결합한 형태로 사용합니다."
-                        })
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Dot Badge -->
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">Dot Badge</h3>
-                      </div>
-                      <div class="desc-box">
-                        <p class="desc">
-                          기존 메뉴 또는 서비스에 Update 소식이 있는 경우 사용하며 Dot가 Icon이나
-                          Text 등의 주변에 노출 됩니다.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                        "mode" : "",
-                        "image" : "components/badges/badge_image_019",
-                        "desc" : null
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                        "mode" : "",
-                        "image" : "components/badges/badge_image_020",
-                        "desc" : null
-                        })
+                      <div class="image-title-bottom">
+                        <ul class="number-desc-list-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "1. Text, Number, Icon",
+                            "desc" : "Text, 숫자, Icon을 표시합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "2. Container (Optional)",
+                            "desc" : "Badge의 형태를 나타내는 배경 컨테이너입니다. 원형 형태로 숫자 길이에 따라 가로 너비의 형태가 넓게 변형될 수 있습니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "3. Dot",
+                            "desc" : "새로운 알림이나 업데이트 있는 경우 Icon이나 Text 주변에 표시됩니다."
+                          })
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- // Types -->
-          <!-- Usage -->
-          <div class="content-container">
-            <div class="content-area">
-              <div class="content-top">
-                <div class="title-box">
-                  <h2 class="title">Usage</h2>
+            <!-- // Anatomy -->
+            <!-- Types -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Types</h2>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      Text/Number/Icon Badge에서는 Basic과 Image 형태로 나뉘며, Basic Badge는 새로운 소식이나 정보를
+                      알려주기 위한 요소로 다양한 영역에 사용하고 Image Badge는 Poster 또는 Thumbnail 내에 국한하여
+                      상태를 노출할 수 있는 정보성 Badge로 사용합니다.
+                    </p>
+                    <p class="desc red">
+                      * Image Badge는 B tv 시스템 기준으로 정의 내려져 있으며 Flag라고 명시 되어 있습니다.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="content-bottom">
-                <!-- Text Badge -->
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">Text Badge</h3>
+                <div class="content-bottom">
+                  <!-- Text Badge -->
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">Text Badge</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">
+                            원형 Badge 내부에 Text로 상태와 같은 동적 정보를 전달하고 알림을 표시할 때 사용합니다.
+                          </p>
+                        </div>
                       </div>
-                      <div class="desc-box">
-                        <p class="desc">
-                          신규 Contents가 Update 된 경우 프리뷰 시나리오 내 Text Badge를 노출하고
-                          Poster에 상태 표기가 필요할 경우 Image Badge를 사용합니다.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                        "mode" : "",
-                        "image" : "components/badges/badge_image_021",
-                        "desc" : null
-                        })
-                      </div>
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                        "mode" : "",
-                        "full" : "",
-                        "state" : "do",
-                        "image" : "components/badges/badge_image_022",
-                        "desc" : "Button과 함께 Text Badge를 노출할 수 있습니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                        "mode" : "",
-                        "full" : "",
-                        "state" : "do",
-                        "image" : "components/badges/badge_image_023",
-                        "desc" : "Thumbnail 내 정보 표기가 필요한 경우 Image Badge를 사용하며 형태는 변할 수 있습니다."
-                        })
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode" : "",
+                            "image" : "components/badges/badge_image_07",
+                            "desc" : null
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode" : "",
+                            "image" : "components/badges/badge_image_08",
+                            "desc" : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "",
+                            "full" : "",
+                            "state" : "do",
+                            "image" : "components/badges/badge_image_09",
+                            "desc" : "Contents의 상태 정보를 나타낼 때 Image Badge를 사용합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "",
+                            "full" : "",
+                            "state" : "do",
+                            "image" : "components/badges/badge_image_010",
+                            "desc" : "Contents 별 일관된 Color를 따라 Badge의 색상을 다르게 적용할 수 있습니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "",
+                            "full" : "",
+                            "state" : "dont",
+                            "image" : "components/badges/badge_image_011",
+                            "desc" : "Basic Badge와 Image Badge를 Contents별로 알맞게 사용하여야 합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "",
+                            "full" : "",
+                            "state" : "exception",
+                            "image" : "components/badges/badge_image_012",
+                            "desc" : "보다 상세한 정보의 고지가 필요할 경우 제한적으로 사용합니다. "
+                          })
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <!-- Number Badge -->
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">Number Badge</h3>
+                  <!-- Number Badge -->
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">Number Badge</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">
+                            Basic Badge는 정보의 개수를 카운트 할 수 있는 기능에 사용합니다.<br />1부터 999까지 표시할
+                            수 있고 숫자 길이에 따라 너비가 자동으로 변형될 수 있습니다.
+                          </p>
+                          <p class="desc">Image Badge의 경우 Contents의 순위를 나타내는 기능으로 사용합니다.</p>
+                        </div>
                       </div>
-                      <div class="desc-box">
-                        <p class="desc">
-                          Module 내 Contents 개수의 고지를 위해 Sub Title과 함께 Number Badge를
-                          노출합니다.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                        "mode" : "",
-                        "image" : "components/badges/badge_image_024",
-                        "desc" : null
-                        })
-                      </div>
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                        "mode" : "",
-                        "full" : "",
-                        "state" : "dont",
-                        "image" : "components/badges/badge_image_025",
-                        "desc" : "시선의 흐름이 Contents의 개수로 먼저 가지 않도록 Title과 Number Badge의 크기감이 비슷하게 사용 되어야 합니다."
-                        })
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode" : "",
+                            "image" : "components/badges/badge_image_013",
+                            "desc" : null
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode" : "",
+                            "image" : "components/badges/badge_image_014",
+                            "desc" : null
+                          })
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <!-- Icon Badge -->
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">Icon Badge</h3>
+                  <!-- Icon Badge -->
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">Icon Badge</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">Icon을 활용하여 사용자의 정보 인지를 효과적으로 돕기 위해 사용합니다.</p>
+                        </div>
                       </div>
-                      <div class="desc-box">
-                        <p class="desc">
-                          정보의 명확한 안내를 돕거나 사용자가 실행한 작업이 적용되었다는 인지를
-                          주기 위해 Icon Badge를 노출합니다.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                        "mode" : "",
-                        "image" : "components/badges/badge_image_026",
-                        "desc" : null
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                        "mode" : "",
-                        "image" : "components/badges/badge_image_027",
-                        "desc" : null
-                        })
-                      </div>
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                        "mode" : "",
-                        "full" : "",
-                        "state" : "do",
-                        "image" : "components/badges/badge_image_028",
-                        "desc" : "사용자가 설정한 기능이 있을 경우 Thumbnail 내에 Image Badge를 노출합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                        "mode" : "",
-                        "full" : "",
-                        "state" : "do",
-                        "image" : "components/badges/badge_image_029",
-                        "desc" : "Icon+text가 결합 된 Image Badge 와 Icon Image Badge를 동시 노출 할 수 있습니다."
-                        })
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode" : "",
+                            "image" : "components/badges/badge_image_015",
+                            "desc" : null
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode" : "",
+                            "image" : "components/badges/badge_image_016",
+                            "desc" : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "",
+                            "full" : "",
+                            "state" : "do",
+                            "image" : "components/badges/badge_image_017",
+                            "desc" : "Image Badge는 경우에 따라 배경 컨테이너를 포함하지 않을 수 있습니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "",
+                            "full" : "",
+                            "state" : "exception",
+                            "image" : "components/badges/badge_image_018",
+                            "desc" : "일반적으로 Badge 내부에 Icon 또는 Text만을 포함하지만 사용자의 이해를 더 쉽게 이끌기 위해 Icon+Text를 결합한 형태로 사용합니다."
+                          })
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <!-- Dot Badge -->
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">Dot Badge</h3>
+                  <!-- Dot Badge -->
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">Dot Badge</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">
+                            기존 메뉴 또는 서비스에 Update 소식이 있는 경우 사용하며 Dot가 Icon이나 Text 등의 주변에
+                            노출 됩니다.
+                          </p>
+                        </div>
                       </div>
-                      <div class="desc-box">
-                        <p class="desc">Contents에 Update가 있는 경우 Dot Badge를 노출합니다.</p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                        "mode" : "",
-                        "image" : "components/badges/badge_image_030",
-                        "desc" : null
-                        })
-                      </div>
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                        "mode" : "",
-                        "full" : "",
-                        "state" : "dont",
-                        "image" : "components/badges/badge_image_031",
-                        "desc" : "Dot의 크기나 위치가 정해진 Guide에서 벗어나게 되면 Update의 정보 인식이 어려워지게 됩니다."
-                        })
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode" : "",
+                            "image" : "components/badges/badge_image_019",
+                            "desc" : null
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode" : "",
+                            "image" : "components/badges/badge_image_020",
+                            "desc" : null
+                          })
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- // Types -->
+            <!-- Usage -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Usage</h2>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <!-- Text Badge -->
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">Text Badge</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">
+                            신규 Contents가 Update 된 경우 프리뷰 시나리오 내 Text Badge를 노출하고 Poster에 상태 표기가
+                            필요할 경우 Image Badge를 사용합니다.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode" : "",
+                            "image" : "components/badges/badge_image_021",
+                            "desc" : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "",
+                            "full" : "",
+                            "state" : "do",
+                            "image" : "components/badges/badge_image_022",
+                            "desc" : "Button과 함께 Text Badge를 노출할 수 있습니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "",
+                            "full" : "",
+                            "state" : "do",
+                            "image" : "components/badges/badge_image_023",
+                            "desc" : "Thumbnail 내 정보 표기가 필요한 경우 Image Badge를 사용하며 형태는 변할 수 있습니다."
+                          })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Number Badge -->
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">Number Badge</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">
+                            Module 내 Contents 개수의 고지를 위해 Sub Title과 함께 Number Badge를 노출합니다.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode" : "",
+                            "image" : "components/badges/badge_image_024",
+                            "desc" : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "",
+                            "full" : "",
+                            "state" : "dont",
+                            "image" : "components/badges/badge_image_025",
+                            "desc" : "시선의 흐름이 Contents의 개수로 먼저 가지 않도록 Title과 Number Badge의 크기감이 비슷하게 사용 되어야 합니다."
+                          })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Icon Badge -->
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">Icon Badge</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">
+                            정보의 명확한 안내를 돕거나 사용자가 실행한 작업이 적용되었다는 인지를 주기 위해 Icon
+                            Badge를 노출합니다.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode" : "",
+                            "image" : "components/badges/badge_image_026",
+                            "desc" : null
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode" : "",
+                            "image" : "components/badges/badge_image_027",
+                            "desc" : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "",
+                            "full" : "",
+                            "state" : "do",
+                            "image" : "components/badges/badge_image_028",
+                            "desc" : "사용자가 설정한 기능이 있을 경우 Thumbnail 내에 Image Badge를 노출합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "",
+                            "full" : "",
+                            "state" : "do",
+                            "image" : "components/badges/badge_image_029",
+                            "desc" : "Icon+text가 결합 된 Image Badge 와 Icon Image Badge를 동시 노출 할 수 있습니다."
+                          })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Dot Badge -->
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">Dot Badge</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">Contents에 Update가 있는 경우 Dot Badge를 노출합니다.</p>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode" : "",
+                            "image" : "components/badges/badge_image_030",
+                            "desc" : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "",
+                            "full" : "",
+                            "state" : "dont",
+                            "image" : "components/badges/badge_image_031",
+                            "desc" : "Dot의 크기나 위치가 정해진 Guide에서 벗어나게 되면 Update의 정보 인식이 어려워지게 됩니다."
+                          })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // Usage -->
           </div>
-          <!-- // Usage -->
+        </div>
+      </main>
+
+      <!-- Quick Menu -->
+      <div class="quick-menu-container">
+        <div class="quick-menu-area">
+          <ul class="quick-menu-list-box">
+            <li class="quick-menu-list">
+              <span class="list-title">Anatomy</span>
+            </li>
+            <li class="quick-menu-list">
+              <span class="list-title">Types</span>
+              <ul class="quick-menu-sub-list-box">
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">Text Badge</span>
+                </li>
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">Number Badge</span>
+                </li>
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">Icon Badge</span>
+                </li>
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">Dot Badge</span>
+                </li>
+              </ul>
+            </li>
+            <li class="quick-menu-list">
+              <span class="list-title">Usage</span>
+              <ul class="quick-menu-sub-list-box">
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">Text Badge</span>
+                </li>
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">Number Badge</span>
+                </li>
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">Icon Badge</span>
+                </li>
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">Dot Badge</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-    </main>
-
-    <!-- Quick Menu -->
-    <div class="quick-menu-container">
-      <div class="quick-menu-area">
-        <ul class="quick-menu-list-box">
-          <li class="quick-menu-list">
-            <span class="list-title">Anatomy</span>
-          </li>
-          <li class="quick-menu-list">
-            <span class="list-title">Types</span>
-            <ul class="quick-menu-sub-list-box">
-              <li class="quick-menu-sub-list">
-                <span class="sub-list-title">Text Badge</span>
-              </li>
-              <li class="quick-menu-sub-list">
-                <span class="sub-list-title">Number Badge</span>
-              </li>
-              <li class="quick-menu-sub-list">
-                <span class="sub-list-title">Icon Badge</span>
-              </li>
-              <li class="quick-menu-sub-list">
-                <span class="sub-list-title">Dot Badge</span>
-              </li>
-            </ul>
-          </li>
-          <li class="quick-menu-list">
-            <span class="list-title">Usage</span>
-            <ul class="quick-menu-sub-list-box">
-              <li class="quick-menu-sub-list">
-                <span class="sub-list-title">Text Badge</span>
-              </li>
-              <li class="quick-menu-sub-list">
-                <span class="sub-list-title">Number Badge</span>
-              </li>
-              <li class="quick-menu-sub-list">
-                <span class="sub-list-title">Icon Badge</span>
-              </li>
-              <li class="quick-menu-sub-list">
-                <span class="sub-list-title">Dot Badge</span>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

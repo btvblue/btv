@@ -4,9 +4,17 @@
   .main-block-image-box {
     @include flex(row, center, center);
     overflow: hidden;
-    border: 1px solid #EEEEEE;
+    border: 1px solid #eeeeee;
     border-radius: 0.8rem;
     background-color: $white;
+    transition: 0.15s;
+    &:hover {
+      box-shadow: 0 0 2rem rgba(112, 112, 112, 0.2);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
   .main-block-info-box {
     margin-top: 2rem;

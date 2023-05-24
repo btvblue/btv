@@ -46,6 +46,18 @@
       }
     }
   }
+  &.caution {
+    .image-box {
+      &::after {
+        background-color: $pink;
+      }
+    }
+    .color-text-box {
+      .color-title-box {
+        color: $pink;
+      }
+    }
+  }
   .image-box {
     @include flex(row, center, center);
     overflow: hidden;

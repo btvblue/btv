@@ -1,288 +1,299 @@
-<!-- prettier-ignore -->
-@@include("../component/head.html",{
-  "title" : "Components | Controls | Checkbox"
-})
-<body>
-  <div class="wrapper">
-    <!-- Header -->
-    <!-- prettier-ignore -->
-    @@include("../component/header.html", {
-      "page" : "components"
-    })
+<!DOCTYPE html>
+<html lang="en">
+  <!-- prettier-ignore -->
+  @@include("../component/head.html",{
+    "title" : "Components | Controls | Checkbox"
+  })
 
-    <!-- LNB -->
-    <!-- prettier-ignore -->
-    @@include("../component/lnb.html", {
-      "title" : "checkbox"
-    })
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <!-- prettier-ignore -->
+      @@include("../component/header.html", {
+        "page" : "components"
+      })
 
-    <!-- Components | Controls | Checkbox -->
-    <main class="main">
-      <div class="main-container">
-        <div class="main-area">
-          <div class="heading-container">
-            <div class="heading-area">
-              <div class="heading-top">
-                <div class="title-box">
-                  <h1 class="title">Checkbox</h1>
-                </div>
-                <div class="desc-box">
-                  <p class="desc">Checkbox는 하나 이상의 Option을 선택할 때 사용되는 컴포넌트입니다. Option을 키고 끄며 선택할 수 있습니다.<br/>다중 Option이 제공되기 때문에 사용자의 의사에 따라 선택하지 않을 수 있고, 선택한 항목에 대한 명확한 표시가
-                    필요합니다.</p>
-                </div>
-              </div>
-              <div class="heading-bottom">
-                <div class="content-box">
-                  <!-- prettier-ignore -->
-                  @@include("../component/image_content_box.html", {
-                    "mode"  : "dark",
-                    "image" : "components/checkbox/checkbox_image_01",
-                    "desc"  : {
-                      "alphabet" : "A",
-                      "desc"     : "General Select / Unselect Checkbox"
-                    }
-                  })
-                </div>
-              </div>
-            </div>
-          </div>
+      <!-- LNB -->
+      <!-- prettier-ignore -->
+      @@include("../component/lnb.html", {
+        "title" : "checkbox"
+      })
 
-          <!-- Anatomy -->
-          <div class="content-container">
-            <div class="content-area">
-              <div class="content-top">
-                <div class="title-box">
-                  <h2 class="title">Anatomy</h2>
-                </div>
-              </div>
-              <div class="content-bottom">
-                <div class="content-box">
-                  <div class="image-title-box">
-                    <div class="image-title-top">
-                      <!-- prettier-ignore -->
-                      @@include("../component/image_content_box.html", {
-                        "mode"  : "dark",
-                        "image" : "components/checkbox/checkbox_image_02",
-                        "desc"  : null
-                      })
-                    </div>
-                    <div class="image-title-bottom">
-                      <ul class="number-desc-list-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "1. Container",
-                          "desc"  : "Checkbox의 형태를 나타냅니다. "
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "2. Icon",
-                          "desc"  : "선택 시 체크 Icon이 표시 됩니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "3. Text",
-                          "desc"  : "해당 Text가 우측에 배치됩니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "4.Background (Optional)",
-                          "desc"  : "정보를 그룹화 하여 노출합니다."
-                        })
-                      </ul>
-                    </div>
+      <!-- Components | Controls | Checkbox -->
+      <main class="main">
+        <div class="main-container">
+          <div class="main-area">
+            <div class="heading-container">
+              <div class="heading-area">
+                <div class="heading-top">
+                  <div class="title-box">
+                    <h1 class="title">Checkbox</h1>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      Checkbox는 하나 이상의 Option을 선택할 때 사용되는 컴포넌트입니다. Option을 키고 끄며 선택할 수
+                      있습니다.<br />다중 Option이 제공되기 때문에 사용자의 의사에 따라 선택하지 않을 수 있고, 선택한
+                      항목에 대한 명확한 표시가 필요합니다.
+                    </p>
                   </div>
                 </div>
-                <div class="content-box">
-                  <!-- prettier-ignore -->
-                  @@include("../component/color_box.html", {
-                    "mode" : "dark",
-                    "full"  : "",
-                    "state" : "do",
-                    "image" : "components/checkbox/checkbox_image_03",
-                    "desc"  : "Checkbox는 사용자의 안정적인 탐색 흐름을 고려하여 해당 Text의 좌측에 배치합니다."
-                  })
+                <div class="heading-bottom">
+                  <div class="content-box">
+                    <!-- prettier-ignore -->
+                    @@include("../component/image_content_box.html", {
+                      "mode"  : "dark",
+                      "image" : "components/checkbox/checkbox_image_01",
+                      "desc"  : {
+                        "alphabet" : "A",
+                        "desc"     : "General Select / Unselect Checkbox"
+                      }
+                    })
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- // Anatomy -->
 
-          <!-- Types -->
-          <div class="content-container">
-            <div class="content-area">
-              <div class="content-top">
-                <div class="title-box">
-                  <h2 class="title">Types</h2>
+            <!-- Anatomy -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Anatomy</h2>
+                  </div>
                 </div>
-              </div>
-              <div class="content-bottom">
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">General Checkbox</h3>
-                      </div>
-                      <div class="desc-box">
-                        <p class="desc">기본형의 Checkbox로, Text와 함께 노출됩니다.</p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <div class="image-title-box">
+                      <div class="image-title-top">
                         <!-- prettier-ignore -->
                         @@include("../component/image_content_box.html", {
                           "mode"  : "dark",
-                          "image" : "components/checkbox/checkbox_image_04",
+                          "image" : "components/checkbox/checkbox_image_02",
                           "desc"  : null
                         })
                       </div>
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode" : "dark",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/checkbox/checkbox_image_05",
-                          "desc"  : "사용자에게 Checkbox List의 명확한 인지를 돕기 위해 Background로 정보를 그룹화 하여 노출하는 것을 권장합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode" : "dark",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/checkbox/checkbox_image_06",
-                          "desc"  : "더 주요하거나 List 전체를 아우르는 내용은 사용자에게 명확한 시인성과 계층이 느껴질 수 있도록 강조하여 사용하는 것을 권장합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode" : "dark",
-                          "full"  : "",
-                          "state" : "dont",
-                          "image" : "components/checkbox/checkbox_image_07",
-                          "desc"  : "Option의 선택이 한개만 가능한 경우 Checkbox보다 Radio Button 사용을 권장합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode" : "dark",
-                          "full"  : "",
-                          "state" : "dont",
-                          "image" : "components/checkbox/checkbox_image_08",
-                          "desc"  : "사용자가 선택한 Option과 선택되지 않은 Option이 명확한 시인성을 가지고 한번에 구분할 수 있어야 합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode" : "dark",
-                          "full"  : "",
-                          "state" : "exception",
-                          "image" : "components/checkbox/checkbox_image_09",
-                          "desc"  : "구매, 결제 수단 Option을 선택하거나 Popup 내의 Option을 선택할 때 Checkbox를 단일 Option으로 사용할 수 있습니다."
-                        })
+                      <div class="image-title-bottom">
+                        <ul class="number-desc-list-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "1. Container",
+                            "desc"  : "Checkbox의 형태를 나타냅니다. "
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "2. Icon",
+                            "desc"  : "선택 시 체크 Icon이 표시 됩니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "3. Text",
+                            "desc"  : "해당 Text가 우측에 배치됩니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "4.Background (Optional)",
+                            "desc"  : "정보를 그룹화 하여 노출합니다."
+                          })
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-box">
+                    <!-- prettier-ignore -->
+                    @@include("../component/color_box.html", {
+                      "mode" : "dark",
+                      "full"  : "",
+                      "state" : "do",
+                      "image" : "components/checkbox/checkbox_image_03",
+                      "desc"  : "Checkbox는 사용자의 안정적인 탐색 흐름을 고려하여 해당 Text의 좌측에 배치합니다."
+                    })
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // Anatomy -->
+
+            <!-- Types -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Types</h2>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">General Checkbox</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">기본형의 Checkbox로, Text와 함께 노출됩니다.</p>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode"  : "dark",
+                            "image" : "components/checkbox/checkbox_image_04",
+                            "desc"  : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "dark",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "components/checkbox/checkbox_image_05",
+                            "desc"  : "사용자에게 Checkbox List의 명확한 인지를 돕기 위해 Background로 정보를 그룹화 하여 노출하는 것을 권장합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "dark",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "components/checkbox/checkbox_image_06",
+                            "desc"  : "더 주요하거나 List 전체를 아우르는 내용은 사용자에게 명확한 시인성과 계층이 느껴질 수 있도록 강조하여 사용하는 것을 권장합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "dark",
+                            "full"  : "",
+                            "state" : "dont",
+                            "image" : "components/checkbox/checkbox_image_07",
+                            "desc"  : "Option의 선택이 한개만 가능한 경우 Checkbox보다 Radio Button 사용을 권장합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "dark",
+                            "full"  : "",
+                            "state" : "dont",
+                            "image" : "components/checkbox/checkbox_image_08",
+                            "desc"  : "사용자가 선택한 Option과 선택되지 않은 Option이 명확한 시인성을 가지고 한번에 구분할 수 있어야 합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "dark",
+                            "full"  : "",
+                            "state" : "exception",
+                            "image" : "components/checkbox/checkbox_image_09",
+                            "desc"  : "구매, 결제 수단 Option을 선택하거나 Popup 내의 Option을 선택할 때 Checkbox를 단일 Option으로 사용할 수 있습니다."
+                          })
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- // Types -->
+            <!-- // Types -->
 
-          <!-- States -->
-          <div class="content-container">
-            <div class="content-area">
-              <div class="content-top">
-                <div class="title-box">
-                  <h2 class="title">States</h2>
+            <!-- States -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">States</h2>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      Checkbox의 상태별 정의는 리모컨의 포커싱에 따라 Focus/Normal 상태로 크게 분류되며,<br />상태에
+                      따라 Checked/Unchecked로 분류됩니다. 선택할 수 없는 Option의 경우는 Dimmed 상태의 Checkbox를
+                      사용합니다.
+                    </p>
+                  </div>
                 </div>
-                <div class="desc-box">
-                  <p class="desc">
-                    Checkbox의 상태별 정의는 리모컨의 포커싱에 따라 Focus/Normal 상태로 크게 분류되며,<br>상태에 따라 Checked/Unchecked로 분류됩니다. 선택할 수 없는 Option의 경우는 Dimmed 상태의 Checkbox를 사용합니다.
-                  </p>
-                </div>
-              </div>
-              <div class="content-bottom">
-                <div class="content-box">
-                  <!-- prettier-ignore -->
-                  @@include("../component/image_content_box.html", {
-                    "mode"  : "dark",
-                    "image" : "components/checkbox/checkbox_image_010",
-                    "desc"  : null
-                  })
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <!-- prettier-ignore -->
+                    @@include("../component/image_content_box.html", {
+                      "mode"  : "dark",
+                      "image" : "components/checkbox/checkbox_image_010",
+                      "desc"  : null
+                    })
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- // States -->
+            <!-- // States -->
 
-          <!-- Usage -->
-          <div class="content-container">
-            <div class="content-area">
-              <div class="content-top">
-                <div class="title-box">
-                  <h2 class="title">Usage</h2>
+            <!-- Usage -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Usage</h2>
+                  </div>
                 </div>
-              </div>
-              <div class="content-bottom">
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">General Usage</h3>
+                <div class="content-bottom">
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">General Usage</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">일반적으로 다중 Option 중 한개 이상의 Option을 선택해야 할 때 사용합니다.</p>
+                        </div>
                       </div>
-                      <div class="desc-box">
-                        <p class="desc">일반적으로 다중 Option 중 한개 이상의 Option을 선택해야 할 때 사용합니다.</p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "dark",
-                          "image" : "components/checkbox/checkbox_image_011",
-                          "desc"  : null
-                        })
-                      </div>
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode"  : "dark",
-                          "full"  : "",
-                          "state" : "dont",
-                          "image" : "components/checkbox/checkbox_image_012",
-                          "desc"  : "Checkbox Option의 항목 안의 항목으로 중첩하여 사용하지 않습니다."
-                        })
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode"  : "dark",
+                            "image" : "components/checkbox/checkbox_image_011",
+                            "desc"  : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode"  : "dark",
+                            "full"  : "",
+                            "state" : "dont",
+                            "image" : "components/checkbox/checkbox_image_012",
+                            "desc"  : "Checkbox Option의 항목 안의 항목으로 중첩하여 사용하지 않습니다."
+                          })
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- // Usage -->
           </div>
-          <!-- // Usage -->
+        </div>
+      </main>
+
+      <!-- Quick Menu -->
+      <div class="quick-menu-container">
+        <div class="quick-menu-area">
+          <ul class="quick-menu-list-box">
+            <li class="quick-menu-list"><span class="list-title">Anatomy</span></li>
+            <li class="quick-menu-list">
+              <span class="list-title">Types</span>
+              <ul class="quick-menu-sub-list-box">
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">General Checkbox</span>
+                </li>
+              </ul>
+            </li>
+            <li class="quick-menu-list"><span class="list-title">States</span></li>
+            <li class="quick-menu-list">
+              <span class="list-title">Usage</span>
+              <ul class="quick-menu-sub-list-box">
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">General Usage</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-    </main>
-
-    <!-- Quick Menu -->
-    <div class="quick-menu-container">
-      <div class="quick-menu-area">
-        <ul class="quick-menu-list-box">
-          <li class="quick-menu-list"><span class="list-title">Anatomy</span></li>
-          <li class="quick-menu-list">
-            <span class="list-title">Types</span>
-            <ul class="quick-menu-sub-list-box">
-              <li class="quick-menu-sub-list"><span class="sub-list-title">General Checkbox</span></li>
-            </ul>
-          </li>
-          <li class="quick-menu-list"><span class="list-title">States</span></li>
-          <li class="quick-menu-list">
-            <span class="list-title">Usage</span>
-            <ul class="quick-menu-sub-list-box">
-              <li class="quick-menu-sub-list"><span class="sub-list-title">General Usage</span></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

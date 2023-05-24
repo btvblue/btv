@@ -1,307 +1,326 @@
-<!-- prettier-ignore -->
-@@include("../component/head.html",{
-  "title" : "Components | Pagination"
-})
-<body>
-  <div class="wrapper">
-    <!-- Header -->
-    <!-- prettier-ignore -->
-    @@include("../component/header.html", {
-      "page" : "components"
-    })
+<!DOCTYPE html>
+<html lang="en">
+  <!-- prettier-ignore -->
+  @@include("../component/head.html",{
+    "title" : "Components | Pagination"
+  })
 
-    <!-- LNB -->
-    <!-- prettier-ignore -->
-    @@include("../component/lnb.html", {
-      "title" : "pagination"
-    })
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <!-- prettier-ignore -->
+      @@include("../component/header.html", {
+        "page" : "components"
+      })
 
-    <!-- Components | Pagination -->
-    <main class="main">
-      <div class="main-container">
-        <div class="main-area">
-          <div class="heading-container">
-            <div class="heading-area">
-              <div class="heading-top">
-                <div class="title-box">
-                  <h1 class="title">Pagination</h1>
+      <!-- LNB -->
+      <!-- prettier-ignore -->
+      @@include("../component/lnb.html", {
+        "title" : "pagination"
+      })
+
+      <!-- Components | Pagination -->
+      <main class="main">
+        <div class="main-container">
+          <div class="main-area">
+            <div class="heading-container">
+              <div class="heading-area">
+                <div class="heading-top">
+                  <div class="title-box">
+                    <h1 class="title">Pagination</h1>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      모형이나 숫자를 통해 동선 내 사용자의 위치를 안내하기 위해 사용합니다.<br />
+                      전체 정보의 양과 현재 사용자가 위치한 지점을 함께 표시하여 사용자의 원활한 서비스 이용을 돕습니다.
+                    </p>
+                  </div>
                 </div>
-                <div class="desc-box">
-                  <p class="desc">모형이나 숫자를 통해 동선 내 사용자의 위치를 안내하기 위해 사용합니다.<br>
-                    전체 정보의 양과 현재 사용자가 위치한 지점을 함께 표시하여 사용자의 원활한 서비스 이용을 돕습니다.</p>
-                </div>
-              </div>
-              <div class="heading-bottom">
-                <div class="content-box">
-                  <!-- prettier-ignore -->
-                  @@include("../component/image_content_box.html", {
-                    "mode"  : "",
-                    "image" : "components/pagination/pagination_image_01",
-                    "desc"  : {
-                      "alphabet" : "A",
-                      "desc"     : "Dot Pagination"
-                    }
-                  })
-                  <!-- prettier-ignore -->
-                  @@include("../component/image_content_box.html", {
-                    "mode"  : "",
-                    "image" : "components/pagination/pagination_image_02",
-                    "desc"  : {
-                      "alphabet" : "B",
-                      "desc"     : "Number Pagination"
-                    }
-                  })
+                <div class="heading-bottom">
+                  <div class="content-box">
+                    <!-- prettier-ignore -->
+                    @@include("../component/image_content_box.html", {
+                      "mode"  : "",
+                      "image" : "components/pagination/pagination_image_01",
+                      "desc"  : {
+                        "alphabet" : "A",
+                        "desc"     : "Dot Pagination"
+                      }
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/image_content_box.html", {
+                      "mode"  : "",
+                      "image" : "components/pagination/pagination_image_02",
+                      "desc"  : {
+                        "alphabet" : "B",
+                        "desc"     : "Number Pagination"
+                      }
+                    })
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Anatomy -->
-          <div class="content-container">
-            <div class="content-area">
-              <div class="content-top">
-                <div class="title-box">
-                  <h2 class="title">Anatomy</h2>
-                </div>
-              </div>
-              <div class="content-bottom">
-                <div class="content-box">
-                  <div class="image-title-box">
-                    <div class="image-title-top">
-                      <!-- prettier-ignore -->
-                      @@include("../component/image_content_box.html", {
-                        "mode"  : "",
-                        "image" : "components/pagination/pagination_image_03",
-                        "desc"  : null
-                      })
-                      <!-- prettier-ignore -->
-                      @@include("../component/image_content_box.html", {
-                        "mode"  : "",
-                        "image" : "components/pagination/pagination_image_04",
-                        "desc"  : null
-                      })
-                    </div>
-                    <div class="image-title-bottom">
-                      <ul class="number-desc-list-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "1. Active Dot",
-                          "desc"  : "사용자가 현재 보고있는 Page의 위치를 dot의 Color로 구분하여 나타냅니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "2. Inactive Dot",
-                          "desc"  : "사용자가 볼수있는 전체 Page의 총량을 Dot의 갯수로 나타냅니다."
-                        })
-                      </ul>
-                      <ul class="number-desc-list-box"> 
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "1. Current Page",
-                          "desc"  : "사용자가 현재 확인하고 있는 Page를 숫자로 나타냅니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/number_desc_list.html", {
-                          "title" : "2. Total Page",
-                          "desc"  : "사용자가 확인 가능한 전체 Page를 숫자로 나타냅니다."
-                        })
-                      </ul>
-                      
-                    </div>
+            <!-- Anatomy -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Anatomy</h2>
                   </div>
                 </div>
-
-              </div>
-            </div>
-          </div>
-          <!-- // Anatomy -->
-
-          <!-- Types -->
-          <div class="content-container">
-            <div class="content-area">
-              <div class="content-top">
-                <div class="title-box">
-                  <h2 class="title">Types</h2>
-                </div>
-              </div>
-              <div class="content-bottom">
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">Dot Pagination</h3>
-                      </div>
-                      <div class="desc-box">
-                        <p class="desc">Page에 대한 총량과 현재 사용자의 위치를 Dot의 Color로 구분하여 보여줍니다.<br>
-                          관여도가 낮은 Contents나 Page 수에 대한 정확한 정보 제공에 사용합니다.</p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <div class="image-title-box">
+                      <div class="image-title-top">
                         <!-- prettier-ignore -->
                         @@include("../component/image_content_box.html", {
                           "mode"  : "",
-                          "image" : "components/pagination/pagination_image_05",
+                          "image" : "components/pagination/pagination_image_03",
                           "desc"  : null
                         })
                         <!-- prettier-ignore -->
                         @@include("../component/image_content_box.html", {
                           "mode"  : "",
-                          "image" : "components/pagination/pagination_image_06",
-                          "desc"  : null
-                        }) 
-                      </div>
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode" : "",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/pagination/pagination_image_07",
-                          "desc"  : "적은 수의 페이지가 나오는 경우에 Dot Pagination 사용을 권장합니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode" : "",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/pagination/pagination_image_08",
-                          "desc"  : "일정 시간 간격으로 Video나 Image가 자동 재생되는 Contents의 경우 Progressbar와 함께 사용할 수 있습니다."
-                        })
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode" : "",
-                          "full"  : "",
-                          "state" : "dont",
-                          "image" : "components/pagination/pagination_image_09",
-                          "desc"  : "사용자의 위치를 연속으로 표시하지 않습니다."
-                        })
-                      </div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">Number pagination</h3>
-                      </div>
-                      <div class="desc-box">
-                        <p class="desc">Page에 대한 총량과 사용자의 위치를 숫자와 Color로 구분하여 보여줍니다.<br/>주로 Page 수나 확인가능한 Contents를 사용자의 관여도가 높아 명확하게 숫자로 정의하여 제공해야 하는 경우 사용합니다.</p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "",
-                          "image" : "components/pagination/pagination_image_010",
+                          "image" : "components/pagination/pagination_image_04",
                           "desc"  : null
                         })
+                      </div>
+                      <div class="image-title-bottom">
+                        <ul class="number-desc-list-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "1. Active Dot",
+                            "desc"  : "사용자가 현재 보고있는 Page의 위치를 dot의 Color로 구분하여 나타냅니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "2. Inactive Dot",
+                            "desc"  : "사용자가 볼수있는 전체 Page의 총량을 Dot의 갯수로 나타냅니다."
+                          })
+                        </ul>
+                        <ul class="number-desc-list-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "1. Current Page",
+                            "desc"  : "사용자가 현재 확인하고 있는 Page를 숫자로 나타냅니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "2. Total Page",
+                            "desc"  : "사용자가 확인 가능한 전체 Page를 숫자로 나타냅니다."
+                          })
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- // Types -->
+            <!-- // Anatomy -->
 
-          <!-- Usage -->
-          <div class="content-container">
-            <div class="content-area">
-              <div class="content-top">
-                <div class="title-box">
-                  <h2 class="title">Usage</h2>
+            <!-- Types -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Types</h2>
+                  </div>
                 </div>
-              </div>
-              <div class="content-bottom">
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">Dot Pagination</h3>
+                <div class="content-bottom">
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">Dot Pagination</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">
+                            Page에 대한 총량과 현재 사용자의 위치를 Dot의 Color로 구분하여 보여줍니다.<br />
+                            관여도가 낮은 Contents나 Page 수에 대한 정확한 정보 제공에 사용합니다.
+                          </p>
+                        </div>
                       </div>
-                      <div class="desc-box">
-                        <p class="desc">훑어보기 페이지 등 사용자에게 페이지를 넘기면 정보가 더 있다는 것을 쉽게 전달 할 때 사용합니다.</p>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode"  : "",
+                            "image" : "components/pagination/pagination_image_05",
+                            "desc"  : null
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode"  : "",
+                            "image" : "components/pagination/pagination_image_06",
+                            "desc"  : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "components/pagination/pagination_image_07",
+                            "desc"  : "적은 수의 페이지가 나오는 경우에 Dot Pagination 사용을 권장합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "components/pagination/pagination_image_08",
+                            "desc"  : "일정 시간 간격으로 Video나 Image가 자동 재생되는 Contents의 경우 Progressbar와 함께 사용할 수 있습니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "",
+                            "full"  : "",
+                            "state" : "dont",
+                            "image" : "components/pagination/pagination_image_09",
+                            "desc"  : "사용자의 위치를 연속으로 표시하지 않습니다."
+                          })
+                        </div>
                       </div>
                     </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "",
-                          "image" : "components/pagination/pagination_image_011",
-                          "desc"  : null
-                        })
+                  </div>
+
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">Number pagination</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">
+                            Page에 대한 총량과 사용자의 위치를 숫자와 Color로 구분하여 보여줍니다.<br />주로 Page 수나
+                            확인가능한 Contents를 사용자의 관여도가 높아 명확하게 숫자로 정의하여 제공해야 하는 경우
+                            사용합니다.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode"  : "",
+                            "image" : "components/pagination/pagination_image_010",
+                            "desc"  : null
+                          })
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">Number pagination</h3>
-                      </div>
-                      <div class="desc-box">
-                        <p class="desc">주로 총량이 많은 Contents를 다룰 때 사용합니다.</p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/image_content_box.html", {
-                          "mode"  : "",
-                          "image" : "components/pagination/pagination_image_012",
-                          "desc"  : null
-                        })
-                      </div>
-                      <div class="content-box">
-                        <!-- prettier-ignore -->
-                        @@include("../component/color_box.html", {
-                          "mode"  : "",
-                          "full"  : "",
-                          "state" : "do",
-                          "image" : "components/pagination/pagination_image_013",
-                          "desc"  : "디테일한 내용을 다루는 Contents는 Page 정보를 자세히 노출하여 사용자의 이해를 돕기위해 Number Pagination의 사용을 권장합니다."
-                        })
-                      </div>
-                    </div>
-                  </div>
-                </div> 
               </div>
             </div>
+            <!-- // Types -->
+
+            <!-- Usage -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Usage</h2>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">Dot Pagination</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">
+                            훑어보기 페이지 등 사용자에게 페이지를 넘기면 정보가 더 있다는 것을 쉽게 전달 할 때
+                            사용합니다.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode"  : "",
+                            "image" : "components/pagination/pagination_image_011",
+                            "desc"  : null
+                          })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">Number pagination</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">주로 총량이 많은 Contents를 다룰 때 사용합니다.</p>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode"  : "",
+                            "image" : "components/pagination/pagination_image_012",
+                            "desc"  : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode"  : "",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "components/pagination/pagination_image_013",
+                            "desc"  : "디테일한 내용을 다루는 Contents는 Page 정보를 자세히 노출하여 사용자의 이해를 돕기위해 Number Pagination의 사용을 권장합니다."
+                          })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // Usage -->
           </div>
-          <!-- // Usage -->
+        </div>
+      </main>
+
+      <!-- Quick Menu -->
+      <div class="quick-menu-container">
+        <div class="quick-menu-area">
+          <ul class="quick-menu-list-box">
+            <li class="quick-menu-list"><span class="list-title">Anatomy</span></li>
+            <li class="quick-menu-list">
+              <span class="list-title">Types</span>
+              <ul class="quick-menu-sub-list-box">
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">Dot Pagination</span>
+                </li>
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">Number Pagination</span>
+                </li>
+              </ul>
+            </li>
+            <li class="quick-menu-list">
+              <span class="list-title">Usage</span>
+              <ul class="quick-menu-sub-list-box">
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">Dot Pagination</span>
+                </li>
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">Number Pagination</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-    </main>
-
-    <!-- Quick Menu -->
-    <div class="quick-menu-container">
-      <div class="quick-menu-area">
-        <ul class="quick-menu-list-box">
-          <li class="quick-menu-list"><span class="list-title">Anatomy</span></li>
-          <li class="quick-menu-list">
-            <span class="list-title">Types</span>
-            <ul class="quick-menu-sub-list-box">
-              <li class="quick-menu-sub-list"><span class="sub-list-title">Dot Pagination</span></li>
-              <li class="quick-menu-sub-list"><span class="sub-list-title">Number Pagination</span></li>
-            </ul>
-          </li>
-          <li class="quick-menu-list">
-            <span class="list-title">Usage</span>
-            <ul class="quick-menu-sub-list-box">
-              <li class="quick-menu-sub-list"><span class="sub-list-title">Dot Pagination</span></li>
-              <li class="quick-menu-sub-list"><span class="sub-list-title">Number Pagination</span></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
