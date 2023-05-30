@@ -100,6 +100,10 @@
         font-weight: 600;
         color: $purple;
       }
+
+      .lnb-last-list-box {
+        display: block;
+      }
     }
     .lnb-sub-link {
       @include flex(row, flex-start, center);
@@ -115,7 +119,8 @@
   .lnb-last-list-box {
     display: none;
     overflow: hidden;
-    margin: 1.65rem 0 1.65rem 5.4rem;
+    margin-left: 5.4rem;
+    padding: 1.65rem 0;
     padding-left: 2rem;
     border-left: 1px solid #eeeeee;
 
@@ -145,9 +150,9 @@
 @media #{$tablet} {
   .lnb-container {
     top: 7rem;
-    width: 23rem;
-    height: auto;
-    border-radius: 0 0 0.4rem 0;
+    width: 100%;
+    height: auto;    
+    background-color: $purple;
     box-shadow: 0px 0px 4rem rgba(112, 112, 112, 0.4);
 
     .lnb-area {
@@ -159,7 +164,10 @@
     .lnb-list-box {
       // overflow-y: visible;
       height: auto;
+      max-height: calc(100dvh - 7.1rem);
       padding-right: 0;
+      padding: 0 4rem;  
+      box-sizing: border-box;
     }
 
     /* LNB LIST */
@@ -168,26 +176,46 @@
 
       .lnb-link {
         height: 6.2rem;
-        padding: 0 3rem 0 5.4rem;
-        border-bottom: 1px solid #eee;
-        background-color: #fff;
+        padding: 0 3.2rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         box-sizing: border-box;
+        color: rgba(255, 255, 255, 0.5);
 
         &:hover {
           border-radius: 0;
         }
       }
 
+      &.active {
+        .lnb-link {
+          font-weight: 600;
+          color: #fff;
+        }
+      }
+
       .btn-open,
       .btn-sub-open {
         top: 1.9rem;
-        left: 2rem;
+        left: 0;
+
+        .ic-arrow {
+          background: asset-image('arrow_right_hov.svg');
+          transform: rotate(0deg);
+        }
+
+        &.active {
+          .ic-arrow {
+            transform: rotate(90deg);
+          }
+        }
       }
     }
 
     /* LNB SUB LIST */
     .lnb-sub-list-box {
-      overflow-y: auto;
+      // overflow-y: auto;
+      // display: block;
+      // height: 0;
       padding: 1rem 0;
       max-height: calc(100dvh - 13.2rem);
     }
@@ -196,16 +224,44 @@
       .lnb-sub-link {
         height: 6rem;
         padding: 0 3rem 0 5.4rem;
+        border-radius: 0;
 
         &:hover {
-          border-radius: 0;
+          font-weight: 600;
+          color: #fff;
+        }        
+      }
+
+      &.active {
+        .lnb-sub-link {
+          font-weight: 600;
+          color: #fff;
         }
       }
     }
 
     .lnb-last-list-box {
       padding-left: 0;
-      border-left: 0;
+      border-color: rgba(255, 255, 255, 0.5);
+
+      .lnb-last-list {
+        .lnb-last-link {
+          padding: 0 2rem;
+
+          &:hover {
+            font-weight: 600;
+            color: #fff;
+          }        
+        }
+
+        &.active {
+
+          .lnb-last-link {
+            font-weight: 600;
+            color: #fff;
+          }
+        }
+      }
     }
   }
 }

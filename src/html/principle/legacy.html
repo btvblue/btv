@@ -18,14 +18,107 @@
         "title" : "legacy"
       })
 
-      <!-- Principle | Legacy -->
-      <main class="main">
+      <!-- Principle | Respect for Legacy -->
+      <main class="main principle">
         <div class="main-container">
-          <div class="main-area"></div>
+          <div class="main-area">
+            <div class="heading-container">
+              <div class="heading-area">
+                <div class="heading-top">
+                  <div class="title-box">
+                    <h1 class="title">Respect for Legacy</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Respect for Media UX -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Respect for Media UX</h2>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      미디어 서비스가 갖고 있는 공통의 사용성을 고려하여 서비스 간 약속된 멘탈 모델을 저해하지 않아야
+                      합니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <ul class="text-list-box">
+                      <!-- prettier-ignore -->
+                      @@include("../component/text_list.html", {
+                        "list" : "실시간 방송은 오랫동안 고객의 일상에 자리해 온 방송 시청 패턴을 바탕으로, 시청 경험을 증진할 수 있는 방향으로 설계합니다.",
+                        "desc" : null
+                      })
+                      <!-- prettier-ignore -->
+                      @@include("../component/text_list.html", {
+                        "list" : "VOD는 점차 늘어나는 미디어 서비스들의 공통적인 사용성을 고려하여, B tv 서비스 만을 위한 학습이 필요한 이용 방식은 지양합니다.",
+                        "desc" : null
+                      })
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Respect for Platform UX -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Respect for Platform UX</h2>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      플랫폼마다 권장하는 사용성을 고려하여 플랫폼 내 통용되는 멘탈 모델을 저해하지 않아야 합니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <ul class="text-list-box">
+                      <!-- prettier-ignore -->
+                      @@include("../component/text_list.html", {
+                        "list" : "Apple tvOS, Google Android TV 등 서비스하고자 하는 플랫폼에서 권장하는 이용 패턴을 충분히 고려하여, B tv의 인터페이스를 설계해야 합니다.",
+                        "desc" : null
+                      })
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Respect for Customers -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Respect for Customers</h2>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      B tv는 다수의 다양한 고객이 이용하고 있습니다. 새로운 기능을 설계할 경우에는 모두에게 편리한
+                      기능인지 거듭 고민해야 합니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <ul class="text-list-box">
+                      <!-- prettier-ignore -->
+                      @@include("../component/text_list.html", {
+                        "list" : "기존 사용 맥락을 해치는 기능의 급격한 변화를 지양하며 변화가 필요한 경우 인터페이스에 대한 학습을 충분히 할 수 있도록 가이드를 제공합니다.",
+                        "desc" : null
+                      })
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
-
-      <!-- Quick Menu -->
     </div>
   </body>
 </html>

@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const breakPoint = 1468;
+
   // Header //
   const header = document.querySelector('.header-container');
   const btnMenu = header.querySelector('.btn-menu');
@@ -11,12 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const target = e.currentTarget;
     const header = document.querySelector('.header-container');
     const headerMenuList = header.querySelector('.header-menu-list-box');
+    const lnbContainer = document.querySelector('.lnb-container');
+    const lnbSubListBox = header.querySelector('.lnb-sub-list-box');
 
-    if (headerMenuList.style.hasOwnProperty('display')) {
+    if (lnbContainer.style.hasOwnProperty('display')) {
+      // if (!lnbContainer.classList.contains('expand')) {
       // 메뉴 펼침 //
-      if (headerMenuList.style.display === 'none') {
-        slideDown(headerMenuList, 400);
-        headerMenuList.classList.add('expand');
+      if (lnbContainer.style.display === 'none') {
+        slideDown(lnbContainer, 400);
+        lnbContainer.classList.add('expand');
         target.querySelector('img').setAttributes({
           src: '../../assets/images/btn_close_menu_nor.svg',
           alt: '메뉴 닫기',
@@ -24,8 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       // 메뉴 접음 //
       else {
-        slideUp(headerMenuList, 400);
-        headerMenuList.classList.remove('expand');
+        slideUp(lnbContainer, 400);
+        lnbContainer.classList.remove('expand');
         target.querySelector('img').setAttributes({
           src: '../../assets/images/btn_open_menu_nor.svg',
           alt: '메뉴 열기',
@@ -37,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // LNB Dropdown //
   const lnbContainer = document.querySelector('.lnb-container');
   const openBtns = lnbContainer.querySelectorAll('.btn-open');
-  const breakPoint = 1468;
   setLnbPosition(window.innerWidth, breakPoint);
 
   // LNB 토글버튼 이벤트 리스너 적용 //
@@ -48,10 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const subListBox = target.closest('.lnb-list').querySelector('.lnb-sub-list-box');
         const lastListBox = subListBox.querySelector('.lnb-last-list-box');
 
+        // Collapse //
         if (target.classList.contains('active')) {
-          target.classList.remove('active');
-          slideUp(subListBox, 400);
-          lnbContainer.classList.remove('expand');
+          slideUp(subListBox, 400, () => {
+            console.log('SlideUp Done');
+            target.classList.remove('active');
+            lnbContainer.classList.remove('expand');
+          });
+
 
           // 마지막 깊이 메뉴가 있을 경우 함께 펼친다 //
           if (lastListBox) {
@@ -63,10 +71,11 @@ document.addEventListener('DOMContentLoaded', () => {
               parent.classList.remove('active');
             }
           }
+          // Expand //
         } else {
           target.classList.add('active');
-          slideDown(subListBox, 400);
           lnbContainer.classList.add('expand');
+          slideDown(subListBox, 400);
 
           // 마지막 깊이 메뉴가 있을 경우 함께 접는다 //
           if (lastListBox) {
@@ -92,15 +101,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const lastListBox = target.closest('.lnb-sub-list').querySelector('.lnb-last-list-box');
         if (target.classList.contains('active')) {
           target.classList.remove('active');
-          // lastListBox.style.height = '0';
-          lastListBox.style.marginTop = '0';
-          lastListBox.style.marginBottom = '0';
+          // lastListBox.style.marginTop = '0';
+          // lastListBox.style.marginBottom = '0';
           slideUp(lastListBox, 400);
         } else {
           target.classList.add('active');
-          // lastListBox.style.height = 'auto';
-          lastListBox.style.marginTop = '1.8rem';
-          lastListBox.style.marginBottom = '1.8rem';
           slideDown(lastListBox, 400);
         }
       });
@@ -153,6 +158,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // 콘텐츠 로드 완료, 리사이징 될 때 퀵메뉴가 콘텐츠와 겹치지 않도록 재설정 한다. //
   const mainContainer = document.querySelector('.main-container');
   let timer = null;
+
+  // Resize //
   window.addEventListener('resize', () => {
     if (quickMenu) setQuickMenuLeft(mainContainer, quickMenu);
 
@@ -163,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 100);
   });
 
-  // 모든 요소 로드 완료 후 상황에 맞게 LNB와 Quick 메뉴의 형태를 적용한다. //
+  // Load - 모든 요소 로드 완료 후 상황에 맞게 LNB와 Quick 메뉴의 형태를 적용한다. //
   window.addEventListener('load', () => {
     setLnbPosition(window.innerWidth, breakPoint);
     if (quickMenu) setQuickMenuLeft(mainContainer, quickMenu);
@@ -172,38 +179,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // 윈도우 가로 크기에 따라 LNB 형태를 변경하는 함수 //
 function setLnbPosition(width, breakPoint) {
-  const header = document.querySelector('.header-container');
-  const headerListBox = header.querySelector('.header-menu-list-box');
-  const lnb = document.querySelector('.lnb-container');
-
-  const list = lnb.querySelector('.active:not(.btn-open, .btn-sub-open)');
-  const parent = list.closest('.lnb-list');
-  const parentSiblings = parent.siblings();
-  const subList = parent.querySelector('.lnb-sub-list-box');
+  const headerContainer = document.querySelector('.header-container');
+  const btnMenu = headerContainer.querySelector('.btn-menu');
+  const lnbContainer = document.querySelector('.lnb-container');
+  const list = lnbContainer.querySelector('.active:not(.btn-open, .btn-sub-open)');
 
   // Tablet //
   if (width < breakPoint) {
-    parentSiblings.forEach((menu, i) => {
-      if (menu !== parent) menu.style.display = 'none';
+    lnbContainer.style.display = 'none';
+    lnbContainer.style.boxSizing = 'border-box';
+    lnbContainer.classList.remove('expand');
+    btnMenu.querySelector('img').setAttributes({
+      src: '../../assets/images/btn_open_menu_nor.svg',
+      alt: '메뉴 열기',
     });
-
-    subList.style.removeProperty('display');
-    headerListBox.style.display = 'none';
-
-    if (parent.querySelector('.btn-open.active')) {
-      parent.querySelector('.btn-open.active').classList.remove('active');
-    }
   }
   // PC //
   else {
-    parentSiblings.forEach((menu, i) => {
-      menu.style.removeProperty('display');
-    });
+    lnbContainer.style.removeProperty('display');
+    lnbContainer.style.removeProperty('box-sizing');
+  }
 
-    // Slide Down 함수를 실행하
-    subList.style.display = 'block';
-    headerListBox.style.removeProperty('display');
-    parent.querySelector('.btn-open').classList.add('active');
+  const activeMenu = lnbContainer.querySelector('li.active');
+
+  activeHierarchyMenu(activeMenu);
+
+  // 현제 페이지 메뉴 기준 상위 메뉴를 Active 상태로 전환한는 재귀함수 //
+  function activeHierarchyMenu(activeMenu) {
+    const nest = activeMenu.closest('ul');
+    const parent = nest.closest('li');
+
+    if (nest && parent && !parent.classList.contains('active')) {
+      const toggleButton = parent.children[0];
+      parent.classList.add('active');
+      toggleButton.classList.add('active');
+
+      activeHierarchyMenu(parent);
+    }
+    else {
+      return false;
+    }
   }
 }
 

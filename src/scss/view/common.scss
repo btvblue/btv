@@ -8,12 +8,34 @@ body {
 .wrapper {
   position: relative;
   min-width: 102.4rem;
+  min-height: 100vh;
   background-color: #f8f8f8;
 }
 
 main {
   width: calc(100% - 57.2rem);
   padding: 17.2rem 28.6rem 10rem;
+
+  // Principle 페이지 style
+  &.principle {
+    .heading-container {
+      margin-bottom: -2rem;
+      padding: 0;
+    }
+    .content-container {
+      margin-top: 10rem;
+      padding: 0;
+      border: none;
+      .content-top {
+        .title-box {
+          .title {
+            font-size: 2.2rem;
+            line-height: 2.7rem;
+          }
+        }
+      }
+    }
+  }
 
   .main-container {
     overflow: hidden;
@@ -94,6 +116,40 @@ main {
   margin: -3rem -1rem -10rem -1rem;
 }
 
+.main-info-container {
+  margin-top: 10rem;
+  .main-info-box {
+    @include flex(row, flex-start, flex-start);
+    padding: 4rem 0 10rem 0;
+    border-top: 1px solid #d4d4d4;
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+    .main-info-left {
+      width: 23.2rem;
+    }
+    .main-info-right {
+      flex: 1;
+    }
+    .main-info-title-box {
+      @include flex(column, flex-start, flex-start);
+      .main-info-title {
+        @include font(2.8rem, 700, #242424, 3.2rem);
+      }
+      .main-info-desc {
+        margin-top: 1rem;
+        @include font(1.6rem, 300, #888888, 1.9rem);
+      }
+    }
+    .main-info-desc-box {
+      .desc {
+        font-family: 'SK_Btv';
+        @include font(1.6rem, 500, #4a4a4a, 2.8rem);
+      }
+    }
+  }
+}
+
 .content-box {
   @include flex(row, flex-start, flex-start);
   flex-wrap: wrap;
@@ -158,6 +214,9 @@ main {
     width: calc(100% - 6rem);
     padding: 19rem 3rem 10rem;
 
+    &.principle {
+      padding-top: 15rem;
+    }
     .main-container {
       .main-area {
         width: 100%;

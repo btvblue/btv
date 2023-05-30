@@ -2,7 +2,7 @@
 <html lang="en">
   <!-- prettier-ignore -->
   @@include("../component/head.html",{
-    "title" : "Principle"
+    "title" : "Principle | Principle"
   })
 
   <body>
@@ -12,20 +12,118 @@
       @@include("../component/header.html", {
         "page" : "principle"
       })
+
       <!-- LNB -->
       <!-- prettier-ignore -->
       @@include("../component/lnb.html", {
         "title" : "principle"
       })
 
-      <!-- Principle -->
+      <!-- Principle | Principle -->
       <main class="main">
         <div class="main-container">
-          <div class="main-area"></div>
+          <div class="main-area">
+            <div class="heading-container">
+              <div class="heading-area">
+                <div class="heading-top">
+                  <div class="title-box">
+                    <h1 class="title">Principle</h1>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      본 Design System는 SK브로드밴드 전용 셋톱박스가 아닌 외부 기기 및 플랫폼을 이용하는 B tv 서비스의
+                      디자인 설계를 다룹니다. B tv 디자인 원칙은 외부 기기 및 플랫폼에 따라 달라지는 환경에서 B tv의
+                      일관된 사용자 경험을 제공하는데 도움을 줍니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="heading-bottom">
+                  <!-- .main-content-box : 메인 페이지에서만 사용 -->
+                  <div class="main-content-box">
+                    <!-- prettier-ignore -->
+                    @@include("../component/main_block_box.html", {
+                      "link"  : "tv",
+                      "image" : "principle/principle/principle_image_01",
+                      "title" : "TV Environment",
+                      "desc"  : null
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/main_block_box.html", {
+                      "link"  : "contents",
+                      "image" : "principle/principle/principle_image_02",
+                      "title" : "Contents",
+                      "desc"  : null
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/main_block_box.html", {
+                      "link"  : "navigation",
+                      "image" : "principle/principle/principle_image_03",
+                      "title" : "Navigation",
+                      "desc"  : null
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/main_block_box.html", {
+                      "link"  : "legacy",
+                      "image" : "principle/principle/principle_image_04",
+                      "title" : "Respect for Legacy",
+                      "desc"  : null
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/main_block_box.html", {
+                      "link"  : "accessibility",
+                      "image" : "principle/principle/principle_image_05",
+                      "title" : "Accessibility",
+                      "desc"  : null
+                    })
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-info-container">
+              <div class="main-info-area">
+                <div class="main-info-box">
+                  <div class="main-info-left">
+                    <div class="main-info-title-box">
+                      <span class="main-info-title kor">핵심 가치</span>
+                      <span class="main-info-desc">Core Value</span>
+                    </div>
+                  </div>
+                  <div class="main-info-right">
+                    <div class="main-info-desc-box">
+                      <p class="desc">
+                        B tv의 핵심 가치는 고객에게 무한한 즐거움을 제공하는 것입니다.<br />고객의 즐거움을 위해 B tv가
+                        제공하는 많은 기능 중에서<br />우리는 B tv 서비스의 본질, 미디어 시청 경험에 집중합니다.<br /><br />고객은
+                        B tv를 통해 영화, 드라마 속 새로운 세계를 만나고 일상에 지칠 때<br />예능을 통해 위로 받으며,
+                        가족, 친구와 함께 B tv를 이용하며 추억을 만듭니다.<br /><br />우리의 메인 과업은 고객의 다양한
+                        즐거움을 위해 콘텐츠를 발견하고<br />감상하는 전 여정에서 자연스러운 이용 패턴을 설계하는
+                        것입니다.<br />B tv의 핵심 기능인 실시간 방송과 VOD(Video On Demand) 특성에 따라<br />최적화된
+                        탐색, 시청 패턴을 세심하게 고민해야 합니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="main-info-box">
+                  <div class="main-info-left">
+                    <div class="main-info-title-box">
+                      <span class="main-info-title">고객</span>
+                      <span class="main-info-desc">Customer</span>
+                    </div>
+                  </div>
+                  <div class="main-info-right">
+                    <div class="main-info-desc-box">
+                      <p class="desc">
+                        B tv는 사회적, 신체적, 문화적 차이와 관계없이 누구나 이용할 수 있습니다.<br />혼자서도 이용할 수
+                        있지만 가족, 친구와 함께 이용할 수 있는 가구 단위의 그룹 서비스이기도 합니다.<br />특정 이용
+                        고객층을 위한 디자인보다 다양한 이용 고객과 상황을 고려한 디자인이 필요합니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
-
-      <!-- Quick Menu -->
     </div>
   </body>
 </html>

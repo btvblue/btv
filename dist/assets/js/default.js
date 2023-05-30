@@ -180,16 +180,19 @@ function slideExpand(target, direction = 'vertical', starting = 0, duration = 50
 
 // Slide Up //
 function slideUp(target, duration = 500, callback) {
-  target.style.transitionProperty = 'height, margin, padding, opacity';
-  target.style.transitionDuration = duration + 'ms';
+  let display = window.getComputedStyle(target).display;
+
+  target.style.display = display;
   target.style.boxSizing = 'border-box';
   target.style.height = target.offsetHeight + 'px';
   target.style.opacity = 1;
   target.style.overflow = 'hidden';
   target.style.paddingTop = 0;
   target.style.paddingBottom = 0;
-  target.style.marginTop = 0;
-  target.style.marginBottom = 0;
+  // target.style.marginTop = 0;
+  // target.style.marginBottom = 0;
+  target.style.transitionProperty = 'height, margin, padding, opacity';
+  target.style.transitionDuration = duration + 'ms';
 
   window.setTimeout(() => {
     target.style.height = 0;
@@ -200,8 +203,8 @@ function slideUp(target, duration = 500, callback) {
     target.style.removeProperty('height');
     target.style.removeProperty('padding-top');
     target.style.removeProperty('padding-bottom');
-    target.style.removeProperty('margin-top');
-    target.style.removeProperty('margin-bottom');
+    // target.style.removeProperty('margin-top');
+    // target.style.removeProperty('margin-bottom');
     target.style.removeProperty('overflow');
     target.style.removeProperty('opacity');
     target.style.removeProperty('transition-duration');
@@ -215,9 +218,11 @@ function slideUp(target, duration = 500, callback) {
 }
 
 // Slide Down //
-function slideDown(target, duration = 300, callback) {
+function slideDown(target, duration = 500, callback) {
   target.style.removeProperty('display');
   let display = window.getComputedStyle(target).display;
+  let paddingTop = window.getComputedStyle(target).paddingTop;
+  let paddingBottom = window.getComputedStyle(target).paddingBottom;
 
   if (display === 'none') {
     display = 'block';
@@ -228,8 +233,8 @@ function slideDown(target, duration = 300, callback) {
   target.style.overflow = 'hidden';
   target.style.height = 0;
   target.style.opacity = 0;
-  target.style.paddingTop = 0;
-  target.style.paddingBottom = 0;
+  target.style.paddingTop = paddingTop;
+  target.style.paddingBottom = paddingBottom;
   target.style.marginTop = 0;
   target.style.marginBottom = 0;
   target.style.boxSizing = 'border-box';

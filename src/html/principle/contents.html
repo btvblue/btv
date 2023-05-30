@@ -19,9 +19,139 @@
       })
 
       <!-- Principle | Contents -->
-      <main class="main">
+      <!-- .principle : Principle 페이지는 개별 style 적용 -->
+      <main class="main principle">
         <div class="main-container">
-          <div class="main-area"></div>
+          <div class="main-area">
+            <div class="heading-container">
+              <div class="heading-area">
+                <div class="heading-top">
+                  <div class="title-box">
+                    <h1 class="title">Contents</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Eye-catching Content -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Eye-catching Content</h2>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      B tv의 본질은 영상 콘텐츠를 시청하는 서비스인 만큼, 어떤 UI 요소보다 콘텐츠가 우선시되어야
+                      합니다.<br />콘텐츠가 돋보일 수 있는 방향으로 화면을 구성합니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <ul class="text-list-box">
+                      <!-- prettier-ignore -->
+                      @@include("../component/text_list.html", {
+                        "list" : "B tv 서비스를 시작하자마자 콘텐츠에 바로 접근할 수 있도록 화면을 구성합니다.",
+                        "desc" : null
+                      })
+                      <!-- prettier-ignore -->
+                      @@include("../component/text_list.html", {
+                        "list" : "콘텐츠와 부가적 요소간 시각적 차이가 필요하기 때문에, 대비를 통해 콘텐츠에 시선이 집중될 수 있도록 설계합니다.<br />(명도와\
+                      채도, 크기와 굵기, 투명도 등)", "desc" : null })
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Visual Storytelling -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Visual Storytelling</h2>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      누구나 쉽게 몰입하고 공감할 수 있도록 생동감 있는 영상과 이미지로 정보를 전달합니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <ul class="text-list-box">
+                      <!-- prettier-ignore -->
+                      @@include("../component/text_list.html", {
+                        "list" : "지루한 텍스트는 줄이고 영상과 이미지를 활용하여 정보를 디자인합니다.",
+                        "desc" : null
+                      })
+                      <!-- prettier-ignore -->
+                      @@include("../component/text_list.html", {
+                        "list" : "다양한 애니메이션 효과를 적극적으로 활용하여 인지하기 쉽게 정보를 전달하며 다이나믹한 화면을 구성합니다.",
+                        "desc" : null
+                      })
+                      <!-- prettier-ignore -->
+                      @@include("../component/text_list.html", {
+                        "list" : "많은 양의 콘텐츠를 탐색하면서도 지치지 않고 탐색의 재미를 느낄 수 있도록 다채로운 콘텐츠 전시 방식을 구성합니다.",
+                        "desc" : null
+                      })
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Clear Information -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Clear Information</h2>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      TV 시청 거리로 인해 고객이 화면 내 정보를 파악하는데 한계가 있기 때문에<br />
+                      최소한의 노력으로 정보를 명확하게 인지할 수 있도록 화면을 구성합니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <ul class="text-list-box">
+                      <!-- prettier-ignore -->
+                      @@include("../component/text_list.html", {
+                        "list" : "화면 내 정보 밀집도가 낮아야 하기 때문에 주요 기능과 정보를 포함하되, 한 화면에서 수행하는 과업의 수를 최소화합니다.",
+                        "desc" : null
+                      })
+                      <!-- prettier-ignore -->
+                      @@include("../component/text_list.html", {
+                        "list" : "화면 내 UI 요소는 보기 쉽게 큰 사이즈로 노출하고 정보가 명확하게 전달될 수 있도록 선명한 화질로 디자인합니다.",
+                        "desc" : null
+                      })
+                      <!-- prettier-ignore -->
+                      @@include("../component/text_list.html", {
+                        "list" : "‘읽는’ 작업을 요하는 텍스트는 제한적으로 사용합니다.",
+                        "desc" : null
+                      })
+                      <!-- prettier-ignore -->
+                      @@include("../component/text_list.html", {
+                        "list" : "한 화면 내 정보는 논리적인 순서 체계에 따라 구성하여 정보의 중요도와 관계를 파악할 수 있어야 합니다.",
+                        "desc" : null
+                      })
+                      <!-- prettier-ignore -->
+                      @@include("../component/text_list.html", {
+                        "list" : "정보의 순서는 누구나 이해할 수 있는 큰 범주에서 작은 범주로, 과업과 관련된 중요한 정보에서 비교적 덜 중요하지 않은 정보로 나열합니다.",
+                        "desc" : null
+                      })
+                      <!-- prettier-ignore -->
+                      @@include("../component/text_list.html", {
+                        "list" : "정보를 제공할 때는 고객이 현재 처한 상황을 중점적으로 인지할 수 있도록 맥락에 맞는 정확한 텍스트와 이미지를 제공합니다.",
+                        "desc" : null
+                      })
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
 

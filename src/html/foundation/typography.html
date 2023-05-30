@@ -148,12 +148,75 @@
                         </div>
                       </div>
                       <div class="sub-content-bottom">
-                        <div class="content-box">
+                        <div class="table-box">
                           <!-- prettier-ignore -->
-                          @@include("../component/image_content_box.html", {
-                            "mode"  : "",
-                            "image" : "foundation/typography/typography_image_06",
-                            "desc"  : null
+                          @@include("../component/table.html", {
+                            "caption" : "Type Scale",
+                            "head" : [ 
+                              {
+                                "title" : "Style",
+                                "width" : "auto",
+                              },
+                              {
+                                "title" : "weight",
+                                "width" : "auto",
+                              },
+                              {
+                                "title" : "Size", 
+                                "width" : "auto",
+                              },
+                              {
+                                "title" : "Usage",
+                                "width" : "400px",
+                              }
+                            ],
+                            "body" : [
+                              {
+                                "data" : [ "Title1", "Bold", "64", "페이지 단위 타이틀 쓰임새로 사용 권장합니다. \n(예시: 전체 편성표 타이틀)" ]
+                              },
+                              {
+                                "data" : [ "Title2", "Bold", "60", "콘텐츠 타이틀 쓰임새로 사용 권장합니다. \n(예시: 콘텐츠 명)" ]
+                              },
+                              {
+                                "data" : [ "Title3", "Bold", "52", "페이지 단위 타이틀 쓰임새로 사용 권장합니다. \n(예시: My/인증/설정)" ]
+                              },
+                              {
+                                "data" : [ "Title4", "Bold", "48", "페이지 단위 타이틀 쓰임새로 사용 권장합니다. \n(예시: 팝업/실시간)" ]
+                              },
+                              {
+                                "data" : [ "Title5", "Bold", "40", "페이지 단위 타이틀 쓰임새로 사용 권장합니다. \n(예시: 검색/구매 금액 표기)" ]
+                              },
+                              {
+                                "data" : [ "Sub Title1", "Bold", "36", "페이지 단위 서브 타이틀 쓰임새로 사용 권장합니다. \n(예시: 서브 타이틀 / 실시간 프로그램명)" ]
+                              },
+                              {
+                                "data" : [ "Sub Title2", "Bold", "32", "주요 본문 서브타이틀 쓰임새로 사용 권장합니다. \n(예시: 본문 타이틀/Tab)" ]
+                              },
+                              {
+                                "data" : [ "Sub Title3", "Bold", "31", "GNB 메뉴 타이틀 쓰임새로 사용 권장합니다. \n(예시: GNB 메뉴)" ]
+                              },
+                              {
+                                "data" : [ "Sub Title4", "Bold", "28", "추천 콘텐츠 타이틀 쓰임새로 사용 권장합니다. \n(예시: 추천 콘텐츠 타이틀)" ]
+                              },
+                              {
+                                "data" : [ "Body1", "Medium", "30", "보조 본문 쓰임새로 사용 권장합니다. \n(예시: My/인증/설정)" ]
+                              },
+                              {
+                                "data" : [ "Body2", "Medium", "28", "콘텐츠 시놉시스 내용 쓰임새로 사용 권장합니다. \n(예시: 시놉시스)" ]
+                              },
+                              {
+                                "data" : [ "Body3", "Medium", "24", "콘텐츠 정보 쓰임새로 사용 권장합니다. \n(예시: 콘텐츠 정보)" ]
+                              },
+                              {
+                                "data" : [ "Body4", "Bold/Medium", "22", "구매시 부가 정보 쓰임새로 사용 권장합니다. \n(예시: 구매)" ]
+                              },
+                              {
+                                "data" : [ "Caption 1", "Bold/Medium", "20-24", "본문 보조 강조형 쓰임새로 사용 권장합니다. \n(예시: 현재 경로)" ]
+                              },
+                              {
+                                "data" : [ "Caption 2", "Bold/Medium", "18-19", "본문 보조 강조형 쓰임새로 사용 권장합니다. \n(예시: Tip)" ]
+                              }
+                            ]
                           })
                         </div>
                       </div>
