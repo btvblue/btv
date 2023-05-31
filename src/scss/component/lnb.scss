@@ -118,17 +118,22 @@
   }
   .lnb-last-list-box {
     display: none;
+    position: relative;
     overflow: hidden;
     margin-left: 5.4rem;
-    padding: 1.65rem 0;
     padding-left: 2rem;
-    border-left: 1px solid #eeeeee;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 1px;
+      height: calc(100% - 3.2rem);
+      background-color: #eeeeee;
+    }
 
     .lnb-last-list {
-      margin-top: 3.2rem;
-      &:first-of-type {
-        margin: 0;
-      }
       &:hover {
         .lnb-last-link {
           color: $purple;
@@ -141,6 +146,8 @@
         }
       }
       .lnb-last-link {
+        @include flex(row, flex-start, center);
+        height: 5.1rem;
         @include font(1.6rem, 300, #aaaaaa, 1.9rem);
       }
     }
@@ -149,9 +156,9 @@
 
 @media #{$tablet} {
   .lnb-container {
-    top: 7rem;
+    display: none;
     width: 100%;
-    height: auto;    
+    height: auto;
     background-color: $purple;
     box-shadow: 0px 0px 4rem rgba(112, 112, 112, 0.4);
 
@@ -166,7 +173,7 @@
       height: auto;
       max-height: calc(100dvh - 7.1rem);
       padding-right: 0;
-      padding: 0 4rem;  
+      padding: 0 4rem;
       box-sizing: border-box;
     }
 
@@ -175,8 +182,8 @@
       margin-top: 0;
 
       .lnb-link {
-        height: 6.2rem;
-        padding: 0 3.2rem;
+        height: 8.2rem;
+        padding: 0 3.4rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         box-sizing: border-box;
         color: rgba(255, 255, 255, 0.5);
@@ -195,7 +202,7 @@
 
       .btn-open,
       .btn-sub-open {
-        top: 1.9rem;
+        top: 2.9rem;
         left: 0;
 
         .ic-arrow {
@@ -209,13 +216,14 @@
           }
         }
       }
+
+      .btn-sub-open {
+        top: 1.9rem;
+      }
     }
 
     /* LNB SUB LIST */
     .lnb-sub-list-box {
-      // overflow-y: auto;
-      // display: block;
-      // height: 0;
       padding: 1rem 0;
       max-height: calc(100dvh - 13.2rem);
     }
@@ -229,7 +237,7 @@
         &:hover {
           font-weight: 600;
           color: #fff;
-        }        
+        }
       }
 
       &.active {
@@ -242,7 +250,9 @@
 
     .lnb-last-list-box {
       padding-left: 0;
-      border-color: rgba(255, 255, 255, 0.5);
+      &::before {
+        background-color: rgba($white, 0.5);
+      }
 
       .lnb-last-list {
         .lnb-last-link {
@@ -251,11 +261,10 @@
           &:hover {
             font-weight: 600;
             color: #fff;
-          }        
+          }
         }
 
         &.active {
-
           .lnb-last-link {
             font-weight: 600;
             color: #fff;

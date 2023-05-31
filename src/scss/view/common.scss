@@ -197,6 +197,17 @@ main {
   }
 }
 
+.video-box {
+  flex: 1;
+  overflow: hidden;
+  margin: 0 1rem;
+  border-radius: 0.8rem;
+  video {
+    display: block;
+    width: 100%;
+  }
+}
+
 .red {
   color: $red;
 }
@@ -206,6 +217,10 @@ main {
 
 .kor {
   font-family: 'SK_Btv';
+}
+
+.body-lock {
+  overflow: hidden;
 }
 
 // Responsive :: 1440px
@@ -224,9 +239,4 @@ main {
       }
     }
   }
-}
-
-// Responsive :: 1280px
-@media #{$tablet_1} {
-  //
 }

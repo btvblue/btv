@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
           src: '../../assets/images/btn_close_menu_nor.svg',
           alt: '메뉴 닫기',
         });
+        document.body.classList.add('body-lock');
       }
       // 메뉴 접음 //
       else {
@@ -35,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
           src: '../../assets/images/btn_open_menu_nor.svg',
           alt: '메뉴 열기',
         });
+        document.body.classList.remove('body-lock');
       }
     }
   }
@@ -59,7 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
             target.classList.remove('active');
             lnbContainer.classList.remove('expand');
           });
-
 
           // 마지막 깊이 메뉴가 있을 경우 함께 펼친다 //
           if (lastListBox) {
@@ -215,8 +216,7 @@ function setLnbPosition(width, breakPoint) {
       toggleButton.classList.add('active');
 
       activeHierarchyMenu(parent);
-    }
-    else {
+    } else {
       return false;
     }
   }
