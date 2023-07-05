@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- prettier-ignore -->
+  @@include("../component/head.html",{
+    "title" : "Components | GNB"
+  })
+
+  <style>
+    .heading-bottom .image-content-box {
+      flex: unset;
+    }
+    .heading-bottom .image-content-box:last-of-type {
+      flex: 1;
+    }
+  </style>
+
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <!-- prettier-ignore -->
+      @@include("../component/header.html", {
+        "page" : "components"
+      })
+
+      <!-- LNB -->
+      <!-- prettier-ignore -->
+      @@include("../component/lnb.html", {
+        "title" : "gnb"
+      })
+
+      <!-- Components | Controls | GNB -->
+      <main class="main">
+        <div class="main-container">
+          <div class="main-area">
+            <img src="/dist/assets/images/temp/mass_component_gnb.png" alt="" style="width: 100%"/>
+          </div>
+        </div>
+      </main>
+
+    </div>
+  </body>
+</html>

@@ -1,34 +1,34 @@
 <header class="header-container">
-  <div class="header-area">
-    <div class="header-left">
-      <div class="header-logo-box">
-        <a href="../overview/overview.html" class="header-logo-link">
-          <img src="../../assets/images/btv_logo.svg" alt="" />
-          <span class="text">UX Guidelines</span>
-        </a>
-      </div>
+    <div class="header-area">
+        <div class="header-left">
+            <div class="header-logo-box">
+                <a href="/dist/html/overview/overview.html" class="header-logo-link">
+                    <img src="/dist/assets/images/btv_logo.svg" alt=""/>
+                    <span class="text">UX Guidelines</span>
+                </a>
+            </div>
+        </div>
+        <div class="header-right">
+            <!--
+              Class 설명
+              expand : 메뉴 펼쳤을 때 스타일 적용 (인터렉션은 js로 구현함. 클래스로 제어하지 않음)
+            -->
+            <!--<ul class="header-menu-list-box">-->
+            <!--  <li class="header-menu-list @@if(page === 'principle') {active}">-->
+            <!--    <a href="../principle/principle.html" class="header-menu-link"><span class="text">Principle</span></a>-->
+            <!--  </li>-->
+            <!--  <li class="header-menu-list @@if(page === 'foundation') {active}">-->
+            <!--    <a href="../foundation/ios/foundation.html" class="header-menu-link"><span class="text">Foundation</span></a>-->
+            <!--  </li>-->
+            <!--  <li class="header-menu-list @@if(page === 'components') {active}">-->
+            <!--    <a href="../components/ios/components.html" class="header-menu-link"><span class="text">Components</span></a>-->
+            <!--  </li>-->
+            <!--</ul>-->
+            <div class="menu-button-box">
+                <button type="button" class="btn-menu">
+                    <img src="/dist/assets/images/btn_open_menu_nor.svg" alt="메뉴 열기"/>
+                </button>
+            </div>
+        </div>
     </div>
-    <div class="header-right">
-      <!--
-        Class 설명 
-        expand : 메뉴 펼쳤을 때 스타일 적용 (인터렉션은 js로 구현함. 클래스로 제어하지 않음)
-      -->
-      <ul class="header-menu-list-box">
-        <li class="header-menu-list @@if(page === 'principle') {active}">
-          <a href="../principle/principle.html" class="header-menu-link"><span class="text">Principle</span></a>
-        </li>
-        <li class="header-menu-list @@if(page === 'foundation') {active}">
-          <a href="../foundation/foundation.html" class="header-menu-link"><span class="text">Foundation</span></a>
-        </li>
-        <li class="header-menu-list @@if(page === 'components') {active}">
-          <a href="../components/components.html" class="header-menu-link"><span class="text">Components</span></a>
-        </li>
-      </ul>
-      <div class="menu-button-box">
-        <button type="button" class="btn-menu">
-          <img src="../../assets/images/btn_open_menu_nor.svg" alt="메뉴 열기" />
-        </button>
-      </div>
-    </div>
-  </div>
 </header>
