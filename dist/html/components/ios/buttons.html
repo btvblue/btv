@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.ico" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <script src="../../assets/js/default.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>Components | Buttons</title>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header-container">
+      <div class="header-area">
+        <div class="header-left">
+          <div class="header-logo-box">
+            <a href="/dist/html/overview/overview.html" class="header-logo-link">
+              <img src="/dist/assets/images/btv_logo.svg" alt="" />
+              <span class="text">UX Guidelines</span>
+            </a>
+          </div>
+        </div>
+        <div class="header-right">
+          <!--
+              Class 설명
+              expand : 메뉴 펼쳤을 때 스타일 적용 (인터렉션은 js로 구현함. 클래스로 제어하지 않음)
+            -->
+          <!--<ul class="header-menu-list-box">-->
+          <!--  <li class="header-menu-list ">-->
+          <!--    <a href="../principle/principle.html" class="header-menu-link"><span class="text">Principle</span></a>-->
+          <!--  </li>-->
+          <!--  <li class="header-menu-list ">-->
+          <!--    <a href="../foundation/ios/foundation.html" class="header-menu-link"><span class="text">Foundation</span></a>-->
+          <!--  </li>-->
+          <!--  <li class="header-menu-list active">-->
+          <!--    <a href="../components/ios/components.html" class="header-menu-link"><span class="text">Components</span></a>-->
+          <!--  </li>-->
+          <!--</ul>-->
+          <div class="menu-button-box">
+            <button type="button" class="btn-menu">
+              <img src="/dist/assets/images/btn_open_menu_nor.svg" alt="메뉴 열기" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- LNB -->
+    <div class="lnb-container">
+      <div class="lnb-area">
+        <ul class="lnb-list-box">
+          <li class="lnb-list ">
+            <a href="/dist/html/overview/overview.html" class="lnb-link"><span class="text">Overview</span></a>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="/dist/html/principle/principle.html" class="lnb-link"><span class="text">Principle</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/principle/tv.html" class="lnb-sub-link"><span
+                                class="text">TV Environment</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/principle/contents.html" class="lnb-sub-link"><span
+                                class="text">Contents</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/principle/navigation.html" class="lnb-sub-link"><span
+                                class="text">Navigation</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/principle/legacy.html" class="lnb-sub-link"><span
+                                class="text">Respect for Legacy</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/principle/accessibility.html" class="lnb-sub-link"><span
+                                class="text">Accessibility</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="lnb-select-box">
+          <span id="lnb_select_label">iOS</span>
+          <div>
+            <ul>
+              <li id="platform_ios"><a href="/dist/html/foundation/ios/foundation.html">iOS</a></li>
+              <li id="platform_web"><a href="/dist/html/foundation/web/color.html">Web UI</a></li>
+            </ul>
+          </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', () => {
+              if (window.location.href.includes('ios')) {
+                document.getElementById('platform_ios').classList.add('active');
+                document.getElementById('lnb_select_label').innerText = 'iOS';
+                document.getElementById('platform_ios_list').style.display = 'block';
+                document.getElementById('platform_web_list').style.display = 'none'
+              }
+              if (window.location.href.includes('web')) {
+                document.getElementById('platform_web').classList.add('active');
+                document.getElementById('lnb_select_label').innerText = 'Web UI';
+                document.getElementById('platform_ios_list').style.display = 'none';
+                document.getElementById('platform_web_list').style.display = 'block';
+              }
+              if (window.location.href.includes('components/web')) {
+                document.getElementById('platform_web_components').style.display = 'block'
+              }
+              if (
+                window.location.href.includes('components/web/checkbox') ||
+                window.location.href.includes('components/web/radio') ||
+                window.location.href.includes('components/web/switch')
+              ) {
+                document.getElementById('platform_web_components_controls').style.display = 'block'
+              }
+              if (window.location.href.includes('foundation/web')) {
+                document.getElementById('platform_web_foundation').style.display = 'block'
+              }
+            });
+          </script>
+        </div>
+        <ul class="lnb-list-box" id="platform_ios_list">
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="/dist/html/foundation/ios/foundation.html" class="lnb-link"><span
+                        class="text">Foundation</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/ios/color.html" class="lnb-sub-link"><span
+                                class="text">Color</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/ios/typography.html" class="lnb-sub-link"><span
+                                class="text">Typography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/ios/iconography.html" class="lnb-sub-link"><span
+                                class="text">Iconography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/ios/layout.html" class="lnb-sub-link"><span
+                                class="text">Layout</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/ios/focus.html" class="lnb-sub-link"><span
+                                class="text">Focus</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/ios/motion.html" class="lnb-sub-link"><span
+                                class="text">Motion</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="/dist/html/components/ios/components.html" class="lnb-link"><span
+                        class="text">Components</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/badges.html" class="lnb-sub-link"><span
+                                class="text">Badges</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/booting.html" class="lnb-sub-link"><span
+                                class="text">Booting</span></a>
+              </li>
+              <li class="lnb-sub-list active">
+                <a href="/dist/html/components/ios/buttons.html" class="lnb-sub-link"><span
+                                class="text">Buttons</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <button class="btn-sub-open"><i class="icon ic-arrow"></i></button>
+                <a href="/dist/html/components/ios/checkbox.html" class="lnb-sub-link"><span
+                                class="text">Controls</span></a>
+                <ul class="lnb-last-list-box">
+                  <li class="lnb-last-list ">
+                    <a href="/dist/html/components/ios/checkbox.html" class="lnb-last-link"><span
+                                        class="text">Checkbox</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="/dist/html/components/ios/radio.html" class="lnb-last-link"><span
+                                        class="text">Radio Button</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="/dist/html/components/ios/switch.html" class="lnb-last-link"><span
+                                        class="text">Switch</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="/dist/html/components/ios/slider.html" class="lnb-last-link"><span
+                                        class="text">Slider</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/dropdowns.html" class="lnb-sub-link"><span
+                                class="text">Dropdown</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/gnb.html" class="lnb-sub-link"><span class="text">GNB</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/inputs.html" class="lnb-sub-link"><span
+                                class="text">Inputs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/ime.html" class="lnb-sub-link"><span class="text">IME</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/list_cards.html" class="lnb-sub-link"><span
+                                class="text">List Cards</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/loading.html" class="lnb-sub-link"><span
+                                class="text">Loading</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/pagination.html" class="lnb-sub-link"><span
+                                class="text">Pagination</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/player.html" class="lnb-sub-link"><span
+                                class="text">Player</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/popup.html" class="lnb-sub-link"><span
+                                class="text">Pop up</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/splash.html" class="lnb-sub-link"><span
+                                class="text">Splash</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/tabs.html" class="lnb-sub-link"><span
+                                class="text">Tabs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/tooltip.html" class="lnb-sub-link"><span
+                                class="text">Tooltip</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="lnb-list-box" id="platform_web_list" style="display: none">
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="/dist/html/foundation/web/color.html" class="lnb-link"><span
+                        class="text">Foundation</span></a>
+            <ul class="lnb-sub-list-box" id="platform_web_foundation">
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/web/color.html" class="lnb-sub-link"><span
+                                class="text">Color</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/web/typography.html" class="lnb-sub-link"><span
+                                class="text">Typography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/web/iconography.html" class="lnb-sub-link"><span
+                                class="text">Iconography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/web/layout.html" class="lnb-sub-link"><span
+                                class="text">Layout</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/web/focus.html" class="lnb-sub-link"><span
+                                class="text">Focus</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="/dist/html/components/web/buttons.html" class="lnb-link"><span
+                        class="text">Components</span></a>
+            <ul class="lnb-sub-list-box" id="platform_web_components">
+              <li class="lnb-sub-list active">
+                <a href="/dist/html/components/web/buttons.html" class="lnb-sub-link"><span
+                                class="text">Buttons</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <button class="btn-sub-open"><i class="icon ic-arrow"></i></button>
+                <a href="/dist/html/components/web/checkbox.html" class="lnb-sub-link"><span
+                                class="text">Controls</span></a>
+                <ul class="lnb-last-list-box" id="platform_web_components_controls">
+                  <li class="lnb-last-list ">
+                    <a href="/dist/html/components/web/checkbox.html" class="lnb-last-link"><span
+                                        class="text">Checkbox</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="/dist/html/components/web/radio.html" class="lnb-last-link"><span
+                                        class="text">Radio Button</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="/dist/html/components/web/switch.html" class="lnb-last-link"><span
+                                        class="text">Switch</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/dropdowns.html" class="lnb-sub-link"><span
+                                class="text">Dropdown</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/dock.html" class="lnb-sub-link"><span
+                                class="text">Dock</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/flag.html" class="lnb-sub-link"><span
+                                class="text">Flag</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/gnb.html" class="lnb-sub-link"><span class="text">GNB</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/inputs.html" class="lnb-sub-link"><span
+                                class="text">Inputs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/ime.html" class="lnb-sub-link"><span class="text">IME</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/loading.html" class="lnb-sub-link"><span
+                                class="text">Loading</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/menus.html" class="lnb-sub-link"><span
+                                class="text">Menus</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/pagination.html" class="lnb-sub-link"><span
+                                class="text">Pagination</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/popup.html" class="lnb-sub-link"><span
+                                class="text">Pop up</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/tabs.html" class="lnb-sub-link"><span
+                                class="text">Tabs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/tooltip.html" class="lnb-sub-link"><span
+                                class="text">Tooltip</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Components | Buttons -->
+    <main class="main">
+      <div class="main-container">
+        <div class="main-area">
+          <div class="heading-container">
+            <div class="heading-area">
+              <div class="heading-top">
+                <div class="title-box">
+                  <h1 class="title">Buttons</h1>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">Button은 주요한 화면을 Trigger 하는데 사용되는 Action 가능한 컴포넌트입니다.</p>
+                </div>
+              </div>
+              <div class="heading-bottom">
+                <div class="content-box">
+                  <div class="image-content-box ">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/buttons/buttons_image_01.png" alt="" />
+                    </div>
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">A</span></span>
+                      <span class="text">Box Button</span>
+                    </div>
+                  </div>
+                  <div class="image-content-box ">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/buttons/buttons_image_02.png" alt="" />
+                    </div>
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">B</span></span>
+                      <span class="text">Text Button</span>
+                    </div>
+                  </div>
+                  <div class="image-content-box ">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/buttons/buttons_image_03.png" alt="" />
+                    </div>
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">C</span></span>
+                      <span class="text">Icon Button</span>
+                    </div>
+                  </div>
+                  <div class="image-content-box ">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/buttons/buttons_image_04.png" alt="" />
+                    </div>
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">D</span></span>
+                      <span class="text">Floating Action Button</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Anatomy -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Anatomy</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box ">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/buttons/buttons_image_05.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="image-content-box ">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/buttons/buttons_image_06.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Icon (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">Button의 기능을 나타냅니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Text</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 Button과 상호 작용할 때 발생할 동작을 나타냅니다. </p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Container</span>
+                          <div class="text-box">
+                            <p class="text">Button의 형태를 나타내며 Box 또는 Line으로 표시될 수 있습니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Icon (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">Button의 기능을 나타냅니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Text</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 Button과 상호 작용할 때 발생할 동작을 나타냅니다. </p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Under Line (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">특정 기능 실행 시 Under Line을 결합해 사용합니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box ">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/buttons/buttons_image_07.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="image-content-box ">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/buttons/buttons_image_08.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Icon</span>
+                          <div class="text-box">
+                            <p class="text">Button의 기능을 나타냅니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Text (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 Button과 상호 작용할 때 발생할 동작을 나타냅니다. </p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Container</span>
+                          <div class="text-box">
+                            <p class="text">Button의 형태를 나타내며 Box 또는 Line으로 표시될 수 있습니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Icon</span>
+                          <div class="text-box">
+                            <p class="text">Button의 기능을 나타냅니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Text</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 Button과 상호 작용할 때 발생할 동작을 나타냅니다. </p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Container</span>
+                          <div class="text-box">
+                            <p class="text">Button의 형태를 나타내며 Box 또는 Line으로 표시될 수 있습니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="color-box   do">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/buttons/buttons_image_09.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Do</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">직관적인 이해를 돕기 위해 Icon과 Text를 함께 배치할 수 있습니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="color-box   dont">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/buttons/buttons_image_010.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Don't</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">사용자의 가독성을 고려하여 길고 복잡한 Text를 지양합니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- States -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">States</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box ">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/buttons/buttons_image_011.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="image-content-box ">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/buttons/buttons_image_012.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="image-content-box ">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/buttons/buttons_image_013.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="image-content-box ">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/buttons/buttons_image_014.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Normal</span>
+                          <div class="text-box">
+                            <p class="text">활성화 된 상태의 일반적인 Button입니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Focus</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 화면상 위치를 쉽게 인식할 수 있도록 Focusing 된 상태의 Button입니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Selected</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 Button을 Select 한 상태입니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">4. Dimmed</span>
+                          <div class="text-box">
+                            <p class="text">비활성화 된 상태의 Button입니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Button Hierarchy -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Button Hierarchy</h2>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">Large Button > Regular Button > Small Button 순으로 기능적 중요도를 구분합니다.</p>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box ">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/buttons/buttons_image_015.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Small Button</span>
+                          <div class="text-box">
+                            <p class="text">부가 정보 및 기능을 제공하는 Button으로 사용합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Regular Button</span>
+                          <div class="text-box">
+                            <p class="text">가장 일반적인 크기로, 화면 내 우선순위가 높은 주요 Action Button으로 사용합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Large Button</span>
+                          <div class="text-box">
+                            <p class="text">가장 높은 강도로 강조할 때 사용합니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Placement -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Placement</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <!-- 1. 시선의 흐름에 따른 배치 -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title kor">1. 시선의 흐름에 따른 배치</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          List를 포함한 다른 Contents와 함께 사용할 경우 시선의 흐름에 따라 배치 및 사용을 권장합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box kor">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_016.png" alt="" />
+                          </div>
+                          <div class="image-text-box">
+                            <span class="text">좌측에서 우측으로 시선의 흐름에 따른 배치</span>
+                          </div>
+                        </div>
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_017.png" alt="" />
+                          </div>
+                          <div class="image-text-box">
+                            <span class="text">상단에서 하단으로 시선의 흐름에 따른 최하단 배치</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 2. Button 배치 -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title kor">2. Button 배치</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          Button의 선택지를 2개로 제공할 때, 긍정을 의미하는 Button은 좌측에 위치하고 부정을 의미하는
+                          Button은 우측에 배치하는 일관된 형태를 권장합니다. 우선 순위가 높은 순으로 좌측에서 우측으로
+                          제공합니다.
+                        </p>
+                        <p class="desc red">
+                          *구매화면의 결제 Button은 예외적으로 긍정의 Button이 우측에 사용됩니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_018.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3. 화면 Layout에 따른 정렬 방식 -->
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title kor">3. 화면 Layout에 따른 정렬 방식</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          Button 정렬 방식은 화면의 Layout에 따라 달라질 수 있습니다.<br />기본적으로 Icon과 Text이
+                            같이 제공될 경우 영역 내 중앙 정렬을 권장하며 화면 정렬 방법에 따라 좌측 정렬으로 사용
+                            가능합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_019.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_020.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">좌측으로 Contents가 정렬 될 경우 좌측 정렬을 권장합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box   dont">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_021.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Don't</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Contents의 정렬 방법과 맞지 않는 정렬은 지양합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box   dont">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_022.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Don't</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">일부만 정렬 방식을 바꾸는 것을 사용하지 않습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Types -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Types</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Box Button</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">가장 일반적인 Button으로, 주요한 액션을 실행하는 Button으로 사용됩니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_023.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Text Button</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          Container가 없는 Text로만 구성된 Button으로 세로형 List로 사용되는 Text Button과 특정 기능을
+                          실행시 사용되는 Under Line Button으로 구성되어 있습니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_024.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Icon Button</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          시각적인 힌트를 제공하며, 기능이 명확히 전달되지 않는 경우 Text를 함께 제공합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_025.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Floating Action Button</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          앱의 중요 기능에 빠르게 접근하는데 사용되며 원형 Container 안에 Icon과 Text를 세로로
+                          배치합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_026.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Usage -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Usage</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Box Button</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          일반적으로 화면의 Contents 영역 또는 하단 영역에 배치하여 화면 내 중요한 작업에 사용됩니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_027.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_028.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">진행 상태를 Icon과 Text로 표시하여 작업의 중복 실행을 방지합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_029.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Button이 나란히 있는 경우 Button의 중요도에 따라 크기를 조절합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_030.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">블록 영역에서 Poster와 Layout적인 통일감을 위해 동일한 크기의 Box Button을 사용합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_031.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">일반적으로 Icon은 Text Color와 동일하며, Button 내 Icon은 Text 기준 좌측에 위치하는 것을 권장합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box   exception">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_032.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Exception</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">단일 선택을 해야하는 곳에서 Check Icon을 사용합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box   dont">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_033.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Don't</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Box Button의 Background에 가시성을 해치는 Image나 Color 사용을 지양합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Text Button</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          세로형 List에 주로 사용되며, 더 보기와 접기 등 특정 기능을 실행 시 사용되는 Under Line
+                          Button이 있습니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_034.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_035.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">정보의 이해를 도울 수 있는 디테일한 Icon을 결합하여 사용합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_036.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">본문이 길어질 경우 Text Button에 Under Line을 사용합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box   exception">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_037.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Exception</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Button 중요도에 따라 다른 Button Type과 함께 사용합니다. </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box   dont">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_038.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Don't</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Text Button을 본문과 구별이 불가능한 형태로 사용하지 않습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Icon Button</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          Icon을 Button으로 사용하며 사용자가 보기에 충분히 이해할 수 있는 메타포일 경우 Text 없이
+                          사용합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_039.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_040.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Icon만으로는 기능을 명확히 전달하기 어려운 경우 Text를 함께 표시합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_041.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">단일 항목을 활성화 할 수 있는 Icon Button으로 사용합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Floating Action Button</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">사용성이 많은 중요한 기능에 사용되며 화면 Layer 최상단에 위치합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_042.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/buttons/buttons_image_043.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">Floating Action Button의 경우 Contents 화면과의 Layer 계층을 명확하게 분리시켜야 합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Quick Menu -->
+    <div class="quick-menu-container">
+      <div class="quick-menu-area">
+        <ul class="quick-menu-list-box">
+          <li class="quick-menu-list"><span class="list-title">Anatomy</span></li>
+          <li class="quick-menu-list"><span class="list-title">States</span></li>
+          <li class="quick-menu-list"><span class="list-title">Button Hierarchy</span></li>
+          <li class="quick-menu-list">
+            <span class="list-title">Placement</span>
+            <ul class="quick-menu-sub-list-box kor">
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">1. 시선의 흐름에 따른 배치</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">2. Button 배치</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">3. 화면 Layout에 따른 정렬 방식 </span>
+              </li>
+            </ul>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Types</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Box Button</span></li>
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Text Button</span></li>
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Icon Button</span></li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Floating Action Button</span>
+              </li>
+            </ul>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Usage</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Box Button</span></li>
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Text Button</span></li>
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Icon Button</span></li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Floating Action Button</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

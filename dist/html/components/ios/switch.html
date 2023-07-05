@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.ico" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <script src="../../assets/js/default.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>Components | Controls | Switch</title>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header-container">
+      <div class="header-area">
+        <div class="header-left">
+          <div class="header-logo-box">
+            <a href="/dist/html/overview/overview.html" class="header-logo-link">
+              <img src="/dist/assets/images/btv_logo.svg" alt="" />
+              <span class="text">UX Guidelines</span>
+            </a>
+          </div>
+        </div>
+        <div class="header-right">
+          <!--
+              Class 설명
+              expand : 메뉴 펼쳤을 때 스타일 적용 (인터렉션은 js로 구현함. 클래스로 제어하지 않음)
+            -->
+          <!--<ul class="header-menu-list-box">-->
+          <!--  <li class="header-menu-list ">-->
+          <!--    <a href="../principle/principle.html" class="header-menu-link"><span class="text">Principle</span></a>-->
+          <!--  </li>-->
+          <!--  <li class="header-menu-list ">-->
+          <!--    <a href="../foundation/ios/foundation.html" class="header-menu-link"><span class="text">Foundation</span></a>-->
+          <!--  </li>-->
+          <!--  <li class="header-menu-list active">-->
+          <!--    <a href="../components/ios/components.html" class="header-menu-link"><span class="text">Components</span></a>-->
+          <!--  </li>-->
+          <!--</ul>-->
+          <div class="menu-button-box">
+            <button type="button" class="btn-menu">
+              <img src="/dist/assets/images/btn_open_menu_nor.svg" alt="메뉴 열기" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- LNB -->
+    <div class="lnb-container">
+      <div class="lnb-area">
+        <ul class="lnb-list-box">
+          <li class="lnb-list ">
+            <a href="/dist/html/overview/overview.html" class="lnb-link"><span class="text">Overview</span></a>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="/dist/html/principle/principle.html" class="lnb-link"><span class="text">Principle</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/principle/tv.html" class="lnb-sub-link"><span
+                                class="text">TV Environment</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/principle/contents.html" class="lnb-sub-link"><span
+                                class="text">Contents</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/principle/navigation.html" class="lnb-sub-link"><span
+                                class="text">Navigation</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/principle/legacy.html" class="lnb-sub-link"><span
+                                class="text">Respect for Legacy</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/principle/accessibility.html" class="lnb-sub-link"><span
+                                class="text">Accessibility</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="lnb-select-box">
+          <span id="lnb_select_label">iOS</span>
+          <div>
+            <ul>
+              <li id="platform_ios"><a href="/dist/html/foundation/ios/foundation.html">iOS</a></li>
+              <li id="platform_web"><a href="/dist/html/foundation/web/color.html">Web UI</a></li>
+            </ul>
+          </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', () => {
+              if (window.location.href.includes('ios')) {
+                document.getElementById('platform_ios').classList.add('active');
+                document.getElementById('lnb_select_label').innerText = 'iOS';
+                document.getElementById('platform_ios_list').style.display = 'block';
+                document.getElementById('platform_web_list').style.display = 'none'
+              }
+              if (window.location.href.includes('web')) {
+                document.getElementById('platform_web').classList.add('active');
+                document.getElementById('lnb_select_label').innerText = 'Web UI';
+                document.getElementById('platform_ios_list').style.display = 'none';
+                document.getElementById('platform_web_list').style.display = 'block';
+              }
+              if (window.location.href.includes('components/web')) {
+                document.getElementById('platform_web_components').style.display = 'block'
+              }
+              if (
+                window.location.href.includes('components/web/checkbox') ||
+                window.location.href.includes('components/web/radio') ||
+                window.location.href.includes('components/web/switch')
+              ) {
+                document.getElementById('platform_web_components_controls').style.display = 'block'
+              }
+              if (window.location.href.includes('foundation/web')) {
+                document.getElementById('platform_web_foundation').style.display = 'block'
+              }
+            });
+          </script>
+        </div>
+        <ul class="lnb-list-box" id="platform_ios_list">
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="/dist/html/foundation/ios/foundation.html" class="lnb-link"><span
+                        class="text">Foundation</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/ios/color.html" class="lnb-sub-link"><span
+                                class="text">Color</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/ios/typography.html" class="lnb-sub-link"><span
+                                class="text">Typography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/ios/iconography.html" class="lnb-sub-link"><span
+                                class="text">Iconography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/ios/layout.html" class="lnb-sub-link"><span
+                                class="text">Layout</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/ios/focus.html" class="lnb-sub-link"><span
+                                class="text">Focus</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/ios/motion.html" class="lnb-sub-link"><span
+                                class="text">Motion</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="/dist/html/components/ios/components.html" class="lnb-link"><span
+                        class="text">Components</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/badges.html" class="lnb-sub-link"><span
+                                class="text">Badges</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/booting.html" class="lnb-sub-link"><span
+                                class="text">Booting</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/buttons.html" class="lnb-sub-link"><span
+                                class="text">Buttons</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <button class="btn-sub-open"><i class="icon ic-arrow"></i></button>
+                <a href="/dist/html/components/ios/checkbox.html" class="lnb-sub-link"><span
+                                class="text">Controls</span></a>
+                <ul class="lnb-last-list-box">
+                  <li class="lnb-last-list ">
+                    <a href="/dist/html/components/ios/checkbox.html" class="lnb-last-link"><span
+                                        class="text">Checkbox</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="/dist/html/components/ios/radio.html" class="lnb-last-link"><span
+                                        class="text">Radio Button</span></a>
+                  </li>
+                  <li class="lnb-last-list active">
+                    <a href="/dist/html/components/ios/switch.html" class="lnb-last-link"><span
+                                        class="text">Switch</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="/dist/html/components/ios/slider.html" class="lnb-last-link"><span
+                                        class="text">Slider</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/dropdowns.html" class="lnb-sub-link"><span
+                                class="text">Dropdown</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/gnb.html" class="lnb-sub-link"><span class="text">GNB</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/inputs.html" class="lnb-sub-link"><span
+                                class="text">Inputs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/ime.html" class="lnb-sub-link"><span class="text">IME</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/list_cards.html" class="lnb-sub-link"><span
+                                class="text">List Cards</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/loading.html" class="lnb-sub-link"><span
+                                class="text">Loading</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/pagination.html" class="lnb-sub-link"><span
+                                class="text">Pagination</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/player.html" class="lnb-sub-link"><span
+                                class="text">Player</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/popup.html" class="lnb-sub-link"><span
+                                class="text">Pop up</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/splash.html" class="lnb-sub-link"><span
+                                class="text">Splash</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/tabs.html" class="lnb-sub-link"><span
+                                class="text">Tabs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/ios/tooltip.html" class="lnb-sub-link"><span
+                                class="text">Tooltip</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="lnb-list-box" id="platform_web_list" style="display: none">
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="/dist/html/foundation/web/color.html" class="lnb-link"><span
+                        class="text">Foundation</span></a>
+            <ul class="lnb-sub-list-box" id="platform_web_foundation">
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/web/color.html" class="lnb-sub-link"><span
+                                class="text">Color</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/web/typography.html" class="lnb-sub-link"><span
+                                class="text">Typography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/web/iconography.html" class="lnb-sub-link"><span
+                                class="text">Iconography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/web/layout.html" class="lnb-sub-link"><span
+                                class="text">Layout</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/foundation/web/focus.html" class="lnb-sub-link"><span
+                                class="text">Focus</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="/dist/html/components/web/buttons.html" class="lnb-link"><span
+                        class="text">Components</span></a>
+            <ul class="lnb-sub-list-box" id="platform_web_components">
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/buttons.html" class="lnb-sub-link"><span
+                                class="text">Buttons</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <button class="btn-sub-open"><i class="icon ic-arrow"></i></button>
+                <a href="/dist/html/components/web/checkbox.html" class="lnb-sub-link"><span
+                                class="text">Controls</span></a>
+                <ul class="lnb-last-list-box" id="platform_web_components_controls">
+                  <li class="lnb-last-list ">
+                    <a href="/dist/html/components/web/checkbox.html" class="lnb-last-link"><span
+                                        class="text">Checkbox</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="/dist/html/components/web/radio.html" class="lnb-last-link"><span
+                                        class="text">Radio Button</span></a>
+                  </li>
+                  <li class="lnb-last-list active">
+                    <a href="/dist/html/components/web/switch.html" class="lnb-last-link"><span
+                                        class="text">Switch</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/dropdowns.html" class="lnb-sub-link"><span
+                                class="text">Dropdown</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/dock.html" class="lnb-sub-link"><span
+                                class="text">Dock</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/flag.html" class="lnb-sub-link"><span
+                                class="text">Flag</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/gnb.html" class="lnb-sub-link"><span class="text">GNB</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/inputs.html" class="lnb-sub-link"><span
+                                class="text">Inputs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/ime.html" class="lnb-sub-link"><span class="text">IME</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/loading.html" class="lnb-sub-link"><span
+                                class="text">Loading</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/menus.html" class="lnb-sub-link"><span
+                                class="text">Menus</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/pagination.html" class="lnb-sub-link"><span
+                                class="text">Pagination</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/popup.html" class="lnb-sub-link"><span
+                                class="text">Pop up</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/tabs.html" class="lnb-sub-link"><span
+                                class="text">Tabs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="/dist/html/components/web/tooltip.html" class="lnb-sub-link"><span
+                                class="text">Tooltip</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Components | Controls | Switch -->
+    <main class="main">
+      <div class="main-container">
+        <div class="main-area">
+          <div class="heading-container">
+            <div class="heading-area">
+              <div class="heading-top">
+                <div class="title-box">
+                  <h1 class="title">Switch</h1>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">
+                    Switch는 상호간의 배타적인 상태의 전환이 필요할 때, 기능을 ON/OFF 하기 위해 사용합니다. 사용자가
+                    선택하지 않아도 기본적으로 선택되어 있는 Default Option을 제공합니다.
+                  </p>
+                </div>
+              </div>
+              <div class="heading-bottom">
+                <div class="content-box">
+                  <div class="image-content-box dark">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/switch/switch_image_01.png" alt="" />
+                    </div>
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">A</span></span>
+                      <span class="text">General ON/OFF Switch</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Anatomy -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Anatomy</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box dark">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/switch/switch_image_02.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Track</span>
+                          <div class="text-box">
+                            <p class="text">Thumb의 이동이 가능한 범위를 나타냅니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Thumb</span>
+                          <div class="text-box">
+                            <p class="text">Thumb의 위치로 Option의 상태를 나타냅니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Anatomy -->
+          <!-- Types -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Types</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">General switch</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          기본적으로 사용되는 Switch로, ON/OFF의 기능을 수행합니다.<br />
+                            사용자의 시각적 이해를 돕기위해 선택된 Option에 Color로 강조합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box dark">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/switch/switch_image_03.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/switch/switch_image_04.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">사용자에게 Switch Option의 명확한 설명을 위해 Title을 같이 배치합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sub-content-container">
+                <div class="sub-content-area">
+                  <div class="sub-content-top">
+                    <div class="title-box">
+                      <h3 class="title">Text Switch</h3>
+                    </div>
+                    <div class="desc-box">
+                      <p class="desc">
+                        Text Switch 안에 배치되는 Text는 ON/OFF의 기능을 수행합니다.<br />
+                          사용자의 시각적 이해를 돕기위해 선택된 Option에 Color와 Text로 강조합니다.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sub-content-bottom">
+                    <div class="content-box">
+                      <div class="image-content-box dark">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/switch/switch_image_05.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-box">
+                      <div class="color-box dark  do">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/switch/switch_image_06.png" alt="" />
+                        </div>
+                        <div class="color-text-box">
+                          <div class="color-title-box">
+                            <span class="color-title">Do</span>
+                          </div>
+                          <div class="color-desc-box">
+                            <p class="color-desc">사용자에게 Switch Option의 명확한 설명을 위해 Title을 같이 배치합니다.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="color-box dark  dont">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/switch/switch_image_07.png" alt="" />
+                        </div>
+                        <div class="color-text-box">
+                          <div class="color-title-box">
+                            <span class="color-title">Don't</span>
+                          </div>
+                          <div class="color-desc-box">
+                            <p class="color-desc">On/Off 요소 외에 Switch를 사용하지 않습니다.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="color-box dark  exception">
+                        <div class="image-box">
+                          <img src="../../assets/images/components/switch/switch_image_08.png" alt="" />
+                        </div>
+                        <div class="color-text-box">
+                          <div class="color-title-box">
+                            <span class="color-title">Exception</span>
+                          </div>
+                          <div class="color-desc-box">
+                            <p class="color-desc">PlayZ의 경우 정보 간 전환 용도로 사용하며, Track 외부에 Text를 배치하는 형태로 Switch를 사용합니다.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Types -->
+          <!-- States -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">States</h2>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">
+                    Switch의 상태 별 정의는 리모컨의 포커싱에 따라 Focus/Select 상태로 크게 분류됩니다.
+                  </p>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-content-box dark">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/switch/switch_image_09.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="color-box dark  do">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/switch/switch_image_010.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Do</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">Switch는 사용자가 선택한 상태값에 대해 시각적으로 바로 인지 할 수 있도록 확실한 대비 Color로 강조해줘야합니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="color-box dark  do">
+                    <div class="image-box">
+                      <img src="../../assets/images/components/switch/switch_image_011.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Do</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">Title이 같이 붙는 경우, Title과 같이 그룹으로 지정하여 전체적으로 Focus Line을 활용하여 사용자의 명확한 이해를 돕습니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // States -->
+          <!-- Usage -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Usage</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Text Switch</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          일반적으로 하나의 상태값을 키고 끌때 사용합니다.<br />
+                            Thumb의 위치는 리모컨 확인 키로 변경이 가능하며 상태값은 즉각적으로 변경됩니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box dark">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/switch/switch_image_012.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box dark  dont">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/switch/switch_image_013.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Don't</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">세개 이상의 상태값을 선택하기 위해 Switch를 사용할 수 없습니다. </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box dark  dont">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/switch/switch_image_014.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Don't</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">사용자의 시선 흐름이 좌측에서 우측으로 흐르기 때문에 Option을 설명하는 Text를 Swich의 우측에 배치 할 수 없습니다. </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box dark  dont">
+                          <div class="image-box">
+                            <img src="../../assets/images/components/switch/switch_image_015.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Don't</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">사용자가 Option을 변경하면 변경 사항은 바로 반영되어야 하기 때문에 확인 또는 적용하기 Button을 제공하지 않습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Usage -->
+        </div>
+      </div>
+    </main>
+    <!-- Quick Menu -->
+    <div class="quick-menu-container">
+      <div class="quick-menu-area">
+        <ul class="quick-menu-list-box">
+          <li class="quick-menu-list"><span class="list-title">Anatomy</span></li>
+          <li class="quick-menu-list">
+            <span class="list-title">Types</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">General Switch</span>
+              </li>
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Text Switch</span></li>
+            </ul>
+          </li>
+          <li class="quick-menu-list"><span class="list-title">States</span></li>
+          <li class="quick-menu-list">
+            <span class="list-title">Usage</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list"><span class="sub-list-title">Text Switch</span></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
