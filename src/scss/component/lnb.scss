@@ -25,13 +25,13 @@
     }
 
     .lnb-area {
+        overflow-y: auto;
         height: calc(100% - 5.2rem);
         padding: 2.6rem 0.6rem 2.6rem 2rem;
         border-right: 1px solid #d4d4d4;
     }
 
     .lnb-list-box {
-        overflow-y: auto;
         padding-right: 1.4rem;
     }
 
