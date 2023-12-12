@@ -12,11 +12,11 @@
   <title>Components | GNB</title>
 </head>
 <style>
+  .heading-bottom .content-box {
+    flex-wrap: unset;
+  }
   .heading-bottom .image-content-box {
     flex: unset;
-  }
-  .heading-bottom .image-content-box:last-of-type {
-    flex: 1;
   }
 </style>
 <body>
@@ -68,24 +68,19 @@
             <a href="../../principle/principle.html" class="lnb-link"><span class="text">Principle</span></a>
             <ul class="lnb-sub-list-box">
               <li class="lnb-sub-list ">
-                <a href="../../principle/tv.html" class="lnb-sub-link"><span
-                                class="text">TV Environment</span></a>
+                <a href="../../principle/tv.html" class="lnb-sub-link"><span class="text">TV Environment</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../principle/contents.html" class="lnb-sub-link"><span
-                                class="text">Contents</span></a>
+                <a href="../../principle/contents.html" class="lnb-sub-link"><span class="text">Contents</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../principle/navigation.html" class="lnb-sub-link"><span
-                                class="text">Navigation</span></a>
+                <a href="../../principle/navigation.html" class="lnb-sub-link"><span class="text">Navigation</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../principle/legacy.html" class="lnb-sub-link"><span
-                                class="text">Respect for Legacy</span></a>
+                <a href="../../principle/legacy.html" class="lnb-sub-link"><span class="text">Respect for Legacy</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../principle/accessibility.html" class="lnb-sub-link"><span
-                                class="text">Accessibility</span></a>
+                <a href="../../principle/accessibility.html" class="lnb-sub-link"><span class="text">Accessibility</span></a>
               </li>
             </ul>
           </li>
@@ -104,7 +99,7 @@
                 document.getElementById('platform_ios').classList.add('active');
                 document.getElementById('lnb_select_label').innerText = 'Apple TV OS';
                 document.getElementById('platform_ios_list').style.display = 'block';
-                document.getElementById('platform_web_list').style.display = 'none'
+                document.getElementById('platform_web_list').style.display = 'none';
               }
               if (window.location.href.includes('web')) {
                 document.getElementById('platform_web').classList.add('active');
@@ -117,20 +112,20 @@
                 window.location.href.includes('components/web/radio') ||
                 window.location.href.includes('components/web/switch')
               ) {
-                document.getElementById('platform_web_components_controls').style.display = 'block'
+                document.getElementById('platform_web_components_controls').style.display = 'block';
               }
               if (window.location.href.includes('components/web')) {
                 if (window.location.href.includes('components/web/components')) {
-                  document.getElementById('platform_web_components').style.display = 'none'
+                  document.getElementById('platform_web_components').style.display = 'none';
                 } else {
-                  document.getElementById('platform_web_components').style.display = 'block'
+                  document.getElementById('platform_web_components').style.display = 'block';
                 }
               }
               if (window.location.href.includes('foundation/web')) {
                 if (window.location.href.includes('foundation/web/foundation')) {
-                  document.getElementById('platform_web_foundation').style.display = 'none'
+                  document.getElementById('platform_web_foundation').style.display = 'none';
                 } else {
-                  document.getElementById('platform_web_foundation').style.display = 'block'
+                  document.getElementById('platform_web_foundation').style.display = 'block';
                 }
               }
             });
@@ -139,120 +134,94 @@
         <ul class="lnb-list-box" id="platform_ios_list">
           <li class="lnb-list ">
             <button class="btn-open"><i class="icon ic-arrow"></i></button>
-            <a href="../../foundation/ios/foundation.html" class="lnb-link"><span
-                        class="text">Foundation</span></a>
+            <a href="../../foundation/ios/foundation.html" class="lnb-link"><span class="text">Foundation</span></a>
             <ul class="lnb-sub-list-box">
               <li class="lnb-sub-list ">
-                <a href="../../foundation/ios/color.html" class="lnb-sub-link"><span
-                                class="text">Color</span></a>
+                <a href="../../foundation/ios/color.html" class="lnb-sub-link"><span class="text">Color</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../foundation/ios/typography.html" class="lnb-sub-link"><span
-                                class="text">Typography</span></a>
+                <a href="../../foundation/ios/typography.html" class="lnb-sub-link"><span class="text">Typography</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../foundation/ios/iconography.html" class="lnb-sub-link"><span
-                                class="text">Iconography</span></a>
+                <a href="../../foundation/ios/iconography.html" class="lnb-sub-link"><span class="text">Iconography</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../foundation/ios/layout.html" class="lnb-sub-link"><span
-                                class="text">Layout</span></a>
+                <a href="../../foundation/ios/layout.html" class="lnb-sub-link"><span class="text">Layout</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../foundation/ios/focus.html" class="lnb-sub-link"><span
-                                class="text">Focus</span></a>
+                <a href="../../foundation/ios/focus.html" class="lnb-sub-link"><span class="text">Focus</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../foundation/ios/motion.html" class="lnb-sub-link"><span
-                                class="text">Motion</span></a>
+                <a href="../../foundation/ios/motion.html" class="lnb-sub-link"><span class="text">Motion</span></a>
               </li>
             </ul>
           </li>
           <li class="lnb-list ">
             <button class="btn-open"><i class="icon ic-arrow"></i></button>
-            <a href="../../components/ios/components.html" class="lnb-link"><span
-                        class="text">Components</span></a>
+            <a href="../../components/ios/components.html" class="lnb-link"><span class="text">Components</span></a>
             <ul class="lnb-sub-list-box">
               <li class="lnb-sub-list ">
-                <a href="../../components/ios/badges.html" class="lnb-sub-link"><span
-                                class="text">Badges</span></a>
+                <a href="../../components/ios/badges.html" class="lnb-sub-link"><span class="text">Badges</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/ios/booting.html" class="lnb-sub-link"><span
-                                class="text">Booting</span></a>
+                <a href="../../components/ios/booting.html" class="lnb-sub-link"><span class="text">Booting</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/ios/buttons.html" class="lnb-sub-link"><span
-                                class="text">Buttons</span></a>
+                <a href="../../components/ios/buttons.html" class="lnb-sub-link"><span class="text">Buttons</span></a>
               </li>
               <li class="lnb-sub-list ">
                 <button class="btn-sub-open"><i class="icon ic-arrow"></i></button>
-                <a href="../../components/ios/checkbox.html" class="lnb-sub-link"><span
-                                class="text">Controls</span></a>
+                <a href="../../components/ios/checkbox.html" class="lnb-sub-link"><span class="text">Controls</span></a>
                 <ul class="lnb-last-list-box">
                   <li class="lnb-last-list ">
-                    <a href="../../components/ios/checkbox.html" class="lnb-last-link"><span
-                                        class="text">Checkbox</span></a>
+                    <a href="../../components/ios/checkbox.html" class="lnb-last-link"><span class="text">Checkbox</span></a>
                   </li>
                   <li class="lnb-last-list ">
-                    <a href="../../components/ios/radio.html" class="lnb-last-link"><span
-                                        class="text">Radio Button</span></a>
+                    <a href="../../components/ios/radio.html" class="lnb-last-link"><span class="text">Radio Button</span></a>
                   </li>
                   <li class="lnb-last-list ">
-                    <a href="../../components/ios/switch.html" class="lnb-last-link"><span
-                                        class="text">Switch</span></a>
+                    <a href="../../components/ios/switch.html" class="lnb-last-link"><span class="text">Switch</span></a>
                   </li>
                   <li class="lnb-last-list ">
-                    <a href="../../components/ios/slider.html" class="lnb-last-link"><span
-                                        class="text">Slider</span></a>
+                    <a href="../../components/ios/slider.html" class="lnb-last-link"><span class="text">Slider</span></a>
                   </li>
                 </ul>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/ios/dropdowns.html" class="lnb-sub-link"><span
-                                class="text">Dropdown</span></a>
+                <a href="../../components/ios/dropdowns.html" class="lnb-sub-link"><span class="text">Dropdown</span></a>
               </li>
               <li class="lnb-sub-list active">
                 <a href="../../components/ios/gnb.html" class="lnb-sub-link"><span class="text">GNB</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/ios/inputs.html" class="lnb-sub-link"><span
-                                class="text">Inputs</span></a>
+                <a href="../../components/ios/inputs.html" class="lnb-sub-link"><span class="text">Inputs</span></a>
               </li>
               <li class="lnb-sub-list ">
                 <a href="../../components/ios/ime.html" class="lnb-sub-link"><span class="text">IME</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/ios/list_cards.html" class="lnb-sub-link"><span
-                                class="text">List Cards</span></a>
+                <a href="../../components/ios/list_cards.html" class="lnb-sub-link"><span class="text">List Cards</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/ios/loading.html" class="lnb-sub-link"><span
-                                class="text">Loading</span></a>
+                <a href="../../components/ios/loading.html" class="lnb-sub-link"><span class="text">Loading</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/ios/pagination.html" class="lnb-sub-link"><span
-                                class="text">Pagination</span></a>
+                <a href="../../components/ios/pagination.html" class="lnb-sub-link"><span class="text">Pagination</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/ios/player.html" class="lnb-sub-link"><span
-                                class="text">Player</span></a>
+                <a href="../../components/ios/player.html" class="lnb-sub-link"><span class="text">Player</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/ios/popup.html" class="lnb-sub-link"><span
-                                class="text">Pop up</span></a>
+                <a href="../../components/ios/popup.html" class="lnb-sub-link"><span class="text">Pop up</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/ios/splash.html" class="lnb-sub-link"><span
-                                class="text">Splash</span></a>
+                <a href="../../components/ios/splash.html" class="lnb-sub-link"><span class="text">Splash</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/ios/tabs.html" class="lnb-sub-link"><span
-                                class="text">Tabs</span></a>
+                <a href="../../components/ios/tabs.html" class="lnb-sub-link"><span class="text">Tabs</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/ios/tooltip.html" class="lnb-sub-link"><span
-                                class="text">Tooltip</span></a>
+                <a href="../../components/ios/tooltip.html" class="lnb-sub-link"><span class="text">Tooltip</span></a>
               </li>
             </ul>
           </li>
@@ -260,104 +229,82 @@
         <ul class="lnb-list-box" id="platform_web_list" style="display: none">
           <li class="lnb-list ">
             <button class="btn-open"><i class="icon ic-arrow"></i></button>
-            <a href="../../foundation/web/foundation.html" class="lnb-link"><span
-                        class="text">Foundation</span></a>
+            <a href="../../foundation/web/foundation.html" class="lnb-link"><span class="text">Foundation</span></a>
             <ul class="lnb-sub-list-box" id="platform_web_foundation">
               <li class="lnb-sub-list ">
-                <a href="../../foundation/web/color.html" class="lnb-sub-link"><span
-                                class="text">Color</span></a>
+                <a href="../../foundation/web/color.html" class="lnb-sub-link"><span class="text">Color</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../foundation/web/typography.html" class="lnb-sub-link"><span
-                                class="text">Typography</span></a>
+                <a href="../../foundation/web/typography.html" class="lnb-sub-link"><span class="text">Typography</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../foundation/web/iconography.html" class="lnb-sub-link"><span
-                                class="text">Iconography</span></a>
+                <a href="../../foundation/web/iconography.html" class="lnb-sub-link"><span class="text">Iconography</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../foundation/web/layout.html" class="lnb-sub-link"><span
-                                class="text">Layout</span></a>
+                <a href="../../foundation/web/layout.html" class="lnb-sub-link"><span class="text">Layout</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../foundation/web/focus.html" class="lnb-sub-link"><span
-                                class="text">Focus</span></a>
+                <a href="../../foundation/web/focus.html" class="lnb-sub-link"><span class="text">Focus</span></a>
               </li>
             </ul>
           </li>
           <li class="lnb-list ">
             <button class="btn-open"><i class="icon ic-arrow"></i></button>
-            <a href="../../components/web/components.html" class="lnb-link"><span
-                        class="text">Components</span></a>
+            <a href="../../components/web/components.html" class="lnb-link"><span class="text">Components</span></a>
             <ul class="lnb-sub-list-box" id="platform_web_components">
               <li class="lnb-sub-list ">
-                <a href="../../components/web/buttons.html" class="lnb-sub-link"><span
-                                class="text">Buttons</span></a>
+                <a href="../../components/web/buttons.html" class="lnb-sub-link"><span class="text">Buttons</span></a>
               </li>
               <li class="lnb-sub-list ">
                 <button class="btn-sub-open"><i class="icon ic-arrow"></i></button>
-                <a href="../../components/web/checkbox.html" class="lnb-sub-link"><span
-                                class="text">Controls</span></a>
+                <a href="../../components/web/checkbox.html" class="lnb-sub-link"><span class="text">Controls</span></a>
                 <ul class="lnb-last-list-box" id="platform_web_components_controls">
                   <li class="lnb-last-list ">
-                    <a href="../../components/web/checkbox.html" class="lnb-last-link"><span
-                                        class="text">Checkbox</span></a>
+                    <a href="../../components/web/checkbox.html" class="lnb-last-link"><span class="text">Checkbox</span></a>
                   </li>
                   <li class="lnb-last-list ">
-                    <a href="../../components/web/radio.html" class="lnb-last-link"><span
-                                        class="text">Radio Button</span></a>
+                    <a href="../../components/web/radio.html" class="lnb-last-link"><span class="text">Radio Button</span></a>
                   </li>
                   <li class="lnb-last-list ">
-                    <a href="../../components/web/switch.html" class="lnb-last-link"><span
-                                        class="text">Switch</span></a>
+                    <a href="../../components/web/switch.html" class="lnb-last-link"><span class="text">Switch</span></a>
                   </li>
                 </ul>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/web/dropdowns.html" class="lnb-sub-link"><span
-                                class="text">Dropdown</span></a>
+                <a href="../../components/web/dropdowns.html" class="lnb-sub-link"><span class="text">Dropdown</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/web/dock.html" class="lnb-sub-link"><span
-                                class="text">Dock</span></a>
+                <a href="../../components/web/dock.html" class="lnb-sub-link"><span class="text">Dock</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/web/flag.html" class="lnb-sub-link"><span
-                                class="text">Flag</span></a>
+                <a href="../../components/web/flag.html" class="lnb-sub-link"><span class="text">Flag</span></a>
               </li>
               <li class="lnb-sub-list active">
                 <a href="../../components/web/gnb.html" class="lnb-sub-link"><span class="text">GNB</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/web/inputs.html" class="lnb-sub-link"><span
-                                class="text">Inputs</span></a>
+                <a href="../../components/web/inputs.html" class="lnb-sub-link"><span class="text">Inputs</span></a>
               </li>
               <li class="lnb-sub-list ">
                 <a href="../../components/web/ime.html" class="lnb-sub-link"><span class="text">IME</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/web/loading.html" class="lnb-sub-link"><span
-                                class="text">Loading</span></a>
+                <a href="../../components/web/loading.html" class="lnb-sub-link"><span class="text">Loading</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/web/menus.html" class="lnb-sub-link"><span
-                                class="text">Menus</span></a>
+                <a href="../../components/web/menus.html" class="lnb-sub-link"><span class="text">Menus</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/web/pagination.html" class="lnb-sub-link"><span
-                                class="text">Pagination</span></a>
+                <a href="../../components/web/pagination.html" class="lnb-sub-link"><span class="text">Pagination</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/web/popup.html" class="lnb-sub-link"><span
-                                class="text">Pop up</span></a>
+                <a href="../../components/web/popup.html" class="lnb-sub-link"><span class="text">Pop up</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/web/tabs.html" class="lnb-sub-link"><span
-                                class="text">Tabs</span></a>
+                <a href="../../components/web/tabs.html" class="lnb-sub-link"><span class="text">Tabs</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/web/tooltip.html" class="lnb-sub-link"><span
-                                class="text">Tooltip</span></a>
+                <a href="../../components/web/tooltip.html" class="lnb-sub-link"><span class="text">Tooltip</span></a>
               </li>
             </ul>
           </li>
@@ -376,9 +323,8 @@
                 </div>
                 <div class="desc-box">
                   <p class="desc">
-                    서비스를 구성하는 가장 기본적인 뼈대이자 정보구조이며, 사용자 동선을 안내하는 중요한 서비스
-                    구성요소입니다.<br />
-                      GNB는 서비스의 정체성을 전달하는 역할로 상위 Level 탐색에 사용됩니다.
+                    Global Navigation Bar의 약자로, 서비스의 가장 기본적인 내비게이션을 담당하는 메뉴입니다.<br />서비스의
+                      정체성을 전달하는 역할로 사용자 동선을 안내와 상위 레벨 탐색을 위해 제공되는 컴포넌트입니다.
                   </p>
                 </div>
               </div>
@@ -386,7 +332,7 @@
                 <div class="content-box">
                   <div class="image-content-box dark">
                     <div class="image-box">
-                      <img src="../../../assets/images/components/gnb/gnb_image_01.png" alt="" />
+                      <img src="../../../assets/images/ios/components/gnb/gnb_image_01.png" alt="" />
                     </div>
                     <div class="image-text-box">
                       <span class="circle"><span class="number">A</span></span>
@@ -395,7 +341,7 @@
                   </div>
                   <div class="image-content-box dark">
                     <div class="image-box">
-                      <img src="../../../assets/images/components/gnb/gnb_image_02.png" alt="" />
+                      <img src="../../../assets/images/ios/components/gnb/gnb_image_02.png" alt="" />
                     </div>
                     <div class="image-text-box">
                       <span class="circle"><span class="number">B</span></span>
@@ -404,7 +350,7 @@
                   </div>
                   <div class="image-content-box dark">
                     <div class="image-box">
-                      <img src="../../../assets/images/components/gnb/gnb_image_03.png" alt="" />
+                      <img src="../../../assets/images/ios/components/gnb/gnb_image_03.png" alt="" />
                     </div>
                     <div class="image-text-box">
                       <span class="circle"><span class="number">C</span></span>
@@ -429,12 +375,12 @@
                     <div class="image-title-top">
                       <div class="image-content-box dark">
                         <div class="image-box">
-                          <img src="../../../assets/images/components/gnb/gnb_image_04.png" alt="" />
+                          <img src="../../../assets/images/ios/components/gnb/gnb_image_04.png" alt="" />
                         </div>
                       </div>
                       <div class="image-content-box dark">
                         <div class="image-box">
-                          <img src="../../../assets/images/components/gnb/gnb_image_05.png" alt="" />
+                          <img src="../../../assets/images/ios/components/gnb/gnb_image_05.png" alt="" />
                         </div>
                       </div>
                     </div>
@@ -443,31 +389,31 @@
                         <li class="number-desc-list">
                           <span class="title">1. Menu Icon (Optional)</span>
                           <div class="text-box">
-                            <p class="text">설명하고자 하는 정보와 관련된 Icon을 노출합니다.</p>
+                            <p class="text">메뉴를 효과적으로 전달하기 위해 아이콘을 함께 제공합니다.</p>
                           </div>
                         </li>
                         <li class="number-desc-list">
                           <span class="title">2. Text</span>
                           <div class="text-box">
-                            <p class="text">설명하고자 하는 정보를 표기합니다.</p>
+                            <p class="text">핵심 경로에 대한 정보를 표기합니다.</p>
                           </div>
                         </li>
                         <li class="number-desc-list">
                           <span class="title">3. Icon (Optional)</span>
                           <div class="text-box">
-                            <p class="text">Menu List에 다음 Depth가 있을 경우 화살표를 노출합니다.</p>
+                            <p class="text">하위 Depth가 있을 경우 표시합니다.</p>
                           </div>
                         </li>
                         <li class="number-desc-list">
                           <span class="title">4. Line (Optional)</span>
                           <div class="text-box">
-                            <p class="text">Select 된 GNB를 표시합니다.</p>
+                            <p class="text">선택된 상태를 표시합니다.</p>
                           </div>
                         </li>
                         <li class="number-desc-list">
                           <span class="title">5. Container (Optional)</span>
                           <div class="text-box">
-                            <p class="text">Focus된 GNB의 영역을 표시합니다.</p>
+                            <p class="text">포커스 영역을 표시합니다.</p>
                           </div>
                         </li>
                       </ul>
@@ -477,53 +423,27 @@
                 <div class="content-box">
                   <div class="color-box dark  do">
                     <div class="image-box">
-                      <img src="../../../assets/images/components/gnb/gnb_image_06.png" alt="" />
+                      <img src="../../../assets/images/ios/components/gnb/gnb_image_06.png" alt="" />
                     </div>
                     <div class="color-text-box">
                       <div class="color-title-box">
                         <span class="color-title">Do</span>
                       </div>
                       <div class="color-desc-box">
-                        <p class="color-desc">사용자의 시인성을 위해 Gradation을 사용합니다.</p>
+                        <p class="color-desc">메뉴별 위계를 명확하게 구분시켜 제공합니다.</p>
                       </div>
                     </div>
                   </div>
                   <div class="color-box dark  do">
                     <div class="image-box">
-                      <img src="../../../assets/images/components/gnb/gnb_image_07.png" alt="" />
+                      <img src="../../../assets/images/ios/components/gnb/gnb_image_07.png" alt="" />
                     </div>
                     <div class="color-text-box">
                       <div class="color-title-box">
                         <span class="color-title">Do</span>
                       </div>
                       <div class="color-desc-box">
-                        <p class="color-desc">Menu Icon은 일반적으로 같은 형태로 제공하나, 예외로 Seg.관련 메뉴 (OCEAN, ZEM키즈 등)는 Image Icon 형태도 가능합니다.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="color-box dark  do">
-                    <div class="image-box">
-                      <img src="../../../assets/images/components/gnb/gnb_image_08.png" alt="" />
-                    </div>
-                    <div class="color-text-box">
-                      <div class="color-title-box">
-                        <span class="color-title">Do</span>
-                      </div>
-                      <div class="color-desc-box">
-                        <p class="color-desc">Floating은 편리한 이동을 유도하는 Menu로 Layer 최상단에 노출합니다.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="color-box dark  exception">
-                    <div class="image-box">
-                      <img src="../../../assets/images/components/gnb/gnb_image_09.png" alt="" />
-                    </div>
-                    <div class="color-text-box">
-                      <div class="color-title-box">
-                        <span class="color-title">Exception</span>
-                      </div>
-                      <div class="color-desc-box">
-                        <p class="color-desc">PlayZ의 경우, General Home에 Dot Badge를 추가할 수 있습니다.</p>
+                        <p class="color-desc">서비스 메뉴는 고유의 아이덴티티 컬러를 사용할 수 있습니다.</p>
                       </div>
                     </div>
                   </div>
@@ -546,7 +466,7 @@
                     <div class="image-title-top">
                       <div class="image-content-box dark">
                         <div class="image-box">
-                          <img src="../../../assets/images/components/gnb/gnb_image_010.png" alt="" />
+                          <img src="../../../assets/images/ios/components/gnb/gnb_image_08.png" alt="" />
                         </div>
                       </div>
                     </div>
@@ -555,19 +475,19 @@
                         <li class="number-desc-list">
                           <span class="title">1. Normal</span>
                           <div class="text-box">
-                            <p class="text">Focus 또는 Select 되지 않은 일반적인 상태입니다.</p>
+                            <p class="text">서비스의 제공된 메뉴를 선택할 수 있는 기본 상태입니다.</p>
                           </div>
                         </li>
                         <li class="number-desc-list">
                           <span class="title">2. Focus</span>
                           <div class="text-box">
-                            <p class="text">사용자가 이동한 Menu의 위치를 인식할 수 있도록 적용된 상태입니다.</p>
+                            <p class="text">사용자가 위치한 메뉴를 표시하며 다른 메뉴로 이동할 수 있는 상태입니다.</p>
                           </div>
                         </li>
                         <li class="number-desc-list">
                           <span class="title">3. Select</span>
                           <div class="text-box">
-                            <p class="text">Menu가 선택되어 정보가 활성화 된 상태입니다.</p>
+                            <p class="text">메뉴가 선택되어 사용자가 위치한 경로를 안내하는 상태입니다.</p>
                           </div>
                         </li>
                       </ul>
@@ -586,16 +506,14 @@
                   <h2 class="title">Placement</h2>
                 </div>
                 <div class="desc-box">
-                  <p class="desc">
-                    화면의 좌측에 배치하여 Category 선택에 따라 Select, Focus 2가지 상태로 구성합니다.
-                  </p>
+                  <p class="desc">TV 화면 좌측에 위치합니다.</p>
                 </div>
               </div>
               <div class="content-bottom">
                 <div class="content-box">
                   <div class="image-content-box ">
                     <div class="image-box">
-                      <img src="../../../assets/images/components/gnb/gnb_image_011.png" alt="" />
+                      <img src="../../../assets/images/ios/components/gnb/gnb_image_09.png" alt="" />
                     </div>
                     <div class="image-text-box">
                       <span class="text">Select</span>
@@ -603,7 +521,7 @@
                   </div>
                   <div class="image-content-box ">
                     <div class="image-box">
-                      <img src="../../../assets/images/components/gnb/gnb_image_012.png" alt="" />
+                      <img src="../../../assets/images/ios/components/gnb/gnb_image_010.png" alt="" />
                     </div>
                     <div class="image-text-box">
                       <span class="text">Focus</span>
@@ -613,14 +531,14 @@
                 <div class="content-box">
                   <div class="color-box dark  do">
                     <div class="image-box">
-                      <img src="../../../assets/images/components/gnb/gnb_image_013.png" alt="" />
+                      <img src="../../../assets/images/ios/components/gnb/gnb_image_011.png" alt="" />
                     </div>
                     <div class="color-text-box">
                       <div class="color-title-box">
                         <span class="color-title">Do</span>
                       </div>
                       <div class="color-desc-box">
-                        <p class="color-desc">하위 Menu List가 있는 경우 우측에 2depth Menu List를 배치합니다.</p>
+                        <p class="color-desc">하위 Depth가 있는 경우 우측에 배치합니다.</p>
                       </div>
                     </div>
                   </div>
@@ -646,8 +564,8 @@
                       </div>
                       <div class="desc-box">
                         <p class="desc">
-                          기본 Home에서 GNB가 접힌 일반적인 상태로 Icon을 노출합니다.<br />
-                            Select 된 Menu의 경우 좌측에 Line 노출하여 사용자의 현위치를 알립니다.
+                          GNB 메뉴가 열리지 않은 기본적인 상태로 아이콘만 단독으로 노출합니다.<br />사용자가 선택하여
+                            진입된 메뉴는 컬러와 라인을 활용하여 다른메뉴와 구분합니다.
                         </p>
                       </div>
                     </div>
@@ -655,26 +573,26 @@
                       <div class="content-box">
                         <div class="image-content-box dark">
                           <div class="image-box">
-                            <img src="../../../assets/images/components/gnb/gnb_image_014.png" alt="" />
+                            <img src="../../../assets/images/ios/components/gnb/gnb_image_012.png" alt="" />
                           </div>
                         </div>
                         <div class="image-content-box dark">
                           <div class="image-box">
-                            <img src="../../../assets/images/components/gnb/gnb_image_015.png" alt="" />
+                            <img src="../../../assets/images/ios/components/gnb/gnb_image_013.png" alt="" />
                           </div>
                         </div>
                       </div>
                       <div class="content-box">
                         <div class="color-box dark  dont">
                           <div class="image-box">
-                            <img src="../../../assets/images/components/gnb/gnb_image_016.png" alt="" />
+                            <img src="../../../assets/images/ios/components/gnb/gnb_image_014.png" alt="" />
                           </div>
                           <div class="color-text-box">
                             <div class="color-title-box">
                               <span class="color-title">Don't</span>
                             </div>
                             <div class="color-desc-box">
-                              <p class="color-desc">Style에 맞지 않거나 시인성을 해치는 Icon 또는 컬러 사용을 지양합니다.</p>
+                              <p class="color-desc">서비스 톤 앤 매너와 맞지 않거나 시인성을 해치는 아이콘, 컬러를 사용하지 않습니다.</p>
                             </div>
                           </div>
                         </div>
@@ -686,13 +604,12 @@
                   <div class="sub-content-area">
                     <div class="sub-content-top">
                       <div class="title-box">
-                        <h3 class="title">1Depth/2Depth</h3>
+                        <h3 class="title">GNB Depth</h3>
                       </div>
                       <div class="desc-box">
                         <p class="desc">
-                          GNB가 Focus되어 열린 상태로 관련 Icon과 Text를 함께 노출합니다. <br />
-                            1 Depth에서 추가적으로 하위 Menu List가 있을 경우 2 Depth를 노출하며, 해당 Category의 관련
-                            List를 제공합니다.
+                          포커스를 통해 메뉴가 열린 상태로 다른 메뉴에 대한 경로를 제공합니다.<br />선택된 메뉴의 하위
+                            Depth가 있을 경우 우측에 함께 제공합니다.
                         </p>
                       </div>
                     </div>
@@ -700,39 +617,39 @@
                       <div class="content-box">
                         <div class="image-content-box dark">
                           <div class="image-box">
-                            <img src="../../../assets/images/components/gnb/gnb_image_017.png" alt="" />
+                            <img src="../../../assets/images/ios/components/gnb/gnb_image_015.png" alt="" />
                           </div>
                         </div>
                         <div class="image-content-box dark">
                           <div class="image-box">
-                            <img src="../../../assets/images/components/gnb/gnb_image_018.png" alt="" />
+                            <img src="../../../assets/images/ios/components/gnb/gnb_image_016.png" alt="" />
                           </div>
                         </div>
                       </div>
                       <div class="content-box">
                         <div class="color-box dark  do">
                           <div class="image-box">
-                            <img src="../../../assets/images/components/gnb/gnb_image_019.png" alt="" />
+                            <img src="../../../assets/images/ios/components/gnb/gnb_image_017.png" alt="" />
                           </div>
                           <div class="color-text-box">
                             <div class="color-title-box">
                               <span class="color-title">Do</span>
                             </div>
                             <div class="color-desc-box">
-                              <p class="color-desc">하위 Menu List가 없는 경우에는 화살표를 노출하지 않습니다.</p>
+                              <p class="color-desc">하위 Depth가 없는 경우에는 화살표 아이콘을 제공하지 않습니다.</p>
                             </div>
                           </div>
                         </div>
                         <div class="color-box dark  do">
                           <div class="image-box">
-                            <img src="../../../assets/images/components/gnb/gnb_image_020.png" alt="" />
+                            <img src="../../../assets/images/ios/components/gnb/gnb_image_018.png" alt="" />
                           </div>
                           <div class="color-text-box">
                             <div class="color-title-box">
                               <span class="color-title">Do</span>
                             </div>
                             <div class="color-desc-box">
-                              <p class="color-desc">Menu List의 최대 글자수가 초과할 경우 ‘..’ 말줄임표 표기합니다.</p>
+                              <p class="color-desc">최대 글자 수가 초과할 경우 말 줄임표로 표기합니다.</p>
                             </div>
                           </div>
                         </div>
@@ -759,120 +676,52 @@
                       <div class="title-box">
                         <h3 class="title">General GNB</h3>
                       </div>
-                      <div class="desc-box">
-                        <p class="desc">Menu List의 탐색과 사용자의 동선을 안내하는 데 사용합니다.</p>
-                      </div>
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box">
                         <div class="image-content-box ">
                           <div class="image-box">
-                            <img src="../../../assets/images/components/gnb/gnb_image_021.png" alt="" />
+                            <img src="../../../assets/images/ios/components/gnb/gnb_image_019.png" alt="" />
                           </div>
                         </div>
                       </div>
                       <div class="content-box">
                         <div class="color-box dark  do">
                           <div class="image-box">
-                            <img src="../../../assets/images/components/gnb/gnb_image_022.png" alt="" />
+                            <img src="../../../assets/images/ios/components/gnb/gnb_image_020.png" alt="" />
                           </div>
                           <div class="color-text-box">
                             <div class="color-title-box">
                               <span class="color-title">Do</span>
                             </div>
                             <div class="color-desc-box">
-                              <p class="color-desc">하위 Menu List가 없는 경우에는 화살표를 노출하지 않습니다.</p>
+                              <p class="color-desc">2 Depth 내 핵심 메뉴는 아이콘과 함께 사용하여 강조할 수 있습니다.</p>
                             </div>
                           </div>
                         </div>
                         <div class="color-box dark  do">
                           <div class="image-box">
-                            <img src="../../../assets/images/components/gnb/gnb_image_023.png" alt="" />
+                            <img src="../../../assets/images/ios/components/gnb/gnb_image_021.png" alt="" />
                           </div>
                           <div class="color-text-box">
                             <div class="color-title-box">
                               <span class="color-title">Do</span>
                             </div>
                             <div class="color-desc-box">
-                              <p class="color-desc">2 Depth 내 주요한 Menu에 Icon을 추가하여 강조해줄 수 있습니다. </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="color-box dark  do">
-                          <div class="image-box">
-                            <img src="../../../assets/images/components/gnb/gnb_image_024.png" alt="" />
-                          </div>
-                          <div class="color-text-box">
-                            <div class="color-title-box">
-                              <span class="color-title">Do</span>
-                            </div>
-                            <div class="color-desc-box">
-                              <p class="color-desc">2 Depth로 Focus 이동 시, Contents 영역을 확보하기 위해 2 Depth가 접혀서 1 Depth 위치로 이동하며, 진입 경로를 좌측 상단에 표시합니다.</p>
+                              <p class="color-desc">2 Depth로 진입한 경우 콘텐츠 영역을 확보하기 위해 1 Depth 위치로 이동할 수 있습니다.</p>
                             </div>
                           </div>
                         </div>
                         <div class="color-box dark  dont">
                           <div class="image-box">
-                            <img src="../../../assets/images/components/gnb/gnb_image_025.png" alt="" />
+                            <img src="../../../assets/images/ios/components/gnb/gnb_image_022.png" alt="" />
                           </div>
                           <div class="color-text-box">
                             <div class="color-title-box">
                               <span class="color-title">Don't</span>
                             </div>
                             <div class="color-desc-box">
-                              <p class="color-desc">GNB에 Focus 되지 않은 상태에서는 Menu를 이동할 수 없습니다.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">Floating</h3>
-                      </div>
-                      <div class="desc-box">
-                        <p class="desc">
-                          Floating은 간단한 Key 조작으로 노출되며 화면에서 가장 기본적인 Menu의 빠른 진입을 돕기 위해
-                          사용합니다.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
-                        <div class="image-content-box ">
-                          <div class="image-box">
-                            <img src="../../../assets/images/components/gnb/gnb_image_026.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="content-box">
-                        <div class="color-box dark  do">
-                          <div class="image-box">
-                            <img src="../../../assets/images/components/gnb/gnb_image_027.png" alt="" />
-                          </div>
-                          <div class="color-text-box">
-                            <div class="color-title-box">
-                              <span class="color-title">Do</span>
-                            </div>
-                            <div class="color-desc-box">
-                              <p class="color-desc">주요 기능과 관련성 있는 적절한 개수의 Action을 제공합니다.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="color-box dark  dont">
-                          <div class="image-box">
-                            <img src="../../../assets/images/components/gnb/gnb_image_028.png" alt="" />
-                          </div>
-                          <div class="color-text-box">
-                            <div class="color-title-box">
-                              <span class="color-title">Don't</span>
-                            </div>
-                            <div class="color-desc-box">
-                              <p class="color-desc">Menu를 더 깊은 탐색 수준으로 확장하거나 주요 기능이 아닌 Contents를 Floating으로 제공하지 않습니다.</p>
+                              <p class="color-desc">GNB가 열리지 않은 상태에서는 메뉴를 이동할 수 없습니다.</p>
                             </div>
                           </div>
                         </div>
@@ -901,7 +750,7 @@
                 <span class="sub-list-title">General Home</span>
               </li>
               <li class="quick-menu-sub-list">
-                <span class="sub-list-title">1Depth/2Depth</span>
+                <span class="sub-list-title">GNB Depth</span>
               </li>
             </ul>
           </li>
@@ -909,12 +758,19 @@
             <span class="list-title">Usage</span>
             <ul class="quick-menu-sub-list-box">
               <li class="quick-menu-sub-list"><span class="sub-list-title">General GNB</span></li>
-              <li class="quick-menu-sub-list"><span class="sub-list-title">Floating</span></li>
             </ul>
           </li>
         </ul>
       </div>
     </div>
+    <!-- Footer -->
+    <footer class="footer-container">
+      <div class="footer-area">
+        <div class="footer-box">
+          <span class="text">Copyright © 2024 SK Broadband CO.LTD All rights reserved</span>
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 </html>

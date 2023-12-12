@@ -15,7 +15,7 @@
         "link" : "../..",
         "path" : "../../.."
       })
-      
+
       <!-- LNB -->
       <!-- prettier-ignore -->
       @@include("../component/lnb.html", {
@@ -23,15 +23,81 @@
         "path" : "../.."
       })
 
-      <!-- Foundation | Color -->
+      <!-- Foundation | Foundation -->
       <main class="main">
         <div class="main-container">
           <div class="main-area">
-            <img src="../../../assets/images/temp/mass_foundation_main.png" alt="" style="width: 100%" />
+            <div class="heading-container">
+              <div class="heading-area">
+                <div class="heading-top">
+                  <div class="title-box">
+                    <h1 class="title">Foundation</h1>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      공통의 가치와 원칙에 따른 일관된 레이아웃 설계로 사용자 경험을 만드는데 필수적인 요소들입니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="heading-bottom">
+                  <!-- .main-content-box : 메인 페이지에서만 사용 -->
+                  <div class="main-content-box">
+                    <!-- prettier-ignore -->
+                    @@include("../component/main_block_box.html", {
+                      "link"  : "color",
+                      "image" : "../../../assets/images/common/foundation/foundation_image_01.png",
+                      "title" : "Color",
+                      "desc"  : {
+                        "desc" : "표준화된 컬러 및 가이드를 제공하여 \n일관성 있는 브랜드 경험을 제공합니다."
+                      }
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/main_block_box.html", {
+                      "link"  : "typography",
+                      "image" : "../../../assets/images/common/foundation/foundation_image_02.png",
+                      "title" : "Typography",
+                      "desc"  : {
+                        "desc" : "서비스와 사용자 커뮤니케이션의 \n주요 요소로 TV 경험을 향상시킵니다."
+                      }
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/main_block_box.html", {
+                      "link"  : "iconography",
+                      "image" : "../../../assets/images/common/foundation/foundation_image_03.png",
+                      "title" : "Iconography",
+                      "desc"  : {
+                        "desc" : "Icon은 서비스를 직관적으로 표현하여 \n사용자의 이해도를 높입니다."
+                      }
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/main_block_box.html", {
+                      "link"  : "layout",
+                      "image" : "../../../assets/images/common/foundation/foundation_image_04.png",
+                      "title" : "Layout",
+                      "desc"  : {
+                        "desc" : "그리드, 간격을 정의하여 정보 및 UI 요소를 \n표시하기 위한 구조를 설정합니다."
+                      }
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/main_block_box.html", {
+                      "link"  : "focus",
+                      "image" : "../../../assets/images/common/foundation/foundation_image_05.png",
+                      "title" : "Focus",
+                      "desc"  : {
+                        "desc" : "선택 가능한 구성 요소를 강조 표시하고 \n사용자의 현재 위치를 직관적으로 나타냅니다."
+                      }
+                    })
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>
 
+      <!-- Footer -->
+      <!-- prettier-ignore -->
+      @@include("../component/footer.html")
     </div>
   </body>
 </html>

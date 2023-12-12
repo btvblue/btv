@@ -9,7 +9,7 @@ body {
 
 #header {
   padding: 20px 25px;
-  background: #491BC7;
+  background: #491bc7;
   h1 {
     display: inline-block;
     @include font(2.2rem, 700, #fff, normal);
@@ -17,21 +17,20 @@ body {
   }
 }
 
-
 .content-container {
-  padding:30px 20px;
+  padding: 30px 20px;
 }
 
 #tab {
   .tab {
-    overflow-x:auto;
+    overflow-x: auto;
     -ms-overflow-style: none;
     /* IE and Edge */
-    scrollbar-width: none;    
+    scrollbar-width: none;
     @include flex(row, flex-start, flex-start);
     max-width: 100%;
     margin: 0 auto;
-    padding:0;
+    padding: 0;
     ::-webkit-scrollbar {
       display: none;
       /* Chrome, Safari, Opera*/
@@ -47,6 +46,7 @@ body {
       @include font(18px, 700, #fff, 50px);
       text-align: center;
       cursor: pointer;
+      list-style: none;
 
       &.on {
         background-color: #333;
@@ -70,7 +70,7 @@ body {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   text-align: center;
-  table-layout:fixed;
+  table-layout: fixed;
   thead {
     tr {
       th {
@@ -91,7 +91,7 @@ body {
       }
       td {
         height: 40px;
-        padding:0 10px;
+        padding: 0 10px;
         border-left: 1px solid #ddd;
         border-bottom: 1px solid #ddd;
         @include font(1.4rem, 400, #333, normal);
@@ -113,7 +113,7 @@ td {
     position: relative;
     background-color: #ddd;
     &:before {
-      content:'';
+      content: '';
       display: block;
       position: absolute;
       top: 0;
@@ -126,7 +126,7 @@ td {
 }
 
 .ok {
-  background-color: #04a3bb !important;
+  background-color: #491bc7 !important;
   color: #fff !important;
   &::before {
     content: '완료';
@@ -159,10 +159,9 @@ td {
 }
 
 @media screen and (max-width: 768px) {
-
   #header {
     h1 {
-      font-size:1.8rem;
+      font-size: 1.8rem;
     }
   }
 
@@ -171,7 +170,7 @@ td {
       .list {
         max-width: 80px;
         height: 40px;
-        font-size:1.4rem;
+        font-size: 1.4rem;
         line-height: 40px;
         border-top-left-radius: 1.5rem;
         border-top-right-radius: 1.5rem;
@@ -187,7 +186,7 @@ td {
   .name {
     width: 40% !important;
   }
-  
+
   .status {
     width: 60px !important;
   }

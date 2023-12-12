@@ -34,8 +34,8 @@
                   </div>
                   <div class="desc-box">
                     <p class="desc">
-                      시각적 일관성을 유지하기 위한 framework를 제공하는 구조적 템플릿으로 시각적 그리드, 간격 및 구획을
-                      정의하여 정보 및 UI 요소를 표시하기 위한 구조를 설정합니다. TV 서비스에서 정보 및 콘텐츠가
+                      시각적 일관성을 유지하기 위한 프레임워크를 제공하는 구조적 템플릿으로 시각적 그리드, 간격 및
+                      구획을 정의하여 정보 및 UI 요소를 표시하기 위한 구조를 설정합니다. TV 서비스에서 정보 및 콘텐츠가
                       최적화되어 보이도록 레이아웃을 디자인할 때 각별히 주의해야 합니다.
                     </p>
                   </div>
@@ -57,13 +57,13 @@
                         <!-- prettier-ignore -->
                         @@include("../component/image_content_box.html", {
                           "mode"  : "",
-                          "image" : "../../../assets/images/foundation/layout/layout_image_01.png",
+                          "image" : "../../../assets/images/ios/foundation/layout/layout_image_01.png",
                           "desc"  : null
                         })
                         <!-- prettier-ignore -->
                         @@include("../component/image_content_box.html", {
                           "mode"  : "",
-                          "image" : "../../../assets/images/foundation/layout/layout_image_02.png",
+                          "image" : "../../../assets/images/ios/foundation/layout/layout_image_02.png",
                           "desc"  : null
                         })
                       </div>
@@ -72,9 +72,9 @@
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : null,
-                            "desc"  : "웹이나 모바일과 달리 TV의 화면 비율은 16:9로 고정되어 있으며, 제작 시 기준 해상도는 1920 x 1080 px로 제작 합니다.<br />이렇게\
+                            "desc"  : "웹이나 모바일과 달리 TV의 화면 비율은 16:9로 고정되어 있으며, 제작 시 기준 해상도는 1920 x 1080 px로 제작합니다.<br />이렇게\
                           하면 HD 또는 4K 화면에 맞게 모든 요소의 크기를 비례적으로 조정할 수 있습니다.\
-                          <br />플랫폼별로 Android 960 x 540, iOS/Web 1920 x 1080로 디자인 합니다. " })
+                          <br />플랫폼별로 Android 960 x 540, iOS/Web 1920 x 1080로 디자인합니다. " })
                         </ul>
                       </div>
                     </div>
@@ -85,7 +85,7 @@
                         <!-- prettier-ignore -->
                         @@include("../component/image_content_box.html", {
                           "mode"  : "",
-                          "image" : "../../../assets/images/foundation/layout/layout_image_03.png",
+                          "image" : "../../../assets/images/ios/foundation/layout/layout_image_03.png",
                           "desc"  : {
                             "alphabet" : "1",
                             "desc"     : "Safe Zone"
@@ -94,7 +94,7 @@
                         <!-- prettier-ignore -->
                         @@include("../component/image_content_box.html", {
                           "mode"  : "",
-                          "image" : "../../../assets/images/foundation/layout/layout_image_04.png",
+                          "image" : "../../../assets/images/ios/foundation/layout/layout_image_04.png",
                           "desc"  : {
                             "alphabet" : "2",
                             "desc"     : "Contents Area"
@@ -106,7 +106,7 @@
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : null,
-                            "desc"  : "TV 디자인은 상하좌우 가장자리에 여백을 두어 콘텐츠 영역이 잘리지 않도록 디자인이 제작 되어야 하는데, 이것을 Safe Zone이라고 합니다. 콘텐츠와 정보를 안전하게 유지하려면 5% 여백 레이아웃을 사용하여야 하며, 구형 TV에서는 콘텐츠 영역이 잘리는 이슈가 있으므로 가이드를 지켜 디자인해야 합니다." })
+                            "desc"  : "TV 레이아웃은 상하좌우 가장자리에 여백을 통해 베젤을 통해 콘텐츠 영역이 잘리지 않도록 디자인합니다.\n이것을 세이프 존이라고 합니다. 콘텐츠와 정보를 안전하게 유지하려면 5% 여백 레이아웃을 사용하는 것을 권장합니다." })
                         </ul>
                       </div>
                     </div>
@@ -117,7 +117,7 @@
                       "mode"  : "",
                       "full"  : "",
                       "state" : "do",
-                      "image" : "../../../assets/images/foundation/layout/layout_image_05.png",
+                      "image" : "../../../assets/images/ios/foundation/layout/layout_image_05.png",
                       "desc"  : "일관된 그리드 시스템을 유지합니다."
                     })
                     <!-- prettier-ignore -->
@@ -125,8 +125,8 @@
                       "mode"  : "",
                       "full"  : "",
                       "state" : "dont",
-                      "image" : "../../../assets/images/foundation/layout/layout_image_06.png",
-                      "desc"  : "통일된 그리드가 없다면 유지보수가 어렵고, 프로덕트 전반에 걸쳐 만족스러운 구성을 지속하기 어렵습니다."
+                      "image" : "../../../assets/images/ios/foundation/layout/layout_image_06.png",
+                      "desc"  : "통일된 그리드가 없다면 프로덕트 전반에 걸쳐 만족스러운 구성을 지속하기 어렵습니다."
                     })
                   </div>
                 </div>
@@ -153,7 +153,7 @@
                     <!-- prettier-ignore -->
                     @@include("../component/image_content_box.html", {
                     "mode"  : "",
-                    "image" : "../../../assets/images/foundation/layout/layout_image_07.png",
+                    "image" : "../../../assets/images/ios/foundation/layout/layout_image_07.png",
                     "desc"  : null
                   })
                   </div>
@@ -164,7 +164,7 @@
                           <h3 class="title">Thumbnail</h3>
                         </div>
                         <div class="desc-box">
-                          <p class="desc">Poster/Thumbnail간 간격은 8배수로 설정합니다.</p>
+                          <p class="desc">콘텐츠간 간격은 일정하게 배치합니다.</p>
                         </div>
                       </div>
                       <div class="sub-content-bottom">
@@ -172,7 +172,7 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                           "mode"  : "",
-                          "image" : "../../../assets/images/foundation/layout/layout_image_08.png",
+                          "image" : "../../../assets/images/ios/foundation/layout/layout_image_08.png",
                           "desc"  : null
                         })
                         </div>
@@ -180,7 +180,7 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                           "mode"  : "",
-                          "image" : "../../../assets/images/foundation/layout/layout_image_09.png",
+                          "image" : "../../../assets/images/ios/foundation/layout/layout_image_09.png",
                           "desc"  : null
                         })
                         </div>
@@ -195,7 +195,7 @@
                         </div>
                         <div class="desc-box">
                           <p class="desc">
-                            Block간 간격은 상하 40을 기본으로, 높이 값이 8의 배수로 떨어지는 것을 권장합니다.
+                            블록 내 간격은 일정하게 배치되며, 블록 간 간격 또한 일정한 값으로 배치되는 것을 권장합니다.
                           </p>
                         </div>
                       </div>
@@ -204,7 +204,7 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                           "mode"  : "",
-                          "image" : "../../../assets/images/foundation/layout/layout_image_010.png",
+                          "image" : "../../../assets/images/ios/foundation/layout/layout_image_010.png",
                           "desc"  : null
                         })
                         </div>
@@ -248,7 +248,7 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                           "mode"  : "",
-                          "image" : "../../../assets/images/foundation/layout/layout_image_011.png",
+                          "image" : "../../../assets/images/ios/foundation/layout/layout_image_011.png",
                           "desc"  : null
                         })
                         </div>
@@ -263,7 +263,7 @@
                         </div>
                         <div class="desc-box">
                           <p class="desc">
-                            선택된 Block Title에 맞는 Contents가 세로로 나열되며, 다양한 유형의 텍스트형 구성 요소를
+                            선택된 블록 타이틀에 맞는 콘텐츠 세로로 나열되며, 다양한 유형의 텍스트형 구성 요소를
                             그룹화하는 데 사용됩니다.
                           </p>
                         </div>
@@ -273,7 +273,7 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                           "mode"  : "",
-                          "image" : "../../../assets/images/foundation/layout/layout_image_012.png",
+                          "image" : "../../../assets/images/ios/foundation/layout/layout_image_012.png",
                           "desc"  : null
                         })
                         </div>
@@ -288,8 +288,8 @@
                         </div>
                         <div class="desc-box">
                           <p class="desc">
-                            Grid 형태의 List로, 주로 개수가 많은 일반 Horizontal 의 전체 Contents를 나열하여 사용자가
-                            탐색하고 탐색하기 쉽게 만듭니다.
+                            그리드 형태의 리스트로, 주로 개수가 많은 일반 수평으로 나열된 전체 콘텐츠를 나열하여
+                            사용자가 탐색하고 탐색하기 쉽게 만듭니다.
                           </p>
                         </div>
                       </div>
@@ -298,7 +298,7 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                           "mode"  : "",
-                          "image" : "../../../assets/images/foundation/layout/layout_image_013.png",
+                          "image" : "../../../assets/images/ios/foundation/layout/layout_image_013.png",
                           "desc"  : null
                         })
                         </div>
@@ -318,11 +318,11 @@
                   </div>
                   <div class="desc-box">
                     <div class="desc">
-                      Layout 영역은 스크린과 컴포넌트 사이의 Margin을 정의하며, 유사한 기능을 공유하는 요소 및 구성
+                      레이아웃 영역은 스크린과 컴포넌트 사이의 마진을 정의하며, 유사한 기능을 공유하는 요소 및 구성
                       요소로 구성됩니다.<br />
-                      또한 Layout 영역은 카드와 같은 더 작은 컨테이너를 그룹화할 수도 있습니다.
+                      또한 레이아웃 영역은 카드와 같은 더 작은 컨테이너를 그룹화할 수도 있습니다.
                     </div>
-                    <div class="desc grey">화면 레이아웃에는 세가지 주요 영역이 있습니다.</div>
+                    <div class="desc grey">화면 레이아웃에는 세 가지 주요 영역이 있습니다.</div>
                   </div>
                 </div>
                 <div class="content-bottom">
@@ -330,7 +330,7 @@
                     <!-- prettier-ignore -->
                     @@include("../component/image_content_box.html", {
                     "mode"  : "",
-                    "image" : "../../../assets/images/foundation/layout/layout_image_014.png",
+                    "image" : "../../../assets/images/ios/foundation/layout/layout_image_014.png",
                     "desc"  : null
                   })
                   </div>
@@ -341,9 +341,7 @@
                           <h3 class="title">Block Area</h3>
                         </div>
                         <div class="desc-box">
-                          <p class="desc">
-                            TV Contents와 Block이 배치되는 영역으로, 좌측부터 180px기준으로 시작합니다.
-                          </p>
+                          <p class="desc">TV 콘텐츠와 블록들이 배치되는 영역입니다.</p>
                         </div>
                       </div>
                       <div class="sub-content-bottom">
@@ -351,7 +349,7 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                           "mode"  : "",
-                          "image" : "../../../assets/images/foundation/layout/layout_image_015.png",
+                          "image" : "../../../assets/images/ios/foundation/layout/layout_image_015.png",
                           "desc"  : null
                         })
                         </div>
@@ -365,9 +363,7 @@
                           <h3 class="title">Preview Area</h3>
                         </div>
                         <div class="desc-box">
-                          <p class="desc">
-                            Contents의 세부적인 Preview내용이 배치되는 영역으로, 좌측부터 180px기준으로 시작합니다.
-                          </p>
+                          <p class="desc">콘텐츠의 세부적인 프리뷰 내용이 보여지는 영역입니다.</p>
                         </div>
                       </div>
                       <div class="sub-content-bottom">
@@ -375,7 +371,7 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                           "mode"  : "",
-                          "image" : "../../../assets/images/foundation/layout/layout_image_016.png",
+                          "image" : "../../../assets/images/ios/foundation/layout/layout_image_016.png",
                           "desc"  : null
                         })
                         </div>
@@ -390,7 +386,7 @@
                         </div>
                         <div class="desc-box">
                           <p class="desc">
-                            Menu 이동을 위한 GNB Area로, focus 시 Flexible 하게 우측으로 영역이 넓어집니다.
+                            메뉴 이동을 위한 GNB 영역으로, 포커스 시 플렉시블 하게 우측으로 영역이 넓어집니다.
                           </p>
                         </div>
                       </div>
@@ -399,13 +395,13 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                           "mode"  : "",
-                          "image" : "../../../assets/images/foundation/layout/layout_image_017.png",
+                          "image" : "../../../assets/images/ios/foundation/layout/layout_image_017.png",
                           "desc"  : null
                         })
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                           "mode"  : "",
-                          "image" : "../../../assets/images/foundation/layout/layout_image_018.png",
+                          "image" : "../../../assets/images/ios/foundation/layout/layout_image_018.png",
                           "desc"  : null
                         })
                         </div>
@@ -453,6 +449,10 @@
           </ul>
         </div>
       </div>
+
+      <!-- Footer -->
+      <!-- prettier-ignore -->
+      @@include("../component/footer.html")
     </div>
   </body>
 </html>

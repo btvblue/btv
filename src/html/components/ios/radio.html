@@ -35,8 +35,8 @@
                   </div>
                   <div class="desc-box">
                     <p class="desc">
-                      Radio Button은 단일 Option만 선택할 수 있는 경우 사용합니다. 같은 List 내 다른 Radio Button 선택
-                      시 기존에 선택되어 있었던 Radio Button이 선택 해제 되며, 항상 Default Option을 제공합니다.
+                      단독으로 선택할 때 사용하는 컴포넌트입니다.<br />하나의 라디오 버튼을 선택하면 다른 라디오
+                      버튼들은 선택 해제되며, 필수적으로 선택된 옵션을 제공합니다.
                     </p>
                   </div>
                 </div>
@@ -45,7 +45,7 @@
                     <!-- prettier-ignore -->
                     @@include("../component/image_content_box.html", {
                       "mode" : "dark",
-                      "image" : "../../../assets/images/components/radio/radio_image_01.png",
+                      "image" : "../../../assets/images/ios/components/radio/radio_image_01.png",
                       "desc" : {
                         "alphabet" : "A",
                         "desc" : "General Select / Unselect Radio Button"
@@ -70,7 +70,7 @@
                         <!-- prettier-ignore -->
                         @@include("../component/image_content_box.html", {
                           "mode" : "dark",
-                          "image" : "../../../assets/images/components/radio/radio_image_02.png",
+                          "image" : "../../../assets/images/ios/components/radio/radio_image_02.png",
                           "desc" : null
                         })
                       </div>
@@ -79,17 +79,17 @@
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "1. Container",
-                            "desc" : "Radio Button의 형태를 나타냅니다."
+                            "desc" : "선택 가능한 영역을 나타냅니다. "
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "2. Icon",
-                            "desc" : "Inner Circle의 존재 유무로 선택 여부를 판단 할 수 있습니다."
+                            "desc" : "선택여부에 따라 채워짐 정도로 표시합니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "3. Text",
-                            "desc" : "해당 Text가 우측에 배치됩니다."
+                            "desc" : "텍스트는 아이콘 우측에 배치합니다."
                           })
                         </ul>
                       </div>
@@ -116,7 +116,7 @@
                           <h3 class="title">General Radio Button</h3>
                         </div>
                         <div class="desc-box">
-                          <p class="desc">기본형의 Radio Button으로, Text와 함께 노출합니다.</p>
+                          <p class="desc">텍스트와 함께 구성하는 기본적인 라디오 버튼입니다.</p>
                         </div>
                       </div>
                       <div class="sub-content-bottom">
@@ -124,7 +124,7 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode" : "dark",
-                            "image" : "../../../assets/images/components/radio/radio_image_03.png",
+                            "image" : "../../../assets/images/ios/components/radio/radio_image_03.png",
                             "desc" : null
                           })
                         </div>
@@ -134,16 +134,16 @@
                             "mode" : "dark",
                             "full" : "",
                             "state" : "do",
-                            "image" : "../../../assets/images/components/radio/radio_image_04.png",
-                            "desc" : "항상 Default Option 선택값을 제공하여 무조건 선택해야하는 Option임을 사용자가 인지할 수 있어야합니다."
+                            "image" : "../../../assets/images/ios/components/radio/radio_image_04.png",
+                            "desc" : "필수적으로 선택된 옵션을 제공합니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/color_box.html", {
                             "mode" : "dark",
                             "full" : "",
                             "state" : "dont",
-                            "image" : "../../../assets/images/components/radio/radio_image_05.png",
-                            "desc" : "Radio Button Option의 항목 안의 항목으로 중첩하여 사용하지 않습니다."
+                            "image" : "../../../assets/images/ios/components/radio/radio_image_05.png",
+                            "desc" : "라디오 버튼 내 하위 라디오 버튼을 구성하여 사용하지 않습니다."
                           })
                         </div>
                       </div>
@@ -161,11 +161,7 @@
                     <h2 class="title">States</h2>
                   </div>
                   <div class="desc-box">
-                    <p class="desc">
-                      Radio Button의 상태별 정의는 리모컨의 포커싱에 따라 focus/normal 상태로 크게 분류되며,<br />상태에
-                      따라 select/unselect 로 분류됩니다. 선택할 수 없는 Option의 경우는 dimmed 상태의 Radio Button을
-                      사용합니다.
-                    </p>
+                    <p class="desc">리모컨의 포커스와 선택 여부에 분류합니다.</p>
                   </div>
                 </div>
                 <div class="content-bottom">
@@ -173,7 +169,7 @@
                     <!-- prettier-ignore -->
                     @@include("../component/image_content_box.html", {
                     "mode" : "dark",
-                    "image" : "../../../assets/images/components/radio/radio_image_06.png",
+                    "image" : "../../../assets/images/ios/components/radio/radio_image_06.png",
                     "desc" : null
                     })
                   </div>
@@ -183,16 +179,16 @@
                       "mode" : "dark",
                       "full" : "",
                       "state" : "do",
-                      "image" : "../../../assets/images/components/radio/radio_image_07.png",
-                      "desc" : "선택 가능한 List의 Option들은 용도에 따라 알맞게 그룹화 하여 사용합니다."
+                      "image" : "../../../assets/images/ios/components/radio/radio_image_07.png",
+                      "desc" : "라디오 버튼간 명확한 구분을 위해 그룹화하여 사용할 수 있습니다."
                     })
                     <!-- prettier-ignore -->
                     @@include("../component/color_box.html", {
                       "mode" : "dark",
                       "full" : "",
                       "state" : "dont",
-                      "image" : "../../../assets/images/components/radio/radio_image_08.png",
-                      "desc" : "그룹 간 List의 간격을 붙여서 사용하지 않습니다."
+                      "image" : "../../../assets/images/ios/components/radio/radio_image_08.png",
+                      "desc" : "그룹 간 간격을 붙여서 사용하지 않습니다."
                     })
                   </div>
                 </div>
@@ -215,19 +211,13 @@
                         <div class="title-box">
                           <h3 class="title">Vertical Radio Button</h3>
                         </div>
-                        <div class="desc-box">
-                          <p class="desc">
-                            기본형의 Radio Button을 Text와 함께 세로로 노출합니다. 주로 디테일한 정보의 Option을 나열할
-                            때 사용합니다.
-                          </p>
-                        </div>
                       </div>
                       <div class="sub-content-bottom">
                         <div class="content-box">
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode" : "dark",
-                            "image" : "../../../assets/images/components/radio/radio_image_09.png",
+                            "image" : "../../../assets/images/ios/components/radio/radio_image_09.png",
                             "desc" : null
                           })
                         </div>
@@ -241,19 +231,13 @@
                         <div class="title-box">
                           <h3 class="title">Horizontal Radio Button</h3>
                         </div>
-                        <div class="desc-box">
-                          <p class="desc">
-                            기본형의 Radio Button을 Text와 가로로 노출합니다. 주로 Option의 내용이 간단 명료 할 때
-                            사용합니다.
-                          </p>
-                        </div>
                       </div>
                       <div class="sub-content-bottom">
                         <div class="content-box">
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode" : "dark",
-                            "image" : "../../../assets/images/components/radio/radio_image_010.png",
+                            "image" : "../../../assets/images/ios/components/radio/radio_image_010.png",
                             "desc" : null
                           })
                         </div>
@@ -263,8 +247,8 @@
                             "mode" : "dark",
                             "full" : "full",
                             "state" : "dont",
-                            "image" : "../../../assets/images/components/radio/radio_image_011.png",
-                            "desc" : "Radio Button 배열 시 정보의 순서를 랜덤으로 배치하지 않습니다."
+                            "image" : "../../../assets/images/ios/components/radio/radio_image_011.png",
+                            "desc" : "버튼의 순서를 랜덤으로 배치하지 않습니다."
                           })
                         </div>
                       </div>
@@ -277,19 +261,13 @@
                         <div class="title-box">
                           <h3 class="title">Image Radio Button</h3>
                         </div>
-                        <div class="desc-box">
-                          <p class="desc">
-                            사용자에게 Option의 더 명확한 설명을 돕기 위해 Image가 Radio Button 컴포넌트 상단에 함께
-                            노출됩니다.
-                          </p>
-                        </div>
                       </div>
                       <div class="sub-content-bottom">
                         <div class="content-box">
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode" : "dark",
-                            "image" : "../../../assets/images/components/radio/radio_image_012.png",
+                            "image" : "../../../assets/images/ios/components/radio/radio_image_012.png",
                             "desc" : null
                           })
                         </div>
@@ -339,6 +317,10 @@
           </ul>
         </div>
       </div>
+
+      <!-- Footer -->
+      <!-- prettier-ignore -->
+      @@include("../component/footer.html")
     </div>
   </body>
 </html>

@@ -27,11 +27,136 @@
       <main class="main">
         <div class="main-container">
           <div class="main-area">
-            <img src="../../../assets/images/temp/mass_component_pagination.png" alt="" style="width: 100%"/>
+            <div class="heading-container">
+              <div class="heading-area">
+                <div class="heading-top">
+                  <div class="title-box">
+                    <h1 class="title">Pagination</h1>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      도형이나 숫자를 통해 사용자의 위치를 안내하기 위해 사용합니다.<br />
+                      전체 정보의 양과 현재 사용자가 위치한 지점을 함께 표시하여 사용자가 쉽게 현재 위치를 파악하도록
+                      합니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Anatomy -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Anatomy</h2>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">컴포넌트에 포함되는 요소에 대한 정의입니다.</p>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <div class="image-title-box">
+                      <div class="image-title-top">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "no-border",
+                          "image" : "../../../assets/images/web/components/Pagination/Mass_pagination_1.png",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="image-title-bottom">
+                        <ul class="number-desc-list-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "1. Active dot",
+                            "desc"  : "사용자가 현재 보고있는 페이지의 위치를 점의 색상으로 \n구분하여 나타냅니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "2. Inactive dot",
+                            "desc"  : "전체 페이지의 총량을 점의 갯수로 나타냅니다."
+                          })
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="image-title-box">
+                      <div class="image-title-top">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "no-border",
+                          "image" : "../../../assets/images/web/components/Pagination/Mass_pagination_2.png",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="image-title-bottom">
+                        <ul class="number-desc-list-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "1. Current Page",
+                            "desc"  : "사용자가 확인하고 있는 콘텐츠의 위치를 숫자로 나타냅니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "2. Total Page",
+                            "desc"  : "전체 콘텐츠를 숫자로 표현합니다."
+                          })
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // Anatomy -->
+
+            <!-- Type -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Type</h2>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <div class="image-title-box">
+                      <div class="image-title-top">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "no-border",
+                          "image" : "../../../assets/images/web/components/Pagination/Mass_pagination_3.png",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="image-title-bottom">
+                        <ul class="number-desc-list-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "A. Active dot",
+                            "desc"  : "페이지의 위치를 표기할 때 사용합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "B. Number Pagination",
+                            "desc"  : "콘텐츠의 위치를 표기할 때 사용합니다."
+                          })
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // Type -->
           </div>
         </div>
       </main>
 
+      <!-- Footer -->
+      <!-- prettier-ignore -->
+      @@include("../component/footer.html")
     </div>
   </body>
 </html>

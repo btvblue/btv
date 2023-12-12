@@ -34,8 +34,8 @@
                   </div>
                   <div class="desc-box">
                     <p class="desc">
-                      Badge는 새로운 Contents나 알림에 대한 정보를 제공할 때 Icon 또는 Text에 추가적인 요소를 사용하여
-                      표시합니다.<br />Badge에는 Text나 숫자 또는 Icon을 포함합니다.
+                      새로운 콘텐츠, 알림에 대한 정보를 표시합니다.<br />아이콘, 텍스트, 숫자와 같은 요소를 함께 사용할
+                      수 있습니다.
                     </p>
                   </div>
                 </div>
@@ -44,7 +44,7 @@
                     <!-- prettier-ignore -->
                     @@include("../component/image_content_box.html", {
                       "mode" : "",
-                      "image" : "../../../assets/images/components/badges/badge_image_01.png",
+                      "image" : "../../../assets/images/ios/components/badges/badge_image_01.png",
                       "desc" : {
                         "alphabet" : "A",
                         "desc" : "Text Badge"
@@ -53,7 +53,7 @@
                     <!-- prettier-ignore -->
                     @@include("../component/image_content_box.html", {
                       "mode" : "",
-                      "image" : "../../../assets/images/components/badges/badge_image_02.png",
+                      "image" : "../../../assets/images/ios/components/badges/badge_image_02.png",
                       "desc" : {
                         "alphabet" : "B",
                         "desc" : "Number Badge"
@@ -62,7 +62,7 @@
                     <!-- prettier-ignore -->
                     @@include("../component/image_content_box.html", {
                       "mode" : "",
-                      "image" : "../../../assets/images/components/badges/badge_image_03.png",
+                      "image" : "../../../assets/images/ios/components/badges/badge_image_03.png",
                       "desc" : {
                         "alphabet" : "C",
                         "desc" : "Icon Badge"
@@ -71,10 +71,10 @@
                     <!-- prettier-ignore -->
                     @@include("../component/image_content_box.html", {
                       "mode" : "",
-                      "image" : "../../../assets/images/components/badges/badge_image_04.png",
+                      "image" : "../../../assets/images/ios/components/badges/badge_image_04.png",
                       "desc" : {
                         "alphabet" : "D",
-                        "desc" : "Floating Action Button"
+                        "desc" : "Dot Badge"
                       }
                     })
                   </div>
@@ -96,13 +96,13 @@
                         <!-- prettier-ignore -->
                         @@include("../component/image_content_box.html", {
                           "mode" : "",
-                          "image" : "../../../assets/images/components/badges/badge_image_05.png",
+                          "image" : "../../../assets/images/ios/components/badges/badge_image_05.png",
                           "desc" : null
                         })
                         <!-- prettier-ignore -->
                         @@include("../component/image_content_box.html", {
                           "mode" : "",
-                          "image" : "../../../assets/images/components/badges/badge_image_06.png",
+                          "image" : "../../../assets/images/ios/components/badges/badge_image_06.png",
                           "desc" : null
                         })
                       </div>
@@ -111,17 +111,17 @@
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "1. Text, Number, Icon",
-                            "desc" : "Text, 숫자, Icon을 표시합니다."
+                            "desc" : "텍스트, 숫자, 아이콘과 같은 정보를 표시합니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "2. Container (Optional)",
-                            "desc" : "Badge의 형태를 나타내는 배경 컨테이너입니다. 원형 형태로 숫자 길이에 따라 가로 너비의 형태가 넓게 변형될 수 있습니다."
+                            "desc" : "형태를 나타내는 영역입니다. 표시하는 정보에 따라 너비가 확장될 수 있습니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "3. Dot",
-                            "desc" : "새로운 알림이나 업데이트 있는 경우 Icon이나 Text 주변에 표시됩니다."
+                            "desc" : "새로운 알림이나 업데이트 있는 경우 아이콘, 텍스트 주변에 표시합니다."
                           })
                         </ul>
                       </div>
@@ -140,12 +140,9 @@
                   </div>
                   <div class="desc-box">
                     <p class="desc">
-                      Text/Number/Icon Badge에서는 Basic과 Image 형태로 나뉘며, Basic Badge는 새로운 소식이나 정보를
-                      알려주기 위한 요소로 다양한 영역에 사용하고 Image Badge는 Poster 또는 Thumbnail 내에 국한하여
-                      상태를 노출할 수 있는 정보성 Badge로 사용합니다.
-                    </p>
-                    <p class="desc red">
-                      * Image Badge는 B tv 시스템 기준으로 정의 내려져 있으며 Flag라고 명시 되어 있습니다.
+                      형태에 따라 텍스트, 숫자, 아이콘, 닷으로 구분합니다.<br />베이직 뱃지는 새로운 소식이나 정보를
+                      알려주기 위한 요소로 다양한 영역에 사용하고, 이미지 뱃지는 포스터 또는 썸네일 내에 상태를 노출할
+                      수 있는 정보성 뱃지로 사용합니다.
                     </p>
                   </div>
                 </div>
@@ -159,7 +156,8 @@
                         </div>
                         <div class="desc-box">
                           <p class="desc">
-                            원형 Badge 내부에 Text로 상태와 같은 동적 정보를 전달하고 알림을 표시할 때 사용합니다.
+                            원형 또는 라운드 쉐입 내부에 텍스트로 상태와 같은 동적 정보를 전달하고 알림을 표시할 때
+                            사용합니다.
                           </p>
                         </div>
                       </div>
@@ -168,13 +166,13 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode" : "",
-                            "image" : "../../../assets/images/components/badges/badge_image_07.png",
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_07.png",
                             "desc" : null
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode" : "",
-                            "image" : "../../../assets/images/components/badges/badge_image_08.png",
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_08.png",
                             "desc" : null
                           })
                         </div>
@@ -184,31 +182,31 @@
                             "mode" : "",
                             "full" : "",
                             "state" : "do",
-                            "image" : "../../../assets/images/components/badges/badge_image_09.png",
-                            "desc" : "Contents의 상태 정보를 나타낼 때 Image Badge를 사용합니다."
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_09.png",
+                            "desc" : "콘텐츠의 상태 정보를 나타낼 때 사용합니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/color_box.html", {
                             "mode" : "",
                             "full" : "",
                             "state" : "do",
-                            "image" : "../../../assets/images/components/badges/badge_image_010.png",
-                            "desc" : "Contents 별 일관된 Color를 따라 Badge의 색상을 다르게 적용할 수 있습니다."
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_010.png",
+                            "desc" : "콘텐츠별 일관된 컬러를 따라 색상을 다르게 적용할 수 있습니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/color_box.html", {
                             "mode" : "",
                             "full" : "",
                             "state" : "dont",
-                            "image" : "../../../assets/images/components/badges/badge_image_011.png",
-                            "desc" : "Basic Badge와 Image Badge를 Contents별로 알맞게 사용하여야 합니다."
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_011.png",
+                            "desc" : "콘텐츠 속성에 맞지 않는 뱃지는 사용하지 않습니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/color_box.html", {
                             "mode" : "",
                             "full" : "",
                             "state" : "exception",
-                            "image" : "../../../assets/images/components/badges/badge_image_012.png",
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_012.png",
                             "desc" : "보다 상세한 정보의 고지가 필요할 경우 제한적으로 사용합니다. "
                           })
                         </div>
@@ -224,10 +222,10 @@
                         </div>
                         <div class="desc-box">
                           <p class="desc">
-                            Basic Badge는 정보의 개수를 카운트 할 수 있는 기능에 사용합니다.<br />1부터 999까지 표시할
-                            수 있고 숫자 길이에 따라 너비가 자동으로 변형될 수 있습니다.
+                            정보의 개수를 카운트할 수 있는 기능에 사용합니다.<br />숫자 길이에 따라 너비가 플렉시블 하게
+                            형태를 변형할 수 있습니다.
                           </p>
-                          <p class="desc">Image Badge의 경우 Contents의 순위를 나타내는 기능으로 사용합니다.</p>
+                          <p class="desc">콘텐츠 순위를 나타내는 기능으로 사용합니다.</p>
                         </div>
                       </div>
                       <div class="sub-content-bottom">
@@ -235,13 +233,13 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode" : "",
-                            "image" : "../../../assets/images/components/badges/badge_image_013.png",
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_013.png",
                             "desc" : null
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode" : "",
-                            "image" : "../../../assets/images/components/badges/badge_image_014.png",
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_014.png",
                             "desc" : null
                           })
                         </div>
@@ -256,7 +254,7 @@
                           <h3 class="title">Icon Badge</h3>
                         </div>
                         <div class="desc-box">
-                          <p class="desc">Icon을 활용하여 사용자의 정보 인지를 효과적으로 돕기 위해 사용합니다.</p>
+                          <p class="desc">사용자의 정보 인지를 효과적으로 돕기 위해 사용합니다.</p>
                         </div>
                       </div>
                       <div class="sub-content-bottom">
@@ -264,13 +262,13 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode" : "",
-                            "image" : "../../../assets/images/components/badges/badge_image_015.png",
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_015.png",
                             "desc" : null
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode" : "",
-                            "image" : "../../../assets/images/components/badges/badge_image_016.png",
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_016.png",
                             "desc" : null
                           })
                         </div>
@@ -280,16 +278,8 @@
                             "mode" : "",
                             "full" : "",
                             "state" : "do",
-                            "image" : "../../../assets/images/components/badges/badge_image_017.png",
-                            "desc" : "Image Badge는 경우에 따라 배경 컨테이너를 포함하지 않을 수 있습니다."
-                          })
-                          <!-- prettier-ignore -->
-                          @@include("../component/color_box.html", {
-                            "mode" : "",
-                            "full" : "",
-                            "state" : "exception",
-                            "image" : "../../../assets/images/components/badges/badge_image_018.png",
-                            "desc" : "일반적으로 Badge 내부에 Icon 또는 Text만을 포함하지만 사용자의 이해를 더 쉽게 이끌기 위해 Icon+Text를 결합한 형태로 사용합니다."
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_017.png",
+                            "desc" : "컨테이너를 포함하지 않고 사용할 수 있습니다."
                           })
                         </div>
                       </div>
@@ -304,8 +294,8 @@
                         </div>
                         <div class="desc-box">
                           <p class="desc">
-                            기존 메뉴 또는 서비스에 Update 소식이 있는 경우 사용하며 Dot가 Icon이나 Text 등의 주변에
-                            노출 됩니다.
+                            기존 메뉴 또는 서비스에 업데이트된 소식이 있는 경우 사용하며 아이콘, 텍스트 주변에
+                            표시합니다.
                           </p>
                         </div>
                       </div>
@@ -314,13 +304,13 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode" : "",
-                            "image" : "../../../assets/images/components/badges/badge_image_019.png",
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_018.png",
                             "desc" : null
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode" : "",
-                            "image" : "../../../assets/images/components/badges/badge_image_020.png",
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_019.png",
                             "desc" : null
                           })
                         </div>
@@ -349,8 +339,7 @@
                         </div>
                         <div class="desc-box">
                           <p class="desc">
-                            신규 Contents가 Update 된 경우 프리뷰 시나리오 내 Text Badge를 노출하고 Poster에 상태 표기가
-                            필요할 경우 Image Badge를 사용합니다.
+                            신규 콘텐츠 업데이트로 프리뷰 또는 콘텐츠 내 표시가 필요할 경우 사용합니다.
                           </p>
                         </div>
                       </div>
@@ -359,7 +348,7 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode" : "",
-                            "image" : "../../../assets/images/components/badges/badge_image_021.png",
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_020.png",
                             "desc" : null
                           })
                         </div>
@@ -369,16 +358,16 @@
                             "mode" : "",
                             "full" : "",
                             "state" : "do",
-                            "image" : "../../../assets/images/components/badges/badge_image_022.png",
-                            "desc" : "Button과 함께 Text Badge를 노출할 수 있습니다."
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_021.png",
+                            "desc" : "버튼 내 상태 표시를 위해 활용할 수 있습니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/color_box.html", {
                             "mode" : "",
                             "full" : "",
                             "state" : "do",
-                            "image" : "../../../assets/images/components/badges/badge_image_023.png",
-                            "desc" : "Thumbnail 내 정보 표기가 필요한 경우 Image Badge를 사용하며 형태는 변할 수 있습니다."
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_022.png",
+                            "desc" : "특정 정보 표시가 필요한 경우 컴포넌트에 따라 형태를 변경하여 사용할 수 있습니다."
                           })
                         </div>
                       </div>
@@ -392,9 +381,7 @@
                           <h3 class="title">Number Badge</h3>
                         </div>
                         <div class="desc-box">
-                          <p class="desc">
-                            Module 내 Contents 개수의 고지를 위해 Sub Title과 함께 Number Badge를 노출합니다.
-                          </p>
+                          <p class="desc">콘텐츠 개수의 고지를 위해 표시합니다.</p>
                         </div>
                       </div>
                       <div class="sub-content-bottom">
@@ -402,18 +389,8 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode" : "",
-                            "image" : "../../../assets/images/components/badges/badge_image_024.png",
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_023.png",
                             "desc" : null
-                          })
-                        </div>
-                        <div class="content-box">
-                          <!-- prettier-ignore -->
-                          @@include("../component/color_box.html", {
-                            "mode" : "",
-                            "full" : "",
-                            "state" : "dont",
-                            "image" : "../../../assets/images/components/badges/badge_image_025.png",
-                            "desc" : "시선의 흐름이 Contents의 개수로 먼저 가지 않도록 Title과 Number Badge의 크기감이 비슷하게 사용 되어야 합니다."
                           })
                         </div>
                       </div>
@@ -428,8 +405,8 @@
                         </div>
                         <div class="desc-box">
                           <p class="desc">
-                            정보의 명확한 안내를 돕거나 사용자가 실행한 작업이 적용되었다는 인지를 주기 위해 Icon
-                            Badge를 노출합니다.
+                            정보의 명확한 안내를 위해 사용하거나 실행한 작업이 적용되었다는 인지를 전달하기 위해
+                            사용합니다.
                           </p>
                         </div>
                       </div>
@@ -438,13 +415,13 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode" : "",
-                            "image" : "../../../assets/images/components/badges/badge_image_026.png",
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_024.png",
                             "desc" : null
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode" : "",
-                            "image" : "../../../assets/images/components/badges/badge_image_027.png",
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_025.png",
                             "desc" : null
                           })
                         </div>
@@ -454,16 +431,8 @@
                             "mode" : "",
                             "full" : "",
                             "state" : "do",
-                            "image" : "../../../assets/images/components/badges/badge_image_028.png",
-                            "desc" : "사용자가 설정한 기능이 있을 경우 Thumbnail 내에 Image Badge를 노출합니다."
-                          })
-                          <!-- prettier-ignore -->
-                          @@include("../component/color_box.html", {
-                            "mode" : "",
-                            "full" : "",
-                            "state" : "do",
-                            "image" : "../../../assets/images/components/badges/badge_image_029.png",
-                            "desc" : "Icon+text가 결합 된 Image Badge 와 Icon Image Badge를 동시 노출 할 수 있습니다."
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_026.png",
+                            "desc" : "기능에 대한 고지를 위해 사용할 수 있습니다."
                           })
                         </div>
                       </div>
@@ -477,7 +446,7 @@
                           <h3 class="title">Dot Badge</h3>
                         </div>
                         <div class="desc-box">
-                          <p class="desc">Contents에 Update가 있는 경우 Dot Badge를 노출합니다.</p>
+                          <p class="desc">콘텐츠 내 업데이트가 있는 경우 노출합니다.</p>
                         </div>
                       </div>
                       <div class="sub-content-bottom">
@@ -485,7 +454,7 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode" : "",
-                            "image" : "../../../assets/images/components/badges/badge_image_030.png",
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_027.png",
                             "desc" : null
                           })
                         </div>
@@ -495,8 +464,8 @@
                             "mode" : "",
                             "full" : "",
                             "state" : "dont",
-                            "image" : "../../../assets/images/components/badges/badge_image_031.png",
-                            "desc" : "Dot의 크기나 위치가 정해진 Guide에서 벗어나게 되면 Update의 정보 인식이 어려워지게 됩니다."
+                            "image" : "../../../assets/images/ios/components/badges/badge_image_028.png",
+                            "desc" : "크기나 위치가 벗어나게 되면 정보 인식에 혼란을 줄 수 있어 사용하지 않습니다."
                           })
                         </div>
                       </div>
@@ -554,6 +523,10 @@
           </ul>
         </div>
       </div>
+
+      <!-- Footer -->
+      <!-- prettier-ignore -->
+      @@include("../component/footer.html")
     </div>
   </body>
 </html>

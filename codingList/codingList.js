@@ -1,7 +1,4 @@
-// data 파일 import
-import data from './data/data_1.js';
-
-const allData = [data];
+const allData = [dataCommon, dataIos, dataWeb];
 
 document.addEventListener('DOMContentLoaded', () => {
   allData.forEach((data, i) => {
@@ -22,25 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const headData = data.headData;
 
     // 다단계 데이터 구조를 1단계 구조로 변환 //
-    const rowData = convertStructure(data);
+    const rowData = convertStructure(data.list);
     // 코딩리스트 생성(head, row, index) //
     createTable(headData, rowData, i);
-  });
-
-  const topButton = document.querySelector('.top_btn');
-  topButton.addEventListener('click', (e) => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'smooth',
-    });
-  });
-
-  window.addEventListener('scroll', (e) => {
-    const target = e.currentTarget;
-    let scrollY = target.scrollY;
-
-    scrollY > 0 ? (topButton.style.opacity = 1) : (topButton.style.opacity = 0);
   });
 });
 
@@ -68,13 +49,11 @@ function tabHandler(e) {
 
 // 계층 구조 데이터를 단층 데이터 구조로 변경하는 함수 //
 function convertStructure(data) {
-  let deepestDepth = data.headData.length - 2;
-  const list = data.list;
   let rows = []; // 변환된 row 배열을 저장하는 배열
   let row = []; // td 태그로 구성하기 위한 객체를 저장한 배열. 재귀함수를 통해 객체 구성을 완료한 후 rows 배열에 push 한다
 
   // 모든 요소를 확인하기 위해 재귀함수를 실행한다. //
-  setTd(list, 0);
+  setTd(data, 0);
 
   // td 추가를 위한 데이터 구조 변환 함수(재귀함수) //
   function setTd(data, currentDepth) {
@@ -92,7 +71,6 @@ function convertStructure(data) {
         // 자식 요소가 없을 경우 나머지 요소를 추가해준다. //
         const fileLink = document.createElement('a');
         const filename = document.createTextNode(cell.name);
-
         fileLink.appendChild(filename);
         // setAttributes 함수는 Node의 prototype에 추가한 함수다. //
         fileLink.setAttributes({
@@ -103,14 +81,6 @@ function convertStructure(data) {
         row.push({
           content: cell.content,
         });
-
-        if (depth < deepestDepth) {
-          for (let i = depth; i < deepestDepth - 1; i++) {
-            row.push({
-              content: '',
-            });
-          }
-        }
 
         row.push({
           content: fileLink,
@@ -142,7 +112,6 @@ function convertStructure(data) {
     }
     return count;
   }
-  console.log(rows);
   return rows;
 }
 

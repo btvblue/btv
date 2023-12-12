@@ -21,7 +21,7 @@ const removeEmptyLines = require('gulp-remove-empty-lines');
 
 // Clean assets
 function clear() {
-  return src('./dist/assets/*', {
+  return src('./dist/*', {
     read: false,
   }).pipe(clean());
 }
@@ -36,10 +36,7 @@ function clearHtml() {
 function js() {
   const source = './src/js/*.*';
 
-  return src(source)
-    .pipe(changed(source))
-    .pipe(dest('./dist/assets/js/'))
-    .pipe(browsersync.stream());
+  return src(source).pipe(changed(source)).pipe(dest('./dist/assets/js/')).pipe(browsersync.stream());
 }
 
 // CSS function
@@ -136,5 +133,7 @@ function browserSync() {
 }
 
 // Tasks to define the execution of the functions simultaneously or in series
+
+exports.clear = series(clear);
+exports.build = parallel(html, js, css, font, images, codingListCss);
 exports.watch = parallel(watchFiles, browserSync);
-exports.build = series(clear, parallel(html, js, css, font, images, codingListCss));
