@@ -97,8 +97,8 @@ const dataIos = {
       content: 'Overview',
       children: [
         {
-          name: 'overview/ios/overview.html',
-          link: 'overview/ios/overview.html',
+          name: 'overview/overview.html',
+          link: 'overview/overview.html',
           content: 'Overview',
           complete: true,
         },
