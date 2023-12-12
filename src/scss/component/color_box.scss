@@ -1,6 +1,9 @@
 .color-box {
   width: calc(50% - 2rem);
-  margin: 2rem 1rem;
+  margin: 0 1rem;
+  &:nth-child(n + 3) {
+    margin-top: 4rem;
+  }
   &.full {
     width: 100%;
   }
@@ -90,6 +93,9 @@
       font-family: 'SK_Btv';
       @include font(1.4rem, 500, #242424, 2.4rem);
       word-break: keep-all;
+      p {
+        white-space: pre-line;
+      }
     }
   }
 }

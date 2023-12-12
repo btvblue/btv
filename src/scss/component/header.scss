@@ -28,6 +28,8 @@
     @include font(2.2rem, 700, $white, 2.7rem);
     white-space: nowrap;
     .text {
+      position: relative;
+      top: 1px;
       margin-left: 0.8rem;
     }
   }

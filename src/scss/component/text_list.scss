@@ -30,5 +30,10 @@
       display: block;
       color: #888888;
     }
+    .list {
+      span {
+        white-space: pre-line;
+      }
+    }
   }
 }

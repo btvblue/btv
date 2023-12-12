@@ -181,6 +181,15 @@ main {
       width: auto;
     }
   }
+  &.reverse {
+    flex-direction: column-reverse;
+    .image-title-top {
+      margin-top: 3rem;
+    }
+    .number-desc-list-box {
+      margin-top: 0;
+    }
+  }
   .image-content-box,
   .number-desc-list-box {
     width: 100%;
@@ -191,9 +200,8 @@ main {
   .image-title-top,
   .image-title-bottom {
     @include flex(row, flex-start, flex-start);
-    width: 100%;
-    margin-left: -1rem;
-    margin-right: -1rem;
+    width: calc(100% + 2rem);
+    margin: 0 -1rem;
   }
 }
 
@@ -221,6 +229,15 @@ main {
 
 .body-lock {
   overflow: hidden;
+}
+
+.ic-palette {
+  display: inline-block;
+  width: 9.7rem;
+  height: 2.2rem;
+  margin: 0 0.8rem;
+  background: url('../../assets/images/web/foundation/color/Mass_color_2.png') no-repeat center / cover;
+  vertical-align: middle;
 }
 
 // Responsive :: 1440px

@@ -24,6 +24,9 @@
     .desc-box {
       margin-top: 1rem;
       @include font(1.4rem, 500, #4a4a4a, 2.4rem);
+      p {
+        white-space: pre-line;
+      }
     }
   }
 }

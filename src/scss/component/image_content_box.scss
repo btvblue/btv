@@ -1,42 +1,62 @@
 .image-content-box {
-  flex: 1;
   overflow: hidden;
   margin: 0 1rem;
-  border: 1px solid #eeeeee;
-  border-radius: 0.8rem;
-  background-color: $white;
+  &:not(.type2) {
+    flex: 1;
+    border: 1px solid #eeeeee;
+    border-radius: 0.8rem;
+    background-color: $white;
+
+    &.dark {
+      background-color: $dark;
+      .image-text-box {
+        .circle {
+          background-color: #eeeeee;
+          color: $dark;
+          & + .text {
+            color: #eeeeee;
+          }
+        }
+        .text {
+          color: #eeeeee;
+        }
+      }
+    }
+    &.no-border {
+      border-radius: unset;
+      border: none;
+      background: none;
+    }
+    .image-box {
+      @include flex(row, center, center);
+    }
+
+    .image-text-box {
+      @include flex(row, center, center);
+      height: 5.6rem;
+      border-top: 1px solid #eeeeee;
+    }
+  }
+
+  &.type2 {
+    width: 100%;
+    margin-top: 5.8rem;
+    &:first-child {
+      margin-top: 0;
+    }
+    .image-box {
+      margin-top: 1rem;
+    }
+  }
+
   img {
     display: block;
     width: 100%;
     height: auto;
   }
 
-  &.dark {
-    background-color: $dark;
-    .image-text-box {
-      .circle {
-        background-color: #eeeeee;
-        color: $dark;
-        & + .text {
-          color: #eeeeee;
-        }
-      }
-      .text {
-        color: #eeeeee;
-      }
-    }
-  }
-  &.no-border {
-    border-radius: unset;
-    border: none;
-  }
-  .image-box {
-    @include flex(row, center, center);
-  }
   .image-text-box {
-    @include flex(row, center, center);
-    height: 5.6rem;
-    border-top: 1px solid #eeeeee;
+    @include flex(row, flex-start, center);
     .circle {
       @include flex(row, center, center);
       min-width: 2rem;
