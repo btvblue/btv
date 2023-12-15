@@ -347,7 +347,7 @@ const dataWeb = {
           name: 'components/web/components.html',
           link: 'components/web/components.html',
           content: 'Components',
-          complete: false,
+          complete: true,
         },
         {
           name: 'components/web/buttons.html',
