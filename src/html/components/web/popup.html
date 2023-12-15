@@ -147,7 +147,7 @@
                       "image" : "../../../assets/images/web/components/Popup/Mass_popup_3.png",
                       "desc" : {
                         "alphabet" : "A",
-                        "desc" : "Modal Pppup"
+                        "desc" : "Modal Popup"
                       }
                     })
                     <!-- prettier-ignore -->
@@ -156,7 +156,7 @@
                       "image" : "../../../assets/images/web/components/Popup/Mass_popup_4.png",
                       "desc" : {
                         "alphabet" : "B",
-                        "desc" : "Toast Pppup"
+                        "desc" : "Toast Popup"
                       }
                     })
                   </div>
@@ -195,9 +195,8 @@
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "A. Modal popup",
-                            "desc"  : "모달 팝업은 사용자가 팝업 외의 콘텐츠에 대한 접근을 제한합니다. \n시용자의 상호작용이 있어야지만 사라집니다."
+                            "desc"  : "모달 팝업은 사용자가 팝업 외의 콘텐츠에 대한 접근을 제한합니다. \n사용자의 상호작용이 있어야지만 사라집니다."
                           })
-                          <!-- prettier-ignore -->
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "B. Toast popup",
@@ -222,24 +221,14 @@
                 </div>
                 <div class="content-bottom">
                   <div class="content-box">
-                    <div class="image-title-box reverse">
-                      <div class="image-title-bottom">
-                        <ul class="number-desc-list-box">
-                          <li class="number-desc-list">
-                            <div class="text-box">
-                              <ul class="sub-number-desc-list-box">
-                                <li class="sub-number-desc-list">
-                                  <span>
-                                    사용자의 추가적인 인터렉션이 필요없는 단순한 안내 제공일 경우, Toast Popup을 통해
-                                    정보를 제공합니다.
-                                  </span>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                    <ul class="sub-number-desc-list-box">
+                      <li class="sub-number-desc-list">
+                        <span>
+                          사용자의 추가적인 인터렉션이 필요없는 단순한 안내 제공일 경우, Toast Popup을 통해 정보를
+                          제공합니다.
+                        </span>
+                      </li>
+                    </ul>
                   </div>
                   <div class="content-box">
                     <!-- prettier-ignore -->
@@ -261,15 +250,9 @@
                   </div>
 
                   <div class="content-box">
-                    <ul class="number-desc-list-box">
-                      <li class="number-desc-list">
-                        <div class="text-box">
-                          <ul class="sub-number-desc-list-box">
-                            <li class="sub-number-desc-list">
-                              <span>Modal Popup은 하나만 사용해야 합니다.</span>
-                            </li>
-                          </ul>
-                        </div>
+                    <ul class="sub-number-desc-list-box">
+                      <li class="sub-number-desc-list">
+                        <span>Modal Popup은 하나만 사용해야 합니다.</span>
                       </li>
                     </ul>
                   </div>
@@ -299,6 +282,26 @@
           </div>
         </div>
       </main>
+
+      <!-- Quick Menu -->
+      <div class="quick-menu-container">
+        <div class="quick-menu-area">
+          <ul class="quick-menu-list-box">
+            <li class="quick-menu-list">
+              <span class="list-title">Anatomy</span>
+            </li>
+            <li class="quick-menu-list">
+              <span class="list-title">Layout</span>
+            </li>
+            <li class="quick-menu-list">
+              <span class="list-title">Type</span>
+            </li>
+            <li class="quick-menu-list">
+              <span class="list-title">Usage</span>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <!-- Footer -->
       <!-- prettier-ignore -->

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- prettier-ignore -->
+  @@include("../component/head.html",{
+    "title" : "Components | Block",
+    "path" : "../../.."
+  })
+
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <!-- prettier-ignore -->
+      @@include("../component/header.html", {
+        "page" : "components",
+        "link" : "../..",
+        "path" : "../../.."
+      })
+
+      <!-- LNB -->
+      <!-- prettier-ignore -->
+      @@include("../component/lnb.html", {
+        "title" : "block",
+        "path" : "../.."
+      })
+
+      <!-- Components | Block -->
+      <main class="main">
+        <div class="main-container">
+          <div class="main-area">
+            <div class="heading-container">
+              <div class="heading-area">
+                <div class="heading-top">
+                  <div class="title-box">
+                    <h1 class="title">Block</h1>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">콘텐츠, 프로모션 등을 특정 주제로 묶어 제공하는 편성 단위입니다.</p>
+                  </div>
+                </div>
+                <div class="heading-bottom">
+                  <div class="content-box">
+                    <!-- prettier-ignore -->
+                    @@include("../component/image_content_box.html", {
+                      "mode"  : "dark",
+                      "image" : "../../../assets/images/ios/components/block/block_image_01.png",
+                      "desc"  : {
+                        "alphabet" : "A",
+                        "desc"     : "Contents Block"
+                      }
+                    })
+                  </div>
+                  <div class="content-box">
+                    <!-- prettier-ignore -->
+                    @@include("../component/image_content_box.html", {
+                      "mode"  : "dark",
+                      "image" : "../../../assets/images/ios/components/block/block_image_02.png",
+                      "desc"  : {
+                        "alphabet" : "B",
+                        "desc"     : "Menu Block"
+                      }
+                    })
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Anatomy -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Anatomy</h2>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <div class="image-title-box">
+                      <div class="image-title-top">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "",
+                          "image" : "../../../assets/images/ios/components/block/block_image_03.png",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="image-title-bottom">
+                        <ul class="number-desc-list-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "1. Block Title (Optional) ",
+                            "desc"  : "콘텐츠들을 하나로 묶은 타이틀을 표기합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "2. Number Badge (Optional)",
+                            "desc"  : "콘텐츠의 개수를 합하여 표시합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "3. Contents List ",
+                            "desc"  : "하나의 타이틀로 묶인 콘텐츠들을 제공합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "4. Box Button (Optional) ",
+                            "desc"  : "콘텐츠가 30개 초과할 때, 전체 리스트로 이동하여 탐색할 수 있는 버튼입니다."
+                          })
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-box">
+                    <div class="image-title-box">
+                      <div class="image-title-top">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "",
+                          "image" : "../../../assets/images/ios/components/block/block_image_04.png",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="image-title-bottom">
+                        <ul class="number-desc-list-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "1. Block Title (Optional)",
+                            "desc"  : "메뉴 블록의 타이틀을 표기합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "2. Number Badge (Optional)",
+                            "desc"  : "메뉴 개수를 합하여 표시합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "3. Menu List",
+                            "desc"  : "하나의 타이틀로 묶인 메뉴들을 제공합니다."
+                          })
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-box">
+                    <!-- prettier-ignore -->
+                    @@include("../component/color_box.html", {
+                        "mode"  : "dark",
+                        "full"  : "",
+                        "state" : "dont",
+                        "image" : "../../../assets/images/ios/components/block/block_image_05.png",
+                        "desc"  : "하나의 타이틀로 묶이지 않은 카드를 제공하지 않습니다."
+                      })
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // Anatomy -->
+            <!-- Placement -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Placement</h2>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">1. Horizontal</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">좌측 정렬하여 수평으로 나열합니다.</p>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                              "mode"  : "",
+                              "image" : "../../../assets/images/ios/components/block/block_image_06.png",
+                              "desc"  : null
+                            })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode"  : "dark",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "../../../assets/images/ios/components/block/block_image_07.png",
+                            "desc"  : "블록 우측과 하단에 콘텐츠가 있다는 시각적 힌트를 제공합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode"  : "dark",
+                            "full"  : "",
+                            "state" : "dont",
+                            "image" : "../../../assets/images/ios/components/block/block_image_08.png",
+                            "desc"  : "사용자가 혼란을 느끼는 블록을 제공하지 않습니다."
+                          })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">2. Vertical</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">화면 내 위계에 따라 블록을 우측 정렬하여 수직으로 배치할 수 있습니다.</p>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                              "mode"  : "",
+                              "image" : "../../../assets/images/ios/components/block/block_image_09.png",
+                              "desc"  : null
+                            })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">3.Grid</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">그리드 형태의 블록은 개수가 많은 수평에서 수직으로 배치합니다.</p>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                              "mode"  : "",
+                              "image" : "../../../assets/images/ios/components/block/block_image_010.png",
+                              "desc"  : null
+                            })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode"  : "dark",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "../../../assets/images/ios/components/block/block_image_011.png",
+                            "desc"  : "시선의 흐름에 따라 좌측 상단부터 우측 하단으로 구성합니다."
+                          })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // Placement -->
+            <!-- Types -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Types</h2>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">Contents Block</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">
+                            블록을 구성하는 콘텐츠(포스터, 썸네일, 이미지, 프로모션)에 따라 크게 4가지로 분류합니다.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <div class="image-title-box">
+                            <div class="image-title-top">
+                              <!-- prettier-ignore -->
+                              @@include("../component/image_content_box.html", {
+                                "mode"  : "",
+                                "image" : "../../../assets/images/ios/components/block/block_image_012.png",
+                                "desc"  : null
+                              })
+                            </div>
+                            <div class="image-title-bottom">
+                              <ul class="number-desc-list-box">
+                                <!-- prettier-ignore -->
+                                @@include("../component/number_desc_list.html", {
+                                  "title" : "A. Poster Contents",
+                                  "desc"  : "단편, 시리즈물 콘텐츠의 포스터를 제공합니다."
+                                })
+                                <!-- prettier-ignore -->
+                                @@include("../component/number_desc_list.html", {
+                                  "title" : "B. Thumbnail Contents",
+                                  "desc"  : "단편, 시리즈물 콘텐츠 또는 재생중인 콘텐츠의 썸네일을 제공합니다."
+                                })
+                                <!-- prettier-ignore -->
+                                @@include("../component/number_desc_list.html", {
+                                  "title" : "C. Image Contents",
+                                  "desc"  : "실시간 채널을 대표하는 이미지를 제공합니다."
+                                })
+                                <!-- prettier-ignore -->
+                                @@include("../component/number_desc_list.html", {
+                                  "title" : "D. Promotion Contents ",
+                                  "desc"  : "이벤트성 프로모션 콘텐츠를 재구성하여 제공합니다."
+                                })
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode"  : "dark",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "../../../assets/images/ios/components/block/block_image_013.png",
+                            "desc"  : "콘텐츠의 속성에 따라 텍스트, 아이콘, 프로그레스 바와 같은\n컴포넌트를 함께 사용할 수 있습니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode"  : "dark",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "../../../assets/images/ios/components/block/block_image_014.png",
+                            "desc"  : "콘텐츠 탐색의 접근성을 위해 Tab과 함께 사용할 수 있습니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode"  : "dark",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "../../../assets/images/ios/components/block/block_image_015.png",
+                            "desc"  : "같은 블록 내에 프로모션과 포스터 콘텐츠를 함께 사용할 수 있습니다."
+                          })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">Menu Block</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">메뉴의 형태에 따라 3가지로 크게 분류합니다.</p>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <div class="image-title-box">
+                            <div class="image-title-top">
+                              <!-- prettier-ignore -->
+                              @@include("../component/image_content_box.html", {
+                                "mode"  : "",
+                                "image" : "../../../assets/images/ios/components/block/block_image_016.png",
+                                "desc"  : null
+                              })
+                            </div>
+                            <div class="image-title-bottom">
+                              <ul class="number-desc-list-box">
+                                <!-- prettier-ignore -->
+                                @@include("../component/number_desc_list.html", {
+                                  "title" : "A. Controller Menu ",
+                                  "desc"  : "사용자가 다양한 옵션에 쉽게 접근할 수 있도록 컨트롤러를 제공합니다."
+                                })
+                                <!-- prettier-ignore -->
+                                @@include("../component/number_desc_list.html", {
+                                  "title" : "B. Information Menu",
+                                  "desc"  : "기본 정보를 제공하고 빠르게 확인할 수 있도록 표기합니다. "
+                                })
+                                <!-- prettier-ignore -->
+                                @@include("../component/number_desc_list.html", {
+                                  "title" : "C. Quick Menu",
+                                  "desc"  : "빠르게 특정 메뉴로 이동하도록 하며, 간단한 정보를 표시할 수 있습니다."
+                                })
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode"  : "dark",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "../../../assets/images/ios/components/block/block_image_017.png",
+                            "desc"  : "블록 내 정보의 위계 구조를 인지할 수 있도록 구성합니다."
+                          })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // Types -->
+            <!-- Usage -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Usage</h2>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">Contents Block</h3>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode"  : "",
+                            "image" : "../../../assets/images/ios/components/block/block_image_018.png",
+                            "desc"  : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode"  : "",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "../../../assets/images/ios/components/block/block_image_019.png",
+                            "desc"  : "타이틀에 부합하는 버튼을 메뉴 블록과 함께 배치할 수 있습니다."
+                          })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">Menu Block</h3>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode"  : "",
+                            "image" : "../../../assets/images/ios/components/block/block_image_020.png",
+                            "desc"  : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode"  : "",
+                            "full"  : "",
+                            "state" : "do",
+                            "image" : "../../../assets/images/ios/components/block/block_image_021.png",
+                            "desc"  : "홈 화면 내에도 퀵 메뉴 블록을 사용할 수 있습니다."
+                          })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // Usage -->
+          </div>
+        </div>
+      </main>
+
+      <!-- Quick Menu -->
+      <div class="quick-menu-container">
+        <div class="quick-menu-area">
+          <ul class="quick-menu-list-box">
+            <li class="quick-menu-list">
+              <span class="list-title">Anatomy</span>
+            </li>
+            <li class="quick-menu-list">
+              <span class="list-title">Placement</span>
+              <ul class="quick-menu-sub-list-box">
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">1. Horizontal</span>
+                </li>
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">2. Vertical</span>
+                </li>
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">3. Grid</span>
+                </li>
+              </ul>
+            </li>
+            <li class="quick-menu-list">
+              <span class="list-title">Types</span>
+              <ul class="quick-menu-sub-list-box">
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">Contents Block</span>
+                </li>
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">Menu Block</span>
+                </li>
+              </ul>
+            </li>
+            <li class="quick-menu-list">
+              <span class="list-title">Usage</span>
+              <ul class="quick-menu-sub-list-box">
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">Contents Block</span>
+                </li>
+                <li class="quick-menu-sub-list">
+                  <span class="sub-list-title">Menu Block</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <!-- prettier-ignore -->
+      @@include("../component/footer.html")
+    </div>
+  </body>
+</html>

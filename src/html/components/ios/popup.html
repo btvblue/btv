@@ -35,7 +35,7 @@
                   </div>
                   <div class="desc-box">
                     <p class="desc">
-                      Popup은 중요한 정보를 제공하거나 사용자의 결정을 위하여 Contents 앞에 생성되는 창입니다.
+                      중요한 정보를 제공하거나 사용자에게 추가적인 작업을 유도하도록 사용되는 컴포넌트입니다.
                     </p>
                   </div>
                 </div>
@@ -91,6 +91,29 @@
                           "image" : "../../../assets/images/ios/components/popup/popup_image_04.png",
                           "desc"  : null
                         })
+                      </div>
+                      <div class="image-title-bottom">
+                        <ul class="number-desc-list-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "1. Background",
+                            "desc"  : "팝업을 강조하기 위해 어둡게 처리되는 배경영역입니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "2. Contents Area",
+                            "desc"  : "정보, 기능과 같은 중요한 설명을 표기합니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "3. Button (Optional)",
+                            "desc"  : "추가적인 작업을 유도하거나 이전 화면으로 돌아가기 위해 사용합니다."
+                          })
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="image-title-box">
+                      <div class="image-title-top">
                         <!-- prettier-ignore -->
                         @@include("../component/image_content_box.html", {
                           "mode"  : "",
@@ -103,44 +126,22 @@
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "1. Background",
-                            "desc"  : "Popup의 배경영역입니다."
+                            "desc"  : "표시하는 정보에 따라 확장될 수 있는 영역입니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "2. Contents Area",
-                            "desc"  : "Title, Description, Image 등 내용이 표기되는 영역입니다. "
+                            "desc"  : "정보, 기능과 같은 중요한 설명을 표기합니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
-                            "title" : "3. Button (Optional)",
-                            "desc"  : "Popup의 동작을 수행하기 위한 Button을 제공합니다."
-                          })
-                        </ul>
-                        <ul class="number-desc-list-box">
-                          <!-- prettier-ignore -->
-                          @@include("../component/number_desc_list.html", {
-                            "title" : "1. Background",
-                            "desc"  : "Popup의 배경영역입니다."
+                            "title" : "3. Button",
+                            "desc"  : "추가적인 작업을 유도하거나 이전 화면으로 돌아가기 위해 사용합니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
-                            "title" : "2. Contents Area",
-                            "desc"  : "Title, Description, Image 등 내용이 표기되는 영역입니다. "
-                          })
-                          <!-- prettier-ignore -->
-                          @@include("../component/number_desc_list.html", {
-                            "title" : "3. Button (Optional)",
-                            "desc"  : "Popup의 동작을 수행하기 위한 Button을 제공합니다."
-                          })
-                          <!-- prettier-ignore -->
-                          @@include("../component/number_desc_list.html", {
-                            "title" : "4. Shadow (Optional)",
-                            "desc"  : "Popup을 강조하기 위한 요소로 제공합니다."
-                          })
-                          <!-- prettier-ignore -->
-                          @@include("../component/number_desc_list.html", {
-                            "title" : "5. Dimmed",
-                            "desc"  : "Contents와 Popup간의 Layer 구분을 위해 사용합니다."
+                            "title" : "4. Dimmed",
+                            "desc"  : "주변 콘텐츠와 시각적으로 분리하기 위해 사용합니다."
                           })
                         </ul>
                       </div>
@@ -162,32 +163,22 @@
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "1. Background",
-                            "desc"  : "Popup의 배경영역입니다."
+                            "desc"  : "표시하는 정보에 따라 확장될 수 있는 영역입니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
-                            "title" : "2. Text (Optional) ",
-                            "desc"  : "Title, Description, Icon 등 내용이 표기되는 영역입니다."
+                            "title" : "2. Text",
+                            "desc"  : "정보, 기능과 같은 중요한 설명을 표기합니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "3. Icon (Optional) ",
-                            "desc"  : "Title, Description, Icon 등 내용이 표기되는 영역입니다. "
+                            "desc"  : "설명하는 내용과 관련된 아이콘을 함께 제공할 수 있습니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
-                            "title" : "4. Shadow (Optional)",
-                            "desc"  : "Popup을 강조하기 위한 요소로 제공합니다."
-                          })
-                          <!-- prettier-ignore -->
-                          @@include("../component/number_desc_list.html", {
-                            "title" : "5. Dimmed (Optional)",
-                            "desc"  : "Contents와 Popup간의 Layer 구분을 위해 사용합니다."
-                          })
-                          <!-- prettier-ignore -->
-                          @@include("../component/number_desc_list.html", {
-                            "title" : "6. Gradient (Optional)",
-                            "desc"  : "Popup의 하위로 깔리는 그라디언트 효과입니다. "
+                            "title" : "4. Gradient",
+                            "desc"  : "주변 콘텐츠와 시각적으로 분리하기 위해 사용합니다."
                           })
                         </ul>
                       </div>
@@ -200,7 +191,7 @@
                       "full"  : "",
                       "state" : "do",
                       "image" : "../../../assets/images/ios/components/popup/popup_image_07.png",
-                      "desc"  : "Title은 가독성을 고려하여 한 줄로 작성하며, 메세지는 간결하게 구성합니다."
+                      "desc"  : "가독성을 고려하여 간결하게 표기합니다."
                     })
                     <!-- prettier-ignore -->
                     @@include("../component/color_box.html", {
@@ -208,7 +199,7 @@
                       "full"  : "",
                       "state" : "do",
                       "image" : "../../../assets/images/ios/components/popup/popup_image_08.png",
-                      "desc"  : "본문 내용이 길어지게 되면 스크롤을 제공합니다."
+                      "desc"  : "콘텐츠 및 정보의 양에 따라 스크롤을 제공할 수 있습니다."
                     })
                     <!-- prettier-ignore -->
                     @@include("../component/color_box.html", {
@@ -216,7 +207,7 @@
                       "full"  : "",
                       "state" : "do",
                       "image" : "../../../assets/images/ios/components/popup/popup_image_09.png",
-                      "desc"  : "행동이 완료 될 때까지 Action Button을 Dimmed 처리 합니다."
+                      "desc"  : "액션을 하기 위한 최소 조건이 완료될 때까지 버튼을 비활성화시켜 제공합니다."
                     })
                     <!-- prettier-ignore -->
                     @@include("../component/color_box.html", {
@@ -224,7 +215,7 @@
                       "full"  : "",
                       "state" : "dont",
                       "image" : "../../../assets/images/ios/components/popup/popup_image_010.png",
-                      "desc"  : "Button의 간격을 과도하게 떨어뜨리지 않습니다."
+                      "desc"  : "버튼의 간격을 과도하게 멀리 배치하지 않습니다."
                     })
                   </div>
                 </div>
@@ -245,10 +236,10 @@
                     <div class="sub-content-area">
                       <div class="sub-content-top">
                         <div class="title-box">
-                          <h3 class="title kor">1. 팝업의 위치</h3>
+                          <h3 class="title">Layer Popup</h3>
                         </div>
                         <div class="desc-box">
-                          <p class="desc">Popup은 일반적으로 화면의 중앙에 위치합니다.</p>
+                          <p class="desc">주목성을 강화하기 위해 화면 정중앙에 위치하도록 구성합니다.</p>
                         </div>
                       </div>
                       <div class="sub-content-bottom">
@@ -268,34 +259,21 @@
                     <div class="sub-content-area">
                       <div class="sub-content-top">
                         <div class="title-box">
-                          <h3 class="title kor">2. 팝업의 배열</h3>
+                          <h3 class="title">Toast Popup</h3>
                         </div>
                         <div class="desc-box">
                           <p class="desc">
-                            Popup은 기본적으로 상, 하 배열 형태로 사용하고, 내용이 많거나 많은 공간이 필요할 경우
-                            예외적으로 좌, 우 배열도 허용합니다.
+                            사용자의 주의를 빠르게 이끌기 위해 아래에서 위로 올라오는 형태로 구성합니다.
                           </p>
                         </div>
                       </div>
                       <div class="sub-content-bottom">
-                        <div class="content-box kor">
+                        <div class="content-box">
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode"  : "",
                             "image" : "../../../assets/images/ios/components/popup/popup_image_012.png",
-                            "desc"  : {
-                              "alphabet" : null,
-                              "desc"     : "상, 하 배열 형태"
-                            }
-                          })
-                          <!-- prettier-ignore -->
-                          @@include("../component/image_content_box.html", {
-                            "mode"  : "",
-                            "image" : "../../../assets/images/ios/components/popup/popup_image_013.png",
-                            "desc"  : {
-                              "alphabet" : null,
-                              "desc"     : "좌, 우 배열 형태"
-                            }
+                            "desc"  : null
                           })
                         </div>
                       </div>
@@ -323,8 +301,8 @@
                         </div>
                         <div class="desc-box">
                           <p class="desc">
-                            사용자에게 전달하고자 하는 정보의 양이 많거나 수행해야 하는 상세한 작업을 포함할 때 Full
-                            Popup을 사용합니다.
+                            사용자에게 전달하고자 하는 정보의 양이 많거나 수행해야 하는 상세한 작업을 포함하는 경우
+                            사용합니다.
                           </p>
                         </div>
                       </div>
@@ -333,7 +311,7 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode"  : "",
-                            "image" : "../../../assets/images/ios/components/popup/popup_image_014.png",
+                            "image" : "../../../assets/images/ios/components/popup/popup_image_013.png",
                             "desc"  : null
                           })
                         </div>
@@ -349,7 +327,7 @@
                         </div>
                         <div class="desc-box">
                           <p class="desc">
-                            사용자에게 Action을 이끌어내기 위해 화면 상위 Layer에 노출되는 Modal 형태의 팝업입니다.
+                            중요한 정보를 제공하고 추가적인 작업을 유도하기 위해 최상단에 위치시켜 사용합니다.
                           </p>
                         </div>
                       </div>
@@ -358,7 +336,7 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode"  : "",
-                            "image" : "../../../assets/images/ios/components/popup/popup_image_015.png",
+                            "image" : "../../../assets/images/ios/components/popup/popup_image_014.png",
                             "desc"  : null
                           })
                         </div>
@@ -368,8 +346,8 @@
                             "mode" : "",
                             "full"  : "",
                             "state" : "do",
-                            "image" : "../../../assets/images/ios/components/popup/popup_image_016.png",
-                            "desc"  : "Layer Popup은 가시성 확보를 위하여 dimmed를 적용합니다."
+                            "image" : "../../../assets/images/ios/components/popup/popup_image_015.png",
+                            "desc"  : "중요한 내용을 주의 집중시키기 위해 배경을 dim 상태로 유지합니다."
                           })
                         </div>
                       </div>
@@ -384,7 +362,7 @@
                         </div>
                         <div class="desc-box">
                           <p class="desc">
-                            사용자에게 피드백 또는 알림을 전달하는 경우 사용하며, N초 후 자동으로 사라집니다.
+                            잠깐 나타났다 사라지는 알림으로 사용자에게 정보를 빠르게 전달하기 위해 사용합니다.
                           </p>
                         </div>
                       </div>
@@ -393,7 +371,7 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode"  : "",
-                            "image" : "../../../assets/images/ios/components/popup/popup_image_017.png",
+                            "image" : "../../../assets/images/ios/components/popup/popup_image_016.png",
                             "desc"  : null
                           })
                         </div>
@@ -403,16 +381,16 @@
                             "mode" : "",
                             "full"  : "",
                             "state" : "do",
-                            "image" : "../../../assets/images/ios/components/popup/popup_image_018.png",
-                            "desc"  : "사용자의 추가 Action 필요 없이 단순한 안내를 제공하는 경우, Popup 대신 Toast Popup으로 정보를 제공합니다."
+                            "image" : "../../../assets/images/ios/components/popup/popup_image_017.png",
+                            "desc"  : "단순한 안내를 제공하기 위해 사용할 수 있습니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/color_box.html", {
                             "mode" : "",
                             "full"  : "",
                             "state" : "do",
-                            "image" : "../../../assets/images/ios/components/popup/popup_image_019.png",
-                            "desc"  : "Toast Popup은 짧은 시간 안에 사용자에게 내용을 전달해야 하므로 서브 Text가 존재할 시, Text 위계 질서가 명확하게 보여야 합니다."
+                            "image" : "../../../assets/images/ios/components/popup/popup_image_018.png",
+                            "desc"  : "텍스트 중요도에 따라 시각적 볼륨을 다르게 표시합니다."
                           })
                         </div>
                       </div>
@@ -438,18 +416,13 @@
                         <div class="title-box">
                           <h3 class="title">Full Popup</h3>
                         </div>
-                        <div class="desc-box">
-                          <p class="desc">
-                            노출되는 정보의 양이 많거나 섬세한 작업을 포함하는 기능이 있을 경우에 사용됩니다.
-                          </p>
-                        </div>
                       </div>
                       <div class="sub-content-bottom">
                         <div class="content-box">
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode"  : "",
-                            "image" : "../../../assets/images/ios/components/popup/popup_image_020.png",
+                            "image" : "../../../assets/images/ios/components/popup/popup_image_019.png",
                             "desc"  : null
                           })
                         </div>
@@ -459,16 +432,16 @@
                             "mode"  : "",
                             "full"  : "",
                             "state" : "do",
-                            "image" : "../../../assets/images/ios/components/popup/popup_image_021.png",
-                            "desc"  : "진행되는 플로우가 있거나 비슷한 유형의 Contents가 있는 경우 Pagination을 하단에 노출시킬 수 있습니다."
+                            "image" : "../../../assets/images/ios/components/popup/popup_image_020.png",
+                            "desc"  : "연속성이 필요한 경우 팝업 내 플로우를 구성할 수 있습니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/color_box.html", {
                             "mode"  : "",
                             "full"  : "",
                             "state" : "do",
-                            "image" : "../../../assets/images/ios/components/popup/popup_image_022.png",
-                            "desc"  : "TV 해상도에 따라 여백이 생기거나 Scroll을 사용합니다."
+                            "image" : "../../../assets/images/ios/components/popup/popup_image_021.png",
+                            "desc"  : "TV 해상도를 고려하여 마진, 스크롤 영역을 구성합니다."
                           })
                         </div>
                       </div>
@@ -480,16 +453,13 @@
                         <div class="title-box">
                           <h3 class="title">Layer Popup</h3>
                         </div>
-                        <div class="desc-box">
-                          <p class="desc">사용자의 Action을 이끌어내거나 결과를 전달하는 데 사용됩니다.</p>
-                        </div>
                       </div>
                       <div class="sub-content-bottom">
                         <div class="content-box">
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode"  : "",
-                            "image" : "../../../assets/images/ios/components/popup/popup_image_023.png",
+                            "image" : "../../../assets/images/ios/components/popup/popup_image_022.png",
                             "desc"  : null
                           })
                         </div>
@@ -499,24 +469,24 @@
                             "mode"  : "",
                             "full"  : "",
                             "state" : "do",
-                            "image" : "../../../assets/images/ios/components/popup/popup_image_024.png",
-                            "desc"  : "세로형 List Button을 사용할 수 있습니다."
+                            "image" : "../../../assets/images/ios/components/popup/popup_image_023.png",
+                            "desc"  : "콘텐츠 속성에 따라 버튼의 위치를 조정할 수 있습니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/color_box.html", {
                             "mode"  : "",
                             "full"  : "",
                             "state" : "do",
-                            "image" : "../../../assets/images/ios/components/popup/popup_image_025.png",
-                            "desc"  : "Checkbox를 통해 Popup 노출을 제어할 수 있습니다. "
+                            "image" : "../../../assets/images/ios/components/popup/popup_image_024.png",
+                            "desc"  : "컴포넌트를 활용하여 팝업 노출 여부를 제어할 수 있습니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/color_box.html", {
                             "mode"  : "",
                             "full"  : "",
                             "state" : "dont",
-                            "image" : "../../../assets/images/ios/components/popup/popup_image_026.png",
-                            "desc"  : "Layer Popup은 중첩해서 사용하지 않습니다."
+                            "image" : "../../../assets/images/ios/components/popup/popup_image_025.png",
+                            "desc"  : "팝업을 중첩하여 사용하지 않습니다."
                           })
                         </div>
                       </div>
@@ -528,18 +498,13 @@
                         <div class="title-box">
                           <h3 class="title">Toast Popup</h3>
                         </div>
-                        <div class="desc-box">
-                          <p class="desc">
-                            사용자에게 빠르게 전달해야 할 피드백 또는 알림을 전달하는 경우에 사용합니다.
-                          </p>
-                        </div>
                       </div>
                       <div class="sub-content-bottom">
                         <div class="content-box">
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode"  : "",
-                            "image" : "../../../assets/images/ios/components/popup/popup_image_027.png",
+                            "image" : "../../../assets/images/ios/components/popup/popup_image_026.png",
                             "desc"  : null
                           })
                         </div>
@@ -549,16 +514,16 @@
                             "mode"  : "",
                             "full"  : "",
                             "state" : "do",
-                            "image" : "../../../assets/images/ios/components/popup/popup_image_028.png",
-                            "desc"  : "필요한 정보의 내용을 Icon과 함께 사용합니다."
+                            "image" : "../../../assets/images/ios/components/popup/popup_image_027.png",
+                            "desc"  : "정보에 대한 시각적 인지를 높이기 위해 아이콘과 함께 구성할 수 있습니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/color_box.html", {
                             "mode"  : "",
                             "full"  : "",
                             "state" : "do",
-                            "image" : "../../../assets/images/ios/components/popup/popup_image_029.png",
-                            "desc"  : "Toast Popup의 본문 Text는 최대 3줄 안으로 권장합니다."
+                            "image" : "../../../assets/images/ios/components/popup/popup_image_028.png",
+                            "desc"  : "사용자가 빠르게 읽고 이해할 수 있도록 최대 3줄 안으로 표기합니다."
                           })
                         </div>
                       </div>
@@ -579,13 +544,9 @@
             <li class="quick-menu-list"><span class="list-title">Anatomy</span></li>
             <li class="quick-menu-list">
               <span class="list-title">Placement</span>
-              <ul class="quick-menu-sub-list-box kor">
-                <li class="quick-menu-sub-list">
-                  <span class="sub-list-title">1. 팝업의 위치</span>
-                </li>
-                <li class="quick-menu-sub-list">
-                  <span class="sub-list-title">2. 팝업의 배열</span>
-                </li>
+              <ul class="quick-menu-sub-list-box">
+                <li class="quick-menu-sub-list"><span class="sub-list-title">Layer Popup</span></li>
+                <li class="quick-menu-sub-list"><span class="sub-list-title">Toast Popup</span></li>
               </ul>
             </li>
             <li class="quick-menu-list">

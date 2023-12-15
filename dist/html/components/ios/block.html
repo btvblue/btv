@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <link rel="icon" type="image/png" href="../../../assets/images/favicon.ico" />
+  <link rel="stylesheet" href="../../../assets/css/style.css" />
+  <script src="../../../assets/js/default.js"></script>
+  <script src="../../../assets/js/common.js"></script>
+  <title>Components | Block</title>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header-container">
+      <div class="header-area">
+        <div class="header-left">
+          <div class="header-logo-box">
+            <a href="../../overview/overview.html" class="header-logo-link">
+              <img src="../../../assets/images/btv_logo.svg" alt="" />
+              <span class="text">UX Guidelines</span>
+            </a>
+          </div>
+        </div>
+        <div class="header-right">
+          <!--
+              Class 설명
+              expand : 메뉴 펼쳤을 때 스타일 적용 (인터렉션은 js로 구현함. 클래스로 제어하지 않음)
+            -->
+          <!--<ul class="header-menu-list-box">-->
+          <!--  <li class="header-menu-list ">-->
+          <!--    <a href="../principle/principle.html" class="header-menu-link"><span class="text">Principle</span></a>-->
+          <!--  </li>-->
+          <!--  <li class="header-menu-list ">-->
+          <!--    <a href="../foundation/ios/foundation.html" class="header-menu-link"><span class="text">Foundation</span></a>-->
+          <!--  </li>-->
+          <!--  <li class="header-menu-list active">-->
+          <!--    <a href="../components/ios/components.html" class="header-menu-link"><span class="text">Components</span></a>-->
+          <!--  </li>-->
+          <!--</ul>-->
+          <div class="menu-button-box">
+            <button type="button" class="btn-menu">
+              <img src="../../../assets/images/btn_open_menu_nor.svg" alt="메뉴 열기" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- LNB -->
+    <div class="lnb-container">
+      <div class="lnb-area">
+        <ul class="lnb-list-box">
+          <li class="lnb-list ">
+            <a href="../../overview/overview.html" class="lnb-link"><span class="text">Overview</span></a>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="../../principle/principle.html" class="lnb-link"><span class="text">Principle</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="../../principle/tv.html" class="lnb-sub-link"><span class="text">TV Environment</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../principle/contents.html" class="lnb-sub-link"><span class="text">Contents</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../principle/navigation.html" class="lnb-sub-link"><span class="text">Navigation</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../principle/legacy.html" class="lnb-sub-link"><span class="text">Respect for Legacy</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../principle/accessibility.html" class="lnb-sub-link"><span class="text">Accessibility</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="lnb-select-box">
+          <span id="lnb_select_label">Apple TV OS</span>
+          <div>
+            <ul>
+              <li id="platform_ios"><a href="../../foundation/ios/foundation.html">Apple TV OS</a></li>
+              <li id="platform_web"><a href="../../foundation/web/foundation.html">Android TV OS</a></li>
+            </ul>
+          </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', () => {
+              if (window.location.href.includes('ios')) {
+                document.getElementById('platform_ios').classList.add('active');
+                document.getElementById('lnb_select_label').innerText = 'Apple TV OS';
+                document.getElementById('platform_ios_list').style.display = 'block';
+                document.getElementById('platform_web_list').style.display = 'none';
+              }
+              if (window.location.href.includes('web')) {
+                document.getElementById('platform_web').classList.add('active');
+                document.getElementById('lnb_select_label').innerText = 'Android TV OS';
+                document.getElementById('platform_ios_list').style.display = 'none';
+                document.getElementById('platform_web_list').style.display = 'block';
+              }
+              if (
+                window.location.href.includes('components/web/checkbox') ||
+                window.location.href.includes('components/web/radio') ||
+                window.location.href.includes('components/web/switch')
+              ) {
+                document.getElementById('platform_web_components_controls').style.display = 'block';
+              }
+              if (window.location.href.includes('components/web')) {
+                if (window.location.href.includes('components/web/components')) {
+                  document.getElementById('platform_web_components').style.display = 'none';
+                } else {
+                  document.getElementById('platform_web_components').style.display = 'block';
+                }
+              }
+              if (window.location.href.includes('foundation/web')) {
+                if (window.location.href.includes('foundation/web/foundation')) {
+                  document.getElementById('platform_web_foundation').style.display = 'none';
+                } else {
+                  document.getElementById('platform_web_foundation').style.display = 'block';
+                }
+              }
+            });
+          </script>
+        </div>
+        <ul class="lnb-list-box" id="platform_ios_list">
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="../../foundation/ios/foundation.html" class="lnb-link"><span class="text">Foundation</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/ios/color.html" class="lnb-sub-link"><span class="text">Color</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/ios/typography.html" class="lnb-sub-link"><span class="text">Typography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/ios/iconography.html" class="lnb-sub-link"><span class="text">Iconography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/ios/layout.html" class="lnb-sub-link"><span class="text">Layout</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/ios/focus.html" class="lnb-sub-link"><span class="text">Focus</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/ios/motion.html" class="lnb-sub-link"><span class="text">Motion</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="../../components/ios/components.html" class="lnb-link"><span class="text">Components</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/badges.html" class="lnb-sub-link"><span class="text">Badges</span></a>
+              </li>
+              <li class="lnb-sub-list active">
+                <a href="../../components/ios/block.html" class="lnb-sub-link"><span class="text">Block</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/buttons.html" class="lnb-sub-link"><span class="text">Buttons</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <button class="btn-sub-open"><i class="icon ic-arrow"></i></button>
+                <a href="../../components/ios/checkbox.html" class="lnb-sub-link"><span class="text">Controls</span></a>
+                <ul class="lnb-last-list-box">
+                  <li class="lnb-last-list ">
+                    <a href="../../components/ios/checkbox.html" class="lnb-last-link"><span class="text">Checkbox</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="../../components/ios/radio.html" class="lnb-last-link"><span class="text">Radio Button</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="../../components/ios/switch.html" class="lnb-last-link"><span class="text">Switch</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="../../components/ios/slider.html" class="lnb-last-link"><span class="text">Slider</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/gnb.html" class="lnb-sub-link"><span class="text">GNB</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/inputs.html" class="lnb-sub-link"><span class="text">Inputs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/ime.html" class="lnb-sub-link"><span class="text">IME</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/loading.html" class="lnb-sub-link"><span class="text">Loading</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/pagination.html" class="lnb-sub-link"><span class="text">Pagination</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/player.html" class="lnb-sub-link"><span class="text">Player</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/popup.html" class="lnb-sub-link"><span class="text">Pop up</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/splash.html" class="lnb-sub-link"><span class="text">Splash</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/tabs.html" class="lnb-sub-link"><span class="text">Tabs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/tooltip.html" class="lnb-sub-link"><span class="text">Tooltip</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="lnb-list-box" id="platform_web_list" style="display: none">
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="../../foundation/web/foundation.html" class="lnb-link"><span class="text">Foundation</span></a>
+            <ul class="lnb-sub-list-box" id="platform_web_foundation">
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/web/color.html" class="lnb-sub-link"><span class="text">Color</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/web/typography.html" class="lnb-sub-link"><span class="text">Typography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/web/iconography.html" class="lnb-sub-link"><span class="text">Iconography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/web/layout.html" class="lnb-sub-link"><span class="text">Layout</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/web/focus.html" class="lnb-sub-link"><span class="text">Focus</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="../../components/web/components.html" class="lnb-link"><span class="text">Components</span></a>
+            <ul class="lnb-sub-list-box" id="platform_web_components">
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/buttons.html" class="lnb-sub-link"><span class="text">Buttons</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <button class="btn-sub-open"><i class="icon ic-arrow"></i></button>
+                <a href="../../components/web/checkbox.html" class="lnb-sub-link"><span class="text">Controls</span></a>
+                <ul class="lnb-last-list-box" id="platform_web_components_controls">
+                  <li class="lnb-last-list ">
+                    <a href="../../components/web/checkbox.html" class="lnb-last-link"><span class="text">Checkbox</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="../../components/web/radio.html" class="lnb-last-link"><span class="text">Radio Button</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="../../components/web/switch.html" class="lnb-last-link"><span class="text">Switch</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/dropdowns.html" class="lnb-sub-link"><span class="text">Dropdown</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/dock.html" class="lnb-sub-link"><span class="text">Dock</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/flag.html" class="lnb-sub-link"><span class="text">Flags</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/gnb.html" class="lnb-sub-link"><span class="text">GNB</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/inputs.html" class="lnb-sub-link"><span class="text">Inputs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/ime.html" class="lnb-sub-link"><span class="text">IME</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/loading.html" class="lnb-sub-link"><span class="text">Loading</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/menus.html" class="lnb-sub-link"><span class="text">Menus</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/pagination.html" class="lnb-sub-link"><span class="text">Pagination</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/popup.html" class="lnb-sub-link"><span class="text">Pop up</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/tabs.html" class="lnb-sub-link"><span class="text">Tabs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/tooltip.html" class="lnb-sub-link"><span class="text">Tooltip</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Components | Block -->
+    <main class="main">
+      <div class="main-container">
+        <div class="main-area">
+          <div class="heading-container">
+            <div class="heading-area">
+              <div class="heading-top">
+                <div class="title-box">
+                  <h1 class="title">Block</h1>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">콘텐츠, 프로모션 등을 특정 주제로 묶어 제공하는 편성 단위입니다.</p>
+                </div>
+              </div>
+              <div class="heading-bottom">
+                <div class="content-box">
+                  <div class="image-content-box dark">
+                    <div class="image-box">
+                      <img src="../../../assets/images/ios/components/block/block_image_01.png" alt="" />
+                    </div>
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">A</span></span>
+                      <span class="text">Contents Block</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="image-content-box dark">
+                    <div class="image-box">
+                      <img src="../../../assets/images/ios/components/block/block_image_02.png" alt="" />
+                    </div>
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">B</span></span>
+                      <span class="text">Menu Block</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Anatomy -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Anatomy</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box ">
+                        <div class="image-box">
+                          <img src="../../../assets/images/ios/components/block/block_image_03.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Block Title (Optional) </span>
+                          <div class="text-box">
+                            <p class="text">콘텐츠들을 하나로 묶은 타이틀을 표기합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Number Badge (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">콘텐츠의 개수를 합하여 표시합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Contents List </span>
+                          <div class="text-box">
+                            <p class="text">하나의 타이틀로 묶인 콘텐츠들을 제공합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">4. Box Button (Optional) </span>
+                          <div class="text-box">
+                            <p class="text">콘텐츠가 30개 초과할 때, 전체 리스트로 이동하여 탐색할 수 있는 버튼입니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box ">
+                        <div class="image-box">
+                          <img src="../../../assets/images/ios/components/block/block_image_04.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Block Title (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">메뉴 블록의 타이틀을 표기합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Number Badge (Optional)</span>
+                          <div class="text-box">
+                            <p class="text">메뉴 개수를 합하여 표시합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Menu List</span>
+                          <div class="text-box">
+                            <p class="text">하나의 타이틀로 묶인 메뉴들을 제공합니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="color-box dark  dont">
+                    <div class="image-box">
+                      <img src="../../../assets/images/ios/components/block/block_image_05.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Don't</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">하나의 타이틀로 묶이지 않은 카드를 제공하지 않습니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Anatomy -->
+          <!-- Placement -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Placement</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">1. Horizontal</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">좌측 정렬하여 수평으로 나열합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../../assets/images/ios/components/block/block_image_06.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../../assets/images/ios/components/block/block_image_07.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">블록 우측과 하단에 콘텐츠가 있다는 시각적 힌트를 제공합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box dark  dont">
+                          <div class="image-box">
+                            <img src="../../../assets/images/ios/components/block/block_image_08.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Don't</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">사용자가 혼란을 느끼는 블록을 제공하지 않습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">2. Vertical</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">화면 내 위계에 따라 블록을 우측 정렬하여 수직으로 배치할 수 있습니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../../assets/images/ios/components/block/block_image_09.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">3.Grid</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">그리드 형태의 블록은 개수가 많은 수평에서 수직으로 배치합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../../assets/images/ios/components/block/block_image_010.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../../assets/images/ios/components/block/block_image_011.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">시선의 흐름에 따라 좌측 상단부터 우측 하단으로 구성합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Placement -->
+          <!-- Types -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Types</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Contents Block</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          블록을 구성하는 콘텐츠(포스터, 썸네일, 이미지, 프로모션)에 따라 크게 4가지로 분류합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-title-box">
+                          <div class="image-title-top">
+                            <div class="image-content-box ">
+                              <div class="image-box">
+                                <img src="../../../assets/images/ios/components/block/block_image_012.png" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="image-title-bottom">
+                            <ul class="number-desc-list-box">
+                              <li class="number-desc-list">
+                                <span class="title">A. Poster Contents</span>
+                                <div class="text-box">
+                                  <p class="text">단편, 시리즈물 콘텐츠의 포스터를 제공합니다.</p>
+                                </div>
+                              </li>
+                              <li class="number-desc-list">
+                                <span class="title">B. Thumbnail Contents</span>
+                                <div class="text-box">
+                                  <p class="text">단편, 시리즈물 콘텐츠 또는 재생중인 콘텐츠의 썸네일을 제공합니다.</p>
+                                </div>
+                              </li>
+                              <li class="number-desc-list">
+                                <span class="title">C. Image Contents</span>
+                                <div class="text-box">
+                                  <p class="text">실시간 채널을 대표하는 이미지를 제공합니다.</p>
+                                </div>
+                              </li>
+                              <li class="number-desc-list">
+                                <span class="title">D. Promotion Contents </span>
+                                <div class="text-box">
+                                  <p class="text">이벤트성 프로모션 콘텐츠를 재구성하여 제공합니다.</p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../../assets/images/ios/components/block/block_image_013.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">콘텐츠의 속성에 따라 텍스트, 아이콘, 프로그레스 바와 같은
+                                컴포넌트를 함께 사용할 수 있습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../../assets/images/ios/components/block/block_image_014.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">콘텐츠 탐색의 접근성을 위해 Tab과 함께 사용할 수 있습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../../assets/images/ios/components/block/block_image_015.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">같은 블록 내에 프로모션과 포스터 콘텐츠를 함께 사용할 수 있습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Menu Block</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">메뉴의 형태에 따라 3가지로 크게 분류합니다.</p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-title-box">
+                          <div class="image-title-top">
+                            <div class="image-content-box ">
+                              <div class="image-box">
+                                <img src="../../../assets/images/ios/components/block/block_image_016.png" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="image-title-bottom">
+                            <ul class="number-desc-list-box">
+                              <li class="number-desc-list">
+                                <span class="title">A. Controller Menu </span>
+                                <div class="text-box">
+                                  <p class="text">사용자가 다양한 옵션에 쉽게 접근할 수 있도록 컨트롤러를 제공합니다.</p>
+                                </div>
+                              </li>
+                              <li class="number-desc-list">
+                                <span class="title">B. Information Menu</span>
+                                <div class="text-box">
+                                  <p class="text">기본 정보를 제공하고 빠르게 확인할 수 있도록 표기합니다. </p>
+                                </div>
+                              </li>
+                              <li class="number-desc-list">
+                                <span class="title">C. Quick Menu</span>
+                                <div class="text-box">
+                                  <p class="text">빠르게 특정 메뉴로 이동하도록 하며, 간단한 정보를 표시할 수 있습니다.</p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../../assets/images/ios/components/block/block_image_017.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">블록 내 정보의 위계 구조를 인지할 수 있도록 구성합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Types -->
+          <!-- Usage -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Usage</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Contents Block</h3>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../../assets/images/ios/components/block/block_image_018.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../../assets/images/ios/components/block/block_image_019.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">타이틀에 부합하는 버튼을 메뉴 블록과 함께 배치할 수 있습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Menu Block</h3>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../../assets/images/ios/components/block/block_image_020.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="color-box   do">
+                          <div class="image-box">
+                            <img src="../../../assets/images/ios/components/block/block_image_021.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">홈 화면 내에도 퀵 메뉴 블록을 사용할 수 있습니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Usage -->
+        </div>
+      </div>
+    </main>
+    <!-- Quick Menu -->
+    <div class="quick-menu-container">
+      <div class="quick-menu-area">
+        <ul class="quick-menu-list-box">
+          <li class="quick-menu-list">
+            <span class="list-title">Anatomy</span>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Placement</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">1. Horizontal</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">2. Vertical</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">3. Grid</span>
+              </li>
+            </ul>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Types</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Contents Block</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Menu Block</span>
+              </li>
+            </ul>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Usage</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Contents Block</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Menu Block</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer-container">
+      <div class="footer-area">
+        <div class="footer-box">
+          <span class="text">Copyright © 2024 SK Broadband CO.LTD All rights reserved</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -164,6 +164,9 @@
                 <a href="../../components/ios/badges.html" class="lnb-sub-link"><span class="text">Badges</span></a>
               </li>
               <li class="lnb-sub-list ">
+                <a href="../../components/ios/block.html" class="lnb-sub-link"><span class="text">Block</span></a>
+              </li>
+              <li class="lnb-sub-list ">
                 <a href="../../components/ios/buttons.html" class="lnb-sub-link"><span class="text">Buttons</span></a>
               </li>
               <li class="lnb-sub-list ">
@@ -192,9 +195,6 @@
               </li>
               <li class="lnb-sub-list ">
                 <a href="../../components/ios/ime.html" class="lnb-sub-link"><span class="text">IME</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="../../components/ios/list_cards.html" class="lnb-sub-link"><span class="text">List Cards</span></a>
               </li>
               <li class="lnb-sub-list ">
                 <a href="../../components/ios/loading.html" class="lnb-sub-link"><span class="text">Loading</span></a>
@@ -271,7 +271,7 @@
                 <a href="../../components/web/dock.html" class="lnb-sub-link"><span class="text">Dock</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/web/flag.html" class="lnb-sub-link"><span class="text">Flag</span></a>
+                <a href="../../components/web/flag.html" class="lnb-sub-link"><span class="text">Flags</span></a>
               </li>
               <li class="lnb-sub-list active">
                 <a href="../../components/web/gnb.html" class="lnb-sub-link"><span class="text">GNB</span></a>
@@ -305,14 +305,345 @@
         </ul>
       </div>
     </div>
-    <!-- Components | Controls | GNB -->
+    <!-- Components | GNB -->
     <main class="main">
       <div class="main-container">
         <div class="main-area">
-          <img src="../../../assets/images/temp/mass_component_gnb.png" alt="" style="width: 100%" />
+          <div class="heading-container">
+            <div class="heading-area">
+              <div class="heading-top">
+                <div class="title-box">
+                  <h1 class="title">GNB</h1>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">
+                    Global Navigation Bar의 약자로, 서비스의 가장 기본적인 내비게이션을 담당하는 메뉴입니다.<br />서비스의
+                      정체성을 전달하는 역할로 사용자 동선을 안내와 상위 레벨 탐색을 위해 제공되는 컴포넌트입니다.
+                  </p>
+                </div>
+                <div class="desc-box">
+                  <ul class="sub-number-desc-list-box">
+                    <li class="sub-number-desc-list">
+                      <span>GNB는 웹사이트의 모든 페이지에서 일관된 네비게이션을 제공합니다.</span>
+                    </li>
+                    <li class="sub-number-desc-list">
+                      <span>사용자가 사이트 내에서 쉽게 이동하고 기능에 접근할 수 있도록 도와줍니다.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Anatomy -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Anatomy</h2>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">컴포넌트에 포함되는 요소에 대한 정의입니다.</p>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box no-border">
+                        <div class="image-box">
+                          <img src="../../../assets/images/web/components/GNB/Mass_gnb_1.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Container</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Text label</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. GNB Icon</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">4. Arrow (optional)</span>
+                          <div class="text-box">
+                            <p class="text">하위 Depth가 있을 경우 표시합니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box no-border">
+                        <div class="image-box">
+                          <img src="../../../assets/images/web/components/GNB/Mass_gnb_2.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Container</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Text label</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. GNB Icon (optional)</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">4. Additional Icon (optional)</span>
+                          <div class="text-box">
+                            <p class="text">설명하고자 하는 부가 정보를 표시합니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box no-border">
+                        <div class="image-box">
+                          <img src="../../../assets/images/web/components/GNB/Mass_gnb_3.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Container</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Menus</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box no-border">
+                        <div class="image-box">
+                          <img src="../../../assets/images/web/components/GNB/Mass_gnb_4.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. 1depth Title</span>
+                          <div class="text-box">
+                            <p class="text">2depth 메뉴에 진입한 경로를 표기합니다. </p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Arrow</span>
+                          <div class="text-box">
+                            <p class="text">하단에 추가적인 숨겨진 메뉴가 있을 경우 노출합니다. </p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Container</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">4. Menus</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Anatomy -->
+          <!-- States -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">States</h2>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">
+                    사용자가 현재 위치한 메뉴를 나타내기 위해 시각적으로 강조됩니다.<br />뎁스에 따라 다른 형상으로
+                      나타납니다.
+                  </p>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box no-border">
+                        <div class="image-box">
+                          <img src="../../../assets/images/web/components/GNB/Mass_gnb_5.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Focused</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 해당 메뉴에 포커스한 상태입니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Enabled</span>
+                          <div class="text-box">
+                            <p class="text">일반적인 메뉴 상태입니다. </p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Selected</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 해당 메뉴를 선택하여 진입한 상태입니다. </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // States -->
+          <!-- Layout -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Layout</h2>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">
+                    GNB는 여러 수준의 하위 메뉴를 포함할 수 있습니다.<br />이는 사용자가 상위 메뉴에서 선택한 옵션에
+                      따라 하위 메뉴가 동적으로 나타날 수 있는 기능을 의미합니다.<br />하위 메뉴는 사용자에게 더 많은
+                      선택 옵션을 제공하고, 네비게이션의 깊이를 늘릴 수 있습니다.
+                  </p>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-content-box  type2">
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">A</span></span>
+                      <span class="text">GNB 1depth</span>
+                    </div>
+                    <div class="image-box">
+                      <img src="../../../assets/images/web/components/GNB/Mass_gnb_6.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="image-content-box  type2">
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">B</span></span>
+                      <span class="text">GNB 2depth</span>
+                    </div>
+                    <div class="image-box">
+                      <img src="../../../assets/images/web/components/GNB/Mass_gnb_7.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Layout -->
+          <!-- Additional -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Additional</h2>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">
+                    GNB가 닫혀있을 경우에는, 아이콘을 통해 현재 위치한 메뉴를 간접적으로 보여줍니다.<br />fold GNB
+                      상태에서는 메뉴를 변경할 수 없고 GNB로 진입한 이후에만 가능합니다.
+                  </p>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box reverse">
+                    <div class="image-title-top">
+                      <div class="image-content-box no-border">
+                        <div class="image-box">
+                          <img src="../../../assets/images/web/components/GNB/Mass_gnb_8.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">Fold GNB</span>
+                          <div class="text-box">
+                            <p class="text">화면의 가장 좌측에 고정적으로 위치합니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Additional -->
         </div>
       </div>
     </main>
+    <!-- Quick Menu -->
+    <div class="quick-menu-container">
+      <div class="quick-menu-area">
+        <ul class="quick-menu-list-box">
+          <li class="quick-menu-list">
+            <span class="list-title">Anatomy</span>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">States</span>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Layout</span>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Additional</span>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- Footer -->
     <footer class="footer-container">
       <div class="footer-area">

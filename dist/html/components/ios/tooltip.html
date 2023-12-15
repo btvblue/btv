@@ -156,6 +156,9 @@
                 <a href="../../components/ios/badges.html" class="lnb-sub-link"><span class="text">Badges</span></a>
               </li>
               <li class="lnb-sub-list ">
+                <a href="../../components/ios/block.html" class="lnb-sub-link"><span class="text">Block</span></a>
+              </li>
+              <li class="lnb-sub-list ">
                 <a href="../../components/ios/buttons.html" class="lnb-sub-link"><span class="text">Buttons</span></a>
               </li>
               <li class="lnb-sub-list ">
@@ -184,9 +187,6 @@
               </li>
               <li class="lnb-sub-list ">
                 <a href="../../components/ios/ime.html" class="lnb-sub-link"><span class="text">IME</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="../../components/ios/list_cards.html" class="lnb-sub-link"><span class="text">List Cards</span></a>
               </li>
               <li class="lnb-sub-list ">
                 <a href="../../components/ios/loading.html" class="lnb-sub-link"><span class="text">Loading</span></a>
@@ -263,7 +263,7 @@
                 <a href="../../components/web/dock.html" class="lnb-sub-link"><span class="text">Dock</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/web/flag.html" class="lnb-sub-link"><span class="text">Flag</span></a>
+                <a href="../../components/web/flag.html" class="lnb-sub-link"><span class="text">Flags</span></a>
               </li>
               <li class="lnb-sub-list ">
                 <a href="../../components/web/gnb.html" class="lnb-sub-link"><span class="text">GNB</span></a>
@@ -309,9 +309,8 @@
                 </div>
                 <div class="desc-box">
                   <p class="desc">
-                    Tooltip은 사용자가 익숙하지 않은 구조나 기능에 대해 도움을 줄 때 주로 사용이 되며, 정보의 정확한
-                    조작을 유도할 때도 표시합니다. 특정 이벤트 프로모션이 진행 되는 경우 부가설명을 위해 사용하기도
-                    합니다.
+                    특정 항목에 대한 추가 설명을 표시하기 위한 작은 정보 팝업 형태의 컴포넌트입니다.<br />익숙하지
+                      않은 기능 또는 정확한 컨트롤을 유도하기 위해 사용할 수 있습니다.
                   </p>
                 </div>
               </div>
@@ -371,31 +370,31 @@
                         <li class="number-desc-list">
                           <span class="title">1. Container</span>
                           <div class="text-box">
-                            <p class="text">Tooltip의 형태를 나타냅니다.</p>
+                            <p class="text">표시하는 정보에 따라 너비가 확장될 수 있는 전체 영역입니다.</p>
                           </div>
                         </li>
                         <li class="number-desc-list">
                           <span class="title">2. Text</span>
                           <div class="text-box">
-                            <p class="text">설명하고자 하는 정보를 표기합니다.</p>
+                            <p class="text">정보, 기능과 같은 추가 설명을 표기합니다.</p>
                           </div>
                         </li>
                         <li class="number-desc-list">
                           <span class="title">3. Sub Text (Optional)</span>
                           <div class="text-box">
-                            <p class="text">Main Text의 세부 정보를 표기합니다.</p>
+                            <p class="text">부가적인 정보를 함께 표시할 수 있습니다.</p>
                           </div>
                         </li>
                         <li class="number-desc-list">
                           <span class="title">4. Tip</span>
                           <div class="text-box">
-                            <p class="text">설명하는 대상을 명확하게 지시합니다.</p>
+                            <p class="text">추가 설명하는 항목을 명확하게 표시합니다.</p>
                           </div>
                         </li>
                         <li class="number-desc-list">
                           <span class="title">5. Icon (Optional)</span>
                           <div class="text-box">
-                            <p class="text">설명하고자 하는 정보와 관련된 Icon을 노출합니다.</p>
+                            <p class="text">설명하는 내용과 관련된 아이콘을 함께 제공할 수 있습니다.</p>
                           </div>
                         </li>
                       </ul>
@@ -416,19 +415,19 @@
                         <li class="number-desc-list">
                           <span class="title">1. Guide image</span>
                           <div class="text-box">
-                            <p class="text">내용과 관련 된 Image를 사용합니다.</p>
+                            <p class="text">정확한 컨트롤을 유도하기 위해 디바이스 이미지를 활용합니다.</p>
                           </div>
                         </li>
                         <li class="number-desc-list">
                           <span class="title">2. Text</span>
                           <div class="text-box">
-                            <p class="text">이미지를 설명하는 텍스트 정보를 표기합니다.</p>
+                            <p class="text">정보, 기능과 같은 추가 설명을 표기합니다.</p>
                           </div>
                         </li>
                         <li class="number-desc-list">
                           <span class="title">3. Icon (Optional)</span>
                           <div class="text-box">
-                            <p class="text">설명하고자 하는 정보와 관련된 Icon을 노출합니다.</p>
+                            <p class="text">설명하는 내용과 관련된 아이콘을 함께 제공할 수 있습니다.</p>
                           </div>
                         </li>
                       </ul>
@@ -457,8 +456,7 @@
                       </div>
                       <div class="desc-box">
                         <p class="desc">
-                          Tip의 위치는 타겟 요소의 배치에 따로 상/하단으로 제공 될 수 있으며 타겟이 되는 요소를
-                          가리키기 위하여 유동적으로 배치합니다.
+                          설명이 필요한 특정 항목의 위치에 따라 상단, 하단으로 유동적으로 배치합니다.
                         </p>
                       </div>
                     </div>
@@ -480,7 +478,7 @@
                               <span class="color-title">Do</span>
                             </div>
                             <div class="color-desc-box">
-                              <p class="color-desc">Tip의 위치는 필요에 따라 좌측, 정중앙, 우측에 배치합니다.</p>
+                              <p class="color-desc">화면 레이아웃에 따라 유동적으로 배치할 수 있습니다.</p>
                             </div>
                           </div>
                         </div>
@@ -493,20 +491,7 @@
                               <span class="color-title">Do</span>
                             </div>
                             <div class="color-desc-box">
-                              <p class="color-desc">기존 UI 요소를 침범하지 않으며 Focus와 정렬을 맞춰 배치합니다.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="color-box   dont">
-                          <div class="image-box">
-                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_09.png" alt="" />
-                          </div>
-                          <div class="color-text-box">
-                            <div class="color-title-box">
-                              <span class="color-title">Don't</span>
-                            </div>
-                            <div class="color-desc-box">
-                              <p class="color-desc">버블의 좌/우측에는 Tip을 사용할 수 없습니다.</p>
+                              <p class="color-desc">다른 요소와 충돌하지 않도록 시각적 균형을 맞춰 배치합니다.</p>
                             </div>
                           </div>
                         </div>
@@ -535,28 +520,28 @@
                         <h3 class="title">Bubble Tooltip</h3>
                       </div>
                       <div class="desc-box">
-                        <p class="desc">사용자에게 특정 기능이나 항목에 대한 부연설명을 필요로 할 때 사용합니다.</p>
+                        <p class="desc">추가 설명하는 항목을 명확하게 표시하기 위해 사용합니다.</p>
                       </div>
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box">
                         <div class="image-content-box ">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_010.png" alt="" />
+                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_09.png" alt="" />
                           </div>
                         </div>
                       </div>
                       <div class="content-box">
                         <div class="color-box   dont">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_011.png" alt="" />
+                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_010.png" alt="" />
                           </div>
                           <div class="color-text-box">
                             <div class="color-title-box">
                               <span class="color-title">Don't</span>
                             </div>
                             <div class="color-desc-box">
-                              <p class="color-desc">Bubble Tooltip은 Focus 색상으로 강조하여 사용할 수 없습니다.</p>
+                              <p class="color-desc">서비스와 다른 포커스 컬러로 강조하여 사용하지 않습니다.</p>
                             </div>
                           </div>
                         </div>
@@ -573,8 +558,8 @@
                       </div>
                       <div class="desc-box">
                         <p class="desc">
-                          특정 영역에 대한 프로모션이 있는 경우 부가설명을 위해 사용하거나 기능에 대한 도움말을
-                          표시하는 데 사용합니다.
+                          특정 항목에 대해 추가적인 설명을 위해 표시하며, 시간 경과에 따라 자동으로 사라지게
+                          구성합니다.
                         </p>
                       </div>
                     </div>
@@ -582,21 +567,21 @@
                       <div class="content-box">
                         <div class="image-content-box ">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_012.png" alt="" />
+                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_011.png" alt="" />
                           </div>
                         </div>
                       </div>
                       <div class="content-box">
                         <div class="color-box   dont">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_013.png" alt="" />
+                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_012.png" alt="" />
                           </div>
                           <div class="color-text-box">
                             <div class="color-title-box">
                               <span class="color-title">Don't</span>
                             </div>
                             <div class="color-desc-box">
-                              <p class="color-desc">Icon을 Text의 뒤에 배치하여 사용하지 않습니다.</p>
+                              <p class="color-desc">시각적 연결성을 고려하여 아이콘과 설명을 멀리 배치하지 않습니다.</p>
                             </div>
                           </div>
                         </div>
@@ -613,8 +598,7 @@
                       </div>
                       <div class="desc-box">
                         <p class="desc">
-                          사용자의 올바른 조작을 유도하는 Guide Image를 사용하고 실행해야 하는 Motion 및 도달하는
-                          정보를 표기합니다.
+                          사용자에게 정확한 컨트롤을 유도하기 위해 이미지를 활용하여 디바이스 조작 방법을 안내합니다.
                         </p>
                       </div>
                     </div>
@@ -622,7 +606,7 @@
                       <div class="content-box">
                         <div class="image-content-box ">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_014.png" alt="" />
+                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_013.png" alt="" />
                           </div>
                         </div>
                       </div>
@@ -649,45 +633,39 @@
                       <div class="title-box">
                         <h3 class="title">Bubble Tooltip</h3>
                       </div>
-                      <div class="desc-box">
-                        <p class="desc">
-                          부가 정보형은 타겟 요소가 한정된 영역에서 사용 될 경우 제공하며,
-                          <br />Tip의 위치는 항상 타겟이 되는 요소를 가까이 가리키고 있어야 합니다.
-                        </p>
-                      </div>
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box">
                         <div class="image-content-box dark">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_015.png" alt="" />
+                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_014.png" alt="" />
                           </div>
                         </div>
                       </div>
                       <div class="content-box">
                         <div class="color-box dark  do">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_016.png" alt="" />
+                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_015.png" alt="" />
                           </div>
                           <div class="color-text-box">
                             <div class="color-title-box">
                               <span class="color-title">Do</span>
                             </div>
                             <div class="color-desc-box">
-                              <p class="color-desc">일반적인 Tooltip은 화면 진입 후 N초 후 사라지지만 말풍선 부가 정보형의 경우 Focus 시 지속적으로 표시합니다.</p>
+                              <p class="color-desc">다른 툴팁 유형과 다르게 포커스 영역을 지속적으로 표시합니다.</p>
                             </div>
                           </div>
                         </div>
                         <div class="color-box dark  dont">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_017.png" alt="" />
+                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_016.png" alt="" />
                           </div>
                           <div class="color-text-box">
                             <div class="color-title-box">
                               <span class="color-title">Don't</span>
                             </div>
                             <div class="color-desc-box">
-                              <p class="color-desc">Tip을 가깝게 배치하지 않으면 가리키는 요소에 혼동을 유발합니다.</p>
+                              <p class="color-desc">포커스 되지 않은 영역에 임의로 노출하지 않습니다.</p>
                             </div>
                           </div>
                         </div>
@@ -702,42 +680,39 @@
                       <div class="title-box">
                         <h3 class="title">Round Tooltip</h3>
                       </div>
-                      <div class="desc-box">
-                        <p class="desc">Text의 특정 부분을 강조해야할 경우 Point Color를 사용합니다.</p>
-                      </div>
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box">
                         <div class="image-content-box dark">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_018.png" alt="" />
+                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_017.png" alt="" />
                           </div>
                         </div>
                       </div>
                       <div class="content-box">
                         <div class="color-box dark  do">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_019.png" alt="" />
+                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_018.png" alt="" />
                           </div>
                           <div class="color-text-box">
                             <div class="color-title-box">
                               <span class="color-title">Do</span>
                             </div>
                             <div class="color-desc-box">
-                              <p class="color-desc">강조해야 하는 부분에는 Point Color를 적용합니다.</p>
+                              <p class="color-desc">화면 내 레이아웃에 따라 시각적 밸런스를 맞춰 배치합니다.</p>
                             </div>
                           </div>
                         </div>
                         <div class="color-box dark  dont">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_020.png" alt="" />
+                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_019.png" alt="" />
                           </div>
                           <div class="color-text-box">
                             <div class="color-title-box">
                               <span class="color-title">Don't</span>
                             </div>
                             <div class="color-desc-box">
-                              <p class="color-desc">Contents 별 일관된 Color를 사용하며 가시성을 해치는 Color는 <br />지양합니다.</p>
+                              <p class="color-desc">설명하는 내용과 무관한 임의에 컬러를 사용하지 않습니다.</p>
                             </div>
                           </div>
                         </div>
@@ -752,19 +727,29 @@
                       <div class="title-box">
                         <h3 class="title">Image Tooltip</h3>
                       </div>
-                      <div class="desc-box">
-                        <p class="desc">사용자에게 Guide Image를 제공하고 실행해야 하는 정보를 표기합니다.</p>
-                      </div>
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box">
                         <div class="image-content-box dark">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_021.png" alt="" />
+                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_020.png" alt="" />
                           </div>
                         </div>
                       </div>
                       <div class="content-box">
+                        <div class="color-box dark  do">
+                          <div class="image-box">
+                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_021.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title">Do</span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">콘텐츠 시청을 최소한으로 방해하는 위치에 배치합니다.</p>
+                            </div>
+                          </div>
+                        </div>
                         <div class="color-box dark  do">
                           <div class="image-box">
                             <img src="../../../assets/images/ios/components/tooltip/tooltip_image_022.png" alt="" />
@@ -774,20 +759,7 @@
                               <span class="color-title">Do</span>
                             </div>
                             <div class="color-desc-box">
-                              <p class="color-desc">사용자가 인지하기 쉽도록 설명하는 요소와 관련된 위치에 노출합니다.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="color-box dark  do">
-                          <div class="image-box">
-                            <img src="../../../assets/images/ios/components/tooltip/tooltip_image_023.png" alt="" />
-                          </div>
-                          <div class="color-text-box">
-                            <div class="color-title-box">
-                              <span class="color-title">Do</span>
-                            </div>
-                            <div class="color-desc-box">
-                              <p class="color-desc">가시성을 높여 사용해야 하는 경우 Background에 Gradation와 함께 Tooltip을 노출합니다.</p>
+                              <p class="color-desc">최상단에 위치시켜 주요한 기능을 빠르게 안내합니다.</p>
                             </div>
                           </div>
                         </div>

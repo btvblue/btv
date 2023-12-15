@@ -34,7 +34,9 @@
                     <h1 class="title">Tabs</h1>
                   </div>
                   <div class="desc-box">
-                    <p class="desc">Page 내 유사한 정보를 Grouping하여 Contents를 정리할 때 사용합니다.</p>
+                    <p class="desc">
+                      콘텐츠 또는 정보를 섹션으로 나눠 섹션별 쉬운 이동을 위해 사용하는 컴포넌트입니다.
+                    </p>
                   </div>
                 </div>
                 <div class="heading-bottom">
@@ -94,27 +96,27 @@
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "1. Container (Optional)",
-                            "desc" : "Tab의 형태를 나타냅니다."
+                            "desc" : "이동 가능한 영역의 형태를 나타낼 수 있습니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
-                            "title" : "2. Selected border",
-                            "desc" : "Tab의 위치와 상태를 나타냅니다."
+                            "title" : "2. Border",
+                            "desc" : "이동한 가능한 영역의 형태와 선택 상태 여부를 표시합니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "3. Text",
-                            "desc" : "설명하고자 하는 정보를 표기합니다."
+                            "desc" : "섹션으로 이동했을 때 나타나는 화면에 대한 정보를 표기합니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "4. Status (Optional)",
-                            "desc" : "설명하고자 하는 부가정보를 표기합니다."
+                            "desc" : "부가적인 정보를 표기할 수 있습니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "5. Icon (Optional)",
-                            "desc" : "다음 정보 이동을 위한 Icon을 노출합니다."
+                            "desc" : "콘텐츠 또는 정보와 관련된 아이콘을 함께 구성할 수 있습니다."
                           })
                         </ul>
                       </div>
@@ -124,26 +126,10 @@
                     <!-- prettier-ignore -->
                     @@include("../component/color_box.html", {
                       "mode" : "dark",
-                      "full" : "full",
+                      "full" : "",
                       "state" : "do",
                       "image" : "../../../assets/images/ios/components/tabs/tabs_image_05.png",
-                      "desc" : "General / Module Tab의 정보는 중앙 정렬하며, List Tab의 정보는 좌측 정렬합니다."
-                    })
-                    <!-- prettier-ignore -->
-                    @@include("../component/color_box.html", {
-                      "mode" : "dark",
-                      "full" : "",
-                      "state" : "do",
-                      "image" : "../../../assets/images/ios/components/tabs/tabs_image_06.png",
-                      "desc" : "List Tab의 부가정보는 우측, Module 탭의 부가정보는 Text의 하단에\
-                    <br />위치합니다." })
-                    <!-- prettier-ignore -->
-                    @@include("../component/color_box.html", {
-                      "mode" : "dark",
-                      "full" : "",
-                      "state" : "do",
-                      "image" : "../../../assets/images/ios/components/tabs/tabs_image_07.png",
-                      "desc" : "Button 내 Text는 가독성을 고려하여 명확하고 간결하게 구성합니다."
+                      "desc" : "부가적인 정보는 화면 레이아웃에 따라 위치를 조정할 수 있습니다."
                     })
                   </div>
                 </div>
@@ -165,7 +151,7 @@
                         <!-- prettier-ignore -->
                         @@include("../component/image_content_box.html", {
                           "mode" : "",
-                          "image" : "../../../assets/images/ios/components/tabs/tabs_image_08.png",
+                          "image" : "../../../assets/images/ios/components/tabs/tabs_image_06.png",
                           "desc" : null
                         })
                       </div>
@@ -174,22 +160,22 @@
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "1. Normal",
-                            "desc" : "Tab이 Focus 또는 Select 되지 않은 일반적인 상태입니다."
+                            "desc" : "섹션별 이동이 가능한 상태입니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "2. Focus",
-                            "desc" : "사용자가 화면상 위치를 쉽게 인식할 수 있도록 적용된 상태입니다."
+                            "desc" : "이동된 위치를 쉽게 인식할 수 있도록 강조된 상태입니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "3. Select",
-                            "desc" : "Tab이 선택되어 상세한 정보가 활성화 된 상태입니다."
+                            "desc" : "사용자와 상호작용하여 선택된 상태입니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "4. UnSelect",
-                            "desc" : "Tab이 활성화 되어 있지 않은 상태입니다."
+                            "desc" : "이동이 가능하지 않은 상태입니다."
                           })
                         </ul>
                       </div>
@@ -216,7 +202,7 @@
                           <h3 class="title kor">Layout에 따른 Tab 사용</h3>
                         </div>
                         <div class="desc-box">
-                          <p class="desc">Tab은 Contents의 Layout에 따라 General Tab 또는 List Tab을 사용합니다.</p>
+                          <p class="desc">콘텐츠 또는 정보의 성격 및 레이아웃에 따라 적합한 타입으로 구성합니다.</p>
                         </div>
                       </div>
                       <div class="sub-content-bottom">
@@ -224,19 +210,19 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode"  : "",
-                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_09.png",
+                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_07.png",
                             "desc"  : {
                               "alphabet" : null,
-                              "desc"     : "일반적인 Layout은 General Tab 사용"
+                              "desc"     : "General Tab 사용"
                             }
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode"  : "",
-                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_010.png",
+                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_08.png",
                             "desc"  : {
                               "alphabet" : null,
-                              "desc"     : "세로로 분리된 Layout은 List Tab 사용"
+                              "desc"     : "List Tab 사용"
                             }
                           })
                         </div>
@@ -264,7 +250,41 @@
                           <h3 class="title">General Tab</h3>
                         </div>
                         <div class="desc-box">
-                          <p class="desc">일반적인 형식의 Tab으로, 기본적인 Layout에서 사용합니다.</p>
+                          <p class="desc">섹션별 쉬운 이동을 실행하는 기본적인 타입으로 사용합니다.</p>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode" : "",
+                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_09.png",
+                            "desc" : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "dark",
+                            "full" : "",
+                            "state" : "do",
+                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_010.png",
+                            "desc" : "성격이 다른 섹션은 표현방식을 다르게 구성할 수 있습니다." })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- List Tab -->
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">List Tab</h3>
+                        </div>
+                        <div class="desc-box">
+                          <p class="desc">
+                            부가적인 정보 표시를 시각적으로 이질감없이 조화롭게 구성하기 위해 사용합니다.
+                          </p>
                         </div>
                       </div>
                       <div class="sub-content-bottom">
@@ -283,59 +303,7 @@
                             "full" : "",
                             "state" : "do",
                             "image" : "../../../assets/images/ios/components/tabs/tabs_image_012.png",
-                            "desc" : "General Tab과 Number Badge를 Tab의 영역을 해치지 않는 영역에\
-                          <br />결합하여 사용합니다." })
-                          <!-- prettier-ignore -->
-                          @@include("../component/color_box.html", {
-                            "mode" : "dark",
-                            "full" : "",
-                            "state" : "do",
-                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_013.png",
-                            "desc" : "Tab 내에 Icon 등을 배치하여 다양한 형태의 Tab으로 사용할 수 있습니다."
-                          })
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- List Tab -->
-                  <div class="sub-content-container">
-                    <div class="sub-content-area">
-                      <div class="sub-content-top">
-                        <div class="title-box">
-                          <h3 class="title">List Tab</h3>
-                        </div>
-                        <div class="desc-box">
-                          <p class="desc">
-                            List 형식의 Tab으로 다양한 상태값을 줄 수 있으며, 좌우로 분할된 Layout 화면에서 세로로
-                            나열하여 사용합니다.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="sub-content-bottom">
-                        <div class="content-box">
-                          <!-- prettier-ignore -->
-                          @@include("../component/image_content_box.html", {
-                            "mode" : "",
-                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_014.png",
-                            "desc" : null
-                          })
-                        </div>
-                        <div class="content-box">
-                          <!-- prettier-ignore -->
-                          @@include("../component/color_box.html", {
-                            "mode" : "dark",
-                            "full" : "",
-                            "state" : "do",
-                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_015.png",
-                            "desc" : "List Tap과 Number Badge를 Tab의 영역을 해치지 않는 영역에 결합하여 사용합니다."
-                          })
-                          <!-- prettier-ignore -->
-                          @@include("../component/color_box.html", {
-                            "mode" : "dark",
-                            "full" : "",
-                            "state" : "do",
-                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_016.png",
-                            "desc" : "Focus / Select 시 Icon은 우측, 좌측 모두 배치 가능합니다."
+                            "desc" : "섹션별 성격에 따라 컴포넌트들을 결합하여 구성할 수 있습니다."
                           })
                         </div>
                       </div>
@@ -349,7 +317,9 @@
                           <h3 class="title">Module Tap</h3>
                         </div>
                         <div class="desc-box">
-                          <p class="desc">Module 형식의 Tab으로, 가로로 나열하는 Layout에서 사용합니다.</p>
+                          <p class="desc">
+                            주요한 기능을 가진 메뉴에 대해 모듈화하여 시각적으로 크게 구성하여 사용합니다.
+                          </p>
                         </div>
                       </div>
                       <div class="sub-content-bottom">
@@ -357,13 +327,13 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode" : "",
-                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_017.png",
+                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_013.png",
                             "desc" : null
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode" : "",
-                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_018.png",
+                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_014.png",
                             "desc" : null
                           })
                         </div>
@@ -390,11 +360,64 @@
                         <div class="title-box">
                           <h3 class="title">General Tab</h3>
                         </div>
-                        <div class="desc-box">
-                          <p class="desc">
-                            유사한 콘텐츠를 그룹화하여 해당 페이지를 벗어나지 않고 섹션 별 콘텐츠 둘러보기가 가능하며
-                            시각적 일관성이 필요합니다.
-                          </p>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode" : "dark",
+                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_015.png",
+                            "desc" : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "dark",
+                            "full" : "",
+                            "state" : "do",
+                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_016.png",
+                            "desc" : "현재 위치한 섹션과 위치하지 않은 섹션을 명확하게 구분합니다."
+                          })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- List Tab -->
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">List Tab</h3>
+                        </div>
+                      </div>
+                      <div class="sub-content-bottom">
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/image_content_box.html", {
+                            "mode" : "dark",
+                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_017.png",
+                            "desc" : null
+                          })
+                        </div>
+                        <div class="content-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/color_box.html", {
+                            "mode" : "dark",
+                            "full" : "",
+                            "state" : "do",
+                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_018.png",
+                            "desc" : "섹션별 성격에 따라 아이콘, 텍스트와 함께 구성할 수 있습니다." })
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Module Tap -->
+                  <div class="sub-content-container">
+                    <div class="sub-content-area">
+                      <div class="sub-content-top">
+                        <div class="title-box">
+                          <h3 class="title">Module Tap</h3>
                         </div>
                       </div>
                       <div class="sub-content-bottom">
@@ -413,86 +436,15 @@
                             "full" : "",
                             "state" : "do",
                             "image" : "../../../assets/images/ios/components/tabs/tabs_image_020.png",
-                            "desc" : "활성/비활성 Tab을 명확하게 인지 할 수 있게 제작되어야 합니다."
+                            "desc" : "모듈간 시각적으로 통일되게 구성합니다."
                           })
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- List Tab -->
-                  <div class="sub-content-container">
-                    <div class="sub-content-area">
-                      <div class="sub-content-top">
-                        <div class="title-box">
-                          <h3 class="title">List Tab</h3>
-                        </div>
-                        <div class="desc-box">
-                          <p class="desc">
-                            상위 Tab과 함께 추가적인 정보 확인 및 부가선택을 돕는 하위 Tap을 제공하여 사용합니다.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="sub-content-bottom">
-                        <div class="content-box">
                           <!-- prettier-ignore -->
-                          @@include("../component/image_content_box.html", {
+                          @@include("../component/color_box.html", {
                             "mode" : "dark",
+                            "full" : "",
+                            "state" : "dont",
                             "image" : "../../../assets/images/ios/components/tabs/tabs_image_021.png",
-                            "desc" : null
-                          })
-                        </div>
-                        <div class="content-box">
-                          <!-- prettier-ignore -->
-                          @@include("../component/color_box.html", {
-                            "mode" : "dark",
-                            "full" : "",
-                            "state" : "do",
-                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_022.png",
-                            "desc" : "Normal 형태가 동일하더라도 하위 화면, Contents 내용에 따라\
-                          <br />Focus / Select 시 다양한 형태로 사용합니다." })
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Module Tap -->
-                  <div class="sub-content-container">
-                    <div class="sub-content-area">
-                      <div class="sub-content-top">
-                        <div class="title-box">
-                          <h3 class="title">Module Tap</h3>
-                        </div>
-                        <div class="desc-box">
-                          <p class="desc">
-                            Tab의 선택에 따라 해당 페이지를 벗어나지 않고 필요한 정보를 확인하거나 사용자의 설정을
-                            빠르고 쉽게 돕습니다.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="sub-content-bottom">
-                        <div class="content-box">
-                          <!-- prettier-ignore -->
-                          @@include("../component/image_content_box.html", {
-                            "mode" : "dark",
-                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_023.png",
-                            "desc" : null
-                          })
-                        </div>
-                        <div class="content-box">
-                          <!-- prettier-ignore -->
-                          @@include("../component/color_box.html", {
-                            "mode" : "dark",
-                            "full" : "",
-                            "state" : "do",
-                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_024.png",
-                            "desc" : "Contents의 부가정보에 따라 Tab에 들어가는 동일한 정보로 변경됩니다."
-                          })
-                          <!-- prettier-ignore -->
-                          @@include("../component/color_box.html", {
-                            "mode" : "dark",
-                            "full" : "",
-                            "state" : "do",
-                            "image" : "../../../assets/images/ios/components/tabs/tabs_image_025.png",
-                            "desc" : "부가정보가 있거나 없는 Module Tab을 함께 사용할 수 있습니다."
+                            "desc" : "탭 내 상태 표시를 서로 다르게 표기하지 않습니다."
                           })
                         </div>
                       </div>

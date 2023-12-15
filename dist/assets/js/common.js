@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slideDown(lnbContainer, 400);
         lnbContainer.classList.add('expand');
         target.querySelector('img').setAttributes({
-          src: '../../assets/images/btn_close_menu_nor.svg',
+          src: '../../../assets/images/btn_close_menu_nor.svg',
           alt: '메뉴 닫기',
         });
         document.body.classList.add('body-lock');
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slideUp(lnbContainer, 400);
         lnbContainer.classList.remove('expand');
         target.querySelector('img').setAttributes({
-          src: '../../assets/images/btn_open_menu_nor.svg',
+          src: '../../../assets/images/btn_open_menu_nor.svg',
           alt: '메뉴 열기',
         });
         document.body.classList.remove('body-lock');
@@ -191,7 +191,7 @@ function setLnbPosition(width, breakPoint) {
     lnbContainer.style.boxSizing = 'border-box';
     lnbContainer.classList.remove('expand');
     btnMenu.querySelector('img').setAttributes({
-      src: '../../assets/images/btn_open_menu_nor.svg',
+      src: '../../../assets/images/btn_open_menu_nor.svg',
       alt: '메뉴 열기',
     });
   }

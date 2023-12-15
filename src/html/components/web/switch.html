@@ -27,10 +27,322 @@
       <main class="main">
         <div class="main-container">
           <div class="main-area">
-            <img src="../../../assets/images/temp/mass_component_switch.png" alt="" style="width: 100%" />
+            <div class="heading-container">
+              <div class="heading-area">
+                <div class="heading-top">
+                  <div class="title-box">
+                    <h1 class="title">Switch</h1>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">스위치는 기능의 상태의 전환이 필요할 때, 기능을 ON/OFF 하기 위해 사용합니다.</p>
+                  </div>
+                  <div class="desc-box">
+                    <ul class="sub-number-desc-list-box">
+                      <li class="sub-number-desc-list">
+                        <span>사용자가 선택하지 않아도 기본적으로 선택되어 있는 디폴트 옵션을 항상 제공합니다. </span>
+                      </li>
+                      <li class="sub-number-desc-list">
+                        <span>사용자가 선택값을 변경하면, Confirm 과정 없이 바로 적용합니다.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Anatomy -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Anatomy</h2>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">컴포넌트에 포함되는 요소에 대한 정의입니다.</p>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <div class="image-title-box">
+                      <div class="image-title-top">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "no-border",
+                          "image" : "../../../assets/images/web/components/Switch/Mass_switch_1.png",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="image-title-bottom">
+                        <ul class="number-desc-list-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "1. Track",
+                            "desc"  : ""
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "2. Thumb",
+                            "desc"  : ""
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "3. Text (optional)",
+                            "desc"  : ""
+                          })
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="image-title-box">
+                      <div class="image-title-top">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "no-border",
+                          "image" : "../../../assets/images/web/components/Switch/Mass_switch_2.png",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="image-title-bottom">
+                        <ul class="number-desc-list-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "1. Track",
+                            "desc"  : ""
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "2. Thumb",
+                            "desc"  : ""
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "3. Container",
+                            "desc"  : ""
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "4. Text",
+                            "desc"  : ""
+                          })
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // Anatomy -->
+
+            <!-- States -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">States</h2>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      스위치의 선택 값에 따라 시각적인 피드백을 제공해야 합니다. On/off 의 명확한 시각적 구분을 제공하여
+                      사용자에게 현재 상태를 알려줘야 합니다. Focus 여부에 따라 적용되는 디자인이 달라집니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <!-- prettier-ignore -->
+                    @@include("../component/image_content_box_type2.html", {
+                      "mode" : "",
+                      "image" : "../../../assets/images/web/components/Switch/Mass_switch_3.png",
+                      "desc" : {
+                        "alphabet" : "A",
+                        "desc" : "Toggle Switch"
+                      }
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/image_content_box_type2.html", {
+                      "mode" : "",
+                      "image" : "../../../assets/images/web/components/Switch/Mass_switch_4.png",
+                      "desc" : {
+                        "alphabet" : "B",
+                        "desc" : "Button Switch"
+                      }
+                    })
+                  </div>
+                  <div class="content-box">
+                    <div class="image-title-box reverse">
+                      <div class="image-title-bottom">
+                        <ul class="number-desc-list-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "1. On Focused",
+                            "desc"  : "사용자가 해당 옵션에 포커스 했고, 선택한 상태입니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "2. Off Focused",
+                            "desc"  : "사용자가 해당 옵션에 포커스 했고, 선택하지 않은 상태입니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "3. On Enabled",
+                            "desc"  : "사용자가 해당 옵션을 선택한 상태입니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "4. Off Enabled",
+                            "desc"  : "사용자가 해당 옵션을 선택하지 않은 상태입니다."
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "5. Disabled",
+                            "desc"  : "사용자가 해당 옵션을 선택하지 않은 상태입니다."
+                          })
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // States -->
+
+            <!-- Style -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Style</h2>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">2가지 버튼 스타일이 있으며, 화면 구성에 따라 적절한 스타일로 사용합니다.</p>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <div class="image-title-box">
+                      <div class="image-title-top">
+                        <!-- prettier-ignore -->
+                        @@include("../component/image_content_box.html", {
+                          "mode"  : "no-border",
+                          "image" : "../../../assets/images/web/components/Switch/Mass_switch_5.png",
+                          "desc"  : null
+                        })
+                      </div>
+                      <div class="image-title-bottom">
+                        <ul class="number-desc-list-box">
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "A. Toggle Switch",
+                            "desc"  : "On/Off 기능의 경우 toggle형을 사용합니다.  "
+                          })
+                          <!-- prettier-ignore -->
+                          @@include("../component/number_desc_list.html", {
+                            "title" : "B. Button Switch",
+                            "desc"  : "설명되어야 하는 텍스트가 길 경우 button형을 사용합니다.  "
+                          })
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // Style -->
+
+            <!-- Usage -->
+            <div class="content-container">
+              <div class="content-area">
+                <div class="content-top">
+                  <div class="title-box">
+                    <h2 class="title">Usage</h2>
+                  </div>
+                  <div class="desc-box">
+                    <p class="desc">
+                      동일한 플랫폼 내에서 체크 박스의 디자인은 일관성을 유지해야 합니다. 동일한 플랫폼 또는 앱 내에서
+                      모든 체크 박스는 비슷한 모양, 크기, 스타일을 가져야 합니다. 이는 사용자들이 체크 박스를 쉽게
+                      인식하고 이해할 수 있도록 도움을 줄 것입니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="content-bottom">
+                  <div class="content-box">
+                    <ul class="sub-number-desc-list-box">
+                      <li class="sub-number-desc-list">
+                        <span
+                          ><strong>사용자에게 스위치의 명확한 기능 설명을 위해 Title을 같이 배치합니다.</strong></span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content-box">
+                    <!-- prettier-ignore -->
+                    @@include("../component/color_box.html", {
+                      "mode"  : "",
+                      "full"  : "",
+                      "state" : "do",
+                      "image" : "../../../assets/images/web/components/Switch/Mass_switch_6.png",
+                      "desc"  : "어떤 기능에 관련된 스위치인지 알 수 있도록 합니다."
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/color_box.html", {
+                      "mode"  : "",
+                      "full"  : "",
+                      "state" : "dont",
+                      "image" : "../../../assets/images/web/components/Switch/Mass_switch_7.png",
+                      "desc"  : "스위치만 단독으로 사용하면 기능을 파악할 수 없습니다."
+                    })
+                  </div>
+                  <div class="content-box">
+                    <ul class="sub-number-desc-list-box">
+                      <li class="sub-number-desc-list">
+                        <span><strong>On/Off의 뉘앙스가 있는 요소 외에는 스위치를 사용하지 않습니다.</strong></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content-box">
+                    <!-- prettier-ignore -->
+                    @@include("../component/color_box.html", {
+                      "mode"  : "",
+                      "full"  : "",
+                      "state" : "do",
+                      "image" : "../../../assets/images/web/components/Switch/Mass_switch_8.png",
+                      "desc"  : ""
+                    })
+                    <!-- prettier-ignore -->
+                    @@include("../component/color_box.html", {
+                      "mode"  : "",
+                      "full"  : "",
+                      "state" : "dont",
+                      "image" : "../../../assets/images/web/components/Switch/Mass_switch_9.png",
+                      "desc"  : ""
+                    })
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // Usage -->
           </div>
         </div>
       </main>
+
+      <!-- Quick Menu -->
+      <div class="quick-menu-container">
+        <div class="quick-menu-area">
+          <ul class="quick-menu-list-box">
+            <li class="quick-menu-list">
+              <span class="list-title">Anatomy</span>
+            </li>
+            <li class="quick-menu-list">
+              <span class="list-title">States</span>
+            </li>
+            <li class="quick-menu-list">
+              <span class="list-title">Style</span>
+            </li>
+            <li class="quick-menu-list">
+              <span class="list-title">Usage</span>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <!-- Footer -->
       <!-- prettier-ignore -->

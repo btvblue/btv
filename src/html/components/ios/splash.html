@@ -35,9 +35,8 @@
                   </div>
                   <div class="desc-box">
                     <p class="desc">
-                      App의 시작에 나타나는 화면으로 Data를 Loading하면서 본 화면이 보여지기 전 1~2초간 노출합니다.<br />실행
-                      화면은 Branding의 목적, 서비스의 Identity를 지속적으로 노출하기 위한 Branding의 관점에서
-                      구현합니다.
+                      서비스 로딩 시에 표시되는 컴포넌트입니다.<br />사용자에게 서비스가 시작되고 있다는 시각적인
+                      피드백을 제공하고 그래픽 요소를 통해 브랜드 인식을 높일 수 있습니다.
                     </p>
                   </div>
                 </div>
@@ -81,17 +80,17 @@
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "1. Graphic Area",
-                            "desc"  : "Brand의 Logo 또는 Brand Identity를 나타내는 주요 요소를 표시합니다."
+                            "desc"  : "브랜드 아이덴티티를 보여줄 수 있는 시각적 요소로 구성합니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "2. Text (Optional)",
-                            "desc"  : "해당 App에 대한 간단한 내용을 표기합니다."
+                            "desc"  : "별도의 추가적인 설명이 필요한 경우 안내 문구를 표시합니다."
                           })
                           <!-- prettier-ignore -->
                           @@include("../component/number_desc_list.html", {
                             "title" : "3. Background",
-                            "desc"  : "투명도가 적용되지 않은 색상의 배경을 표시합니다."
+                            "desc"  : "서비스 사용환경을 고려한 배경 컬러를 선정합니다."
                           })
                         </ul>
                       </div>
@@ -110,7 +109,7 @@
                       "full"  : "",
                       "state" : "do",
                       "image" : "../../../assets/images/ios/components/splash/splash_image_03.png",
-                      "desc"  : "Brand와 관련된 Graphic나 Tagline을 제외한 Text 사용을 지양합니다."
+                      "desc"  : "서비스의 로고, 컬러를 변형하지 않고 사용합니다."
                     })
                     <!-- prettier-ignore -->
                     @@include("../component/color_box.html", {
@@ -118,23 +117,15 @@
                       "full"  : "",
                       "state" : "do",
                       "image" : "../../../assets/images/ios/components/splash/splash_image_04.png",
-                      "desc"  : "Brand의 Identity와 명시성을 고려하여 각 요소에 대해 밝거나 어두운 Mode의 Version을 사용합니다."
-                    })
-                    <!-- prettier-ignore -->
-                    @@include("../component/color_box.html", {
-                      "mode" : "",
-                      "full"  : "",
-                      "state" : "do",
-                      "image" : "../../../assets/images/ios/components/splash/splash_image_05.png",
-                      "desc"  : "Splash의 마지막 시퀀스에서 Logo 하단에 Progress Bar가 표시됩니다."
+                      "desc"  : "딜레이가 발생할 경우 애니메이션 완료 시점에 로딩과 함께 표시할 수 있습니다."
                     })
                     <!-- prettier-ignore -->
                     @@include("../component/color_box.html", {
                       "mode" : "",
                       "full"  : "",
                       "state" : "dont",
-                      "image" : "../../../assets/images/ios/components/splash/splash_image_06.png",
-                      "desc"  : "Graphic은 가독성 확보가 가능한 적절한 크기로 표현되어야 합니다."
+                      "image" : "../../../assets/images/ios/components/splash/splash_image_05.png",
+                      "desc"  : "시각적 볼륨을 고려하지 않은 그래픽 요소를 구성하지 않습니다."
                     })
                   </div>
                 </div>
@@ -157,10 +148,7 @@
                           <h3 class="title">General Splash</h3>
                         </div>
                         <div class="desc-box">
-                          <p class="desc">
-                            실행 화면은 Brand 인지도를 높이는 Graphic 또는 기타 요소를 표시하여 앱이 로드되는 동안
-                            Branding을 표현합니다.
-                          </p>
+                          <p class="desc">서비스의 브랜드 모티브와 관련된 그래픽 요소, 움직임 요소로 구성합니다.</p>
                         </div>
                       </div>
                       <div class="sub-content-bottom">
@@ -168,7 +156,7 @@
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode"  : "",
-                            "image" : "../../../assets/images/ios/components/splash/splash_image_07.png",
+                            "image" : "../../../assets/images/ios/components/splash/splash_image_06.png",
                             "desc"  : null
                           })
                         </div>
@@ -178,8 +166,8 @@
                             "mode"  : "",
                             "full"  : "",
                             "state" : "do",
-                            "image" : "../../../assets/images/ios/components/splash/splash_image_08.png",
-                            "desc"  : "사용자 경험에 흥미를 더하는 Animation을 사용하여 표시할 수 있습니다."
+                            "image" : "../../../assets/images/ios/components/splash/splash_image_07.png",
+                            "desc"  : "브랜드 아이덴티티를 해치지 않는 애니메이션을 사용할 수 있습니다."
                           })
                         </div>
                       </div>
@@ -204,20 +192,13 @@
                         <div class="title-box">
                           <h3 class="title">General Splash</h3>
                         </div>
-                        <div class="desc-box">
-                          <p class="desc">
-                            App을 실행하면서 앱이 로드 될 때 빈 화면을 표시하는 대신 Splash를 노출합니다.<br />시작
-                            화면을 표시하면 Loading 시간이 길다는 느낌을 줄일 수 있으며 사용자 경험에 즐거움을 더할 수
-                            있습니다.
-                          </p>
-                        </div>
                       </div>
                       <div class="sub-content-bottom">
                         <div class="content-box">
                           <!-- prettier-ignore -->
                           @@include("../component/image_content_box.html", {
                             "mode"  : "",
-                            "image" : "../../../assets/images/ios/components/splash/splash_image_09.png",
+                            "image" : "../../../assets/images/ios/components/splash/splash_image_08.png",
                             "desc"  : null
                           })
                         </div>
@@ -227,8 +208,8 @@
                             "mode"  : "",
                             "full"  : "",
                             "state" : "dont",
-                            "image" : "../../../assets/images/ios/components/splash/splash_image_010.png",
-                            "desc"  : "App이 실행 중인 경우 Splash를 표시하지 않습니다."
+                            "image" : "../../../assets/images/ios/components/splash/splash_image_09.png",
+                            "desc"  : "데이터 로드가 완료되어 서비스 화면이 표시되었을 경우 중복하여 제공하지 않습니다."
                           })
                         </div>
                       </div>

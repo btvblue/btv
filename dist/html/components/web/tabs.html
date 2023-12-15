@@ -156,6 +156,9 @@
                 <a href="../../components/ios/badges.html" class="lnb-sub-link"><span class="text">Badges</span></a>
               </li>
               <li class="lnb-sub-list ">
+                <a href="../../components/ios/block.html" class="lnb-sub-link"><span class="text">Block</span></a>
+              </li>
+              <li class="lnb-sub-list ">
                 <a href="../../components/ios/buttons.html" class="lnb-sub-link"><span class="text">Buttons</span></a>
               </li>
               <li class="lnb-sub-list ">
@@ -184,9 +187,6 @@
               </li>
               <li class="lnb-sub-list ">
                 <a href="../../components/ios/ime.html" class="lnb-sub-link"><span class="text">IME</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="../../components/ios/list_cards.html" class="lnb-sub-link"><span class="text">List Cards</span></a>
               </li>
               <li class="lnb-sub-list ">
                 <a href="../../components/ios/loading.html" class="lnb-sub-link"><span class="text">Loading</span></a>
@@ -263,7 +263,7 @@
                 <a href="../../components/web/dock.html" class="lnb-sub-link"><span class="text">Dock</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/web/flag.html" class="lnb-sub-link"><span class="text">Flag</span></a>
+                <a href="../../components/web/flag.html" class="lnb-sub-link"><span class="text">Flags</span></a>
               </li>
               <li class="lnb-sub-list ">
                 <a href="../../components/web/gnb.html" class="lnb-sub-link"><span class="text">GNB</span></a>
@@ -301,10 +301,375 @@
     <main class="main">
       <div class="main-container">
         <div class="main-area">
-          <img src="../../../assets/images/temp/mass_component_tabs.png" alt="" style="width: 100%" />
+          <div class="heading-container">
+            <div class="heading-area">
+              <div class="heading-top">
+                <div class="title-box">
+                  <h1 class="title">Tabs</h1>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">사용자가 다양한 섹션 또는 카테고리 사이를 전환할 수 있는 기능을 제공합니다.</p>
+                </div>
+                <div class="desc-box">
+                  <ul class="sub-number-desc-list-box">
+                    <li class="sub-number-desc-list">
+                      <span>각 탭은 해당 섹션 또는 카테고리에 대한 내용을 표시하는 컨텐츠 영역과 연결됩니다.</span>
+                    </li>
+                    <li class="sub-number-desc-list">
+                      <span
+                          >사용자가 탭을 클릭하면 해당 탭에 대한 내용이 나타나며, 다른 탭을 선택하면 관련된 컨텐츠가
+                          변경됩니다.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Anatomy -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Anatomy</h2>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">컴포넌트에 포함되는 요소에 대한 정의입니다.</p>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box no-border">
+                        <div class="image-box">
+                          <img src="../../../assets/images/web/components/Tabs/Mass_tab_1.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Container</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Text label</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Additional Icon</span>
+                          <div class="text-box">
+                            <p class="text">설명하고자 하는 부가 정보를 표시합니다. (ex. new)</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box no-border">
+                        <div class="image-box">
+                          <img src="../../../assets/images/web/components/Tabs/Mass_tab_2.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Container</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Password Circle</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Anatomy -->
+          <!-- States -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">States</h2>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">
+                    탭 중 하나가 포커스된 상태일 때, 해당 탭은 사용자의 현재 위치를 나타내기 위해 강조됩니다.<br />선택된
+                      탭은 밝은 색상, 강조 효과로 표시됩니다.<br />비활성 탭은 일반적으로 회색 또는 다른 강조 효과가
+                      없는 상태로 표시됩니다.
+                  </p>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-content-box  type2">
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">A</span></span>
+                      <span class="text">Block Tab</span>
+                    </div>
+                    <div class="image-box">
+                      <img src="../../../assets/images/web/components/Tabs/Mass_tab_3.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="image-content-box  type2">
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">B</span></span>
+                      <span class="text">Page Tab</span>
+                    </div>
+                    <div class="image-box">
+                      <img src="../../../assets/images/web/components/Tabs/Mass_tab_4.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="image-title-box reverse">
+                    <div class="image-title-top">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Focused</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 해당 탭에 포커스한 상태입니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Enabled</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 해당 탭에 포커스하거나, 선택하지 않은 일반적인 상태입니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Selected</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 해당 탭을 선택한 상태입니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">4. Disabled</span>
+                          <div class="text-box">
+                            <p class="text">선택 불가능한 탭 상태입니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // States -->
+          <!-- Layout -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Layout</h2>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">타입에 따라 각각의 탭이 위치하는 레이아웃이 상이합니다.</p>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-content-box  type2">
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">A</span></span>
+                      <span class="text">Block Tab</span>
+                    </div>
+                    <div class="image-box">
+                      <img src="../../../assets/images/web/components/Tabs/Mass_tab_5.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="image-content-box  type2">
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">B</span></span>
+                      <span class="text">Page Tab</span>
+                    </div>
+                    <div class="image-box">
+                      <img src="../../../assets/images/web/components/Tabs/Mass_tab_6.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Layout -->
+          <!-- Types -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Types</h2>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">
+                    각각의 탭은 선택 가능한 버튼으로 디자인되며, 보통 가로 형태로 위치합니다.<br />탭이 사용되는
+                      위치에 따라 타입을 나눕니다. 블록에는 블록 탭, 페이지에는 페이지 탭 형태를 사용합니다.
+                  </p>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box no-border">
+                        <div class="image-box">
+                          <img src="../../../assets/images/web/components/Tabs/Mass_tab_7.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">A. Block Tab</span>
+                          <div class="text-box">
+                            <p class="text">블록 내에 Tab 기능이 필요할 경우 사용합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">B. Page Tab</span>
+                          <div class="text-box">
+                            <p class="text">페이지 내에 Tab 기능이 필요할 경우 사용합니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Types -->
+          <!-- Usage -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Usage</h2>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">
+                    각 탭은 탭 레이블을 가지고 있으며, 사용자가 선택할 수 있도록 합니다. 탭의 모양은 일관성을 유지해야
+                    합니다.<br />사용자가 다른 탭 사이를 전환할 때 혼동되지 않도록 디자인 해야 합니다.
+                  </p>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <ul class="sub-number-desc-list-box">
+                    <li class="sub-number-desc-list">
+                      <span><strong>하나의 탭 모음은 하나의 열에만 위치해야 합니다.</strong></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="content-box">
+                  <div class="color-box   do">
+                    <div class="image-box">
+                      <img src="../../../assets/images/web/components/Tabs/Mass_tab_8.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Do</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">하나의 열에 탭을 배치합니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="color-box   dont">
+                    <div class="image-box">
+                      <img src="../../../assets/images/web/components/Tabs/Mass_tab_9.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Don't</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">탭을 여러 줄로 배치하지 않습니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <ul class="sub-number-desc-list-box">
+                    <li class="sub-number-desc-list">
+                      <span
+                          ><strong
+                            >탭의 명칭은 간결하고 명확하며 해당 탭을 잘 대표하는 용어로 작성되어야 합니다.</strong
+                          ></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="content-box">
+                  <div class="color-box   do">
+                    <div class="image-box">
+                      <img src="../../../assets/images/web/components/Tabs/Mass_tab_10.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Do</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">간결한 명칭을 사용합니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="color-box   dont">
+                    <div class="image-box">
+                      <img src="../../../assets/images/web/components/Tabs/Mass_tab_11.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Don't</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">불명확하거나 혼동을 줄 수 있는 문구를 사용하면 사용자가 원하는 컨텐츠를 찾기 어려워질 수 있습니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Usage -->
         </div>
       </div>
     </main>
+    <!-- Quick Menu -->
+    <div class="quick-menu-container">
+      <div class="quick-menu-area">
+        <ul class="quick-menu-list-box">
+          <li class="quick-menu-list">
+            <span class="list-title">Anatomy</span>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">States</span>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Layout</span>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Types</span>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Usage</span>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- Footer -->
     <footer class="footer-container">
       <div class="footer-area">

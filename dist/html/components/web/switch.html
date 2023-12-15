@@ -156,6 +156,9 @@
                 <a href="../../components/ios/badges.html" class="lnb-sub-link"><span class="text">Badges</span></a>
               </li>
               <li class="lnb-sub-list ">
+                <a href="../../components/ios/block.html" class="lnb-sub-link"><span class="text">Block</span></a>
+              </li>
+              <li class="lnb-sub-list ">
                 <a href="../../components/ios/buttons.html" class="lnb-sub-link"><span class="text">Buttons</span></a>
               </li>
               <li class="lnb-sub-list ">
@@ -184,9 +187,6 @@
               </li>
               <li class="lnb-sub-list ">
                 <a href="../../components/ios/ime.html" class="lnb-sub-link"><span class="text">IME</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="../../components/ios/list_cards.html" class="lnb-sub-link"><span class="text">List Cards</span></a>
               </li>
               <li class="lnb-sub-list ">
                 <a href="../../components/ios/loading.html" class="lnb-sub-link"><span class="text">Loading</span></a>
@@ -263,7 +263,7 @@
                 <a href="../../components/web/dock.html" class="lnb-sub-link"><span class="text">Dock</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/web/flag.html" class="lnb-sub-link"><span class="text">Flag</span></a>
+                <a href="../../components/web/flag.html" class="lnb-sub-link"><span class="text">Flags</span></a>
               </li>
               <li class="lnb-sub-list ">
                 <a href="../../components/web/gnb.html" class="lnb-sub-link"><span class="text">GNB</span></a>
@@ -301,10 +301,347 @@
     <main class="main">
       <div class="main-container">
         <div class="main-area">
-          <img src="../../../assets/images/temp/mass_component_switch.png" alt="" style="width: 100%" />
+          <div class="heading-container">
+            <div class="heading-area">
+              <div class="heading-top">
+                <div class="title-box">
+                  <h1 class="title">Switch</h1>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">스위치는 기능의 상태의 전환이 필요할 때, 기능을 ON/OFF 하기 위해 사용합니다.</p>
+                </div>
+                <div class="desc-box">
+                  <ul class="sub-number-desc-list-box">
+                    <li class="sub-number-desc-list">
+                      <span>사용자가 선택하지 않아도 기본적으로 선택되어 있는 디폴트 옵션을 항상 제공합니다. </span>
+                    </li>
+                    <li class="sub-number-desc-list">
+                      <span>사용자가 선택값을 변경하면, Confirm 과정 없이 바로 적용합니다.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Anatomy -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Anatomy</h2>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">컴포넌트에 포함되는 요소에 대한 정의입니다.</p>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box no-border">
+                        <div class="image-box">
+                          <img src="../../../assets/images/web/components/Switch/Mass_switch_1.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Track</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Thumb</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Text (optional)</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box no-border">
+                        <div class="image-box">
+                          <img src="../../../assets/images/web/components/Switch/Mass_switch_2.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Track</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Thumb</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Container</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">4. Text</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Anatomy -->
+          <!-- States -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">States</h2>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">
+                    스위치의 선택 값에 따라 시각적인 피드백을 제공해야 합니다. On/off 의 명확한 시각적 구분을 제공하여
+                    사용자에게 현재 상태를 알려줘야 합니다. Focus 여부에 따라 적용되는 디자인이 달라집니다.
+                  </p>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-content-box  type2">
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">A</span></span>
+                      <span class="text">Toggle Switch</span>
+                    </div>
+                    <div class="image-box">
+                      <img src="../../../assets/images/web/components/Switch/Mass_switch_3.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="image-content-box  type2">
+                    <div class="image-text-box">
+                      <span class="circle"><span class="number">B</span></span>
+                      <span class="text">Button Switch</span>
+                    </div>
+                    <div class="image-box">
+                      <img src="../../../assets/images/web/components/Switch/Mass_switch_4.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="image-title-box reverse">
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. On Focused</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 해당 옵션에 포커스 했고, 선택한 상태입니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Off Focused</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 해당 옵션에 포커스 했고, 선택하지 않은 상태입니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. On Enabled</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 해당 옵션을 선택한 상태입니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">4. Off Enabled</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 해당 옵션을 선택하지 않은 상태입니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">5. Disabled</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 해당 옵션을 선택하지 않은 상태입니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // States -->
+          <!-- Style -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Style</h2>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">2가지 버튼 스타일이 있으며, 화면 구성에 따라 적절한 스타일로 사용합니다.</p>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box no-border">
+                        <div class="image-box">
+                          <img src="../../../assets/images/web/components/Switch/Mass_switch_5.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">A. Toggle Switch</span>
+                          <div class="text-box">
+                            <p class="text">On/Off 기능의 경우 toggle형을 사용합니다. </p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">B. Button Switch</span>
+                          <div class="text-box">
+                            <p class="text">설명되어야 하는 텍스트가 길 경우 button형을 사용합니다. </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Style -->
+          <!-- Usage -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Usage</h2>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">
+                    동일한 플랫폼 내에서 체크 박스의 디자인은 일관성을 유지해야 합니다. 동일한 플랫폼 또는 앱 내에서
+                    모든 체크 박스는 비슷한 모양, 크기, 스타일을 가져야 합니다. 이는 사용자들이 체크 박스를 쉽게
+                    인식하고 이해할 수 있도록 도움을 줄 것입니다.
+                  </p>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <ul class="sub-number-desc-list-box">
+                    <li class="sub-number-desc-list">
+                      <span
+                          ><strong>사용자에게 스위치의 명확한 기능 설명을 위해 Title을 같이 배치합니다.</strong></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="content-box">
+                  <div class="color-box   do">
+                    <div class="image-box">
+                      <img src="../../../assets/images/web/components/Switch/Mass_switch_6.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Do</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">어떤 기능에 관련된 스위치인지 알 수 있도록 합니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="color-box   dont">
+                    <div class="image-box">
+                      <img src="../../../assets/images/web/components/Switch/Mass_switch_7.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Don't</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc">스위치만 단독으로 사용하면 기능을 파악할 수 없습니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <ul class="sub-number-desc-list-box">
+                    <li class="sub-number-desc-list">
+                      <span><strong>On/Off의 뉘앙스가 있는 요소 외에는 스위치를 사용하지 않습니다.</strong></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="content-box">
+                  <div class="color-box   do">
+                    <div class="image-box">
+                      <img src="../../../assets/images/web/components/Switch/Mass_switch_8.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Do</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="color-box   dont">
+                    <div class="image-box">
+                      <img src="../../../assets/images/web/components/Switch/Mass_switch_9.png" alt="" />
+                    </div>
+                    <div class="color-text-box">
+                      <div class="color-title-box">
+                        <span class="color-title">Don't</span>
+                      </div>
+                      <div class="color-desc-box">
+                        <p class="color-desc"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Usage -->
         </div>
       </div>
     </main>
+    <!-- Quick Menu -->
+    <div class="quick-menu-container">
+      <div class="quick-menu-area">
+        <ul class="quick-menu-list-box">
+          <li class="quick-menu-list">
+            <span class="list-title">Anatomy</span>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">States</span>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Style</span>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Usage</span>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- Footer -->
     <footer class="footer-container">
       <div class="footer-area">

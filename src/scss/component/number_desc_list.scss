@@ -28,8 +28,16 @@
     margin-left: 0;
   }
 }
+.sub-number-desc-list-box {
+  margin-left: 1.8rem;
+  .heading-container & {
+    margin-left: 0;
+  }
+}
 .sub-number-desc-list {
   display: flex;
+  font-family: 'SK_Btv';
+  @include font(1.6rem, 500, #4a4a4a, 2.8rem);
   &::before {
     content: '';
     display: block;
@@ -41,6 +49,9 @@
     margin: 0 1rem 0 0.4rem;
     border-radius: 50%;
     background-color: #4a4a4a;
+  }
+  .heading-container & {
+    @include font(1.8rem, 500, #242424, 3rem);
   }
   strong {
     font-weight: 700;

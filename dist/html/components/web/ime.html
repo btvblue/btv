@@ -156,6 +156,9 @@
                 <a href="../../components/ios/badges.html" class="lnb-sub-link"><span class="text">Badges</span></a>
               </li>
               <li class="lnb-sub-list ">
+                <a href="../../components/ios/block.html" class="lnb-sub-link"><span class="text">Block</span></a>
+              </li>
+              <li class="lnb-sub-list ">
                 <a href="../../components/ios/buttons.html" class="lnb-sub-link"><span class="text">Buttons</span></a>
               </li>
               <li class="lnb-sub-list ">
@@ -184,9 +187,6 @@
               </li>
               <li class="lnb-sub-list active">
                 <a href="../../components/ios/ime.html" class="lnb-sub-link"><span class="text">IME</span></a>
-              </li>
-              <li class="lnb-sub-list ">
-                <a href="../../components/ios/list_cards.html" class="lnb-sub-link"><span class="text">List Cards</span></a>
               </li>
               <li class="lnb-sub-list ">
                 <a href="../../components/ios/loading.html" class="lnb-sub-link"><span class="text">Loading</span></a>
@@ -263,7 +263,7 @@
                 <a href="../../components/web/dock.html" class="lnb-sub-link"><span class="text">Dock</span></a>
               </li>
               <li class="lnb-sub-list ">
-                <a href="../../components/web/flag.html" class="lnb-sub-link"><span class="text">Flag</span></a>
+                <a href="../../components/web/flag.html" class="lnb-sub-link"><span class="text">Flags</span></a>
               </li>
               <li class="lnb-sub-list ">
                 <a href="../../components/web/gnb.html" class="lnb-sub-link"><span class="text">GNB</span></a>
@@ -301,10 +301,144 @@
     <main class="main">
       <div class="main-container">
         <div class="main-area">
-          <img src="../../../assets/images/temp/mass_component_ime.png" alt="" style="width: 100%" />
+          <div class="heading-container">
+            <div class="heading-area">
+              <div class="heading-top">
+                <div class="title-box">
+                  <h1 class="title">IME</h1>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">텍스트 입력이 필요한 경우 제공되는 화상 키보드입니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Anatomy -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Anatomy</h2>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">컴포넌트에 포함되는 요소에 대한 정의입니다.</p>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-content-box no-border">
+                    <div class="image-box">
+                      <img src="../../../assets/images/web/components/IME/Mass_ime_1.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box no-border">
+                        <div class="image-box">
+                          <img src="../../../assets/images/web/components/IME/Mass_ime_2.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">1. Character</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 선택한 입력 소스(한글, 영어, 숫자)를 표시합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">2. Segmented Control</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 현재 사용하고있는 입력 소스를 나타내고 전환합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">3. Button Area</span>
+                          <div class="text-box">
+                            <p class="text">사용자가 입력한 문자를 편집하는데 사용합니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">4. Container</span>
+                          <div class="text-box">
+                            <p class="text"></p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Anatomy -->
+          <!-- Types -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Types</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="content-box">
+                  <div class="image-content-box no-border">
+                    <div class="image-box">
+                      <img src="../../../assets/images/web/components/IME/Mass_ime_3.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <div class="image-title-box">
+                    <div class="image-title-top">
+                      <div class="image-content-box no-border">
+                        <div class="image-box">
+                          <img src="../../../assets/images/web/components/IME/Mass_ime_4.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-title-bottom">
+                      <ul class="number-desc-list-box">
+                        <li class="number-desc-list">
+                          <span class="title">A. 3*4</span>
+                          <div class="text-box">
+                            <p class="text">3*4 자판은 3개의 열과 4개의 행으로 구성되어 있고, 각각의 키는 숫자, 숫자, 기호 등의 문자를 나타냅니다.</p>
+                          </div>
+                        </li>
+                        <li class="number-desc-list">
+                          <span class="title">B. qwerty</span>
+                          <div class="text-box">
+                            <p class="text">쿼티 키보드는 가장 많이 사용되는 키보드 레이아웃 중 하나이고, 한글에 최적화된 구성을 가지고 있습니다.
+                              쿼티 자판에는 A부터 Z까지의 알파벳 문자를 나타내는 26개의 키가 포함됩니다.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Types -->
         </div>
       </div>
     </main>
+    <!-- Quick Menu -->
+    <div class="quick-menu-container">
+      <div class="quick-menu-area">
+        <ul class="quick-menu-list-box">
+          <li class="quick-menu-list">
+            <span class="list-title">Anatomy</span>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Types</span>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- Footer -->
     <footer class="footer-container">
       <div class="footer-area">
