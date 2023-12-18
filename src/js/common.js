@@ -120,6 +120,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const quickMenu = document.querySelector('.quick-menu-container');
   const titles = document.querySelectorAll('h2, h3');
+  const wrapper = document.querySelector('.wrapper');
+
+  if (!quickMenu) {
+    wrapper.classList.add('center-align');
+  }
 
   if (quickMenu) {
     const listTitles = quickMenu.querySelectorAll('.list-title, .sub-list-title');

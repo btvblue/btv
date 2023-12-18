@@ -10,6 +10,19 @@ body {
   min-width: 102.4rem;
   min-height: 100vh;
   background-color: #f8f8f8;
+  &.center-align {
+    main,
+    .footer-container {
+      width: calc(100% - 28.6rem);
+      padding-right: 0;
+    }
+    .header-container {
+      .header-right {
+        width: calc(100% - 28.6rem);
+        padding-left: 28.6rem;
+      }
+    }
+  }
 }
 
 main {
@@ -42,7 +55,7 @@ main {
     width: 100%;
     .main-area {
       width: 100%;
-      max-width: 89.6rem;
+      max-width: 96.4rem;
       margin: 0 auto;
     }
   }
@@ -242,9 +255,26 @@ main {
 
 // Responsive :: 1440px
 @media #{$tablet} {
+  .wrapper {
+    &.center-align {
+      main {
+        width: calc(100% - 6rem);
+        padding: 19rem 3rem 10rem;
+      }
+      .footer-container {
+        width: calc(100% - 6rem);
+        padding: 0 3rem;
+      }
+    }
+  }
+
   .main {
     width: calc(100% - 6rem);
     padding: 19rem 3rem 10rem;
+    .footer-container {
+      width: calc(100% - 6rem);
+      padding: 0 3rem;
+    }
 
     &.principle {
       padding-top: 15rem;
@@ -252,6 +282,7 @@ main {
     .main-container {
       .main-area {
         width: 100%;
+        // max-width: unset;
         box-sizing: border-box;
       }
     }

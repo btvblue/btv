@@ -14,13 +14,12 @@
   }
   .header-left {
     position: absolute;
-    min-width: 43.4rem;
     padding-left: 4rem;
   }
 
   .header-right {
     width: calc(100% - 57.2rem);
-    padding-left: 32.6rem;
+    padding-left: 28.6rem;
   }
 
   .header-logo-link {
@@ -37,18 +36,20 @@
   .header-menu-list-box {
     @include flex(row, flex-start, center);
     position: relative;
-    left: -4rem;
-    width: 97.6rem;
+    width: 100%;
+    max-width: 96.4rem;
     margin: 0 auto;
 
     .header-menu-list {
       opacity: 0.5;
-      margin: 0 4rem;
       &.active {
         opacity: 1;
         .header-menu-link {
           font-weight: 600;
         }
+      }
+      & + .header-menu-list {
+        margin-left: 8rem;
       }
       .header-menu-link {
         @include font(2rem, 300, $white, 2.4rem);
