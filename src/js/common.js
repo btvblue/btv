@@ -21,21 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
       // 메뉴 펼침 //
       if (lnbContainer.style.display === 'none') {
         slideDown(lnbContainer, 400);
+        target.classList.add('active');
         lnbContainer.classList.add('expand');
-        target.querySelector('img').setAttributes({
-          src: '../../../assets/images/btn_close_menu_nor.svg',
-          alt: '메뉴 닫기',
-        });
         document.body.classList.add('body-lock');
       }
       // 메뉴 접음 //
       else {
         slideUp(lnbContainer, 400);
+        target.classList.remove('active');
         lnbContainer.classList.remove('expand');
-        target.querySelector('img').setAttributes({
-          src: '../../../assets/images/btn_open_menu_nor.svg',
-          alt: '메뉴 열기',
-        });
         document.body.classList.remove('body-lock');
       }
     }
@@ -195,10 +189,6 @@ function setLnbPosition(width, breakPoint) {
     lnbContainer.style.display = 'none';
     lnbContainer.style.boxSizing = 'border-box';
     lnbContainer.classList.remove('expand');
-    btnMenu.querySelector('img').setAttributes({
-      src: '../../../assets/images/btn_open_menu_nor.svg',
-      alt: '메뉴 열기',
-    });
   }
   // PC //
   else {

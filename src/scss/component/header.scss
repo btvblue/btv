@@ -59,16 +59,41 @@
 
   .menu-button-box {
     display: none;
-
-    .btn-menu {
-      width: 5.2rem;
-      height: 5.2rem;
-      border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.3);
-      transition: background 0.1s;
-
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.6);
+  }
+  .btn-menu {
+    position: relative;
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background 0.1s;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 3.2rem;
+      height: 3.2rem;
+      transform: translate(-50%, -50%);
+    }
+    &::before {
+      display: block;
+      background: asset-image('btn_open_menu_nor.svg');
+    }
+    &::after {
+      display: none;
+      background: asset-image('btn_close_menu_nor.svg');
+    }
+    &.active {
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: block;
       }
     }
   }
