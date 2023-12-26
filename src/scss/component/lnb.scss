@@ -19,7 +19,7 @@
 
     &::-webkit-scrollbar-track {
       // 전체
-      background: $purple;
+      background: $white;
     }
   }
 
@@ -262,8 +262,12 @@
     display: none;
     width: 100%;
     height: calc(100% - 9.3rem);
-    box-shadow: 0px 0px 4rem rgba(112, 112, 112, 0.4);
     background: rgba(0, 0, 0, 0);
+    * {
+      &::-webkit-scrollbar-track {
+        background-color: $purple;
+      }
+    }
 
     .lnb-area {
       height: 100%;
