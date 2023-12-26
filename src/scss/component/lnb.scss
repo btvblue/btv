@@ -19,8 +19,7 @@
 
     &::-webkit-scrollbar-track {
       // 전체
-      background: transparent;
-      border-radius: 3.2rem;
+      background: $purple;
     }
   }
 
@@ -262,22 +261,23 @@
   .lnb-container {
     display: none;
     width: 100%;
-    height: auto;
-    background-color: $purple;
+    height: calc(100% - 9.3rem);
     box-shadow: 0px 0px 4rem rgba(112, 112, 112, 0.4);
+    background: rgba(0, 0, 0, 0);
 
     .lnb-area {
-      height: auto;
+      height: 100%;
       padding: 0;
       border-right: none;
+      background: rgba(0, 0, 0, 0);
     }
 
     .lnb-list-box {
       height: auto;
-      max-height: calc(100dvh - 7.1rem);
       padding-right: 0;
       padding: 0 3rem;
       box-sizing: border-box;
+      background-color: $purple;
     }
 
     /* LNB LIST */
@@ -327,7 +327,6 @@
 
     /* LNB SUB LIST */
     .lnb-sub-list-box {
-      max-height: calc(100dvh - 13.2rem);
       padding: 1rem 0;
       border-top: 1px solid rgba($white, 0.1);
     }
