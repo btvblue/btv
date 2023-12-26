@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const lnbHide = document.querySelector('.lnb-hide');
+  if (lnbHide) {
+    lnbHide.addEventListener('click', (event) => {
+      const target = event.target.closest('.lnb-hide');
+      const targetParent = target.closest('.lnb-container');
+      targetParent.classList.remove('expand');
+      document.body.classList.remove('body-lock');
+      slideUp(targetParent, 400);
+      btnMenu.classList.remove('active');
+    });
+  }
+
   const breakPoint = 1468;
 
   // Header //
@@ -34,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
-
   // LNB Dropdown //
   const lnbContainer = document.querySelector('.lnb-container');
   const openBtns = lnbContainer.querySelectorAll('.btn-open');
