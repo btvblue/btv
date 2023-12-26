@@ -83,43 +83,6 @@
                   <li id="platform_web"><a href="../../foundation/web/foundation.html">Android TV OS</a></li>
                 </ul>
               </div>
-              <script>
-                document.addEventListener('DOMContentLoaded', () => {
-                  if (window.location.href.includes('ios')) {
-                    document.getElementById('platform_ios').classList.add('active');
-                    document.getElementById('lnb_select_label').innerText = 'Apple TV OS';
-                    document.getElementById('platform_ios_list').style.display = 'block';
-                    document.getElementById('platform_web_list').style.display = 'none';
-                  }
-                  if (window.location.href.includes('web')) {
-                    document.getElementById('platform_web').classList.add('active');
-                    document.getElementById('lnb_select_label').innerText = 'Android TV OS';
-                    document.getElementById('platform_ios_list').style.display = 'none';
-                    document.getElementById('platform_web_list').style.display = 'block';
-                  }
-                  if (
-                    window.location.href.includes('components/web/checkbox') ||
-                    window.location.href.includes('components/web/radio') ||
-                    window.location.href.includes('components/web/switch')
-                  ) {
-                    document.getElementById('platform_web_components_controls').style.display = 'block';
-                  }
-                  if (window.location.href.includes('components/web')) {
-                    if (window.location.href.includes('components/web/components')) {
-                      document.getElementById('platform_web_components').style.display = 'none';
-                    } else {
-                      document.getElementById('platform_web_components').style.display = 'block';
-                    }
-                  }
-                  if (window.location.href.includes('foundation/web')) {
-                    if (window.location.href.includes('foundation/web/foundation')) {
-                      document.getElementById('platform_web_foundation').style.display = 'none';
-                    } else {
-                      document.getElementById('platform_web_foundation').style.display = 'block';
-                    }
-                  }
-                });
-              </script>
             </div>
           </div>
         </ul>
@@ -296,6 +259,43 @@
           </li>
         </ul>
       </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          if (window.location.href.includes('ios')) {
+            document.getElementById('platform_ios').classList.add('active');
+            document.getElementById('lnb_select_label').innerText = 'Apple TV OS';
+            document.getElementById('platform_ios_list').style.display = 'block';
+            document.getElementById('platform_web_list').style.display = 'none';
+          }
+          if (window.location.href.includes('web')) {
+            document.getElementById('platform_web').classList.add('active');
+            document.getElementById('lnb_select_label').innerText = 'Android TV OS';
+            document.getElementById('platform_ios_list').style.display = 'none';
+            document.getElementById('platform_web_list').style.display = 'block';
+          }
+          if (
+            window.location.href.includes('components/web/checkbox') ||
+            window.location.href.includes('components/web/radio') ||
+            window.location.href.includes('components/web/switch')
+          ) {
+            document.getElementById('platform_web_components_controls').style.display = 'block';
+          }
+          if (window.location.href.includes('components/web')) {
+            if (window.location.href.includes('components/web/components')) {
+              document.getElementById('platform_web_components').style.display = 'none';
+            } else {
+              document.getElementById('platform_web_components').style.display = 'block';
+            }
+          }
+          if (window.location.href.includes('foundation/web')) {
+            if (window.location.href.includes('foundation/web/foundation')) {
+              document.getElementById('platform_web_foundation').style.display = 'none';
+            } else {
+              document.getElementById('platform_web_foundation').style.display = 'block';
+            }
+          }
+        });
+      </script>
     </div>
     <!-- Components | Flags -->
     <main class="main">

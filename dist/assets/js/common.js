@@ -116,10 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const titles = document.querySelectorAll('h2, h3');
   const wrapper = document.querySelector('.wrapper');
 
-  if (!quickMenu) {
-    wrapper.classList.add('center-align');
-  }
-
   if (quickMenu) {
     const listTitles = quickMenu.querySelectorAll('.list-title, .sub-list-title');
 
@@ -153,6 +149,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     });
+  } else {
+    wrapper.classList.add('center-align');
   }
 
   // 콘텐츠 로드 완료, 리사이징 될 때 퀵메뉴가 콘텐츠와 겹치지 않도록 재설정 한다. //
