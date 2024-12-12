@@ -77,11 +77,11 @@
           </li>
           <div class="lnb-select">
             <div class="lnb-select-box">
-              <span id="lnb_select_label">Apple TV OS</span>
+              <span id="lnb_select_label">iOS</span>
               <div>
                 <ul>
-                  <li id="platform_ios"><a href="../../foundation/ios/foundation.html">Apple TV OS</a></li>
-                  <li id="platform_web"><a href="../../foundation/web/foundation.html">Android TV OS</a></li>
+                  <li id="platform_ios"><a href="../../foundation/ios/foundation.html">iOS</a></li>
+                  <li id="platform_web"><a href="../../foundation/web/foundation.html">Web UI</a></li>
                 </ul>
               </div>
             </div>
@@ -264,13 +264,13 @@
         document.addEventListener('DOMContentLoaded', () => {
           if (window.location.href.includes('ios')) {
             document.getElementById('platform_ios').classList.add('active');
-            document.getElementById('lnb_select_label').innerText = 'Apple TV OS';
+            document.getElementById('lnb_select_label').innerText = 'iOS';
             document.getElementById('platform_ios_list').style.display = 'block';
             document.getElementById('platform_web_list').style.display = 'none';
           }
           if (window.location.href.includes('web')) {
             document.getElementById('platform_web').classList.add('active');
-            document.getElementById('lnb_select_label').innerText = 'Android TV OS';
+            document.getElementById('lnb_select_label').innerText = 'Web UI';
             document.getElementById('platform_ios_list').style.display = 'none';
             document.getElementById('platform_web_list').style.display = 'block';
           }
@@ -310,9 +310,9 @@
                 </div>
                 <div class="desc-box">
                   <p class="desc">
-                    시각적 일관성을 유지하기 위한 프레임워크를 제공하는 구조적 템플릿으로 시각적 그리드, 간격 및
-                    구획을 정의하여 정보 및 UI 요소를 표시하기 위한 구조를 설정합니다. TV 서비스에서 정보 및 콘텐츠가
-                    최적화되어 보이도록 레이아웃을 디자인할 때 각별히 주의해야 합니다.
+                    시각적 일관성을 유지하기 위한 프레임워크를 제공하는 구조적 템플릿으로 시각적 그리드, 간격을
+                    정의하여 정보 및 UI 요소를 표시하기 위한 구조를 설정합니다. 정보 및 콘텐츠가 최적화되어 보일 수
+                    있게 구성합니다.
                   </p>
                 </div>
               </div>
@@ -345,7 +345,8 @@
                       <ul class="number-desc-list-box">
                         <li class="number-desc-list">
                           <div class="text-box">
-                            <p class="text">웹이나 모바일과 달리 TV의 화면 비율은 16:9로 고정되어 있으며, 제작 시 기준 해상도는 1920 x 1080 px로 제작합니다.<br />이렇게                          하면 HD 또는 4K 화면에 맞게 모든 요소의 크기를 비례적으로 조정할 수 있습니다. <br />플랫폼별로 Android 960 x 540, iOS/Web 1920 x 1080로 디자인합니다. </p>
+                            <p class="text">웹이나 모바일과 달리 TV의 화면 비율은 16:9로 고정되어 있습니다.
+                              해상도는 1920 x 1080 px를 기본으로 하며, tv 환경에 따라 요소들의 크기를 비례적으로 조정합니다.</p>
                           </div>
                         </li>
                       </ul>
@@ -359,18 +360,10 @@
                         <div class="image-box">
                           <img src="../../../assets/images/ios/foundation/layout/layout_image_03.png" alt="" />
                         </div>
-                        <div class="image-text-box">
-                          <span class="circle"><span class="number">1</span></span>
-                          <span class="text">Safe Zone</span>
-                        </div>
                       </div>
                       <div class="image-content-box ">
                         <div class="image-box">
                           <img src="../../../assets/images/ios/foundation/layout/layout_image_04.png" alt="" />
-                        </div>
-                        <div class="image-text-box">
-                          <span class="circle"><span class="number">2</span></span>
-                          <span class="text">Contents Area</span>
                         </div>
                       </div>
                     </div>
@@ -379,7 +372,7 @@
                         <li class="number-desc-list">
                           <div class="text-box">
                             <p class="text">TV 레이아웃은 상하좌우 가장자리에 여백을 통해 베젤을 통해 콘텐츠 영역이 잘리지 않도록 디자인합니다.
-                              이것을 세이프 존이라고 합니다. 콘텐츠와 정보를 안전하게 유지하려면 5% 여백 레이아웃을 사용하는 것을 권장합니다.</p>
+                              콘텐츠와 정보를 안전하게 유지하여 화면 내 5%의 여백 레이아웃을 사용하는 것을 권장합니다.</p>
                           </div>
                         </li>
                       </ul>
@@ -387,29 +380,29 @@
                   </div>
                 </div>
                 <div class="content-box">
-                  <div class="color-box   do">
+                  <div class="color-box   ">
                     <div class="image-box">
                       <img src="../../../assets/images/ios/foundation/layout/layout_image_05.png" alt="" />
                     </div>
                     <div class="color-text-box">
                       <div class="color-title-box">
-                        <span class="color-title">Do</span>
+                        <span class="color-title"></span>
                       </div>
                       <div class="color-desc-box">
-                        <p class="color-desc">일관된 그리드 시스템을 유지합니다.</p>
+                        <p class="color-desc">그리드를 통해 화면 전반에 일관된 레이아웃을 제공합니다.</p>
                       </div>
                     </div>
                   </div>
-                  <div class="color-box   dont">
+                  <div class="color-box   ">
                     <div class="image-box">
                       <img src="../../../assets/images/ios/foundation/layout/layout_image_06.png" alt="" />
                     </div>
                     <div class="color-text-box">
                       <div class="color-title-box">
-                        <span class="color-title">Don't</span>
+                        <span class="color-title"></span>
                       </div>
                       <div class="color-desc-box">
-                        <p class="color-desc">통일된 그리드가 없다면 프로덕트 전반에 걸쳐 만족스러운 구성을 지속하기 어렵습니다.</p>
+                        <p class="color-desc">사용자에게 혼란스러움을 줄 수 있는 화면마다 다른 그리드 구성은 지양합니다.</p>
                       </div>
                     </div>
                   </div>
@@ -427,9 +420,9 @@
                 </div>
                 <div class="desc-box">
                   <div class="desc">
-                    8-Point Grid의 기본 단위는 4와 8의 배수에 기반한 8가지로 규정하여 사용합니다.
+                    최적화된 화면 크기와 해상도에 대응을 위해 그리드의 단위를 2의 배수로 사용합니다.
                     <br />
-                      8의 배수는 가장 큰 기본 배수이며 8이 포함하고 있는 2와 4의 배수도 사용 가능합니다.
+                      2의 배수로 된 유닛은 정확한 정렬과 스케일링, 다양한 레이아웃을 쉽게 구성할 수 있습니다.
                   </div>
                 </div>
               </div>
@@ -448,7 +441,10 @@
                         <h3 class="title">Thumbnail</h3>
                       </div>
                       <div class="desc-box">
-                        <p class="desc">콘텐츠간 간격은 일정하게 배치합니다.</p>
+                        <p class="desc">
+                          블록 내 크기, 형태, 위치를 일정하게 유지하며, 떨어진 거리에서도 요소들이 명확히 보일 수 있게
+                          구성합니다.
+                        </p>
                       </div>
                     </div>
                     <div class="sub-content-bottom">
@@ -463,29 +459,6 @@
                         <div class="image-content-box ">
                           <div class="image-box">
                             <img src="../../../assets/images/ios/foundation/layout/layout_image_09.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
-                        <h3 class="title">Block</h3>
-                      </div>
-                      <div class="desc-box">
-                        <p class="desc">
-                          블록 내 간격은 일정하게 배치되며, 블록 간 간격 또한 일정한 값으로 배치되는 것을 권장합니다.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
-                        <div class="image-content-box ">
-                          <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/layout/layout_image_010.png" alt="" />
                           </div>
                         </div>
                       </div>
@@ -528,7 +501,7 @@
                       <div class="content-box">
                         <div class="image-content-box ">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/layout/layout_image_011.png" alt="" />
+                            <img src="../../../assets/images/ios/foundation/layout/layout_image_010.png" alt="" />
                           </div>
                         </div>
                       </div>
@@ -552,7 +525,7 @@
                       <div class="content-box">
                         <div class="image-content-box ">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/layout/layout_image_012.png" alt="" />
+                            <img src="../../../assets/images/ios/foundation/layout/layout_image_011.png" alt="" />
                           </div>
                         </div>
                       </div>
@@ -576,7 +549,7 @@
                       <div class="content-box">
                         <div class="image-content-box ">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/layout/layout_image_013.png" alt="" />
+                            <img src="../../../assets/images/ios/foundation/layout/layout_image_012.png" alt="" />
                           </div>
                         </div>
                       </div>
@@ -596,18 +569,17 @@
                 </div>
                 <div class="desc-box">
                   <div class="desc">
-                    레이아웃 영역은 스크린과 컴포넌트 사이의 마진을 정의하며, 유사한 기능을 공유하는 요소 및 구성
-                    요소로 구성됩니다.<br />
-                      또한 레이아웃 영역은 카드와 같은 더 작은 컨테이너를 그룹화할 수도 있습니다.
+                    콘텐츠를 효과적으로 표시하기 위해 크게 프리뷰 영역, GNB 영역, 콘텐츠 블록 영역으로 구성됩니다.<br />
+                      각 요소는 사용자의 시청거리, 리모컨 조작, 콘텐츠의 가시성 등을 고려하여 설계됩니다.<br />
+                      레이아웃은 컴포넌트에 따라 세분화하여 작은 그룹들로 구성될 수 있습니다.
                   </div>
-                  <div class="desc grey">화면 레이아웃에는 세 가지 주요 영역이 있습니다.</div>
                 </div>
               </div>
               <div class="content-bottom">
                 <div class="content-box">
                   <div class="image-content-box ">
                     <div class="image-box">
-                      <img src="../../../assets/images/ios/foundation/layout/layout_image_014.png" alt="" />
+                      <img src="../../../assets/images/ios/foundation/layout/layout_image_013.png" alt="" />
                     </div>
                   </div>
                 </div>
@@ -618,7 +590,34 @@
                         <h3 class="title">Block Area</h3>
                       </div>
                       <div class="desc-box">
-                        <p class="desc">TV 콘텐츠와 블록들이 배치되는 영역입니다.</p>
+                        <p class="desc">
+                          콘텐츠 블록들이 일관성있게 나열되어 사용자가 쉽게 이해하고 탐색할 수 있게 구조화된
+                          영역입니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../../assets/images/ios/foundation/layout/layout_image_014.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Preview Area</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          전체 콘텐츠를 시청하기 전에 빠르고 쉽게 미리볼 수 있는 영역으로 포커스 항목에 따라
+                          전환됩니다.
+                        </p>
                       </div>
                     </div>
                     <div class="sub-content-bottom">
@@ -636,32 +635,12 @@
                   <div class="sub-content-area">
                     <div class="sub-content-top">
                       <div class="title-box">
-                        <h3 class="title">Preview Area</h3>
-                      </div>
-                      <div class="desc-box">
-                        <p class="desc">콘텐츠의 세부적인 프리뷰 내용이 보여지는 영역입니다.</p>
-                      </div>
-                    </div>
-                    <div class="sub-content-bottom">
-                      <div class="content-box">
-                        <div class="image-content-box ">
-                          <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/layout/layout_image_016.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="sub-content-container">
-                  <div class="sub-content-area">
-                    <div class="sub-content-top">
-                      <div class="title-box">
                         <h3 class="title">GNB Area</h3>
                       </div>
                       <div class="desc-box">
                         <p class="desc">
-                          메뉴 이동을 위한 GNB 영역으로, 포커스 시 플렉시블 하게 우측으로 영역이 넓어집니다.
+                          주요 카테고리로 빠르게 접근할 수 있는 네비게이션입니다. 현재 사용자의 위치를 보여주며 포커스
+                          시 우측으로 확장되는 영역입니다.
                         </p>
                       </div>
                     </div>
@@ -669,12 +648,7 @@
                       <div class="content-box">
                         <div class="image-content-box ">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/layout/layout_image_017.png" alt="" />
-                          </div>
-                        </div>
-                        <div class="image-content-box ">
-                          <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/layout/layout_image_018.png" alt="" />
+                            <img src="../../../assets/images/ios/foundation/layout/layout_image_016.png" alt="" />
                           </div>
                         </div>
                       </div>
@@ -697,7 +671,6 @@
             <span class="list-title">Grid Size Unit</span>
             <ul class="quick-menu-sub-list-box">
               <li class="quick-menu-sub-list"><span class="sub-list-title">Thumbnail</span></li>
-              <li class="quick-menu-sub-list"><span class="sub-list-title">Block</span></li>
             </ul>
           </li>
           <li class="quick-menu-list">

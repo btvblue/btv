@@ -77,11 +77,11 @@
           </li>
           <div class="lnb-select">
             <div class="lnb-select-box">
-              <span id="lnb_select_label">Apple TV OS</span>
+              <span id="lnb_select_label">iOS</span>
               <div>
                 <ul>
-                  <li id="platform_ios"><a href="../../foundation/ios/foundation.html">Apple TV OS</a></li>
-                  <li id="platform_web"><a href="../../foundation/web/foundation.html">Android TV OS</a></li>
+                  <li id="platform_ios"><a href="../../foundation/ios/foundation.html">iOS</a></li>
+                  <li id="platform_web"><a href="../../foundation/web/foundation.html">Web UI</a></li>
                 </ul>
               </div>
             </div>
@@ -264,13 +264,13 @@
         document.addEventListener('DOMContentLoaded', () => {
           if (window.location.href.includes('ios')) {
             document.getElementById('platform_ios').classList.add('active');
-            document.getElementById('lnb_select_label').innerText = 'Apple TV OS';
+            document.getElementById('lnb_select_label').innerText = 'iOS';
             document.getElementById('platform_ios_list').style.display = 'block';
             document.getElementById('platform_web_list').style.display = 'none';
           }
           if (window.location.href.includes('web')) {
             document.getElementById('platform_web').classList.add('active');
-            document.getElementById('lnb_select_label').innerText = 'Android TV OS';
+            document.getElementById('lnb_select_label').innerText = 'Web UI';
             document.getElementById('platform_ios_list').style.display = 'none';
             document.getElementById('platform_web_list').style.display = 'block';
           }
@@ -344,6 +344,12 @@
                             채도가 높아 색상이 더 밝고 생생하게 보이기 때문에 다양한 디스플레이 환경 설정에 따라서 색상
                             테스트가 필요합니다.
                         </p>
+                        <p class="desc">
+                          디스플레이 내 색 구현은 주로 RGB(적색, 녹색, 청색) 서브픽셀을 기반으로 합니다. 쿨톤
+                          색상(파란색 계열)은 이 기본 색상에 더 가깝기 <br />때문에 재현이 상대적으로 쉬울 수
+                            있습니다. TV의 색 온도 설정에 따라 전체적인 색조가 달라질 수 있습니다. TV의 화면 조정 시
+                            녹색을 <br />기준으로 하는 경우가 많아, 웜톤 계열의 색상이 더 민감하게 반응할 수 있습니다.
+                        </p>
                       </div>
                     </div>
                     <div class="sub-content-bottom">
@@ -360,7 +366,14 @@
                             <ul class="number-desc-list-box">
                               <li class="number-desc-list">
                                 <div class="text-box">
-                                  <p class="text">모바일이나 웹에서 사용했던 컬러보다 채도를 낮춰서 적용해야 되며, 웜 톤 보다 쿨 톤이 색 번짐이 적어 사용자의 눈 피로도를 줄일 수 있습니다.</p>
+                                  <p class="text">sRGB 및 DCI-P3 색상 영역은 TV 디스플레이가 재현할 수 있는 색상의 스펙트럼을 말하며, sRGB는 가장 널리 사용되는 색상이며
+                                    가장 광범위한 TV 모델과 호환됩니다.</p>
+                                </div>
+                              </li>
+                              <li class="number-desc-list">
+                                <div class="text-box">
+                                  <p class="text">DCI-P3 색상을 사용하면 영상이 더욱 생생하게 나타날 수 있고, DCI-P3에서 만든 콘텐츠는 더 많은 영역의 색상에 적용할 수 있으며,
+                                    콘텐츠는 고급 TV 디스플레이에서만 호환될 수 있습니다.</p>
                                 </div>
                               </li>
                             </ul>
@@ -370,54 +383,29 @@
                       <div class="content-box">
                         <div class="image-title-box">
                           <div class="image-title-top">
-                            <div class="image-content-box ">
+                            <div class="color-box   ">
                               <div class="image-box">
                                 <img src="../../../assets/images/ios/foundation/color/color_image_02.png" alt="" />
                               </div>
+                              <div class="color-text-box">
+                                <div class="color-title-box">
+                                  <span class="color-title"></span>
+                                </div>
+                                <div class="color-desc-box">
+                                  <p class="color-desc">명도 대비가 확실하고 차분한 컬러의 사용을 권장합니다.</p>
+                                </div>
+                              </div>
                             </div>
-                          </div>
-                          <div class="image-title-bottom">
-                            <ul class="number-desc-list-box">
-                              <li class="number-desc-list">
-                                <div class="text-box">
-                                  <p class="text">sRGB 및 DCI-P3 색상 영역은 TV 디스플레이가 재현할 수 있는 색상의 스펙트럼을 말하며, sRGB는 가장 널리 사용되는 색상이며 가장 광범위한 TV 모델과 호환됩니다.</p>
-                                </div>
-                              </li>
-                              <li class="number-desc-list">
-                                <div class="text-box">
-                                  <p class="text">DCI-P3 색상을 사용하면 영상이 더욱 생생하게 나타날 수 있습니다. DCI-P3에서 만든 콘텐츠는 더 많은 영역의 색상에 적용할 수 있으며, 콘텐츠는 고급 TV 디스플레이와만 호환될 수 있습니다.</p>
-                                </div>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="content-box">
-                        <div class="image-title-box">
-                          <div class="image-title-top">
-                            <div class="color-box   do">
+                            <div class="color-box   ">
                               <div class="image-box">
                                 <img src="../../../assets/images/ios/foundation/color/color_image_03.png" alt="" />
                               </div>
                               <div class="color-text-box">
                                 <div class="color-title-box">
-                                  <span class="color-title">Do</span>
+                                  <span class="color-title"></span>
                                 </div>
                                 <div class="color-desc-box">
-                                  <p class="color-desc">명도 대비가 확실하고 차분한 컬러(파랑,보라,회색)의 사용을 권장합니다.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="color-box   dont">
-                              <div class="image-box">
-                                <img src="../../../assets/images/ios/foundation/color/color_image_04.png" alt="" />
-                              </div>
-                              <div class="color-text-box">
-                                <div class="color-title-box">
-                                  <span class="color-title">Don't</span>
-                                </div>
-                                <div class="color-desc-box">
-                                  <p class="color-desc">명도 대비가 정확하지 않고 채도가 높은 컬러의 사용을 지양합니다.</p>
+                                  <p class="color-desc">명도 대비가 확실하고 차분한 컬러의 사용을 권장합니다.</p>
                                 </div>
                               </div>
                             </div>
@@ -439,7 +427,7 @@
                           통일감을 부여하고<br />
                             브랜드 이미지 생성에 중요한 역할을 하므로 컬러 활용 기준을 준수해야 합니다.
                         </p>
-                        <p class="desc grey">
+                        <p class="desc">
                           B tv 콘텐츠 중심의 디자인을 위해서 무분별하게 컬러를 사용하지 않고 명확하게 지정된 컬러를
                           위주로 사용합니다.
                         </p>
@@ -447,55 +435,56 @@
                     </div>
                     <div class="sub-content-bottom">
                       <div class="content-box">
-                        <div class="color-box dark  do">
+                        <div class="color-box   ">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/color/color_image_05.png" alt="" />
+                            <img src="../../../assets/images/ios/foundation/color/color_image_04.png" alt="" />
                           </div>
                           <div class="color-text-box">
                             <div class="color-title-box">
-                              <span class="color-title">Do</span>
+                              <span class="color-title"></span>
                             </div>
                             <div class="color-desc-box">
                               <p class="color-desc">브랜드 컬러를 활용한 3가지 계열 컬러칩 사용을 권장합니다.</p>
                             </div>
                           </div>
                         </div>
-                        <div class="color-box dark  dont">
+                        <div class="color-box   ">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/color/color_image_06.png" alt="" />
+                            <img src="../../../assets/images/ios/foundation/color/color_image_05.png" alt="" />
                           </div>
                           <div class="color-text-box">
                             <div class="color-title-box">
-                              <span class="color-title">Don't</span>
+                              <span class="color-title"></span>
                             </div>
                             <div class="color-desc-box">
                               <p class="color-desc">브랜드 컬러와 관련 없는 컬러 사용을 지양합니다.</p>
                             </div>
                           </div>
                         </div>
-                        <div class="color-box dark  do">
+                        <div class="color-box   ">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/color/color_image_07.png" alt="" />
+                            <img src="../../../assets/images/ios/foundation/color/color_image_06.png" alt="" />
                           </div>
                           <div class="color-text-box">
                             <div class="color-title-box">
-                              <span class="color-title">Do</span>
+                              <span class="color-title"></span>
                             </div>
                             <div class="color-desc-box">
                               <p class="color-desc">버튼 컬러는 메인 브랜드 컬러와 상호보완적이며 주로 보색을 사용합니다.</p>
                             </div>
                           </div>
                         </div>
-                        <div class="color-box dark  caution">
+                        <div class="color-box   ">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/color/color_image_08.png" alt="" />
+                            <img src="../../../assets/images/ios/foundation/color/color_image_07.png" alt="" />
                           </div>
                           <div class="color-text-box">
                             <div class="color-title-box">
-                              <span class="color-title">Caution</span>
+                              <span class="color-title"></span>
                             </div>
                             <div class="color-desc-box">
-                              <p class="color-desc">TV 다크 테마에서는 브랜드 컬러의 저채도 컬러와 포인트 컬러를 목적에 맞도록 적절하게 적용하여 계층 간의 구조를 명확히 합니다.</p>
+                              <p class="color-desc">TV 다크 테마에서는 브랜드 컬러의 저채도 컬러와 포인트 컬러를
+                                목적에 맞도록 적절하게 적용하여 계층 간의 구조를 명확히 합니다.</p>
                             </div>
                           </div>
                         </div>
@@ -512,11 +501,8 @@
                       <div class="desc-box">
                         <p class="desc">
                           TV 스크린은 대비가 높아 색상이 더 밝고 생생하게 보이기 때문에 화이트 컬러가 특히 더 밝게
-                          보이게 됩니다. 이러한 이유로 사용자의 시각적인 피로도를 높일 수 있는 트루
-                          화이트(#FFFFFF)대신 라이트 그레이(#F5F5F5) 사용을 권장합니다.
-                        </p>
-                        <p class="desc grey">
-                          Apple tv에서 서비스 중인 B tv에서는 라이트 그레이(#F5F5F5)를 사용하고 있습니다.
+                          보이게 됩니다. 이러한 이유로 사용자의 <br />
+                            시각적인 피로도를 줄일 수 있도록 명도를 조정하여 사용하는 것을 권장합니다.
                         </p>
                       </div>
                     </div>
@@ -524,7 +510,7 @@
                       <div class="content-box">
                         <div class="image-content-box ">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/color/color_image_09.png" alt="" />
+                            <img src="../../../assets/images/ios/foundation/color/color_image_08.png" alt="" />
                           </div>
                         </div>
                       </div>
@@ -548,18 +534,18 @@
                       <div class="content-box">
                         <div class="image-content-box ">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/color/color_image_010.png" alt="" />
+                            <img src="../../../assets/images/ios/foundation/color/color_image_09.png" alt="" />
                           </div>
                         </div>
                       </div>
                       <div class="content-box">
-                        <div class="color-box dark  do">
+                        <div class="color-box   ">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/color/color_image_011.png" alt="" />
+                            <img src="../../../assets/images/ios/foundation/color/color_image_010.png" alt="" />
                           </div>
                           <div class="color-text-box">
                             <div class="color-title-box">
-                              <span class="color-title">Do</span>
+                              <span class="color-title"></span>
                             </div>
                             <div class="color-desc-box">
                               <p class="color-desc">다크 테마 UI에 포인트 컬러는 사용자의 눈에 잘 띄도록
@@ -567,43 +553,45 @@
                             </div>
                           </div>
                         </div>
-                        <div class="color-box dark  dont">
+                        <div class="color-box   ">
+                          <div class="image-box">
+                            <img src="../../../assets/images/ios/foundation/color/color_image_011.png" alt="" />
+                          </div>
+                          <div class="color-text-box">
+                            <div class="color-title-box">
+                              <span class="color-title"></span>
+                            </div>
+                            <div class="color-desc-box">
+                              <p class="color-desc">어두운 배경에 지나치게 높은 고 채도의 색상은 빛 번짐 및 시각적인 진동을
+                                유발할 수 있으므로 사용을 지양합니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="color-box   ">
                           <div class="image-box">
                             <img src="../../../assets/images/ios/foundation/color/color_image_012.png" alt="" />
                           </div>
                           <div class="color-text-box">
                             <div class="color-title-box">
-                              <span class="color-title">Don't</span>
-                            </div>
-                            <div class="color-desc-box">
-                              <p class="color-desc">어두운 배경에 지나치게 높은 고 채도의 색상은 빛 번짐 및 시각적인 진동을 유발할 수 있으므로 사용을 지양합니다.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="color-box dark  do">
-                          <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/color/color_image_013.png" alt="" />
-                          </div>
-                          <div class="color-text-box">
-                            <div class="color-title-box">
-                              <span class="color-title">Do</span>
+                              <span class="color-title"></span>
                             </div>
                             <div class="color-desc-box">
                               <p class="color-desc">TV 다크 테마에서 포인트 컬러는 좁은 면적에 사용합니다.</p>
                             </div>
                           </div>
                         </div>
-                        <div class="color-box dark  dont">
+                        <div class="color-box   ">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/color/color_image_014.png" alt="" />
+                            <img src="../../../assets/images/ios/foundation/color/color_image_013.png" alt="" />
                           </div>
                           <div class="color-text-box">
                             <div class="color-title-box">
-                              <span class="color-title">Don't</span>
+                              <span class="color-title"></span>
                             </div>
                             <div class="color-desc-box">
                               <p class="color-desc">TV 다크 테마에서 포인트 컬러를 사용한 면적이 너무 넓으면
-                                사용자에게 시각적인 불편함을 줄 수 있기 때문에 적당한 포인트 컬러의 사용을 권장합니다.</p>
+                                사용자에게 시각적인 불편함을 줄 수 있기 때문에 적당한 포인트 컬러의 사용을
+                                권장합니다.</p>
                             </div>
                           </div>
                         </div>
@@ -643,7 +631,7 @@
                       <div class="content-box">
                         <div class="image-content-box no-border">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/color/color_image_015.png" alt="" />
+                            <img src="../../../assets/images/ios/foundation/color/color_image_014.png" alt="" />
                           </div>
                         </div>
                       </div>
@@ -667,7 +655,7 @@
                       <div class="content-box">
                         <div class="image-content-box no-border">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/color/color_image_016.png" alt="" />
+                            <img src="../../../assets/images/ios/foundation/color/color_image_015.png" alt="" />
                           </div>
                         </div>
                       </div>
@@ -691,7 +679,7 @@
                       <div class="content-box">
                         <div class="image-content-box no-border">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/color/color_image_017.png" alt="" />
+                            <img src="../../../assets/images/ios/foundation/color/color_image_016.png" alt="" />
                           </div>
                         </div>
                       </div>
@@ -715,7 +703,7 @@
                       <div class="content-box">
                         <div class="image-content-box no-border">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/color/color_image_018.png" alt="" />
+                            <img src="../../../assets/images/ios/foundation/color/color_image_017.png" alt="" />
                           </div>
                         </div>
                       </div>
@@ -736,7 +724,7 @@
                       <div class="content-box">
                         <div class="image-content-box no-border">
                           <div class="image-box">
-                            <img src="../../../assets/images/ios/foundation/color/color_image_019.png" alt="" />
+                            <img src="../../../assets/images/ios/foundation/color/color_image_018.png" alt="" />
                           </div>
                         </div>
                       </div>
@@ -765,12 +753,12 @@
                 <div class="content-box">
                   <div class="image-content-box no-border">
                     <div class="image-box">
-                      <img src="../../../assets/images/ios/foundation/color/color_image_020.png" alt="" />
+                      <img src="../../../assets/images/ios/foundation/color/color_image_019.png" alt="" />
                     </div>
                   </div>
                   <div class="image-content-box no-border">
                     <div class="image-box">
-                      <img src="../../../assets/images/ios/foundation/color/color_image_021.png" alt="" />
+                      <img src="../../../assets/images/ios/foundation/color/color_image_020.png" alt="" />
                     </div>
                   </div>
                 </div>

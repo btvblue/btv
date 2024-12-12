@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  const breakPoint = 1468;
+  const breakPoint = 1550;
 
   // Header //
   const header = document.querySelector('.header-container');
@@ -170,8 +170,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Resize //
   window.addEventListener('resize', () => {
-    if (quickMenu) setQuickMenuLeft(mainContainer, quickMenu);
-
     // 부하를 줄이기 위해 윈도우 창 크기 변경 후 한 번만 실행되도록 한다. //
     clearTimeout(timer);
     timer = setTimeout(function () {
@@ -182,7 +180,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Load - 모든 요소 로드 완료 후 상황에 맞게 LNB와 Quick 메뉴의 형태를 적용한다. //
   window.addEventListener('load', () => {
     setLnbPosition(window.innerWidth, breakPoint);
-    if (quickMenu) setQuickMenuLeft(mainContainer, quickMenu);
   });
 });
 
@@ -223,20 +220,6 @@ function setLnbPosition(width, breakPoint) {
     } else {
       return false;
     }
-  }
-}
-
-// 윈도우 가로 크기에 따라 퀵메뉴 left 위치를 재설정 하는 함수
-function setQuickMenuLeft(container, menu) {
-  const mainLeft = container.offsetLeft;
-  const mainWidth = container.offsetWidth;
-  const mainRight = mainLeft + mainWidth;
-  const menuLeft = menu.getBoundingClientRect().left;
-
-  if (menuLeft <= mainRight) {
-    menu.style.left = `${mainRight}px`;
-  } else {
-    menu.style.removeProperty('left');
   }
 }
 

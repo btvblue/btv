@@ -77,11 +77,11 @@
           </li>
           <div class="lnb-select">
             <div class="lnb-select-box">
-              <span id="lnb_select_label">Apple TV OS</span>
+              <span id="lnb_select_label">iOS</span>
               <div>
                 <ul>
-                  <li id="platform_ios"><a href="../foundation/ios/foundation.html">Apple TV OS</a></li>
-                  <li id="platform_web"><a href="../foundation/web/foundation.html">Android TV OS</a></li>
+                  <li id="platform_ios"><a href="../foundation/ios/foundation.html">iOS</a></li>
+                  <li id="platform_web"><a href="../foundation/web/foundation.html">Web UI</a></li>
                 </ul>
               </div>
             </div>
@@ -264,13 +264,13 @@
         document.addEventListener('DOMContentLoaded', () => {
           if (window.location.href.includes('ios')) {
             document.getElementById('platform_ios').classList.add('active');
-            document.getElementById('lnb_select_label').innerText = 'Apple TV OS';
+            document.getElementById('lnb_select_label').innerText = 'iOS';
             document.getElementById('platform_ios_list').style.display = 'block';
             document.getElementById('platform_web_list').style.display = 'none';
           }
           if (window.location.href.includes('web')) {
             document.getElementById('platform_web').classList.add('active');
-            document.getElementById('lnb_select_label').innerText = 'Android TV OS';
+            document.getElementById('lnb_select_label').innerText = 'Web UI';
             document.getElementById('platform_ios_list').style.display = 'none';
             document.getElementById('platform_web_list').style.display = 'block';
           }
@@ -379,8 +379,8 @@
                     <br />이에 따라 기기 환경별로 B tv 서비스의 기능과 디자인이 일부 지원되지 않을 수 있습니다.<br />
                   </p>
                   <p class="desc">
-                    외부 플랫폼에 B tv 서비스를 제공할 때는 고객이 다양한 서비스를 이용할 수 있으므로<br />B tv만의
-                      특수한 이용 패턴을 강요하지 않고 해당 플랫폼 내 다른 서비스가 공통으로 제시하는 사용성을
+                    외부 플랫폼에 B tv 서비스를 제공할 때는 고객이 다양한 서비스와 함께 이용할 수 있으므로<br />
+                      B tv만의 특수한 이용 패턴을 강요하지 않고 해당 플랫폼 내 다른 서비스가 공통으로 제시하는 사용성을
                       고려합니다.
                   </p>
                 </div>
