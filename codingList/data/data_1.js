@@ -309,6 +309,12 @@ const dataWeb = {
           complete: true,
         },
         {
+          name: 'foundation/web/adot.html',
+          link: 'foundation/web/adot.html',
+          content: 'B tv 에이닷',
+          complete: false,
+        },
+        {
           name: 'foundation/web/color.html',
           link: 'foundation/web/color.html',
           content: 'Color',
