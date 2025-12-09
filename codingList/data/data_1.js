@@ -344,6 +344,12 @@ const dataWeb = {
           content: 'Focus',
           complete: true,
         },
+        {
+          name: 'foundation/web/voiceid.html',
+          link: 'foundation/web/voiceid.html',
+          content: 'Voice ID',
+          complete: true,
+        },
       ],
     },
     {

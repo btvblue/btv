@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <link rel="icon" type="image/png" href="../../../assets/images/favicon.ico" />
+  <link rel="stylesheet" href="../../../assets/css/style.css" />
+  <script src="../../../assets/js/default.js"></script>
+  <script src="../../../assets/js/common.js"></script>
+  <title>Foundation | 에이닷</title>
+</head>
+<body>
+  <div class="wrapper voice-id">
+    <!-- Header -->
+    <header class="header-container">
+      <div class="header-area">
+        <div class="header-left">
+          <div class="header-logo-box">
+            <a href="../../overview/overview.html" class="header-logo-link">
+              <img src="../../../assets/images/btv_logo.svg" alt="" />
+              <span class="text">UX Guidelines</span>
+            </a>
+          </div>
+        </div>
+        <div class="header-right">
+          <!--
+        Class 설명
+        expand : 메뉴 펼쳤을 때 스타일 적용 (인터렉션은 js로 구현함. 클래스로 제어하지 않음)
+      -->
+          <ul class="header-menu-list-box">
+            <li class="header-menu-list ">
+              <a href="../../principle/principle.html" class="header-menu-link"><span class="text">Principle</span></a>
+            </li>
+            <li class="header-menu-list active">
+              <a href="../../foundation/web/foundation.html" class="header-menu-link"><span class="text">Foundation</span></a>
+            </li>
+            <li class="header-menu-list ">
+              <a href="../../components/web/components.html" class="header-menu-link"><span class="text">Components</span></a>
+            </li>
+          </ul>
+          <div class="menu-button-box">
+            <button type="button" class="btn-menu"></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- LNB -->
+    <div class="lnb-container">
+      <div class="lnb-hide"></div>
+      <div class="lnb-area">
+        <ul class="lnb-list-box">
+          <li class="lnb-list ">
+            <a href="../../overview/overview.html" class="lnb-link"><span class="text">Overview</span></a>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="../../principle/principle.html" class="lnb-link"><span class="text">Principle</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="../../principle/tv.html" class="lnb-sub-link"><span class="text">TV Environment</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../principle/contents.html" class="lnb-sub-link"><span class="text">Contents</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../principle/navigation.html" class="lnb-sub-link"><span class="text">Navigation</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../principle/legacy.html" class="lnb-sub-link"><span class="text">Respect for Legacy</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../principle/accessibility.html" class="lnb-sub-link"><span class="text">Accessibility</span></a>
+              </li>
+            </ul>
+          </li>
+          <div class="lnb-select">
+            <div class="lnb-select-box">
+              <span id="lnb_select_label">Android TV OS</span>
+              <div>
+                <ul>
+                  <li id="platform_ios"><a href="../../foundation/ios/foundation.html">Apple TV OS</a></li>
+                  <li id="platform_web"><a href="../../foundation/web/foundation.html">Android TV OS</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </ul>
+        <ul class="lnb-list-box" id="platform_ios_list" style="display: none">
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="../../foundation/ios/foundation.html" class="lnb-link"><span class="text">Foundation</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/ios/color.html" class="lnb-sub-link"><span class="text">Color</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/ios/typography.html" class="lnb-sub-link"><span class="text">Typography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/ios/iconography.html" class="lnb-sub-link"><span class="text">Iconography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/ios/layout.html" class="lnb-sub-link"><span class="text">Layout</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/ios/focus.html" class="lnb-sub-link"><span class="text">Focus</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/ios/motion.html" class="lnb-sub-link"><span class="text">Motion</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="../../components/ios/components.html" class="lnb-link"><span class="text">Components</span></a>
+            <ul class="lnb-sub-list-box">
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/badges.html" class="lnb-sub-link"><span class="text">Badges</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/block.html" class="lnb-sub-link"><span class="text">Block</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/buttons.html" class="lnb-sub-link"><span class="text">Buttons</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <button class="btn-sub-open"><i class="icon ic-arrow"></i></button>
+                <a href="../../components/ios/checkbox.html" class="lnb-sub-link"><span class="text">Controls</span></a>
+                <ul class="lnb-last-list-box">
+                  <li class="lnb-last-list ">
+                    <a href="../../components/ios/checkbox.html" class="lnb-last-link"><span class="text">Checkbox</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="../../components/ios/radio.html" class="lnb-last-link"><span class="text">Radio Button</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="../../components/ios/switch.html" class="lnb-last-link"><span class="text">Switch</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="../../components/ios/slider.html" class="lnb-last-link"><span class="text">Slider</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/gnb.html" class="lnb-sub-link"><span class="text">GNB</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/inputs.html" class="lnb-sub-link"><span class="text">Inputs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/ime.html" class="lnb-sub-link"><span class="text">IME</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/loading.html" class="lnb-sub-link"><span class="text">Loading</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/pagination.html" class="lnb-sub-link"><span class="text">Pagination</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/player.html" class="lnb-sub-link"><span class="text">Player</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/popup.html" class="lnb-sub-link"><span class="text">Pop up</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/splash.html" class="lnb-sub-link"><span class="text">Splash</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/tabs.html" class="lnb-sub-link"><span class="text">Tabs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/ios/tooltip.html" class="lnb-sub-link"><span class="text">Tooltip</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="lnb-list-box" id="platform_web_list">
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="../../foundation/web/foundation.html" class="lnb-link"><span class="text">Foundation</span></a>
+            <ul class="lnb-sub-list-box" id="platform_web_foundation">
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/web/color.html" class="lnb-sub-link"><span class="text">Color</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/web/typography.html" class="lnb-sub-link"><span class="text">Typography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/web/iconography.html" class="lnb-sub-link"><span class="text">Iconography</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/web/layout.html" class="lnb-sub-link"><span class="text">Layout</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/web/focus.html" class="lnb-sub-link"><span class="text">Focus</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../foundation/web/adot.html" class="lnb-sub-link"><span class="text">AI (에이닷)</span></a>
+              </li>
+              <li class="lnb-sub-list active">
+                <a href="../../foundation/web/voiceid.html" class="lnb-sub-link"><span class="text">Voice ID</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="lnb-list ">
+            <button class="btn-open"><i class="icon ic-arrow"></i></button>
+            <a href="../../components/web/components.html" class="lnb-link"><span class="text">Components</span></a>
+            <ul class="lnb-sub-list-box" id="platform_web_components">
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/buttons.html" class="lnb-sub-link"><span class="text">Buttons</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <button class="btn-sub-open"><i class="icon ic-arrow"></i></button>
+                <a href="../../components/web/checkbox.html" class="lnb-sub-link"><span class="text">Controls</span></a>
+                <ul class="lnb-last-list-box" id="platform_web_components_controls">
+                  <li class="lnb-last-list ">
+                    <a href="../../components/web/checkbox.html" class="lnb-last-link"><span class="text">Checkbox</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="../../components/web/radio.html" class="lnb-last-link"><span class="text">Radio Button</span></a>
+                  </li>
+                  <li class="lnb-last-list ">
+                    <a href="../../components/web/switch.html" class="lnb-last-link"><span class="text">Switch</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/dropdowns.html" class="lnb-sub-link"><span class="text">Dropdown</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/dock.html" class="lnb-sub-link"><span class="text">Dock</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/flag.html" class="lnb-sub-link"><span class="text">Flags</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/gnb.html" class="lnb-sub-link"><span class="text">GNB</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/inputs.html" class="lnb-sub-link"><span class="text">Inputs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/ime.html" class="lnb-sub-link"><span class="text">IME</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/loading.html" class="lnb-sub-link"><span class="text">Loading</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/menus.html" class="lnb-sub-link"><span class="text">Menus</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/pagination.html" class="lnb-sub-link"><span class="text">Pagination</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/popup.html" class="lnb-sub-link"><span class="text">Pop up</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/tabs.html" class="lnb-sub-link"><span class="text">Tabs</span></a>
+              </li>
+              <li class="lnb-sub-list ">
+                <a href="../../components/web/tooltip.html" class="lnb-sub-link"><span class="text">Tooltip</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          if (window.location.href.includes('ios')) {
+            document.getElementById('platform_ios').classList.add('active');
+            document.getElementById('lnb_select_label').innerText = 'Apple TV OS';
+            document.getElementById('platform_ios_list').style.display = 'block';
+            document.getElementById('platform_web_list').style.display = 'none';
+          }
+          if (window.location.href.includes('web')) {
+            document.getElementById('platform_web').classList.add('active');
+            document.getElementById('lnb_select_label').innerText = 'Android TV OS';
+            document.getElementById('platform_ios_list').style.display = 'none';
+            document.getElementById('platform_web_list').style.display = 'block';
+          }
+          if (
+            window.location.href.includes('components/web/checkbox') ||
+            window.location.href.includes('components/web/radio') ||
+            window.location.href.includes('components/web/switch')
+          ) {
+            document.getElementById('platform_web_components_controls').style.display = 'block';
+          }
+          if (window.location.href.includes('components/web')) {
+            if (window.location.href.includes('components/web/components')) {
+              document.getElementById('platform_web_components').style.display = 'none';
+            } else {
+              document.getElementById('platform_web_components').style.display = 'block';
+            }
+          }
+          if (window.location.href.includes('foundation/web')) {
+            if (window.location.href.includes('foundation/web/foundation')) {
+              document.getElementById('platform_web_foundation').style.display = 'none';
+            } else {
+              document.getElementById('platform_web_foundation').style.display = 'block';
+            }
+          }
+        });
+      </script>
+    </div>
+    <!-- Foundation | 에이닷 -->
+    <main class="main">
+      <div class="main-container">
+        <div class="main-area">
+          <div class="heading-container">
+            <div class="heading-area">
+              <div class="heading-top">
+                <div class="title-box">
+                  <h1 class="title">Voice ID</h1>
+                </div>
+                <div class="desc-box">
+                  <p class="desc">
+                    Voice ID는 B tv 에이닷의 특화 기능으로, 프로필에 사용자의 목소리를 등록하면<br />이를 기반으로
+                      사용자를 식별해 개인화 서비스를 제공합니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Voice ID 등록 방법 -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Voice ID 등록 방법</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">설정 > Voice ID 등록하기 메뉴를 통해 등록 화면 진입</h3>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../../assets/images/web/foundation/voiceid/Mass_voiceid_1.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Voice ID 등록 안내에 따라 가이드 문구를 차례로 발화</h3>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../../assets/images/web/foundation/voiceid/Mass_voiceid_2.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Voice ID 등록 방법 -->
+          <!-- Voice ID 사용 예 -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Voice ID 사용 예</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Voice ID로 프로필 변경</h3>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../../assets/images/web/foundation/voiceid/Mass_voiceid_3.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="image-content-box ">
+                          <div class="image-box">
+                            <img src="../../../assets/images/web/foundation/voiceid/Mass_voiceid_4.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Voice ID 사용 예 -->
+          <!-- Status indicators -->
+          <div class="content-container">
+            <div class="content-area">
+              <div class="content-top">
+                <div class="title-box">
+                  <h2 class="title">Status indicators</h2>
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Progress step</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          사용자가 순차적으로 수행해야 하는 작업의 단계를 의미하며, 전체 단계와 현재 단계, 이전 단계,
+                          남은 단계를 나타냅니다. <br />
+                            Voice ID 등록에서 사용자가 발화해야하는 전체 단계를 안내합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-title-box data-row">
+                          <div class="image-title-top">
+                            <div class="image-content-box ">
+                              <div class="image-box">
+                                <img src="../../../assets/images/web/foundation/voiceid/Mass_voiceid_5.png" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="image-title-bottom">
+                            <ul class="number-desc-list-box">
+                              <li class="number-desc-list">
+                                <span class="title">1. 전체 단계</span>
+                                <div class="text-box">
+                                  <p class="text">사용자가 수행해야하는 전체 단계</p>
+                                </div>
+                              </li>
+                              <li class="number-desc-list">
+                                <span class="title">3. 이전 단계</span>
+                                <div class="text-box">
+                                  <p class="text">사용자가 작업을 완료한 단계로 완료 상태 표기</p>
+                                </div>
+                              </li>
+                              <li class="number-desc-list">
+                                <span class="title">2. 현재 단계</span>
+                                <div class="text-box">
+                                  <p class="text">사용자가 머물러있는 단계</p>
+                                </div>
+                              </li>
+                              <li class="number-desc-list">
+                                <span class="title">4. 남은 단계</span>
+                                <div class="text-box">
+                                  <p class="text">사용자가 수행해야하는 나머지 단계</p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-box">
+                        <div class="image-title-box">
+                          <div class="image-title-top">
+                            <div class="image-content-box ">
+                              <div class="image-box">
+                                <img src="../../../assets/images/web/foundation/voiceid/Mass_voiceid_6.png" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="image-title-bottom">
+                            <ul class="number-desc-list-box">
+                              <li class="number-desc-list">
+                                <span class="title">A. Success</span>
+                                <div class="text-box">
+                                  <p class="text">사용자가 현재 단계의 작업을 성공한 경우 체크 표시 후, 다음 단계로 넘어갑니다.
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="number-desc-list">
+                                <span class="title">B. Fail</span>
+                                <div class="text-box">
+                                  <p class="text">사용자가 현재 단계의 작업을 실패한 경우 실패 안내 후, 현재 단계를 다시 수행합니다.
+                                  </p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub-content-container">
+                  <div class="sub-content-area">
+                    <div class="sub-content-top">
+                      <div class="title-box">
+                        <h3 class="title">Progress bar</h3>
+                      </div>
+                      <div class="desc-box">
+                        <p class="desc">
+                          사용자가 수행해야 하는 작업의 진행률을 Bar 형태로 표현합니다.<br />
+                            Voice ID 등록에서 단계 별로 사용자가 채워야하는 발화 시간을 의미합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="sub-content-bottom">
+                      <div class="content-box">
+                        <div class="image-title-box">
+                          <div class="image-title-top">
+                            <div class="image-content-box ">
+                              <div class="image-box">
+                                <img src="../../../assets/images/web/foundation/voiceid/Mass_voiceid_7.png" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="image-title-bottom">
+                            <ul class="number-desc-list-box">
+                              <li class="number-desc-list">
+                                <span class="title">1. 전체 진행률</span>
+                                <div class="text-box">
+                                  <p class="text">사용자가 수행해야하는 작업의 전체를 Bar 형태로 제공</p>
+                                </div>
+                              </li>
+                              <li class="number-desc-list">
+                                <span class="title">2. 현재 진행률</span>
+                                <div class="text-box">
+                                  <p class="text">전체 프로세스 중 사용자가 현재까지 진행한 진행률을 전체 진행률 위에 표기
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="number-desc-list">
+                                <span class="title">3. 진행률 레이블</span>
+                                <div class="text-box">
+                                  <p class="text">진행 상태를 의미하는 숫자를 적절한 단위(%)와 함께 표기하며, 필요에 따라 맥락에 맞는 설명 문구를 추가로 제공
+                                  </p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // Status indicators -->
+        </div>
+      </div>
+    </main>
+    <!-- Quick Menu -->
+    <div class="quick-menu-container">
+      <div class="quick-menu-area">
+        <ul class="quick-menu-list-box">
+          <li class="quick-menu-list">
+            <span class="list-title">Voice ID 등록 방법</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">설정 > Voice ID 등록하기 메뉴를 통해 등록 화면 진입</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Voice ID 등록 안내에 따라 가이드 문구를 차례로 발화</span>
+              </li>
+            </ul>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Voice ID 사용 예</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Voice ID로 프로필 변경</span>
+              </li>
+            </ul>
+          </li>
+          <li class="quick-menu-list">
+            <span class="list-title">Status indicators</span>
+            <ul class="quick-menu-sub-list-box">
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Progress step</span>
+              </li>
+              <li class="quick-menu-sub-list">
+                <span class="sub-list-title">Progress bar</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer-container">
+      <div class="footer-area">
+        <div class="footer-box">
+          <span class="text">Copyright © 2025 SK Broadband CO.LTD All rights reserved</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
